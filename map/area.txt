@@ -359,7 +359,7 @@ orleans_area = {
 # Low Countries				 		   #
 ########################################
 
-wallonia_area = { #4
+wallonia_area = { 5059  #4
 	91 93 94 1866 4989
 }
 
@@ -367,11 +367,11 @@ holland_area = { #4
 	96 97 98 4383
 }
 
-flanders_area = { #3
+flanders_area = { 5060  #3
 	90 1865 4769
 }
 
-frisia_area = { #5
+frisia_area = { 5057  5056  #5
 	99 100 1931 4381 4382
 }
 
@@ -380,7 +380,7 @@ brabant_area = { #3
 	92 1744 2974
 }
 
-north_brabant_area = { #3
+north_brabant_area = { 5058  #3
 	95 4770 1742
 }
 
