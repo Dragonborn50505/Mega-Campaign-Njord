@@ -1646,7 +1646,7 @@ province;red;green;blue;x;x
 1645;12;253;253;Indian Ocean #30;x
 1646;13;203;203;Indian Ocean #31;x
 1647;14;203;253;Indian Ocean #32;x
-1648;15;223;253;Lake Chad;x
+1648;15;223;253;Lake Tchad;x
 1649;16;253;253;Lake Victoria;x
 1650;17;203;203;Lake Tangayika;x
 1651;18;203;253;Lake Malawi;x
@@ -4940,3 +4940,117 @@ province;red;green;blue;x;x
 4939;210;80;11;Te Moana-a-Toi;x
 4940;29;216;197;Lake Tulare;x
 4941;30;216;201;Lake Cahuilla;x
+4942;163;58;216;Fatra;x
+4943;107;32;51;Tatry;x
+4944;58;193;28;Tekov;x
+4945;141;142;208;Rab;x
+4946;171;160;188;Liptov;x
+4947;59;33;191;Kamenec;x
+4948;254;174;151;Zvolen;x
+4949;45;177;161;Abov;x
+4950;238;166;86;Csongrad;x
+4951;111;63;153;Carpathians;x
+4952;176;6;174;Carpathians;x
+4953;156;21;107;Beszterce;x
+4954;45;180;160;Szatmar;x
+4955;62;30;71;Arad;x
+4956;254;63;103;Pozega;x
+4957;52;152;17;Dinarides;x
+4958;212;58;78;Komarom;x
+4959;3;174;249;Balti;x
+4960;100;46;113;Negotin;x
+4961;228;216;106;Planina;x
+4962;111;58;81;Korab;x
+4963;177;72;157;Pindhos;x
+4964;1;233;111;Suvalkai;x
+4965;60;142;187;Raseiniai;x
+4966;164;144;3;Insterburg;x
+4967;139;149;250;Pernau;x
+4968;202;90;101;Dago;x
+4969;133;53;105;Kymmenedalen;x
+4970;197;51;101;Oleaborg;x
+4971;32;181;149;Lulea;x
+4972;20;95;34;Harnosand;x
+4973;102;181;33;Sodermanland;x
+4974;162;9;247;Jonkoping;x
+4975;7;73;155;Malung;x
+4976;4;196;128;Vestfold;x
+4977;31;181;149;Lillehammer;x
+4978;8;73;155;Sunnmore;x
+4979;230;242;90;Solvesborg;x
+4980;93;201;184;Naestved;x
+4981;126;79;123;Viborg;x
+4982;101;218;150;Sonderjylland;x
+4983;18;36;150;The Pyrenees;x
+4984;179;148;26;Landes;x
+4985;230;76;53;Chalons;x
+4986;44;77;214;Cheateauroux;x
+4987;200;64;2;Channel Isles;x
+4988;195;83;27;Evreux;x
+4989;47;114;1;Arlon;x
+4990;218;175;44;Cantabrian Mountains;x
+4991;162;106;120;Cantabrian Mountains;x
+4992;5;233;97;Central Chain;x
+4993;201;145;157;Iberian Chain;x
+4994;214;198;235;Bethic Chain;x
+4995;245;138;77;Bethic Chain;x
+4996;156;136;93;Baza;x
+4997;219;185;145;Merida;x
+4998;130;85;85;Guadalajara;x
+4999;184;42;42;Setubal;x
+5000;134;162;120;Wazores;x
+5001;122;80;166;Bir Nahid;x
+5002;236;255;59;Tanta;x
+5003;80;42;168;Nekhel;x
+5004;255;83;218;Siwah;x
+5005;43;195;27;Ayn Dallah;x
+5006;181;78;123;Dakla;x
+5007;201;224;88;Selima;x
+5008;50;104;50;Arish;x
+5009;244;188;24;Wislica;x
+5010;41;187;139;Ciechanow;x
+5011;169;252;0;Ratne;x
+5012;186;200;242;Liw;x
+5013;143;200;242;Biala;x
+5014;160;160;188;Swidnica;x
+5015;108;33;226;Lis;x
+5016;255;121;205;Kodak;x
+5017;55;53;213;Kremenchuk;x
+5018;69;133;133;Shostka;x
+5019;1;159;159;Uman;x
+5020;32;32;32;Lutsk;x
+5021;80;81;82;Lugansk;x
+5022;101;101;101;Bielska Sloboda;x
+5023;244;12;13;Halshany;x
+5024;38;149;155;Thebes;x
+5025;39;150;155;Chania;x
+5026;88;122;199;Boruj;x
+5027;21;76;1;Stanimaka;x
+5028;227;216;106;Rhodopes;x
+5029;20;54;219;Thyateira;x
+5030;243;209;24;Prusa;x
+5031;208;208;209;Taurus;x
+5032;16;125;133;Ponticmountains;x
+5033;175;175;255;Taurus;x
+5034;67;121;121;Nigde;x
+5035;174;42;42;Giresun;x
+5036;255;18;18;Bayburt;x
+5037;175;38;190;Alexandretta;x
+5038;160;45;160;Tarsus;x
+5039;45;45;160;Sis;x
+5040;217;34;25;Vodena;x
+5041;34;99;178;Dubh Linn;x
+5042;140;114;138;Galway;x
+5043;5;76;18;Limerick;x
+5044;189;52;229;Cork;x
+5045;224;228;54;Waterford;x
+5046;20;203;180;Loch nEathach;x
+5047;186;186;147;Leitrim;x
+5048;183;119;179;Clwyd;x
+5049;162;125;255;Ynysmon;x
+5050;166;66;60;Lanark;x
+5051;190;52;22;Lochaber;x
+5052;162;126;254;Ross;x
+5053;202;124;124;Banff;x
+5054;121;147;155;Armagh;x
+5055;122;91;236;Barnstaple;x
