@@ -1,18 +1,17 @@
 #Written with Eu4 Easy Province Creator by emiroercn
-#Stoumont
+#Bardowick
 add_core = BYZ
 owner = BYZ
 controller = BYZ
-culture = flemish
-religion = orthodox
+culture = lower_saxon
+religion = catholic
 hre = no
-base_tax = 4
-base_production = 2
-trade_goods = grain
-base_manpower = 4
-capital = "Stoumont"
+base_tax = 1
+base_production = 1
+trade_goods = salt
+base_manpower = 1
+capital = "Bardowick"
 is_city = yes
-extra_cost = 26
 discovered_by = eastern
 discovered_by = ottoman
 discovered_by = muslim

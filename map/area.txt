@@ -910,8 +910,8 @@ moravia_area = {
 	265 4237 4726
 }
 
-south_saxony_area = { #4
-	59 61 4744 62
+south_saxony_area = {  #4
+	59 61 4744 62 5064
 }
 
 upper_bavaria_area = { #4
@@ -1028,8 +1028,8 @@ hesse_area = { #5
 	81 1762 1876 4774 78
 }
 
-braunschweig_area = { #4
-	57 1758 2971 4773
+braunschweig_area = {  #4
+	57 1758 2971 4773 5061
 }
    
 weser_area = { #4
@@ -1041,11 +1041,11 @@ holstein_area = { #3
 }
 
 lower_saxony_area = { #4
-	44 53 1857 4772
+	44 53 1857 4772 5062
 }
 
-mecklenburg_area = { #5
-	45 46 2996 4749 4786
+mecklenburg_area = {  #5
+	45 46 2996 4749 4786 5063
 }
 
 ########################################
