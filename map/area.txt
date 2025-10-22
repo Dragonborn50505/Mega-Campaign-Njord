@@ -910,7 +910,7 @@ moravia_area = {
 	265 4237 4726
 }
 
-south_saxony_area = {  #4
+south_saxony_area = { 5065   #4
 	59 61 4744 62 5064
 }
 
