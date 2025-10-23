@@ -979,7 +979,7 @@ austria_proper_area = { #5
 	133 134 1770 4761 4762
 }
 
-inner_austria_area = { #4
+inner_austria_area = { 5066  #4
 	128 132 1863 4759
 }
 
