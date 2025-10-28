@@ -1,16 +1,16 @@
 #Written with Eu4 Easy Province Creator by emiroercn
-#Liezen
+#Prachen
 add_core = BYZ
 owner = BYZ
 controller = BYZ
-culture = austrian
+culture = czech
 religion = catholic
 hre = yes
 base_tax = 1
 base_production = 1
-trade_goods = wool
+trade_goods = iron
 base_manpower = 1
-capital = "Liezen"
+capital = "Prachen"
 is_city = yes
 discovered_by = western
 discovered_by = muslim
