@@ -483,7 +483,7 @@ liguria_area = { #3
 	101 102 2992
 }
 
-corsica_sardinia_area = { #4
+corsica_sardinia_area = { 5069  #4
 	127 1247 2986 4735
 }
 
@@ -499,15 +499,15 @@ naples_area = { #3  #Campania
 	121 2983 4734
 }
 
-lazio_area = { #4 Lazio-Umbria
+lazio_area = { 5071  #4 Lazio-Umbria
 	118 2976 4731 4732
 }
 
-calabria_area = { #3 (+Lucania)
+calabria_area = { 5070  #3 (+Lucania)
 	123 1934 2984
 }
 
-apulia_area = { #4
+apulia_area = { 5073  #4
 	122 1933 2985 4733
 }
 
@@ -516,7 +516,7 @@ emilia_romagna_area = { #5
 	105 106 113 114 4730
 }
 
-central_italy_area = { #3
+central_italy_area = { 5072  #3
 	119 120 2977
 }
 

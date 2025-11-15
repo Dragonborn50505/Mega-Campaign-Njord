@@ -3,15 +3,17 @@
 add_core = BYZ
 owner = BYZ
 controller = BYZ
-culture = umbrian
+culture = greek
 religion = orthodox
-hre = nocatholicbase_tax = 7
+hre = no
+base_tax = 7
 base_production = 2
 trade_goods = glass
 base_manpower = 3
 capital = "Chieti"
 is_city = yes
 extra_cost = 0
+center_of_trade = 0
 discovered_by = eastern
 discovered_by = ottoman
 discovered_by = muslim
