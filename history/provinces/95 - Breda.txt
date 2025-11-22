@@ -1,0 +1,17 @@
+owner = FLA
+controller = FLA
+capital = "Breda"
+is_city = yes
+culture = flemish
+religion = norse_pagan
+trade_goods = cloth
+hre = yes
+base_tax = 2
+base_production = 4
+base_manpower = 4
+add_core = FLA
+add_core = Z6S
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

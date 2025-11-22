@@ -1,0 +1,15 @@
+owner = Z63
+controller = Z63
+capital = "Bilbao"
+is_city = yes
+culture = basque
+religion = catholic
+trade_goods = iron
+base_tax = 1
+base_production = 4
+base_manpower = 2
+add_core = Z63
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western
