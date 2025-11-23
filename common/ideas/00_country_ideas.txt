@@ -14,14 +14,9 @@ norse_ideas = {
 		infantry_power = 0.15
 	}
 	
-
-    	trigger = {
-        	OR = {
-            		tag = FLA
-            		has_country_flag = accepted_norse_ideas_flag
-        	}
-    	}
-
+	trigger = {
+		tag = FLA
+	}
 	free = yes
 	
 	norse_ideas_eternal_struggle = {
@@ -14487,6 +14482,7 @@ FLA_ideas = {
 	
 	trigger = {
 		tag = FLA
+		has_country_flag = accepted_norse_ideas_flag
 		NOT = { has_country_flag = refused_norse_ideas }
 	}
 	free = yes
