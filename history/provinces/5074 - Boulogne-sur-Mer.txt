@@ -1,8 +1,8 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #Boulogne-sur-Mer
-add_core = Z15
-owner = Z15
-controller = Z15
+add_core = NRM
+owner = NRM
+controller = NRM
 culture = flemish
 religion = catholic
 hre = yes
