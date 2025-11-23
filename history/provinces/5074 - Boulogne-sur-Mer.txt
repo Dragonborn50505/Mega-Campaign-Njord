@@ -1,18 +1,19 @@
 #Written with Eu4 Easy Province Creator by emiroercn
-#Haute-Corse
-add_core = BYZ
-owner = BYZ
-controller = BYZ
-culture = sardinian
+#Boulogne-sur-Mer
+add_core = NRM
+owner = NRM
+controller = NRM
+culture = flemish
 religion = catholic
 hre = yes
-base_tax = 7
-base_production = 2
-trade_goods = glass
-base_manpower = 3
-capital = "Haute-Corse"
+base_tax = 8
+base_production = 3
+trade_goods = naval_supplies
+base_manpower = 4
+capital = "Boulogne-sur-Mer"
 is_city = yes
 extra_cost = 0
+center_of_trade = 0
 discovered_by = eastern
 discovered_by = ottoman
 discovered_by = muslim

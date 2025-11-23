@@ -1,5 +1,5 @@
-owner = Z15
-controller = Z15
+owner = FLA
+controller = FLA
 capital = "Las Palmas"
 is_city = yes
 culture = flemish
@@ -9,6 +9,6 @@ hre = yes
 base_tax = 2
 base_production = 1
 base_manpower = 1
-add_core = Z15
+add_core = FLA
 native_size = 5
 native_ferocity = 1
