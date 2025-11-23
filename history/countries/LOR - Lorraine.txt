@@ -6,7 +6,6 @@ religion = catholic
 primary_culture = alsatian
 capital = 189
 add_accepted_culture = hessian
-elector = yes
 1444.11.11= {
 	monarch = {
 		name = "Wido"

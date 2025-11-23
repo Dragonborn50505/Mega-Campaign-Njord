@@ -5,7 +5,6 @@ religion = catholic
 primary_culture = greek
 capital = 136
 add_accepted_culture = neapolitan
-elector = yes
 1444.11.11= {
 	monarch = {
 		name = "Phokas"

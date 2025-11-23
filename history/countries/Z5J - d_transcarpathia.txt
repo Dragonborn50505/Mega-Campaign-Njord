@@ -5,6 +5,7 @@ technology_group = eastern
 religion = orthodox
 primary_culture = dynamic-hungarian-culture-num1
 capital = 1952
+elector = yes
 add_accepted_culture = szekely
 set_country_flag = ZZZ_generated_converter_nation
 1444.11.11= {
