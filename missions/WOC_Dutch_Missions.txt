@@ -639,7 +639,7 @@ NED_1_1 = {
 		effect = {
 			add_country_modifier = {
 				name = plati_mis_mod_europagan_pagan_fury
-				duration = -1
+				duration = 14600
 			}
 		}
 	}
