@@ -1,5 +1,5 @@
-owner = FLA
-controller = FLA
+owner = UTR
+controller = UTR
 capital = "Breda"
 is_city = yes
 culture = flemish
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 2
 base_production = 4
 base_manpower = 4
-add_core = FLA
+add_core = UTR
 add_core = Z6S
 discovered_by = eastern
 discovered_by = muslim

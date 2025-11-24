@@ -1,5 +1,5 @@
-owner = GEL
-controller = GEL
+owner = HAI
+controller = HAI
 capital = "Namur"
 is_city = yes
 culture = flemish
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 5
 base_production = 4
 base_manpower = 2
-add_core = GEL
+add_core = HAI
 add_permanent_claim = LUX
 discovered_by = eastern
 discovered_by = muslim

@@ -1,5 +1,3 @@
-owner = Z99
-controller = Z99
 capital = "Accra"
 is_city = yes
 culture = aka
@@ -10,8 +8,6 @@ base_production = 1
 base_manpower = 1
 extra_cost = 8
 center_of_trade = 1
-add_core = ASH
-add_core = Z99
 discovered_by = sub_saharan
 native_size = 80
 native_ferocity = 4

@@ -1,5 +1,5 @@
-owner = Z15
-controller = Z15
+owner = Z6Q
+controller = Z6Q
 capital = "Lille"
 is_city = yes
 culture = flemish
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 2
 base_production = 4
 base_manpower = 5
-add_core = Z15
+add_core = Z6Q
 add_permanent_claim = FLA
 discovered_by = eastern
 discovered_by = muslim
