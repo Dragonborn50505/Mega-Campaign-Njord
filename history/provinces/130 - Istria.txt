@@ -1,5 +1,5 @@
-owner = Z2G
-controller = Z2G
+owner = Z1P
+controller = Z1P
 capital = "Pula"
 is_city = yes
 culture = venetian
@@ -11,8 +11,7 @@ base_production = 4
 base_manpower = 5
 extra_cost = 8
 center_of_trade = 1
-add_core = VEN
-add_core = Z2G
+add_core = Z1P
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

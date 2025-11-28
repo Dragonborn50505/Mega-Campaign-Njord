@@ -12,7 +12,6 @@ historical_idea_groups = {
 	economic_ideas
 	quality_ideas
 }
-historical_score = 75
 historical_units = {
 	austrian_grenzer
 	austrian_hussar
@@ -29,49 +28,37 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Adriano #0" = 0
-	"Alberto #0" = 10
-	"Alessandro #0" = 20
-	"Antonio #0" = 15
-	"Biagio #0" = 0
-	"Bonaventura #0" = 0
-	"Carlo #0" = 15
-	"Constantino #0" = 0
-	"Cosimo #0" = 60
-	"Danilo #0" = 0
-	"Eustachio #0" = 0
-	"Evangelista #0" = 0
-	"Ferdinando #0" = 60
-	"Filippo #0" = 15
-	"Francesco #0" = 20
-	"Francesco Stefano #0" = 20
-	"Gian Carlo #0" = 15
-	"Gian Gastone #0" = 20
-	"Giancarlo #0" = 0
-	"Giovanni #0" = 10
+	"Adalberto #2" = 10
+	"Adelasia #1" = -1
+	"Agano #1" = 10
+	"Alp Yurek #0" = 0
+	"Alpert #1" = 10
+	"Bonifacio #4" = 10
+	"Boson #1" = 10
+	"Engelbert #1" = 10
+	"Federico #1" = 10
 	"Girolamo #0" = 0
-	"Giuliano #0" = 0
-	"Giuseppe #0" = 10
-	"Innocenzo #0" = 0
-	"Ippolito #0" = 0
-	"Leopoldo #0" = 10
-	"Lorenzo #0" = 0
-	"Luigi #0" = 10
-	"Luisella #0" = -1
-	"Marco #0" = 0
-	"Massimiliano #0" = 10
-	"Matteo #0" = 10
-	"Milena #0" = -1
-	"Paolina #0" = -1
-	"Pasquale #0" = 0
-	"Piero #0" = 0
-	"Pietro #0" = 15
-	"Pietro Leopoldo #0" = 20
-	"Raniero #0" = 10
-	"Rodolfo #0" = 10
-	"Salvestro #0" = 0
-	"Sergio #0" = 0
-	"Vitale #0" = 0
+	"Guido #1" = 10
+	"Hedwig #0" = -1
+	"Heinrich #2" = 10
+	"Konrad #1" = 10
+	"Lamberto #1" = 10
+	"Liutbert #1" = 10
+	"Lothar #1" = 10
+	"Maginfrit #1" = 10
+	"Martino #0" = 0
+	"Matilda #1" = -1
+	"Pio #0" = 0
+	"Raineri #1" = 10
+	"Tachipert #1" = 10
+	"Thietmar #1" = 10
+	"Ubert #1" = 10
+	"Uc #1" = 10
+	"Ulrich #1" = 10
+	"Walpert #1" = 10
+	"Wawrzyniec #0" = 0
+	"Welf #3" = 10
+	"Wicheram #1" = 10
 }
 leader_names = {
 	"Allori"

@@ -1,5 +1,5 @@
-owner = Z9J
-controller = Z9J
+owner = Z5N
+controller = Z5N
 capital = "Usolye Kamskoye"
 is_city = yes
 culture = kirgiz
@@ -8,8 +8,7 @@ trade_goods = salt
 base_tax = 1
 base_production = 1
 base_manpower = 1
-add_core = CHG
-add_core = Z9J
+add_core = Z5N
 add_permanent_claim = PRM
 discovered_by = eastern
 discovered_by = nomad_group

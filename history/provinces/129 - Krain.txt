@@ -1,5 +1,5 @@
-owner = Z34
-controller = Z34
+owner = Z22
+controller = Z22
 capital = "Laibach"
 is_city = yes
 culture = slovene
@@ -10,7 +10,7 @@ base_tax = 1
 base_production = 4
 base_manpower = 2
 add_core = CLI
-add_core = Z34
+add_core = Z22
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

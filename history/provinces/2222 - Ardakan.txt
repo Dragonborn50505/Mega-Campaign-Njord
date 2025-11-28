@@ -1,5 +1,5 @@
-owner = Z6F
-controller = Z6F
+owner = Z07
+controller = Z07
 capital = "Ardakan"
 is_city = yes
 culture = persian
@@ -9,7 +9,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 2
 add_core = PER
-add_core = Z6F
+add_core = Z07
 discovered_by = indian
 discovered_by = muslim
 discovered_by = nomad_group

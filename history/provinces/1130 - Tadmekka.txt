@@ -1,5 +1,5 @@
-owner = Z50
-controller = Z50
+owner = GUR
+controller = GUR
 capital = "Tadmekka al-Suq"
 is_city = yes
 culture = berber
@@ -8,5 +8,6 @@ trade_goods = wool
 base_tax = 1
 base_production = 1
 base_manpower = 2
-add_core = Z50
+add_core = TLC
+add_core = GUR
 discovered_by = sub_saharan

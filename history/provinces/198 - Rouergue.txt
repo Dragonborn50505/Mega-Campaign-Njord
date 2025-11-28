@@ -1,5 +1,5 @@
-owner = Z9N
-controller = Z9N
+owner = Z5Q
+controller = Z5Q
 capital = "Rodez"
 is_city = yes
 culture = aquitaine
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 1
 base_production = 2
 base_manpower = 2
-add_core = Z9N
+add_core = Z5Q
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman

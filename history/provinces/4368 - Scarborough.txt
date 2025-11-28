@@ -1,5 +1,5 @@
-owner = Z6H
-controller = Z6H
+owner = Z3P
+controller = Z3P
 capital = "Scarborough"
 is_city = yes
 culture = english
@@ -11,7 +11,7 @@ base_tax = 10
 base_production = 3
 base_manpower = 2
 add_core = ENG
-add_core = Z6H
+add_core = Z3P
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman

@@ -1,5 +1,5 @@
-owner = KOL
-controller = KOL
+owner = FLA
+controller = FLA
 capital = "Kleves"
 is_city = yes
 culture = flemish
@@ -9,6 +9,7 @@ hre = yes
 base_tax = 5
 base_production = 5
 base_manpower = 3
+add_core = FLA
 add_core = KLE
 discovered_by = eastern
 discovered_by = muslim

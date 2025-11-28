@@ -1,5 +1,5 @@
-owner = Z18
-controller = Z18
+owner = Z10
+controller = Z10
 capital = "Judenburg"
 is_city = yes
 culture = austrian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 5
 base_production = 4
 base_manpower = 3
-add_core = Z18
+add_core = Z10
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

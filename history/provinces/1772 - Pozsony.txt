@@ -1,5 +1,5 @@
-owner = Z9Y
-controller = Z9Y
+owner = Z5Y
+controller = Z5Y
 capital = "Pressburg"
 is_city = yes
 culture = slovak
@@ -12,7 +12,7 @@ base_manpower = 5
 extra_cost = 8
 center_of_trade = 1
 add_core = SLO
-add_core = Z9Y
+add_core = Z5Y
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

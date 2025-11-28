@@ -1,5 +1,5 @@
-owner = Z3R
-controller = Z3R
+owner = CAS
+controller = CAS
 capital = "Cuenca"
 is_city = yes
 culture = moroccan
@@ -9,7 +9,7 @@ base_tax = 5
 base_production = 4
 base_manpower = 3
 add_core = MOR
-add_core = Z3R
+add_core = CAS
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman

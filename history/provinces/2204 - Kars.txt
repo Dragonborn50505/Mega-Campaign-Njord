@@ -1,5 +1,5 @@
-owner = SME
-controller = SME
+owner = Z07
+controller = Z07
 capital = "Akhaltsikhe"
 is_city = yes
 culture = georgian
@@ -8,7 +8,8 @@ trade_goods = wine
 base_tax = 5
 base_production = 4
 base_manpower = 3
-add_core = SME
+add_core = GEO
+add_core = Z07
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = nomad_group

@@ -1,5 +1,5 @@
-owner = Z5H
-controller = Z5H
+owner = Z33
+controller = Z33
 capital = "Kanchipuram"
 is_city = yes
 culture = tamil
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 4
 base_production = 4
 base_manpower = 2
-add_core = Z5H
+add_core = Z33
 add_permanent_claim = MAD
 discovered_by = chinese
 discovered_by = indian

@@ -11,6 +11,7 @@ base_production = 3
 base_manpower = 2
 add_core = DAL
 add_core = GRE
+add_permanent_claim = BYZ
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

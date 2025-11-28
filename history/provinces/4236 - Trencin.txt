@@ -1,5 +1,5 @@
-owner = Y1C
-controller = Y1C
+owner = Z6W
+controller = Z6W
 capital = "Trencin"
 is_city = yes
 culture = slovak
@@ -10,7 +10,7 @@ base_tax = 4
 base_production = 3
 base_manpower = 4
 add_core = SLO
-add_core = Y1C
+add_core = Z6W
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

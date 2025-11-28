@@ -12,16 +12,3 @@ historical_idea_groups = {
 	diplomatic_ideas
 	quantity_ideas
 }
-monarch_names = {
-	"Anastasia #1" = -1
-	"Atpälha #0" = -1
-	"Gavriil #1" = 10
-	"Hasaba #1" = 10
-	"Ilme #0" = -1
-	"Nenyts #1" = 10
-	"Ngeva #1" = -1
-	"Sarak #1" = 10
-	"Tada #1" = -1
-	"Urnyay #0" = 0
-	"Yevdokia #0" = -1
-}

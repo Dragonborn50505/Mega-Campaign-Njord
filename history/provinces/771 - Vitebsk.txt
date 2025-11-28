@@ -1,5 +1,5 @@
-owner = Y1Q
-controller = Y1Q
+owner = UKR
+controller = UKR
 capital = "Vitebsk"
 is_city = yes
 culture = byelorussian
@@ -9,7 +9,7 @@ base_tax = 1
 base_production = 3
 base_manpower = 2
 add_core = PLT
-add_core = Y1Q
+add_core = UKR
 discovered_by = eastern
 discovered_by = nomad_group
 discovered_by = western

@@ -5,6 +5,7 @@ is_city = yes
 culture = crimean
 religion = orthodox
 trade_goods = wine
+fort_15th = yes
 base_tax = 1
 base_production = 1
 base_manpower = 1

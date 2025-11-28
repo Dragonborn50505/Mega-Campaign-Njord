@@ -1,5 +1,5 @@
-owner = KRL
-controller = KRL
+owner = UKR
+controller = UKR
 capital = "Olonets"
 is_city = yes
 culture = karelian
@@ -9,6 +9,7 @@ base_tax = 2
 base_production = 1
 base_manpower = 1
 add_core = KRL
+add_core = UKR
 add_permanent_claim = FIN
 discovered_by = AST
 discovered_by = CRI

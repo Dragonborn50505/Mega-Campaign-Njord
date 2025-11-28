@@ -1,5 +1,5 @@
-owner = Z0Z
-controller = Z0Z
+owner = Z0T
+controller = Z0T
 capital = "Khairpur"
 is_city = yes
 culture = hindustani_proper
@@ -9,7 +9,7 @@ base_tax = 1
 base_production = 4
 base_manpower = 2
 add_core = HIN
-add_core = Z0Z
+add_core = Z0T
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

@@ -1,5 +1,5 @@
-owner = LOR
-controller = LOR
+owner = FLA
+controller = FLA
 capital = "Jülich"
 is_city = yes
 culture = hessian
@@ -10,7 +10,7 @@ base_tax = 7
 base_production = 4
 base_manpower = 7
 add_core = AAC
-add_core = LOR
+add_core = FLA
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman

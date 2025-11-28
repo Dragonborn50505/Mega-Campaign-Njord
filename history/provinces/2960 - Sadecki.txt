@@ -1,5 +1,5 @@
-owner = TIR
-controller = TIR
+owner = POL
+controller = POL
 capital = "Nowy Sacz"
 is_city = yes
 culture = polish
