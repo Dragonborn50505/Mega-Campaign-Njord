@@ -1,5 +1,5 @@
-owner = GUG
-controller = GUG
+owner = PUN
+controller = PUN
 capital = "Kangra"
 is_city = yes
 culture = zhangzhung
@@ -8,7 +8,7 @@ trade_goods = cotton
 base_tax = 5
 base_production = 1
 base_manpower = 3
-add_core = GUG
+add_core = PUN
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

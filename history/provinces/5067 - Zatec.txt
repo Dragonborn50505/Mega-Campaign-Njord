@@ -1,15 +1,15 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #Zatec
-add_core = BYZ
-owner = BYZ
-controller = BYZ
+add_core = BOH
+owner = BOH
+controller = BOH
 culture = czech
 religion = catholic
 hre = yes
-base_tax = 1
-base_production = 1
+base_tax = 4
+base_production = 3
 trade_goods = glass
-base_manpower = 1
+base_manpower = 3
 capital = "Zatec"
 is_city = yes
 discovered_by = western

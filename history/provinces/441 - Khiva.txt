@@ -1,5 +1,5 @@
-owner = Z4T
-controller = Z4T
+owner = Z7N
+controller = Z7N
 capital = "Khiva"
 is_city = yes
 culture = tajik
@@ -11,7 +11,6 @@ base_manpower = 4
 extra_cost = 8
 center_of_trade = 1
 add_core = TRS
-add_core = Z4T
 add_core = Z7N
 discovered_by = KAS
 discovered_by = indian

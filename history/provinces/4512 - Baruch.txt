@@ -1,5 +1,5 @@
-owner = KRK
-controller = KRK
+owner = GUJ
+controller = GUJ
 capital = "Bharuch"
 is_city = yes
 culture = gujarati
@@ -9,7 +9,6 @@ base_tax = 10
 base_production = 4
 base_manpower = 6
 add_core = GUJ
-add_core = KRK
 discovered_by = chinese
 discovered_by = east_african
 discovered_by = indian

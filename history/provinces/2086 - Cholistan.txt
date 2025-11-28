@@ -9,7 +9,6 @@ base_tax = 4
 base_production = 5
 base_manpower = 2
 add_core = MUL
-add_core = TRS
 add_permanent_claim = PUN
 discovered_by = chinese
 discovered_by = indian

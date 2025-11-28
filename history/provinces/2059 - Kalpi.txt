@@ -1,5 +1,5 @@
-owner = ODH
-controller = ODH
+owner = BND
+controller = BND
 capital = "Kalpi"
 is_city = yes
 culture = dynamic-avadhi-persian-culture-num1
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 4
 base_production = 4
 base_manpower = 2
-add_core = ODH
+add_core = BND
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

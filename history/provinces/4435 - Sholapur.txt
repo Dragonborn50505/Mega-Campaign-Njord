@@ -1,5 +1,5 @@
-owner = BRR
-controller = BRR
+owner = MAR
+controller = MAR
 capital = "Sholhapur"
 is_city = yes
 culture = dynamic-marathi-culture-num1
@@ -8,8 +8,7 @@ trade_goods = cotton
 base_tax = 5
 base_production = 4
 base_manpower = 3
-add_core = BRR
-add_permanent_claim = MAR
+add_core = MAR
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

@@ -1,10 +1,10 @@
 government = monarchy
-add_government_reform = feudal_theocracy
+add_government_reform = indian_sultanate_reform
 government_rank = 2
 technology_group = muslim
 religion = sunni
 primary_culture = persian
-capital = 2074
+capital = 522
 religious_school = hanafi_school
 1444.11.11= {
 	monarch = {

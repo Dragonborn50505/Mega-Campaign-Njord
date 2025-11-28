@@ -1,5 +1,5 @@
-owner = Z4T
-controller = Z4T
+owner = Z0D
+controller = Z0D
 capital = "Narym"
 is_city = yes
 culture = khitan
@@ -10,7 +10,6 @@ base_production = 1
 base_manpower = 1
 add_core = LIO
 add_core = Z0D
-add_core = Z4T
 discovered_by = KAS
 discovered_by = KAZ
 discovered_by = KZH

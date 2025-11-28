@@ -1,5 +1,5 @@
-owner = GUG
-controller = GUG
+owner = PUN
+controller = PUN
 capital = "Sirhind"
 is_city = yes
 culture = kanauji
@@ -11,7 +11,7 @@ base_manpower = 5
 extra_cost = 8
 center_of_trade = 1
 add_core = DLH
-add_core = GUG
+add_core = PUN
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

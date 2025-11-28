@@ -1,5 +1,5 @@
-owner = ODH
-controller = ODH
+owner = BND
+controller = BND
 capital = "Garha"
 is_city = yes
 culture = vindhyan
@@ -9,7 +9,6 @@ base_tax = 5
 base_production = 3
 base_manpower = 3
 add_core = BND
-add_core = ODH
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim
