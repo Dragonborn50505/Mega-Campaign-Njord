@@ -1,0 +1,15 @@
+owner = Z2G
+controller = Z2G
+capital = "Kem"
+is_city = yes
+culture = karelian
+religion = catholic
+trade_goods = salt
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = KRL
+add_core = Z2G
+add_permanent_claim = FIN
+discovered_by = eastern
+discovered_by = western

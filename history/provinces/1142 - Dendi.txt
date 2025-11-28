@@ -1,0 +1,13 @@
+owner = OYO
+controller = OYO
+capital = "Lulama"
+is_city = yes
+culture = bozo
+religion = catholic
+trade_goods = grain
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = OYO
+add_permanent_claim = Z1B
+discovered_by = sub_saharan

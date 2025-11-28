@@ -1,0 +1,16 @@
+owner = Z2E
+controller = Z2E
+capital = "Ingolstadt"
+is_city = yes
+culture = bavarian
+religion = catholic
+trade_goods = wine
+hre = yes
+base_tax = 4
+base_production = 3
+base_manpower = 3
+add_core = Z2E
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

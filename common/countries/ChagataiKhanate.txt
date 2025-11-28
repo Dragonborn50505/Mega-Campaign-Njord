@@ -1,0 +1,106 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 87 92 104 }
+revolutionary_colors = { 0 8 0 }
+historical_idea_groups = {
+	religious_ideas
+	trade_ideas
+	quantity_ideas
+	offensive_ideas
+	expansion_ideas
+	economic_ideas
+	defensive_ideas
+	administrative_ideas
+}
+historical_units = {
+	reformed_steppe_rifles
+	steppe_cavalry
+	steppe_footmen
+	steppe_infantry
+	steppe_lancers
+	steppe_mounted_raiders
+	steppe_musketeers
+	steppe_raiders
+	steppe_riders
+	steppe_rifles
+	steppe_uhlans
+}
+monarch_names = {
+	"Abagha #0" = 0
+	"Alchi #0" = 0
+	"Babur #0" = 0
+	"Bagaridai #0" = 0
+	"Basudevnayaran #0" = 0
+	"Begter #0" = 0
+	"Behrad #0" = 0
+	"Bulughan #0" = -1
+	"Bönek #0" = 0
+	"Chidukhul #0" = 0
+	"Chormakhan #0" = 0
+	"Daritai #0" = 0
+	"Deguang #0" = 0
+	"Girgen #0" = 0
+	"Gordiya #0" = 0
+	"Gundes #0" = -1
+	"Hafez #0" = 0
+	"Kadan #0" = 0
+	"Kara-kat #0" = -1
+	"Khachigun #0" = 0
+	"Khadagan #0" = -1
+	"Khagatai #0" = 0
+	"Khojin #0" = -1
+	"Khutulan #0" = -1
+	"Kokochu #0" = 0
+	"Koza #0" = 0
+	"Mandukhai #0" = -1
+	"Mongoljin #0" = -1
+	"Narin #0" = 0
+	"Nogai #0" = 0
+	"Parviz #0" = 0
+	"Ratnadevi #0" = -1
+	"Saghar #0" = -1
+	"Subetei #0" = 0
+	"Tekine #0" = -1
+	"Toghtoga #0" = 0
+	"Yesui #0" = -1
+	"Yesunge #1" = 10
+}
+leader_names = {
+	"Altan Unegen"
+	"Altanqai"
+	"Arigh Erdene"
+	"Bayan Vachir"
+	"Bayardai"
+	"Boke Qorchi"
+	"Boketei"
+	"Delger Dash"
+	"Qadancher"
+	"Suren Chinua"
+	"Tegusteni"
+	"Tolui-gene"
+	"Yekedai"
+}
+ship_names = {
+	"Alghu Khan"
+	"Amir Husayn"
+	"Amo Darya"
+	"Baraq Khan"
+	"Chagatai"
+	"Duwa"
+	"Genghis Khan"
+	"Güyük"
+	"Irtysh"
+	"Jagatai Khan"
+	"Mubarak Shah"
+	"Möngke Khan"
+	"Orghina"
+	"Qazan Khan"
+	"Qipchaq"
+	"Qubilai Khan"
+	"Samarqand"
+	"Syr Darya"
+	"Timur i Leng"
+	"Tughlugh Timur"
+	"Yesünto'a"
+	"Ögedai Khan"
+}

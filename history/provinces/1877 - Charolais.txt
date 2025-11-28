@@ -1,0 +1,17 @@
+owner = Z5P
+controller = Z5P
+capital = "Charolles"
+is_city = yes
+culture = burgundian
+religion = catholic
+trade_goods = salt
+hre = yes
+base_tax = 5
+base_production = 4
+base_manpower = 3
+add_core = BUR
+add_core = Z5P
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

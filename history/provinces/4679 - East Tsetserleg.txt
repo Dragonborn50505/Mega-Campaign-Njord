@@ -1,0 +1,14 @@
+owner = Z1Y
+controller = Z1Y
+capital = "Khovsgol"
+is_city = yes
+culture = buryat
+religion = nestorian
+trade_goods = fur
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = BRT
+add_core = Z1Y
+discovered_by = chinese
+discovered_by = nomad_group

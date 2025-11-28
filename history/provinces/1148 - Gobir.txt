@@ -1,0 +1,12 @@
+owner = OYO
+controller = OYO
+capital = "Birnin Lalle"
+is_city = yes
+culture = yorumba
+religion = sunni
+trade_goods = iron
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = OYO
+discovered_by = sub_saharan

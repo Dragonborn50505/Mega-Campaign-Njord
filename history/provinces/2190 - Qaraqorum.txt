@@ -1,0 +1,14 @@
+owner = Z4X
+controller = Z4X
+capital = "Sain Noyon"
+is_city = yes
+culture = oirats
+religion = vajrayana
+trade_goods = livestock
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = Z4X
+add_core = ZUN
+discovered_by = chinese
+discovered_by = nomad_group

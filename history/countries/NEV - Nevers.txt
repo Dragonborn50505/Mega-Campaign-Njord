@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = eastern
+religion = orthodox
+primary_culture = dynamic-greek-culture-num1
+capital = 191
+fixed_capital = 191
+add_accepted_culture = burgundian
+1444.11.11= {
+	monarch = {
+		name = "Himerios"
+		dynasty = "Parthenios"
+		adm = 5
+		dip = 5
+		mil = 2
+		birth_date = 1399.1.17
+		religion = orthodox
+		culture = dynamic-greek-culture-num1
+	}
+	add_ruler_personality = charismatic_negotiator_personality
+	add_ruler_personality = well_connected_personality
+	queen = {
+		name = "Echive"
+		dynasty = "al-Harrani"
+		adm = 4
+		dip = 2
+		mil = 2
+		country_of_origin = NEV
+		birth_date = 1398.11.29
+		death_date = 1458.11.29
+		female = yes
+		religion = orthodox
+		culture = cosmopolitan_french
+	}
+	add_queen_personality = greedy_personality
+	add_queen_personality = pious_personality
+	heir = {
+		name = "David"
+		monarch_name = "David"
+		dynasty = "Parthenios"
+		adm = 4
+		dip = 4
+		mil = 3
+		birth_date = 1430.5.2
+		death_date = 1495.5.2
+		claim = 89
+		religion = orthodox
+		culture = dynamic-greek-culture-num1
+	}
+	add_heir_personality = fertile_personality
+	add_heir_personality = pious_personality
+}
+1444.11.11= {
+	add_prestige = 75
+	add_treasury = 69
+}

@@ -1,0 +1,15 @@
+owner = Z0D
+controller = Z0D
+capital = "Ningxia"
+is_city = yes
+culture = tangut
+religion = vajrayana
+trade_goods = salt
+fort_15th = yes
+base_tax = 5
+base_production = 3
+base_manpower = 3
+add_core = TAU
+add_core = Z0D
+discovered_by = chinese
+discovered_by = nomad_group

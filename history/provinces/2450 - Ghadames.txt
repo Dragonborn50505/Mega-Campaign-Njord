@@ -1,0 +1,17 @@
+owner = AFR
+controller = AFR
+capital = "Ghadames"
+is_city = yes
+culture = berber
+religion = catholic
+trade_goods = spices
+base_tax = 1
+base_production = 1
+base_manpower = 2
+add_core = AFR
+add_core = TLC
+add_permanent_claim = Z00
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

@@ -1,0 +1,17 @@
+owner = Z1K
+controller = Z1K
+capital = "Caernarvon"
+is_city = yes
+culture = welsh
+religion = catholic
+trade_goods = livestock
+hre = yes
+base_tax = 5
+base_production = 1
+base_manpower = 2
+add_core = WLS
+add_core = Z1K
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

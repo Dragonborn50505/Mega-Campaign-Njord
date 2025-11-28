@@ -1,0 +1,16 @@
+owner = AFR
+controller = AFR
+capital = "Marrakech"
+is_city = yes
+culture = moroccan
+religion = catholic
+trade_goods = sugar
+base_tax = 6
+base_production = 4
+base_manpower = 4
+add_core = MOR
+add_core = AFR
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western
