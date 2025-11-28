@@ -1,5 +1,5 @@
-owner = Z2W
-controller = Z2W
+owner = Z1X
+controller = Z1X
 capital = "Dang"
 is_city = yes
 culture = nepali
@@ -9,7 +9,7 @@ base_tax = 3
 base_production = 1
 base_manpower = 2
 add_core = NPL
-add_core = Z2W
+add_core = Z1X
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

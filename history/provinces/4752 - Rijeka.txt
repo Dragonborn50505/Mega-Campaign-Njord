@@ -1,5 +1,5 @@
-owner = Z18
-controller = Z18
+owner = Z10
+controller = Z10
 capital = "Rijeka"
 is_city = yes
 culture = croatian
@@ -11,7 +11,8 @@ base_production = 3
 base_manpower = 2
 extra_cost = 8
 center_of_trade = 1
-add_core = Z18
+add_core = Z10
+add_permanent_claim = BYZ
 add_permanent_claim = CRO
 discovered_by = AST
 discovered_by = CRI

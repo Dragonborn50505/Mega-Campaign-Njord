@@ -1,5 +1,5 @@
-owner = Z08
-controller = Z08
+owner = Z0D
+controller = Z0D
 capital = "Qamdo"
 is_city = yes
 culture = tibetan
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 5
 base_production = 3
 base_manpower = 2
-add_core = Z08
+add_core = Z0D
 discovered_by = chinese
 discovered_by = indian
 discovered_by = nomad_group

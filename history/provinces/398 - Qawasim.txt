@@ -1,5 +1,5 @@
-owner = OMA
-controller = OMA
+owner = UKR
+controller = UKR
 capital = "Sharjah"
 is_city = yes
 culture = oghuz
@@ -9,7 +9,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 4
 add_core = OGZ
-add_core = OMA
+add_core = UKR
 add_permanent_claim = ARB
 discovered_by = east_african
 discovered_by = indian

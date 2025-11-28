@@ -1,5 +1,5 @@
-owner = Z09
-controller = Z09
+owner = Z0E
+controller = Z0E
 capital = "Zhetyru"
 is_city = yes
 culture = oghuz
@@ -9,7 +9,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 add_core = OGZ
-add_core = Z09
+add_core = Z0E
 discovered_by = GOL
 discovered_by = KZH
 discovered_by = muslim

@@ -1,5 +1,5 @@
-owner = EGY
-controller = EGY
+owner = Z2k
+controller = Z2k
 capital = "Al Quds"
 is_city = yes
 culture = al_suryah_arabic
@@ -10,7 +10,7 @@ base_tax = 4
 base_production = 3
 base_manpower = 9
 add_core = EGY
-add_core = SYR
+add_core = Z2K
 add_permanent_claim = KOJ
 discovered_by = east_african
 discovered_by = eastern

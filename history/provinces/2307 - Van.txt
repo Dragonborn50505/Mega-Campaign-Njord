@@ -1,5 +1,5 @@
-owner = Z60
-controller = Z60
+owner = Z07
+controller = Z07
 capital = "Van"
 is_city = yes
 culture = armenian
@@ -8,7 +8,8 @@ trade_goods = wool
 base_tax = 4
 base_production = 4
 base_manpower = 2
-add_core = Z60
+add_core = ARM
+add_core = Z07
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = muslim

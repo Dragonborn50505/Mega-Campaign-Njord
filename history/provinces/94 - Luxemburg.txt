@@ -1,5 +1,5 @@
-owner = BAR
-controller = BAR
+owner = Z0X
+controller = Z0X
 capital = "Luxemburg"
 is_city = yes
 culture = wallonian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 6
 base_production = 8
 base_manpower = 5
-add_core = BAR
+add_core = Z0X
 add_permanent_claim = LUX
 discovered_by = eastern
 discovered_by = muslim

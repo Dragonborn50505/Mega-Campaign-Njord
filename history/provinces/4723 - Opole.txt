@@ -1,5 +1,5 @@
-owner = Z5U
-controller = Z5U
+owner = Z3C
+controller = Z3C
 capital = "Opole"
 is_city = yes
 culture = schlesian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 3
 base_production = 1
 base_manpower = 2
-add_core = Z5U
+add_core = Z3C
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

@@ -1,5 +1,5 @@
-owner = Z5H
-controller = Z5H
+owner = Z33
+controller = Z33
 capital = "Nellore"
 is_city = yes
 culture = telegu
@@ -9,7 +9,7 @@ base_tax = 5
 base_production = 4
 base_manpower = 3
 add_core = GOC
-add_core = Z5H
+add_core = Z33
 add_permanent_claim = MAD
 discovered_by = chinese
 discovered_by = indian

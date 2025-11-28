@@ -1,5 +1,5 @@
-owner = Z5S
-controller = Z5S
+owner = Z3B
+controller = Z3B
 capital = "Besançon"
 is_city = yes
 culture = arpitan
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 3
 base_production = 4
 base_manpower = 4
-add_core = Z5S
+add_core = Z3B
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman

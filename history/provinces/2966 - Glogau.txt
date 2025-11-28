@@ -1,5 +1,5 @@
-owner = Y0Y
-controller = Y0Y
+owner = Z6L
+controller = Z6L
 capital = "Glogau"
 is_city = yes
 culture = schlesian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 3
 base_production = 3
 base_manpower = 2
-add_core = Y0Y
+add_core = Z6L
 add_permanent_claim = SIL
 discovered_by = AST
 discovered_by = CRI

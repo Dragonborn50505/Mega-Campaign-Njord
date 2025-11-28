@@ -1,5 +1,5 @@
-owner = Z83
-controller = Z83
+owner = Z4R
+controller = Z4R
 capital = "Gniezno"
 is_city = yes
 culture = polish
@@ -10,7 +10,7 @@ base_tax = 3
 base_production = 1
 base_manpower = 1
 add_core = POL
-add_core = Z83
+add_core = Z4R
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

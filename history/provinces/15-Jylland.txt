@@ -1,5 +1,5 @@
-owner = Z2J
-controller = Z2J
+owner = Z1R
+controller = Z1R
 capital = "Ribe"
 is_city = yes
 culture = danish
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 4
 base_production = 1
 base_manpower = 2
-add_core = Z2J
+add_core = Z1R
 add_permanent_claim = DAN
 discovered_by = eastern
 discovered_by = muslim

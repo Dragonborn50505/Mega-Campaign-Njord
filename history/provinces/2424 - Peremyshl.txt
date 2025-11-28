@@ -1,5 +1,5 @@
-owner = Z1D
-controller = Z1D
+owner = Z13
+controller = Z13
 capital = "Przemysl"
 is_city = yes
 culture = red_ruthenian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 4
 base_production = 1
 base_manpower = 3
-add_core = Z1D
+add_core = Z13
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

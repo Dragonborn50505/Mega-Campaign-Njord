@@ -9,6 +9,7 @@ base_tax = 5
 base_production = 3
 base_manpower = 4
 add_core = BOS
+add_permanent_claim = BYZ
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

@@ -1,5 +1,5 @@
-owner = YAR
-controller = YAR
+owner = UKR
+controller = UKR
 capital = "Yaroslavl"
 is_city = yes
 culture = russian
@@ -10,7 +10,7 @@ base_production = 4
 base_manpower = 5
 extra_cost = 8
 center_of_trade = 1
-add_core = YAR
+add_core = UKR
 discovered_by = eastern
 discovered_by = nomad_group
 discovered_by = western

@@ -1,5 +1,5 @@
-owner = ACH
-controller = ACH
+owner = GRE
+controller = GRE
 capital = "Mystras"
 is_city = yes
 culture = greek
@@ -8,7 +8,6 @@ trade_goods = wine
 base_tax = 1
 base_production = 4
 base_manpower = 2
-add_core = ACH
 add_core = GRE
 discovered_by = eastern
 discovered_by = muslim

@@ -1,5 +1,5 @@
-owner = Z1L
-controller = Z1L
+owner = Z17
+controller = Z17
 capital = "Champaner"
 is_city = yes
 culture = malvi
@@ -9,7 +9,7 @@ base_tax = 6
 base_production = 4
 base_manpower = 3
 add_core = MLW
-add_core = Z1L
+add_core = Z17
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

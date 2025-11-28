@@ -1,5 +1,5 @@
-owner = Z59
-controller = Z59
+owner = Z2Z
+controller = Z2Z
 capital = "Temesvár"
 is_city = yes
 culture = szekely
@@ -10,7 +10,8 @@ hre = yes
 base_tax = 1
 base_production = 3
 base_manpower = 2
-add_core = Z59
+add_core = TRA
+add_core = Z2Z
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

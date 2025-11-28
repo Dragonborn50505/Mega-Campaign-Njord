@@ -1,5 +1,5 @@
-owner = Z9U
-controller = Z9U
+owner = UKR
+controller = UKR
 capital = "Narva"
 is_city = yes
 culture = estonian
@@ -8,7 +8,7 @@ trade_goods = grain
 base_tax = 2
 base_production = 2
 base_manpower = 1
-add_core = Z9U
+add_core = UKR
 add_permanent_claim = EST
 discovered_by = AST
 discovered_by = CRI

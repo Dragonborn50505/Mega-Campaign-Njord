@@ -1,5 +1,5 @@
-owner = MNG
-controller = MNG
+owner = JIN
+controller = JIN
 capital = "Otog"
 is_city = yes
 culture = mongol
@@ -12,3 +12,4 @@ add_core = KHA
 add_core = MNG
 discovered_by = chinese
 discovered_by = nomad_group
+add_core = JIN

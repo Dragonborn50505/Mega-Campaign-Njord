@@ -1,5 +1,5 @@
-owner = VPS
-controller = VPS
+owner = UKR
+controller = UKR
 capital = "Derbent"
 is_city = yes
 culture = azerbaijani
@@ -9,7 +9,7 @@ base_tax = 5
 base_production = 8
 base_manpower = 3
 add_core = ARL
-add_core = VPS
+add_core = UKR
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = nomad_group
