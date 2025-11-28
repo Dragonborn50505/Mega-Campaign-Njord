@@ -1,5 +1,5 @@
-owner = NOR
-controller = NOR
+owner = SWE
+controller = SWE
 capital = "Mandal"
 is_city = yes
 culture = norwegian
@@ -8,7 +8,7 @@ trade_goods = iron
 base_tax = 1
 base_production = 1
 base_manpower = 2
-add_core = NOR
+add_core = SWE
 add_permanent_claim = NOR
 discovered_by = eastern
 discovered_by = muslim

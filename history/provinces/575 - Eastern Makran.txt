@@ -1,5 +1,5 @@
-owner = Z2B
-controller = Z2B
+owner = Z3K
+controller = Z3K
 capital = "Gwadar"
 is_city = yes
 culture = baluchi
@@ -9,7 +9,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 4
 add_core = BAL
-add_core = Z2B
+add_core = Z3K
 discovered_by = east_african
 discovered_by = indian
 discovered_by = muslim

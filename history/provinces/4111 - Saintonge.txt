@@ -1,5 +1,5 @@
-owner = Z6A
-controller = Z6A
+owner = Y0H
+controller = Y0H
 capital = "Saintes"
 is_city = yes
 culture = occitain
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 6
 base_production = 4
 base_manpower = 4
-add_core = Z6A
+add_core = Y0H
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman

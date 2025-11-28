@@ -1,5 +1,5 @@
-owner = BYZ
-controller = BYZ
+owner = ATH
+controller = ATH
 capital = "Negroponte"
 is_city = yes
 culture = anatolian
@@ -8,6 +8,7 @@ trade_goods = fish
 base_tax = 4
 base_production = 4
 base_manpower = 2
+add_core = ATH
 add_core = BYZ
 discovered_by = eastern
 discovered_by = muslim

@@ -1,5 +1,5 @@
-owner = Z5V
-controller = Z5V
+owner = Z9W
+controller = Z9W
 capital = "Chotebuz"
 is_city = yes
 culture = dynamic-hungarian-culture-num1
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 1
 base_production = 4
 base_manpower = 2
-add_core = Z5V
+add_core = Z9W
 add_permanent_claim = SOR
 discovered_by = AST
 discovered_by = CRI

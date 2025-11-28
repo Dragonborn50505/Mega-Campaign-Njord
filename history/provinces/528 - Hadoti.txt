@@ -1,5 +1,5 @@
-owner = Z17
-controller = Z17
+owner = Z1L
+controller = Z1L
 capital = "Kota"
 is_city = yes
 culture = malvi
@@ -9,7 +9,7 @@ base_tax = 5
 base_production = 4
 base_manpower = 2
 add_core = MLW
-add_core = Z17
+add_core = Z1L
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

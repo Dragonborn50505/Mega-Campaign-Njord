@@ -1,5 +1,5 @@
-owner = BOS
-controller = BOS
+owner = RAG
+controller = RAG
 capital = "Visoki"
 is_city = yes
 culture = serbian
@@ -8,8 +8,7 @@ trade_goods = grain
 base_tax = 3
 base_production = 2
 base_manpower = 2
-add_core = BOS
-add_core = SER
+add_core = RAG
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

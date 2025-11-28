@@ -1,5 +1,5 @@
-owner = Z7D
-controller = Z7D
+owner = Y1X
+controller = Y1X
 capital = "Poznan"
 is_city = yes
 culture = polish
@@ -10,7 +10,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 4
 add_core = POL
-add_core = Z7D
+add_core = Y1X
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

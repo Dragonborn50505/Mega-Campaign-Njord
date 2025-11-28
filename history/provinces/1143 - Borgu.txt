@@ -1,5 +1,5 @@
-owner = OYO
-controller = OYO
+owner = Z11
+controller = Z11
 capital = "Bussa"
 is_city = yes
 culture = mali
@@ -8,7 +8,7 @@ trade_goods = grain
 base_tax = 2
 base_production = 1
 base_manpower = 1
-add_core = OYO
+add_core = Z11
 discovered_by = sub_saharan
 native_size = 40
 native_ferocity = 4

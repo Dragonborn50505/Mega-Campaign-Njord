@@ -1,5 +1,5 @@
-owner = ALB
-controller = ALB
+owner = Z7T
+controller = Z7T
 capital = "Durrës"
 is_city = yes
 culture = albanian
@@ -10,7 +10,8 @@ base_production = 1
 base_manpower = 2
 extra_cost = 8
 center_of_trade = 1
-add_core = ALB
+add_core = Z7T
+add_permanent_claim = ALB
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

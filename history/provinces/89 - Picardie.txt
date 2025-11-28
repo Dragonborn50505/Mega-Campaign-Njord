@@ -1,5 +1,5 @@
-owner = Z0X
-controller = Z0X
+owner = Z15
+controller = Z15
 capital = "Amiens"
 is_city = yes
 culture = flemish
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 8
 base_production = 4
 base_manpower = 3
-add_core = Z0X
+add_core = Z15
 add_permanent_claim = FLA
 discovered_by = eastern
 discovered_by = muslim

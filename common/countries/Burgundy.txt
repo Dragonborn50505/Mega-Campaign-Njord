@@ -30,30 +30,28 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Amaneus #0" = 0
-	"Arsenda #0" = -1
-	"Bernat Aton #0" = 0
-	"Borel #0" = 0
-	"Brandimena #0" = -1
+	"Adeliza #0" = -1
+	"Arnault #0" = 0
+	"Atiyya #0" = 0
+	"Berenguié #0" = 0
 	"Cunigunde #1" = -1
+	"Edith #0" = -1
 	"Eudes #4" = 10
-	"Garyphallia #0" = -1
+	"Eustace #0" = 0
 	"Gauthier #1" = 10
+	"Gelduin #0" = 0
 	"Gilbert #2" = 10
-	"Guitart #0" = 0
-	"Hamelin #0" = 0
 	"Henri #1" = 10
 	"Hugues #6" = 10
-	"Julian #0" = 0
-	"Mechthild #0" = -1
-	"Mutina #0" = 0
+	"Laura #0" = -1
+	"Mabel #0" = -1
 	"Othon-Guillaume #1" = 10
 	"Otton #1" = 10
-	"Rainaut #0" = 0
 	"Raoul #1" = 10
+	"Reginald #0" = 0
 	"Richard #1" = 10
 	"Robert #2" = 10
-	"Zobor #0" = 0
+	"Thibault #0" = 0
 }
 leader_names = {
 	"Arbelot"

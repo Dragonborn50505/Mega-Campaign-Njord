@@ -10,7 +10,6 @@ base_tax = 3
 base_production = 3
 base_manpower = 3
 add_core = CRO
-add_permanent_claim = BYZ
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

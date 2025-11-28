@@ -1,5 +1,5 @@
-owner = Z2G
-controller = Z2G
+owner = Z3Z
+controller = Z3Z
 capital = "Umeå"
 is_city = yes
 culture = swedish
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 3
 base_production = 1
 base_manpower = 1
-add_core = Z2G
+add_core = Z3Z
 add_permanent_claim = SWE
 discovered_by = eastern
 discovered_by = western

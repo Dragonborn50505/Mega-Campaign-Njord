@@ -1,5 +1,5 @@
-owner = Z1X
-controller = Z1X
+owner = Z2W
+controller = Z2W
 capital = "Jumbla"
 is_city = yes
 culture = nepali
@@ -10,7 +10,7 @@ base_tax = 4
 base_production = 3
 base_manpower = 3
 add_core = NPL
-add_core = Z1X
+add_core = Z2W
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

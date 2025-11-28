@@ -1,5 +1,5 @@
-owner = Z42
-controller = Z42
+owner = Z6Y
+controller = Z6Y
 capital = "Tannu Uriankhai"
 is_city = yes
 culture = kirgiz
@@ -8,6 +8,7 @@ trade_goods = fur
 base_tax = 1
 base_production = 1
 base_manpower = 1
-add_core = Z42
+add_core = CHG
+add_core = Z6Y
 discovered_by = chinese
 discovered_by = nomad_group

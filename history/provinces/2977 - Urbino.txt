@@ -1,5 +1,5 @@
-owner = Z3H
-controller = Z3H
+owner = Z64
+controller = Z64
 capital = "Urbino"
 is_city = yes
 culture = umbrian
@@ -12,7 +12,7 @@ base_manpower = 2
 extra_cost = 8
 center_of_trade = 1
 add_core = URB
-add_core = Z3H
+add_core = Z64
 add_permanent_claim = PAP
 discovered_by = eastern
 discovered_by = muslim

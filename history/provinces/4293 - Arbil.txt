@@ -1,5 +1,5 @@
-owner = Z07
-controller = Z07
+owner = ARD
+controller = ARD
 capital = "Arbil"
 is_city = yes
 culture = kurdish
@@ -10,7 +10,6 @@ base_tax = 5
 base_production = 4
 base_manpower = 3
 add_core = ARD
-add_core = Z07
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

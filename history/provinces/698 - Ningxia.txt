@@ -1,5 +1,5 @@
-owner = Z0D
-controller = Z0D
+owner = Z08
+controller = Z08
 capital = "Ningxia"
 is_city = yes
 culture = tangut
@@ -10,6 +10,6 @@ base_tax = 5
 base_production = 3
 base_manpower = 3
 add_core = TAU
-add_core = Z0D
+add_core = Z08
 discovered_by = chinese
 discovered_by = nomad_group

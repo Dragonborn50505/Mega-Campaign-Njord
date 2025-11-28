@@ -1,5 +1,5 @@
-owner = GUR
-controller = GUR
+owner = Z3N
+controller = Z3N
 capital = "Macina"
 is_city = yes
 culture = soninke
@@ -10,8 +10,7 @@ base_production = 2
 base_manpower = 1
 extra_cost = 8
 center_of_trade = 1
-add_core = GUR
-add_core = ZAF
+add_core = Z3N
 discovered_by = sub_saharan
 native_ferocity = 4
 native_hostileness = 9

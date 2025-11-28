@@ -1,5 +1,5 @@
-owner = Z4S
-controller = Z4S
+owner = Z84
+controller = Z84
 capital = "Zhorelec"
 is_city = yes
 culture = dynamic-hungarian-culture-num1
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 3
 base_production = 3
 base_manpower = 2
-add_core = Z4S
+add_core = Z84
 add_permanent_claim = MEI
 discovered_by = eastern
 discovered_by = muslim

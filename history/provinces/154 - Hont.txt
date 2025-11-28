@@ -1,5 +1,5 @@
-owner = Z7H
-controller = Z7H
+owner = Y23
+controller = Y23
 capital = "Hont"
 is_city = yes
 culture = hungarian
@@ -10,7 +10,7 @@ base_tax = 1
 base_production = 2
 base_manpower = 2
 add_core = HUN
-add_core = Z7H
+add_core = Y23
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

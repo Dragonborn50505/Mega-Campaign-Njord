@@ -1,5 +1,5 @@
-owner = Z0W
-controller = Z0W
+owner = Z14
+controller = Z14
 capital = "Kamatapur"
 is_city = yes
 culture = kochi
@@ -9,7 +9,7 @@ base_tax = 1
 base_production = 3
 base_manpower = 2
 add_core = KMT
-add_core = Z0W
+add_core = Z14
 add_permanent_claim = ASS
 discovered_by = chinese
 discovered_by = indian

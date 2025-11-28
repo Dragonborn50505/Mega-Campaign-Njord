@@ -1,5 +1,5 @@
-owner = Z1Y
-controller = Z1Y
+owner = Z2Z
+controller = Z2Z
 capital = "Khovsgol"
 is_city = yes
 culture = buryat
@@ -9,6 +9,6 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 add_core = BRT
-add_core = Z1Y
+add_core = Z2Z
 discovered_by = chinese
 discovered_by = nomad_group

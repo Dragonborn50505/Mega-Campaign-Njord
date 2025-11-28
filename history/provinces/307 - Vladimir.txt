@@ -1,5 +1,5 @@
-owner = Z79
-controller = Z79
+owner = Y1R
+controller = Y1R
 capital = "Vladimir"
 is_city = yes
 culture = russian
@@ -8,8 +8,7 @@ trade_goods = iron
 base_tax = 1
 base_production = 3
 base_manpower = 2
-add_core = Z79
-add_permanent_claim = UKR
+add_core = Y1R
 discovered_by = GOL
 discovered_by = KAZ
 discovered_by = eastern

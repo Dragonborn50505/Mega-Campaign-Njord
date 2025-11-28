@@ -1,5 +1,5 @@
-owner = Z3C
-controller = Z3C
+owner = Z5U
+controller = Z5U
 capital = "Ratibor"
 is_city = yes
 culture = schlesian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 1
 base_production = 4
 base_manpower = 2
-add_core = Z3C
+add_core = Z5U
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

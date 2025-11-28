@@ -1,14 +1,14 @@
-owner = TUS
-controller = TUS
+owner = ITA
+controller = ITA
 capital = "Siena"
 is_city = yes
 culture = tuscan
 religion = catholic
 trade_goods = glass
-hre = yes
 base_tax = 5
 base_production = 8
 base_manpower = 3
+add_core = ITA
 add_core = TUS
 discovered_by = eastern
 discovered_by = muslim

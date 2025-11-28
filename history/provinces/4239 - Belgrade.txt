@@ -1,5 +1,5 @@
-owner = SER
-controller = SER
+owner = Z3J
+controller = Z3J
 capital = "Belgrade"
 is_city = yes
 culture = serbian
@@ -10,7 +10,7 @@ base_production = 4
 base_manpower = 4
 extra_cost = 8
 center_of_trade = 1
-add_core = SER
+add_core = Z3J
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

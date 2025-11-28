@@ -1,5 +1,5 @@
-owner = Z1I
-controller = Z1I
+owner = ARM
+controller = ARM
 capital = "Yerevan"
 is_city = yes
 culture = armenian
@@ -12,7 +12,6 @@ base_manpower = 4
 extra_cost = 8
 center_of_trade = 1
 add_core = ARM
-add_core = Z1I
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = muslim

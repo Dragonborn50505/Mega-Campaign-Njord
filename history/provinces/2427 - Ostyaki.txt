@@ -1,5 +1,5 @@
-owner = Z3G
-controller = Z3G
+owner = Z61
+controller = Z61
 capital = "Beloyarskiy"
 is_city = yes
 culture = nogaybak
@@ -9,6 +9,6 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 add_core = NOG
-add_core = Z3G
-add_core = Z3I
+add_core = Z61
+add_core = Z65
 discovered_by = nomad_group

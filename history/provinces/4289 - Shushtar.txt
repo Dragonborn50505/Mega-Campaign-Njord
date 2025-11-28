@@ -1,5 +1,5 @@
-owner = Z07
-controller = Z07
+owner = YZD
+controller = YZD
 capital = "Shushtar"
 is_city = yes
 culture = luri
@@ -9,8 +9,7 @@ base_tax = 6
 base_production = 4
 base_manpower = 5
 add_core = LRI
-add_core = PER
-add_core = Z07
+add_core = YZD
 discovered_by = east_african
 discovered_by = indian
 discovered_by = muslim

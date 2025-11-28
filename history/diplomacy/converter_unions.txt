@@ -1,7 +1,15 @@
 union=
 {
-	first="MLO"
-	second="VEN"
+	first="Z5C"
+	second="Z1X"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+union=
+{
+	first="GAL"
+	second="POR"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -9,7 +17,7 @@ union=
 union=
 {
 	first="NAV"
-	second="Z5U"
+	second="Y1D"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -17,15 +25,55 @@ union=
 union=
 {
 	first="NAV"
-	second="Z5W"
+	second="Z9T"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
 
 union=
 {
-	first="NAV"
-	second="Z6X"
+	first="Z1J"
+	second="Z0X"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+union=
+{
+	first="Z3M"
+	second="Z12"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+union=
+{
+	first="Z4O"
+	second="AIR"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+union=
+{
+	first="Z4O"
+	second="Z2K"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+union=
+{
+	first="Z4O"
+	second="Z75"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+union=
+{
+	first="FEZ"
+	second="TLC"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -41,7 +89,7 @@ union=
 union=
 {
 	first="THU"
-	second="Z1R"
+	second="Z2J"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -49,22 +97,38 @@ union=
 union=
 {
 	first="THU"
-	second="Z2U"
+	second="Z4Q"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
 
 union=
 {
-	first="Z10"
-	second="Z22"
+	first="MZB"
+	second="GHD"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
 
 union=
 {
-	first="Z11"
+	first="Z18"
+	second="Z34"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+union=
+{
+	first="Z74"
+	second="Z7Z"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+union=
+{
+	first="Z1B"
 	second="DNZ"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
@@ -72,7 +136,7 @@ union=
 
 union=
 {
-	first="Z11"
+	first="Z1B"
 	second="KAR"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
@@ -80,8 +144,24 @@ union=
 
 union=
 {
-	first="Z11"
-	second="Z5M"
+	first="Z1B"
+	second="Y02"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+union=
+{
+	first="SME"
+	second="ARM"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+union=
+{
+	first="Z6J"
+	second="SOS"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -96,16 +176,8 @@ union=
 
 union=
 {
-	first="Z29"
-	second="Z0G"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="TUS"
-	second="PIS"
+	first="Z3E"
+	second="Z0E"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -113,7 +185,7 @@ union=
 union=
 {
 	first="SHL"
-	second="Z2I"
+	second="Z45"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -121,7 +193,7 @@ union=
 union=
 {
 	first="SHL"
-	second="Z2W"
+	second="Z4S"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -130,6 +202,30 @@ union=
 {
 	first="CHP"
 	second="BOU"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+union=
+{
+	first="Z3J"
+	second="SER"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+union=
+{
+	first="THR"
+	second="Z7R"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+union=
+{
+	first="THR"
+	second="Z7T"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -145,7 +241,7 @@ union=
 union=
 {
 	first="HAB"
-	second="Z3C"
+	second="Z5U"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -154,6 +250,14 @@ union=
 {
 	first="ETH"
 	second="DAM"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+union=
+{
+	first="Z43"
+	second="Z6M"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -177,7 +281,7 @@ union=
 union=
 {
 	first="FKN"
-	second="Z2E"
+	second="Z3X"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -200,16 +304,32 @@ union=
 
 union=
 {
-	first="Z7D"
-	second="Z4R"
+	first="Y1X"
+	second="Z83"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
 
 union=
 {
-	first="Z2X"
-	second="Z0M"
+	first="Z7Y"
+	second="Z8G"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+union=
+{
+	first="Z7Y"
+	second="ZAF"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+union=
+{
+	first="Z4U"
+	second="Z0N"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -217,7 +337,7 @@ union=
 union=
 {
 	first="LOI"
-	second="Z1F"
+	second="Z21"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -264,40 +384,24 @@ union=
 
 union=
 {
-	first="Z7H"
-	second="Z4A"
+	first="Y23"
+	second="Y1C"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
 
 union=
 {
-	first="Z7H"
-	second="Z5Y"
+	first="Y23"
+	second="Z7C"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
 
 union=
 {
-	first="Z7H"
-	second="Z6W"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="Z4I"
-	second="Z5P"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="Z4I"
-	second="Z6U"
+	first="Y23"
+	second="Z9Y"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -306,6 +410,22 @@ union=
 {
 	first="CNN"
 	second="MCM"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+union=
+{
+	first="Z1E"
+	second="BJA"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+union=
+{
+	first="VAL"
+	second="GRA"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -328,7 +448,7 @@ union=
 
 union=
 {
-	first="Z2Z"
+	first="Z59"
 	second="VOL"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
@@ -336,16 +456,32 @@ union=
 
 union=
 {
-	first="Z2Z"
-	second="WAL"
+	first="Z59"
+	second="Z1D"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
 
 union=
 {
-	first="Z2Z"
-	second="Z13"
+	first="Z59"
+	second="Z42"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+union=
+{
+	first="ALG"
+	second="KBA"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+union=
+{
+	first="Z0B"
+	second="Z54"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -353,7 +489,7 @@ union=
 union=
 {
 	first="SIL"
-	second="Z4C"
+	second="Y0A"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -361,7 +497,7 @@ union=
 union=
 {
 	first="SIL"
-	second="Z65"
+	second="Y0Y"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -369,7 +505,7 @@ union=
 union=
 {
 	first="SIL"
-	second="Z6L"
+	second="Z7E"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -393,7 +529,7 @@ union=
 union=
 {
 	first="LEI"
-	second="Z72"
+	second="Y1I"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -401,15 +537,39 @@ union=
 union=
 {
 	first="CAS"
-	second="Z6T"
+	second="Y19"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
 
 union=
 {
-	first="Z36"
-	second="Z3B"
+	first="Z5L"
+	second="Z5S"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+union=
+{
+	first="NOV"
+	second="KRL"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+union=
+{
+	first="NOV"
+	second="SMO"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+union=
+{
+	first="NOV"
+	second="Y0K"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -448,8 +608,8 @@ union=
 
 union=
 {
-	first="VRN"
-	second="Z2Q"
+	first="RAG"
+	second="MON"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }

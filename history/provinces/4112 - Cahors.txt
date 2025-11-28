@@ -1,5 +1,5 @@
-owner = AMG
-controller = AMG
+owner = Y0C
+controller = Y0C
 capital = "Cahors"
 is_city = yes
 culture = aquitaine
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 5
 base_production = 8
 base_manpower = 2
-add_core = AMG
+add_core = Y0C
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman

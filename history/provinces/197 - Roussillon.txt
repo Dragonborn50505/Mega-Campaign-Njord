@@ -1,5 +1,5 @@
-owner = Z4G
-controller = Z4G
+owner = Z7J
+controller = Z7J
 capital = "Perpignan"
 is_city = yes
 culture = occitain
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 5
 base_production = 4
 base_manpower = 2
-add_core = Z4G
+add_core = Z7J
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman

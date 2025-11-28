@@ -1,5 +1,5 @@
-owner = Z4K
-controller = Z4K
+owner = Z7Q
+controller = Z7Q
 capital = "Dorpat"
 is_city = yes
 culture = dynamic-russian_culture-culture-num1
@@ -8,7 +8,7 @@ trade_goods = naval_supplies
 base_tax = 4
 base_production = 1
 base_manpower = 1
-add_core = Z4K
+add_core = Z7Q
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

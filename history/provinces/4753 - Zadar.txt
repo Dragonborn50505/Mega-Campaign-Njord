@@ -1,5 +1,5 @@
-owner = Z2A
-controller = Z2A
+owner = Z3G
+controller = Z3G
 capital = "Zadar"
 is_city = yes
 culture = croatian
@@ -9,8 +9,7 @@ hre = yes
 base_tax = 6
 base_production = 3
 base_manpower = 2
-add_core = Z2A
-add_permanent_claim = BYZ
+add_core = Z3G
 add_permanent_claim = DAL
 discovered_by = AST
 discovered_by = CRI

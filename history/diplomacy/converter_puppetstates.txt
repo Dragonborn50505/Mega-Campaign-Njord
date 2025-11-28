@@ -126,15 +126,7 @@ vassal=
 vassal=
 {
 	first="BEJ"
-	second="Z2D"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-vassal=
-{
-	first="CHG"
-	second="KAS"
+	second="Z3U"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -150,7 +142,7 @@ vassal=
 vassal=
 {
 	first="FIN"
-	second="Z0F"
+	second="Z0A"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -158,7 +150,7 @@ vassal=
 vassal=
 {
 	first="GUG"
-	second="Z1X"
+	second="Z2W"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -174,7 +166,7 @@ vassal=
 vassal=
 {
 	first="MAD"
-	second="Z33"
+	second="Z5H"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -190,7 +182,7 @@ vassal=
 vassal=
 {
 	first="SWE"
-	second="Z2G"
+	second="Z3Z"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -198,40 +190,24 @@ vassal=
 vassal=
 {
 	first="YOR"
-	second="Z12"
+	second="Z1C"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
 
-vassal=
+dependency=
 {
-	first="Z00"
-	second="AFR"
+	subject_type="tributary_state"
+	first="Z4H"
+	second="ACH"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
 
-vassal=
+dependency=
 {
+	subject_type="tributary_state"
 	first="Z07"
-	second="Z1I"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-dependency=
-{
-	subject_type="tributary_state"
-	first="CHG"
-	second="KAS"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-dependency=
-{
-	subject_type="tributary_state"
-	first="Z0C"
 	second="KRK"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
@@ -241,7 +217,25 @@ dependency=
 {
 	subject_type="tributary_state"
 	first="AFG"
-	second="Z08"
+	second="NAX"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+dependency=
+{
+	subject_type="tributary_state"
+	first="Z0R"
+	second="Y0J"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+dependency=
+{
+	subject_type="tributary_state"
+	first="Z0R"
+	second="Y1M"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -250,7 +244,25 @@ dependency=
 {
 	subject_type="tributary_state"
 	first="AFG"
-	second="Z15"
+	second="Y21"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+dependency=
+{
+	subject_type="tributary_state"
+	first="Z2X"
+	second="Z0H"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+dependency=
+{
+	subject_type="tributary_state"
+	first="Z2X"
+	second="Z0P"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -259,7 +271,16 @@ dependency=
 {
 	subject_type="tributary_state"
 	first="AFG"
-	second="Z1Z"
+	second="Z1G"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+dependency=
+{
+	subject_type="tributary_state"
+	first="Z5C"
+	second="Z1S"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -268,7 +289,7 @@ dependency=
 {
 	subject_type="tributary_state"
 	first="AFG"
-	second="Z3E"
+	second="Z1X"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -276,8 +297,8 @@ dependency=
 dependency=
 {
 	subject_type="tributary_state"
-	first="Z0N"
-	second="Z6B"
+	first="Z2X"
+	second="Z2M"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -285,8 +306,26 @@ dependency=
 dependency=
 {
 	subject_type="tributary_state"
-	first="Z0N"
-	second="Z76"
+	first="Z4T"
+	second="Z2O"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+dependency=
+{
+	subject_type="tributary_state"
+	first="Z4T"
+	second="Z2X"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+dependency=
+{
+	subject_type="tributary_state"
+	first="Z4T"
+	second="Z30"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -295,7 +334,97 @@ dependency=
 {
 	subject_type="tributary_state"
 	first="AFG"
-	second="Z7F"
+	second="Z31"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+dependency=
+{
+	subject_type="tributary_state"
+	first="Z2X"
+	second="Z3T"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+dependency=
+{
+	subject_type="tributary_state"
+	first="AFG"
+	second="Z43"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+dependency=
+{
+	subject_type="tributary_state"
+	first="Z2X"
+	second="Z44"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+dependency=
+{
+	subject_type="tributary_state"
+	first="Z2X"
+	second="Z48"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+dependency=
+{
+	subject_type="tributary_state"
+	first="Z2X"
+	second="Z58"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+dependency=
+{
+	subject_type="tributary_state"
+	first="AFG"
+	second="Z5C"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+dependency=
+{
+	subject_type="tributary_state"
+	first="AFG"
+	second="Z5Y"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+dependency=
+{
+	subject_type="tributary_state"
+	first="AFG"
+	second="Z6M"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+dependency=
+{
+	subject_type="tributary_state"
+	first="Z1G"
+	second="Z7A"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+dependency=
+{
+	subject_type="tributary_state"
+	first="Z4T"
+	second="Z90"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }

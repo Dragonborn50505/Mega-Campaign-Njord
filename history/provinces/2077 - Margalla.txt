@@ -1,5 +1,5 @@
-owner = CHG
-controller = CHG
+owner = Z48
+controller = Z48
 capital = "Rawalpindi"
 is_city = yes
 culture = kashmiri
@@ -8,8 +8,8 @@ trade_goods = iron
 base_tax = 1
 base_production = 1
 base_manpower = 2
-add_core = CHG
 add_core = KSH
+add_core = Z48
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

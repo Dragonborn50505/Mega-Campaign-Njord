@@ -1,5 +1,5 @@
-owner = Z34
-controller = Z34
+owner = Z5J
+controller = Z5J
 capital = "Turda"
 is_city = yes
 culture = szekely
@@ -11,8 +11,7 @@ base_production = 3
 base_manpower = 5
 extra_cost = 8
 center_of_trade = 1
-add_core = TRA
-add_core = Z34
+add_core = Z5J
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

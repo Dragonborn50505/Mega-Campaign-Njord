@@ -1,5 +1,5 @@
-owner = Z0M
-controller = Z0M
+owner = Z0N
+controller = Z0N
 capital = "Bács"
 is_city = yes
 culture = hungarian
@@ -10,7 +10,7 @@ base_tax = 1
 base_production = 4
 base_manpower = 2
 add_core = HUN
-add_core = Z0M
+add_core = Z0N
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

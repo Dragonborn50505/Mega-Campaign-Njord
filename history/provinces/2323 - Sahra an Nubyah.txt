@@ -1,5 +1,5 @@
-owner = Z2D
-controller = Z2D
+owner = Z3U
+controller = Z3U
 capital = "Sahra an Nübyah"
 is_city = yes
 culture = nubian
@@ -9,7 +9,7 @@ base_tax = 4
 base_production = 2
 base_manpower = 3
 add_core = NUB
-add_core = Z2D
+add_core = Z3U
 add_permanent_claim = BEJ
 discovered_by = east_african
 discovered_by = eastern

@@ -1,5 +1,5 @@
-owner = Z0C
-controller = Z0C
+owner = Z07
+controller = Z07
 capital = "Porbandar"
 is_city = yes
 culture = saurashtri
@@ -8,7 +8,7 @@ trade_goods = cotton
 base_tax = 3
 base_production = 4
 base_manpower = 1
-add_core = Z0C
+add_core = Z07
 discovered_by = chinese
 discovered_by = east_african
 discovered_by = indian

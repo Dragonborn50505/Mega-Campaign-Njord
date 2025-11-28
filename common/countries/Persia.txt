@@ -12,6 +12,7 @@ historical_idea_groups = {
 	diplomatic_ideas
 	administrative_ideas
 }
+historical_score = 600
 historical_units = {
 	afsharid_reformed
 	afsharid_reformed_infantry
@@ -26,37 +27,50 @@ historical_units = {
 	topchis_artillery
 }
 monarch_names = {
-	"Afsin #0" = 0
-	"Alkan #0" = 0
-	"Alp Arslan #1" = 10
-	"Arslan Shah #1" = 10
-	"Asli #0" = -1
-	"Azam #0" = 0
-	"Bartan #1" = 10
-	"Berkyaruq #1" = 10
-	"Burundai #0" = 0
-	"Dilek #0" = -1
-	"Erdem #1" = 10
-	"Firuze #0" = -1
-	"Gunduz #0" = -1
-	"Ilgazi #0" = 0
-	"Ipekel #0" = -1
-	"Khadagh #0" = 0
-	"Leyla #0" = -1
-	"Mahmud #2" = 10
-	"Malik Shah #2" = 10
-	"Mansure #0" = -1
-	"Mas'ud #1" = 10
-	"Mohammed #1" = 10
-	"Muhammed #1" = 10
-	"Selim #0" = 0
-	"Shahzadeh #0" = -1
-	"Talib #0" = 0
-	"Togrul #1" = 10
-	"Tolui #0" = 0
-	"Tughril-Beg #1" = 10
-	"Yinal #0" = 0
-	"Çaka #0" = 0
+	"'Abb0s #0" = 30
+	"'Ali Mor0d #0" = 10
+	"'0del #0" = 10
+	"Abdol #0" = 0
+	"Abu'l Fath #0" = 10
+	"Aga Muhammad #0" = 10
+	"Ahmad #0" = 0
+	"Ali #0" = 0
+	"Allahyar #0" = 0
+	"Amanollah #0" = 0
+	"Atiya #0" = -1
+	"Dilaram #0" = -1
+	"Ebrahim #0" = 0
+	"Ebr0him #0" = 10
+	"Farajollah #0" = 0
+	"Farid #0" = 0
+	"Fath Al0 #0" = 10
+	"Haidar #0" = 30
+	"Hamid #0" = 0
+	"Hatem #0" = 0
+	"Hosayn #0" = 10
+	"Ism0'0l #0" = 30
+	"Ja'far #0" = 10
+	"Joneid #0" = 30
+	"Karim #0" = 10
+	"Khayr al-Nisa #0" = -1
+	"Loft Ali #0" = 10
+	"Maryam #0" = -1
+	"Mohammad Ali #0" = 10
+	"Mohammad Kodab0nda #0" = 10
+	"Mohammad S0diq #0" = 10
+	"Najm-e #0" = 0
+	"N0der #0" = 10
+	"N0der Mirza #0" = 5
+	"Pari #0" = -1
+	"Rajab Ali #0" = 0
+	"Razia #0" = -1
+	"Safi #0" = 15
+	"Shahbanu #0" = -1
+	"Shahqoli #0" = 0
+	"Sh0h Rukh #0" = 10
+	"Solaym0n #0" = 20
+	"Tajlu #0" = -1
+	"Tam0shp #0" = 20
 }
 leader_names = {
 	"Ahrari"

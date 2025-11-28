@@ -30,16 +30,23 @@ historical_units = {
 	slavic_stradioti
 }
 monarch_names = {
-	"Anna #1" = -1
-	"Bithild #0" = -1
-	"Gábor #0" = 0
-	"Hedwig #0" = -1
-	"Manrique #0" = 0
-	"Marìa #0" = -1
-	"Miklós #0" = 0
-	"Rastislav #0" = 0
-	"Theodoros #1" = 10
-	"Ádárn #2" = 10
+	"Anna #0" = -1
+	"Athanasios #0" = 0
+	"Berke #0" = 0
+	"Ecatarina #1" = -1
+	"Eudokia #1" = -1
+	"Eustathia #1" = -1
+	"Gjergj #0" = 0
+	"Helgi #0" = 0
+	"Herakleios #0" = 0
+	"Leto #0" = 0
+	"Manuel #1" = 10
+	"Nonna #0" = -1
+	"Olga #0" = -1
+	"Tepes #1" = 10
+	"Theodotos #0" = 0
+	"Tudor #1" = 10
+	"Yeran #1" = -1
 }
 leader_names = {
 	"Basarab"

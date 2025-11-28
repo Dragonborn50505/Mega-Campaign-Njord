@@ -1,5 +1,5 @@
-owner = Z2U
-controller = Z2U
+owner = Z4Q
+controller = Z4Q
 capital = "København"
 is_city = yes
 culture = danish
@@ -11,7 +11,7 @@ base_production = 7
 base_manpower = 2
 extra_cost = 20
 center_of_trade = 2
-add_core = Z2U
+add_core = Z4Q
 add_permanent_claim = DAN
 discovered_by = eastern
 discovered_by = muslim

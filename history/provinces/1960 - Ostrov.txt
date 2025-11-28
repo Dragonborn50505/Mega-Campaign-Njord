@@ -1,5 +1,5 @@
-owner = UKR
-controller = UKR
+owner = NOV
+controller = NOV
 capital = "Ostrov"
 is_city = yes
 culture = novgorodian
@@ -9,7 +9,6 @@ base_tax = 1
 base_production = 1
 base_manpower = 2
 add_core = NOV
-add_core = UKR
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

@@ -1,5 +1,5 @@
-owner = UKR
-controller = UKR
+owner = Z5X
+controller = Z5X
 capital = "Okladnikova Sloboda"
 is_city = yes
 culture = bjarmian
@@ -8,8 +8,7 @@ trade_goods = fish
 base_tax = 2
 base_production = 1
 base_manpower = 1
-add_core = BJA
-add_core = UKR
+add_core = Z5X
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

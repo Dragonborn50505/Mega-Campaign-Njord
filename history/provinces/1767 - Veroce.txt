@@ -1,5 +1,5 @@
-owner = Z2V
-controller = Z2V
+owner = Z4R
+controller = Z4R
 capital = "Osijek"
 is_city = yes
 culture = bosnian
@@ -9,8 +9,7 @@ hre = yes
 base_tax = 1
 base_production = 4
 base_manpower = 2
-add_core = Z2V
-add_permanent_claim = BYZ
+add_core = Z4R
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

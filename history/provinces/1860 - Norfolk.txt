@@ -1,5 +1,5 @@
-owner = Z2F
-controller = Z2F
+owner = Z3Y
+controller = Z3Y
 capital = "Norwich"
 is_city = yes
 culture = english
@@ -10,7 +10,7 @@ base_tax = 5
 base_production = 3
 base_manpower = 3
 add_core = ENG
-add_core = Z2F
+add_core = Z3Y
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman

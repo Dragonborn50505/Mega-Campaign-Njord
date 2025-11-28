@@ -1,5 +1,5 @@
-owner = KAS
-controller = KAS
+owner = Z0P
+controller = Z0P
 capital = "Yangi Hissar"
 is_city = yes
 culture = afghani
@@ -8,8 +8,7 @@ trade_goods = wool
 base_tax = 3
 base_production = 1
 base_manpower = 2
-add_core = KAS
-add_permanent_claim = CHG
+add_core = Z0P
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

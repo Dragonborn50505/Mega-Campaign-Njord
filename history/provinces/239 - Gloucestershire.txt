@@ -1,5 +1,5 @@
-owner = Z1H
-controller = Z1H
+owner = Z25
+controller = Z25
 capital = "Bristol"
 is_city = yes
 culture = english
@@ -12,7 +12,7 @@ base_manpower = 2
 extra_cost = 8
 center_of_trade = 1
 add_core = ENG
-add_core = Z1H
+add_core = Z25
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman

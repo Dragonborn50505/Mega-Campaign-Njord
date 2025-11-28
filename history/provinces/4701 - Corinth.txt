@@ -1,5 +1,5 @@
-owner = GRE
-controller = GRE
+owner = ACH
+controller = ACH
 capital = "Corinth"
 is_city = yes
 culture = greek
@@ -8,6 +8,7 @@ trade_goods = wine
 base_tax = 6
 base_production = 4
 base_manpower = 5
+add_core = ACH
 add_core = GRE
 discovered_by = eastern
 discovered_by = muslim

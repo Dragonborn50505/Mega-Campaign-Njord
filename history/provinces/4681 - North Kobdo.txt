@@ -1,5 +1,5 @@
-owner = KAS
-controller = KAS
+owner = Z0H
+controller = Z0H
 capital = "Olgii"
 is_city = yes
 culture = khalkha
@@ -8,8 +8,7 @@ trade_goods = livestock
 base_tax = 1
 base_production = 1
 base_manpower = 1
-add_core = KAS
 add_core = KLK
-add_permanent_claim = CHG
+add_core = Z0H
 discovered_by = chinese
 discovered_by = nomad_group

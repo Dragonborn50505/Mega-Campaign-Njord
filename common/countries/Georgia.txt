@@ -1,5 +1,5 @@
 ck2_converter_generated = yes
-graphical_culture = muslimgfx
+graphical_culture = asiangfx
 color = { 190 35 37 }
 revolutionary_colors = { 1 0 4 }
 historical_idea_groups = {
@@ -31,31 +31,12 @@ historical_units = {
 	slavic_stradioti
 }
 monarch_names = {
-	"Afsin #0" = 0
-	"Alkan #1" = 10
 	"Ananias #1" = 10
-	"Asli #0" = -1
-	"Azam #0" = 0
-	"Bagrat #2" = 10
-	"Burundai #0" = 0
-	"Davit #2" = 10
-	"Demetre #2" = 10
-	"Dilek #0" = -1
-	"Firuze #0" = -1
-	"Giorgi #3" = 10
-	"Gunduz #0" = -1
-	"Ilgazi #0" = 0
-	"Ipekel #0" = -1
-	"Khadagh #0" = 0
-	"Leyla #0" = -1
-	"Mansure #0" = -1
-	"Selim #0" = 0
-	"Shahzadeh #0" = -1
-	"Talib #0" = 0
-	"Tamar #1" = -1
-	"Tolui #0" = 0
-	"Yinal #0" = 0
-	"Çaka #0" = 0
+	"Guchu #1" = 10
+	"Khorchi #1" = 10
+	"Lamara #0" = -1
+	"Nahal #0" = -1
+	"Nayaga #0" = 0
 }
 leader_names = {
 	"Abashidze"

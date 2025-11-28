@@ -1,5 +1,5 @@
-owner = Z0F
-controller = Z0F
+owner = Z0A
+controller = Z0A
 capital = "Jokkmokk"
 is_city = yes
 culture = sapmi
@@ -8,7 +8,7 @@ trade_goods = unknown
 base_tax = 1
 base_production = 1
 base_manpower = 1
-add_core = Z0F
+add_core = Z0A
 add_permanent_claim = SMI
 discovered_by = eastern
 discovered_by = western

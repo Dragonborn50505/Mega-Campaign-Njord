@@ -1,5 +1,5 @@
-owner = Z4A
-controller = Z4A
+owner = Z7C
+controller = Z7C
 capital = "Spiš"
 is_city = yes
 culture = hungarian
@@ -10,7 +10,7 @@ base_tax = 2
 base_production = 3
 base_manpower = 2
 add_core = HUN
-add_core = Z4A
+add_core = Z7C
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

@@ -1,5 +1,5 @@
-owner = Z1M
-controller = Z1M
+owner = Z2C
+controller = Z2C
 capital = "Lwów"
 is_city = yes
 culture = ruthenian
@@ -10,8 +10,7 @@ base_production = 4
 base_manpower = 4
 extra_cost = 8
 center_of_trade = 1
-add_core = KIE
-add_core = Z1M
+add_core = Z2C
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

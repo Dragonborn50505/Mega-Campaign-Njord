@@ -1,5 +1,5 @@
-owner = Z2Z
-controller = Z2Z
+owner = Z59
+controller = Z59
 capital = "Nagybecskerek"
 is_city = yes
 culture = szekely
@@ -9,8 +9,7 @@ hre = yes
 base_tax = 1
 base_production = 3
 base_manpower = 2
-add_core = TRA
-add_core = Z2Z
+add_core = Z59
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL
