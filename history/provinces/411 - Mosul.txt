@@ -1,5 +1,5 @@
-owner = Z1R
-controller = Z1R
+owner = Z07
+controller = Z07
 capital = "Al Mawsil"
 is_city = yes
 culture = assyrian
@@ -9,7 +9,7 @@ base_tax = 6
 base_production = 3
 base_manpower = 7
 add_core = ASY
-add_core = Z1R
+add_core = Z07
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

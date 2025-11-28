@@ -1,5 +1,5 @@
-owner = Z6O
-controller = Z6O
+owner = Z3S
+controller = Z3S
 capital = "Manuf"
 is_city = yes
 culture = al_misr_arabic
@@ -11,7 +11,7 @@ base_production = 4
 base_manpower = 4
 extra_cost = 10
 add_core = MAM
-add_core = Z6O
+add_core = Z3S
 add_permanent_claim = EGY
 discovered_by = east_african
 discovered_by = eastern

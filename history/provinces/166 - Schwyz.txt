@@ -1,5 +1,5 @@
-owner = Z5L
-controller = Z5L
+owner = Z36
+controller = Z36
 capital = "Schwyz"
 is_city = yes
 culture = swiss
@@ -10,7 +10,7 @@ base_tax = 5
 base_production = 1
 base_manpower = 2
 add_core = SWI
-add_core = Z5L
+add_core = Z36
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman

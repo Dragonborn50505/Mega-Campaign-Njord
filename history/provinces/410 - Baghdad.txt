@@ -1,5 +1,5 @@
-owner = Z0Q
-controller = Z0Q
+owner = IRQ
+controller = IRQ
 capital = "Baghdad"
 is_city = yes
 culture = dynamic-mongol-culture-num3
@@ -10,7 +10,7 @@ base_production = 4
 base_manpower = 7
 extra_cost = 8
 center_of_trade = 1
-add_core = Z0Q
+add_core = IRQ
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

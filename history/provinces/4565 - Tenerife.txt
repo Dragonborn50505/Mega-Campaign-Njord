@@ -1,5 +1,5 @@
-owner = FLA
-controller = FLA
+owner = Z0X
+controller = Z0X
 capital = "Tenerife"
 is_city = yes
 culture = berber
@@ -10,6 +10,8 @@ hre = yes
 base_tax = 1
 base_production = 1
 base_manpower = 1
-add_core = FLA
+add_core = TLC
+add_core = Z0X
+add_permanent_claim = Z00
 native_size = 5
 native_ferocity = 1

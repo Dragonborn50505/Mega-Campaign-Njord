@@ -26,17 +26,17 @@ historical_units = {
 	topchis_artillery
 }
 monarch_names = {
-	"Elham #0" = -1
-	"Jahanshah #0" = 0
-	"Mehrzad #1" = 10
-	"Mohammed #1" = 10
-	"Nezam #1" = 10
-	"Qutlugh Inanj #1" = 10
-	"Sibel #0" = -1
-	"Sumru #0" = -1
-	"Vahhab #0" = 0
-	"Wandad #0" = 0
-	"Zakaria #1" = 10
+	"Amin #0" = 0
+	"Bahramshah #1" = 10
+	"Chidukhul #0" = 0
+	"Chiora #0" = -1
+	"Khosrau #0" = 0
+	"Lorîn #0" = -1
+	"Noushin #0" = -1
+	"Osman #1" = 10
+	"Saim #1" = 10
+	"Sharukan #0" = 0
+	"Zarrina #0" = -1
 }
 leader_names = {
 	"Ardashir"

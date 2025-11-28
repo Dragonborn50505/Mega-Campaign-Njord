@@ -1,5 +1,5 @@
-owner = Z9R
-controller = Z9R
+owner = UKR
+controller = UKR
 capital = "Murom"
 is_city = yes
 culture = russian
@@ -8,8 +8,7 @@ trade_goods = grain
 base_tax = 1
 base_production = 3
 base_manpower = 2
-add_core = Z9R
-add_permanent_claim = RYA
+add_core = UKR
 discovered_by = GOL
 discovered_by = eastern
 discovered_by = nomad_group

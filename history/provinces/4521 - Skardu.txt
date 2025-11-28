@@ -1,5 +1,5 @@
-owner = Z0U
-controller = Z0U
+owner = Z0Q
+controller = Z0Q
 capital = "Skardu"
 is_city = yes
 culture = peristani
@@ -8,7 +8,7 @@ trade_goods = wool
 base_tax = 6
 base_production = 3
 base_manpower = 4
-add_core = Z0U
+add_core = Z0Q
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

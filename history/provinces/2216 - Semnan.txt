@@ -1,5 +1,5 @@
-owner = Z4G
-controller = Z4G
+owner = Z2P
+controller = Z2P
 capital = "Semnan"
 is_city = yes
 culture = persian
@@ -9,7 +9,7 @@ base_tax = 1
 base_production = 3
 base_manpower = 2
 add_core = PER
-add_core = Z4G
+add_core = Z2P
 discovered_by = indian
 discovered_by = muslim
 discovered_by = nomad_group

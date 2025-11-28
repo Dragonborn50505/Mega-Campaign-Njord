@@ -1,5 +1,5 @@
-owner = Y16
-controller = Y16
+owner = Z6S
+controller = Z6S
 capital = "Teruel"
 is_city = yes
 culture = aragonese
@@ -8,8 +8,7 @@ trade_goods = iron
 base_tax = 4
 base_production = 4
 base_manpower = 2
-add_core = Y16
-add_permanent_claim = VAL
+add_core = Z6S
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman

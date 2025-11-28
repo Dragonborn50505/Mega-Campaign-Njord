@@ -1,5 +1,5 @@
-owner = Z8B
-controller = Z8B
+owner = Z4X
+controller = Z4X
 capital = "Govi"
 is_city = yes
 culture = oirats
@@ -8,7 +8,7 @@ trade_goods = livestock
 base_tax = 1
 base_production = 1
 base_manpower = 1
-add_core = Z8B
+add_core = Z4X
 add_core = ZUN
 discovered_by = chinese
 discovered_by = nomad_group

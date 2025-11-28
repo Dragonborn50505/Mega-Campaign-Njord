@@ -1,55 +1,40 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = barbary_sultanate_reform
 government_rank = 1
 technology_group = muslim
-religion = catholic
+religion = sunni
 primary_culture = moroccan
-capital = 2468
-1444.11.11= {
+capital = 344
+fixed_capital = 344
+religious_school = maliki_school
+1444.1.1= {
 	monarch = {
-		name = "Daniyah"
-		dynasty = "Mu'minid"
+		name = "Muhammad"
+		dynasty = "Hintata"
 		adm = 2
 		dip = 3
-		mil = 4
-		birth_date = 1405.5.6
-		female = yes
-		religion = catholic
-		culture = moroccan
+		mil = 3
 	}
-	add_ruler_personality = infertile_personality
-	add_ruler_personality = righteous_personality
-	queen = {
-		name = "Tahir"
-		dynasty = "Amin"
-		adm = 5
-		dip = 4
-		mil = 5
-		country_of_origin = MRK
-		birth_date = 1407.12.25
-		death_date = 1467.12.25
-		religion = catholic
-		culture = berber
-	}
-	add_queen_personality = greedy_personality
-	add_queen_personality = zealot_personality
-	heir = {
-		name = "Affan"
-		monarch_name = "Affan"
-		dynasty = "Mu'minid"
-		adm = 2
-		dip = 0
-		mil = 1
-		birth_date = 1437.9.14
-		death_date = 1502.9.14
-		claim = 89
-		religion = catholic
-		culture = moroccan
-	}
-	add_heir_personality = well_connected_personality
-	add_heir_personality = zealot_personality
 }
-1444.11.11= {
-	add_prestige = 79
-	add_treasury = 62
+1444.1.1= {
+	heir = {
+		name = "Ali"
+		monarch_name = "Ali"
+		dynasty = "Hintata"
+		birth_date = 1440.1.1
+		death_date = 1472.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+1466.1.1= {
+	monarch = {
+		name = "Ali"
+		dynasty = "Hintata"
+		adm = 2
+		dip = 2
+		mil = 4
+	}
 }

@@ -1,5 +1,5 @@
-owner = Z1K
-controller = Z1K
+owner = Z16
+controller = Z16
 capital = "Jaén"
 is_city = yes
 culture = castillian
@@ -8,7 +8,7 @@ trade_goods = wool
 base_tax = 5
 base_production = 4
 base_manpower = 2
-add_core = Z1K
+add_core = Z16
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman

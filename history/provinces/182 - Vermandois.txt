@@ -1,5 +1,5 @@
-owner = Z5Z
-controller = Z5Z
+owner = Z3F
+controller = Z3F
 capital = "Soissons"
 is_city = yes
 culture = cosmopolitan_french
@@ -10,7 +10,7 @@ base_tax = 7
 base_production = 4
 base_manpower = 5
 add_core = FRA
-add_core = Z5Z
+add_core = Z3F
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman

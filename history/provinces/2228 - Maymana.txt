@@ -1,5 +1,5 @@
-owner = Z3O
-controller = Z3O
+owner = KHO
+controller = KHO
 capital = "Maymana"
 is_city = yes
 culture = khorasani
@@ -9,7 +9,6 @@ base_tax = 5
 base_production = 9
 base_manpower = 4
 add_core = KHO
-add_core = Z3O
 discovered_by = KAS
 discovered_by = indian
 discovered_by = muslim

@@ -1,5 +1,5 @@
-owner = Z5N
-controller = Z5N
+owner = BYZ
+controller = BYZ
 capital = "Buzau"
 is_city = yes
 culture = romanian
@@ -8,8 +8,7 @@ trade_goods = livestock
 base_tax = 1
 base_production = 2
 base_manpower = 1
-add_core = WAL
-add_core = Z5N
+add_core = BYZ
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

@@ -22,18 +22,25 @@ historical_units = {
 	muslim_mass_infantry
 }
 monarch_names = {
-	"Abd ar-Rahman #1" = 10
-	"Ahmad Khedir #1" = 10
-	"Amellal #0" = 0
-	"Ashhab #1" = 10
-	"Capussa #0" = 0
-	"Durra #0" = -1
-	"Idris #0" = 0
-	"Lantpert #0" = 0
-	"Muzahima #0" = -1
-	"Tegama #1" = 10
-	"Yabid #1" = 10
-	"Zaghlin #1" = 10
+	"Abd al-Aziz #0" = 10
+	"Abdallah #0" = 0
+	"Abdesslam #0" = 0
+	"Abu Zakariya #0" = 10
+	"Ahmed #0" = 0
+	"Aisha #0" = -1
+	"Azis #0" = 0
+	"Bahayou #0" = 10
+	"Bakir #0" = 30
+	"Boumezrag #0" = 0
+	"Dahman #0" = 20
+	"Da0a #0" = -1
+	"Hassan #0" = 20
+	"Mohammed #0" = 0
+	"Mohand #0" = 0
+	"Muhammed #0" = 10
+	"Werdja #0" = -1
+	"Yahya #0" = 10
+	"Zahir #0" = 0
 }
 leader_names = {
 	"Atfayyish"

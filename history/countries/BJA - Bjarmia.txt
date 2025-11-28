@@ -1,12 +1,16 @@
-government = monarchy
-add_government_reform = principality
-government_rank = 1
+government = tribal
+add_government_reform = feudal_tribe
+government_rank = 2
 technology_group = eastern
-religion = orthodox
-primary_culture = dynamic-samoyed-culture-num1
-capital = 1955
-add_accepted_culture = russian
+religion = finnish_pagan
+primary_culture = bjarmian
+capital = 4258
 1444.11.11= {
-	add_prestige = 65
-	add_treasury = 57
+	monarch = {
+		name = "Native Council"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
 }

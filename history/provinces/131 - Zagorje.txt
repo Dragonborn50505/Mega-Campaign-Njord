@@ -1,5 +1,5 @@
-owner = Z4R
-controller = Z4R
+owner = Z2V
+controller = Z2V
 capital = "Zagreb"
 is_city = yes
 culture = croatian
@@ -10,7 +10,8 @@ hre = yes
 base_tax = 5
 base_production = 3
 base_manpower = 3
-add_core = Z4R
+add_core = Z2V
+add_permanent_claim = BYZ
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

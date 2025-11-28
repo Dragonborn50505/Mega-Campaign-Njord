@@ -1,5 +1,5 @@
-owner = Y1I
-controller = Y1I
+owner = Z72
+controller = Z72
 capital = "Carrickfergus"
 is_city = yes
 culture = dynamic-normand-culture-num1
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 4
 base_production = 4
 base_manpower = 2
-add_core = Y1I
+add_core = Z72
 add_permanent_claim = ULS
 discovered_by = eastern
 discovered_by = muslim

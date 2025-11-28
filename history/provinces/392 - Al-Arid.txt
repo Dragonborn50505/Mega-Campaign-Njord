@@ -1,5 +1,5 @@
-owner = Z6E
-controller = Z6E
+owner = Z3N
+controller = Z3N
 capital = "Diriyah"
 is_city = yes
 culture = dynamic-bedouin_arabic-mongol-culture-num1
@@ -8,7 +8,7 @@ trade_goods = livestock
 base_tax = 1
 base_production = 1
 base_manpower = 1
-add_core = Z6E
+add_core = Z3N
 add_permanent_claim = ARB
 discovered_by = east_african
 discovered_by = indian

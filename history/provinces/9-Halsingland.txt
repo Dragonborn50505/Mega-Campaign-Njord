@@ -11,6 +11,6 @@ base_production = 1
 base_manpower = 2
 add_core = FIN
 add_permanent_claim = SWE
-add_permanent_claim = Z3Z
+add_permanent_claim = Z2G
 discovered_by = eastern
 discovered_by = western

@@ -1,5 +1,5 @@
-owner = Z3G
-controller = Z3G
+owner = Z2A
+controller = Z2A
 capital = "Jajce"
 is_city = yes
 culture = bosnian
@@ -9,7 +9,8 @@ hre = yes
 base_tax = 4
 base_production = 3
 base_manpower = 2
-add_core = Z3G
+add_core = Z2A
+add_permanent_claim = BYZ
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

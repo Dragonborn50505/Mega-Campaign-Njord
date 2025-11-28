@@ -1,12 +1,7 @@
-government = monarchy
-add_government_reform = principality
+government = tribal
+add_government_reform = tribal_kingdom
 government_rank = 1
 technology_group = eastern
 religion = orthodox
-primary_culture = novgorodian
-capital = 30
-add_accepted_culture = finnish
-1444.11.11= {
-	add_prestige = 87
-	add_treasury = 0
-}
+primary_culture = karelian
+capital = 32

@@ -1,5 +1,5 @@
-owner = Z53
-controller = Z53
+owner = Z00
+controller = Z00
 capital = "Figuig"
 is_city = yes
 culture = moroccan
@@ -9,7 +9,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 add_core = MOR
-add_core = Z53
+add_core = Z00
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = western

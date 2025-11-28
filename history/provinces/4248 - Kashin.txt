@@ -1,5 +1,5 @@
-owner = BJA
-controller = BJA
+owner = UKR
+controller = UKR
 capital = "Kashin"
 is_city = yes
 culture = russian
@@ -8,7 +8,7 @@ trade_goods = livestock
 base_tax = 3
 base_production = 2
 base_manpower = 2
-add_core = BJA
+add_core = UKR
 discovered_by = KAZ
 discovered_by = eastern
 discovered_by = nomad_group

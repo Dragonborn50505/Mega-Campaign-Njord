@@ -1,5 +1,5 @@
-owner = Z30
-controller = Z30
+owner = CHG
+controller = CHG
 capital = "Khujand"
 is_city = yes
 culture = tajik
@@ -8,8 +8,8 @@ trade_goods = silk
 base_tax = 2
 base_production = 4
 base_manpower = 2
+add_core = CHG
 add_core = TRS
-add_core = Z30
 discovered_by = KAS
 discovered_by = indian
 discovered_by = muslim

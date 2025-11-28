@@ -1,5 +1,5 @@
-owner = Z5J
-controller = Z5J
+owner = Z34
+controller = Z34
 capital = "Gyula"
 is_city = yes
 culture = hungarian
@@ -10,7 +10,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 5
 add_core = HUN
-add_core = Z5J
+add_core = Z34
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

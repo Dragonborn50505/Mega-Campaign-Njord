@@ -1,5 +1,5 @@
-owner = ARD
-controller = ARD
+owner = Z07
+controller = Z07
 capital = "Sulimaniyeh"
 is_city = yes
 culture = kurdish
@@ -9,6 +9,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 2
 add_core = ARD
+add_core = Z07
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

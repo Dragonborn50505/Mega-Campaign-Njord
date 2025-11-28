@@ -1,3 +1,5 @@
+owner = Z23
+controller = Z23
 capital = "Assinie"
 is_city = yes
 culture = dyola
@@ -6,6 +8,7 @@ trade_goods = unknown
 base_tax = 2
 base_production = 2
 base_manpower = 1
+add_core = Z23
 discovered_by = ASH
 discovered_by = BEN
 discovered_by = HAU

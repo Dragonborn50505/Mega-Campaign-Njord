@@ -1,5 +1,5 @@
-owner = Z47
-controller = Z47
+owner = Z2K
+controller = Z2K
 capital = "Al Karak"
 is_city = yes
 culture = al_suryah_arabic
@@ -10,7 +10,7 @@ base_tax = 5
 base_production = 4
 base_manpower = 2
 add_core = SYR
-add_core = Z47
+add_core = Z2K
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

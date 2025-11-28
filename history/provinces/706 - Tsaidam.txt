@@ -1,5 +1,5 @@
-owner = Z08
-controller = Z08
+owner = Z0D
+controller = Z0D
 capital = "Tsaidam"
 is_city = yes
 culture = tangut
@@ -10,7 +10,7 @@ base_tax = 3
 base_production = 1
 base_manpower = 1
 add_core = TAU
-add_core = Z08
+add_core = Z0D
 discovered_by = chinese
 discovered_by = indian
 discovered_by = nomad_group

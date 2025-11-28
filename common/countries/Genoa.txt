@@ -12,7 +12,6 @@ historical_idea_groups = {
 	economic_ideas
 	quality_ideas
 }
-historical_score = 850
 historical_units = {
 	austrian_grenzer
 	austrian_hussar
@@ -30,52 +29,13 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Adriano #0" = 0
-	"Alessandro #0" = 0
-	"Ambrogio #0" = 0
-	"Andrea #0" = 80
-	"Antonio #0" = 0
-	"Antonio Maria #0" = 10
-	"Barnaba #0" = 0
-	"Battista #0" = 0
-	"Benedetto #0" = 0
-	"Camillo #0" = 10
-	"Carlo #0" = 10
-	"Cesare #0" = 0
-	"Ceva #0" = 20
-	"Domenico #0" = 0
-	"Donato #0" = 0
-	"Federico #0" = 10
-	"Filippo #0" = 10
-	"Francesco #0" = 20
-	"Giacomo #0" = 0
-	"Giannettino #0" = 10
-	"Gianpiero #0" = 0
-	"Giorgio #0" = 15
-	"Giovanni #0" = 0
-	"Giovanni Andrea #0" = 80
-	"Giovanni Battista #0" = 0
-	"Giovanni Davide #0" = 20
-	"Girolamo #0" = 0
-	"Giuseppe #0" = 10
-	"Isnardo #0" = 0
-	"Leonardo #0" = 0
-	"Lorenzo #0" = 0
-	"Luca #0" = 0
-	"Luigi #0" = 15
-	"Matteo #0" = 0
-	"Milena #0" = -1
-	"Niccol0 #0" = 0
-	"Pagano #0" = 20
-	"Pantaleone #0" = 0
-	"Paolo #0" = 0
-	"Pietro #0" = 0
-	"Priscilla #0" = -1
-	"Prospero #0" = 0
-	"Rinaldo #0" = 0
-	"Teodora #0" = -1
-	"Tommasso #0" = 0
-	"Vitale #0" = 0
+	"Augusta #0" = -1
+	"Burgondo #1" = 10
+	"Cornelia #0" = -1
+	"Gherardo #0" = 0
+	"Montefeltrano #0" = 0
+	"Rodolfo #1" = 10
+	"Stefano #0" = 0
 }
 leader_names = {
 	"Adorno"
