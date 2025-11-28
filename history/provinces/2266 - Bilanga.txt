@@ -1,5 +1,5 @@
-owner = Z00
-controller = Z00
+owner = OYO
+controller = OYO
 capital = "Bilanga"
 is_city = yes
 culture = mali
@@ -8,6 +8,6 @@ trade_goods = grain
 base_tax = 1
 base_production = 1
 base_manpower = 1
-add_core = Z00
+add_core = OYO
 add_permanent_claim = GUR
 discovered_by = sub_saharan

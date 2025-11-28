@@ -1,5 +1,5 @@
-owner = Z6M
-controller = Z6M
+owner = POL
+controller = POL
 capital = "Lublin"
 is_city = yes
 culture = polish

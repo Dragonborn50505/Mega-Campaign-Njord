@@ -1,5 +1,5 @@
-owner = BYZ
-controller = BYZ
+owner = SER
+controller = SER
 capital = "Smederevo"
 is_city = yes
 culture = serbian
@@ -8,7 +8,6 @@ trade_goods = grain
 base_tax = 3
 base_production = 4
 base_manpower = 2
-add_core = BYZ
 add_core = SER
 discovered_by = AST
 discovered_by = CRI

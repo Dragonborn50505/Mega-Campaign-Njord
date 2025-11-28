@@ -1,5 +1,5 @@
-owner = KRA
-controller = KRA
+owner = POL
+controller = POL
 capital = "Kraków"
 is_city = yes
 culture = polish

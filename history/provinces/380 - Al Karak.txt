@@ -1,11 +1,10 @@
-owner = Z2K
-controller = Z2K
+owner = ARB
+controller = ARB
 capital = "Al Karak"
 is_city = yes
 culture = al_suryah_arabic
 religion = catholic
 trade_goods = grain
-hre = yes
 base_tax = 5
 base_production = 4
 base_manpower = 2

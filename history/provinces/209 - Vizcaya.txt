@@ -1,5 +1,5 @@
-owner = NAV
-controller = NAV
+owner = CAS
+controller = CAS
 capital = "Bilbao"
 is_city = yes
 culture = basque
@@ -8,7 +8,7 @@ trade_goods = iron
 base_tax = 1
 base_production = 4
 base_manpower = 2
-add_core = NAV
+add_core = CAS
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman

@@ -1,5 +1,5 @@
-owner = Z6T
-controller = Z6T
+owner = CAS
+controller = CAS
 capital = "Toledo"
 is_city = yes
 culture = castillian
@@ -10,7 +10,7 @@ base_production = 4
 base_manpower = 2
 extra_cost = 8
 center_of_trade = 1
-add_core = Z6T
+add_core = CAS
 add_permanent_claim = CAS
 discovered_by = eastern
 discovered_by = muslim

@@ -1,5 +1,5 @@
-owner = BYZ
-controller = BYZ
+owner = ALB
+controller = ALB
 capital = "Lezhë"
 is_city = yes
 culture = albanian
@@ -10,7 +10,6 @@ base_tax = 4
 base_production = 4
 base_manpower = 4
 add_core = ALB
-add_core = BYZ
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

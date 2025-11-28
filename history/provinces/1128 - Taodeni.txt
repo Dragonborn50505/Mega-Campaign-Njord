@@ -1,15 +1,10 @@
-owner = Z00
-controller = Z00
 capital = "Tawdani"
-is_city = yes
 culture = berber
 religion = catholic
 trade_goods = salt
 base_tax = 1
 base_production = 1
 base_manpower = 1
-add_core = TLC
-add_core = Z00
 discovered_by = MOR
 discovered_by = sub_saharan
 native_size = 60

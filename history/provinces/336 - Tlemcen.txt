@@ -1,5 +1,5 @@
-owner = Z00
-controller = Z00
+owner = AFR
+controller = AFR
 capital = "Tlemcen"
 is_city = yes
 culture = algerian
@@ -12,7 +12,7 @@ base_manpower = 4
 extra_cost = 16
 center_of_trade = 2
 add_core = ALG
-add_core = Z00
+add_core = AFR
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman

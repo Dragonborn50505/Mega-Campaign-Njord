@@ -1,5 +1,5 @@
-owner = Z00
-controller = Z00
+owner = AFR
+controller = AFR
 capital = "El Kef"
 is_city = yes
 culture = tunisian
@@ -9,7 +9,7 @@ base_tax = 5
 base_production = 4
 base_manpower = 3
 add_core = TUN
-add_core = Z00
+add_core = AFR
 add_permanent_claim = AFR
 discovered_by = eastern
 discovered_by = muslim

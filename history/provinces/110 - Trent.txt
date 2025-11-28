@@ -1,5 +1,5 @@
-owner = MLO
-controller = MLO
+owner = VEN
+controller = VEN
 capital = "Trent"
 is_city = yes
 culture = venetian
@@ -10,6 +10,7 @@ base_tax = 6
 base_production = 4
 base_manpower = 4
 add_core = MLO
+add_core = VEN
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman

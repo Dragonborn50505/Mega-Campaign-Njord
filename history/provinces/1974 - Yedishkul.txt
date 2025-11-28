@@ -1,5 +1,5 @@
-owner = BYZ
-controller = BYZ
+owner = CRI
+controller = CRI
 capital = "Kherson"
 is_city = yes
 culture = cuman
@@ -8,7 +8,7 @@ trade_goods = salt
 base_tax = 1
 base_production = 1
 base_manpower = 1
-add_core = BYZ
+add_core = CRI
 add_core = CMN
 discovered_by = eastern
 discovered_by = muslim

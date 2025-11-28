@@ -1,5 +1,5 @@
-owner = BYZ
-controller = BYZ
+owner = BUL
+controller = BUL
 capital = "Nis"
 is_city = yes
 culture = bulgarian
@@ -10,7 +10,6 @@ base_tax = 1
 base_production = 2
 base_manpower = 2
 add_core = BUL
-add_core = BYZ
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

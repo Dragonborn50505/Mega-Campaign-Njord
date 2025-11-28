@@ -1,5 +1,5 @@
-owner = BYZ
-controller = BYZ
+owner = ALB
+controller = ALB
 capital = "Vlorë"
 is_city = yes
 culture = albanian
@@ -9,7 +9,6 @@ base_tax = 1
 base_production = 3
 base_manpower = 2
 add_core = ALB
-add_core = BYZ
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL
