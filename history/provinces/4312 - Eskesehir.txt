@@ -1,5 +1,5 @@
-owner = Z08
-controller = Z08
+owner = Z11
+controller = Z11
 capital = "Eskisehir"
 is_city = yes
 culture = dynamic-greek-culture-num3
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 4
 base_production = 4
 base_manpower = 2
-add_core = Z08
+add_core = Z11
 add_permanent_claim = BYZ
 discovered_by = eastern
 discovered_by = muslim

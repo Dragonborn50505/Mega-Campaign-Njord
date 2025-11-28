@@ -1,5 +1,5 @@
-owner = Z5W
-controller = Z5W
+owner = CAS
+controller = CAS
 capital = "Pamplona"
 is_city = yes
 culture = basque
@@ -8,7 +8,7 @@ trade_goods = iron
 base_tax = 4
 base_production = 4
 base_manpower = 2
-add_core = Z5W
+add_core = CAS
 add_permanent_claim = NAV
 discovered_by = eastern
 discovered_by = muslim

@@ -1,5 +1,5 @@
-owner = SIL
-controller = SIL
+owner = POL
+controller = POL
 capital = "Sandomierz"
 is_city = yes
 culture = polish

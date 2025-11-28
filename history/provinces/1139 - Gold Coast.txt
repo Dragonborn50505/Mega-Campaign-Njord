@@ -1,5 +1,5 @@
-owner = Z00
-controller = Z00
+owner = OYO
+controller = OYO
 capital = "Accra"
 is_city = yes
 culture = aka
@@ -11,7 +11,7 @@ base_manpower = 1
 extra_cost = 8
 center_of_trade = 1
 add_core = ASH
-add_core = Z00
+add_core = OYO
 discovered_by = sub_saharan
 native_size = 80
 native_ferocity = 4

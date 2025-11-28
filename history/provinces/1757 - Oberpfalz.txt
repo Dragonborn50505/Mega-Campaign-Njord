@@ -1,5 +1,5 @@
-owner = Z2E
-controller = Z2E
+owner = FKN
+controller = FKN
 capital = "Amberg"
 is_city = yes
 culture = bavarian
@@ -10,6 +10,7 @@ base_tax = 4
 base_production = 6
 base_manpower = 3
 add_core = Z2E
+add_core = FKN
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman

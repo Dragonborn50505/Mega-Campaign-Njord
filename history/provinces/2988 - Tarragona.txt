@@ -1,5 +1,5 @@
-owner = Z00
-controller = Z00
+owner = ARA
+controller = ARA
 capital = "Taragona"
 is_city = yes
 culture = catalan
@@ -10,7 +10,7 @@ base_production = 4
 base_manpower = 3
 extra_cost = 10
 add_core = CAT
-add_core = Z00
+add_core = ARA
 add_permanent_claim = ARA
 discovered_by = eastern
 discovered_by = muslim

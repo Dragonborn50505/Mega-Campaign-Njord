@@ -1,5 +1,5 @@
-owner = Z6Q
-controller = Z6Q
+owner = POL
+controller = POL
 capital = "Tarnów"
 is_city = yes
 culture = polish

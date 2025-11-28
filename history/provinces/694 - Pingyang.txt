@@ -1,5 +1,5 @@
-owner = MNG
-controller = MNG
+owner = JIN
+controller = JIN
 capital = "Pingyang"
 is_city = yes
 culture = jin

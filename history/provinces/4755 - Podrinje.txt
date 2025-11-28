@@ -1,5 +1,5 @@
-owner = Z2A
-controller = Z2A
+owner = BOS
+controller = BOS
 capital = "Visegrad"
 is_city = yes
 culture = bosnian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 4
 base_production = 4
 base_manpower = 2
-add_core = Z2A
+add_core = BOS
 add_permanent_claim = BYZ
 discovered_by = AST
 discovered_by = CRI

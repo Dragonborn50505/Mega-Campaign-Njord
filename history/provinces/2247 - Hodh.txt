@@ -1,5 +1,5 @@
-owner = Z00
-controller = Z00
+owner = GUR
+controller = GUR
 capital = "Walata"
 is_city = yes
 culture = senegambian
@@ -9,7 +9,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 add_core = JOL
-add_core = Z00
+add_core = GUR
 discovered_by = MOR
 discovered_by = sub_saharan
 native_size = 40

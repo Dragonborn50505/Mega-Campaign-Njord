@@ -1,5 +1,5 @@
-owner = Z08
-controller = Z08
+owner = Z11
+controller = Z11
 capital = "Sinop"
 is_city = yes
 culture = anatolian
@@ -10,7 +10,7 @@ base_production = 4
 base_manpower = 3
 extra_cost = 16
 center_of_trade = 2
-add_core = Z08
+add_core = Z11
 add_permanent_claim = BYZ
 add_permanent_claim = Z09
 discovered_by = eastern
