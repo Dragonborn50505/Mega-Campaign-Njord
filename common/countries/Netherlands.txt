@@ -3,14 +3,14 @@ graphical_culture = westerngfx
 color = { 220 138 57 }
 revolutionary_colors = { 6 0 14 }
 historical_idea_groups = {
-	administrative_ideas
-	exploration_ideas
 	defensive_ideas
-	maritime_ideas
-	innovativeness_ideas
+	religious_ideas
 	quality_ideas
 	trade_ideas
-	economic_ideas
+	quantity_ideas
+	maritime_ideas
+	innovativeness_ideas
+	offensive_ideas
 }
 historical_score = 3500
 historical_units = {
@@ -32,57 +32,40 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Abraham #0" = 0
-	"Adriaan #0" = 10
-	"Andries #0" = 10
-	"Antonius #0" = 10
-	"Antoon #0" = 0
-	"Barthout #0" = 0
-	"Christiaan #0" = 0
-	"Christoffel #0" = 0
-	"Constantijn #0" = 0
-	"Cornelis #0" = 0
-	"Daniel #0" = 0
-	"David #0" = 0
-	"Dirk #0" = 0
-	"Eise #0" = 0
-	"Filips #0" = 0
-	"Filips Willem #0" = 15
-	"Frans #0" = 0
-	"Frederik #0" = 10
-	"Frederik Hendrik #0" = 20
-	"Gabriel #0" = 0
-	"Gaspar #0" = 10
-	"Gerard #0" = 0
-	"Gerben #0" = 0
-	"Godfried #0" = 0
-	"Hans #0" = 0
-	"Hendrik Lodewijk #0" = 15
-	"Hugo #0" = 0
-	"Isaac #0" = 10
-	"Jacob #0" = 10
-	"Jan #0" = 0
-	"Jeroen #0" = 0
-	"Johan #0" = 10
-	"Joost #0" = 0
-	"Karel #0" = 15
-	"Laurens #0" = 10
-	"Lodewijk #0" = 40
-	"Margaretha #0" = -1
-	"Maurits #0" = 20
-	"Nicolaas #0" = 0
-	"Paul #0" = 10
-	"Pieter #0" = 10
-	"Roeland #0" = 0
-	"Rogier #0" = 0
-	"Rosanne #0" = -1
-	"Rutger #0" = 0
-	"Simon #0" = 10
-	"Tamara #0" = -1
-	"Thomas #0" = 0
-	"Vincent #0" = 0
-	"Willem #0" = 100
-	"Zacharias #0" = 0
+	# Expedition 33
+	"Maelle #1" = 40,
+	"Alicia #1" = 40,
+	"Gustave #0" = 40,
+	"Lune #1" = 40,
+	"Sciel #1" = 40,
+	"Aline #1" = 0,
+	"Clea #1" = 15,
+	"Esquie #0" = 0,
+	"FranÃ§ois #0" = 0,
+	"Renoir #0" = 15,
+	"Verso #1" = 15,
+
+	# Arcane
+	"Vi #1" = 15,
+	"Jinx #1" = 40,
+	"Powder #1" = 40,
+	"Silco #0" = 15,
+	"Mel #1" = 0,
+
+	# Murder Drones
+	"Uzi #1" = 40,
+	"N #0" = 15,
+	"V #1" = 0,
+	"Cyn #1" = 40,
+
+	# Lackadaisy
+	"Rocky #0" = 15,
+	"Mordecai #0" = 0,
+	"Ivy #1" = 0,
+
+	# Game of Thrones
+	"Arya #1" = 15,
+	"Melisandre #1" = 0,
 }
 leader_names = {
 	"Batenburg"
@@ -396,7 +379,7 @@ ship_names = {
 	"Valk"
 	"Veere"
 	"Velsen"
-	"Verenigde Provinciën"
+	"Verenigde Provinci n"
 	"Vergulden Draeck"
 	"Vlaming"
 	"Vliegende Vis"
@@ -452,10 +435,10 @@ army_names = {
 fleet_names = {
 	"Middellandse Zeevloot"
 	"Noordzeevloot"
-	"Oost-Indiëvloot"
+	"Oost-Indi vloot"
 	"Oostzeevloot"
 	"Staatse Vloot"
 	"Vloot van $PROVINCE$"
-	"West-Indiëvloot"
+	"West-Indi vloot"
 }
 preferred_religion = reformed
