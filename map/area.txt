@@ -334,7 +334,7 @@ lorraine_area = { #4
 	187 188 189 4766
 }
 
-picardy_area = { #4
+picardy_area = { 5074  #4
 	87 88 89 1743
 }
 
@@ -359,20 +359,20 @@ orleans_area = {
 # Low Countries				 		   #
 ########################################
 
-wallonia_area = { #4
+wallonia_area = {  #4
 	91 93 94 1866 4989
 }
 
 holland_area = { #4
-	96 97 98 4383
+	96 97 98 4383 5057
 }
 
-flanders_area = { #3
+flanders_area = { 5060 5059  #3
 	90 1865 4769
 }
 
-frisia_area = { #5
-	99 100 1931 4381 4382
+frisia_area = { 5056  #5
+	100 1931 4381 4382 5058
 }
 
 brabant_area = { #3
@@ -380,8 +380,8 @@ brabant_area = { #3
 	92 1744 2974
 }
 
-north_brabant_area = { #3
-	95 4770 1742
+north_brabant_area = {  #3
+	95 4770 1742 99
 }
 
 ########################################
@@ -483,7 +483,7 @@ liguria_area = { #3
 	101 102 2992
 }
 
-corsica_sardinia_area = { #4
+corsica_sardinia_area = { 5069  #4
 	127 1247 2986 4735
 }
 
@@ -499,15 +499,15 @@ naples_area = { #3  #Campania
 	121 2983 4734
 }
 
-lazio_area = { #4 Lazio-Umbria
+lazio_area = { 5071  #4 Lazio-Umbria
 	118 2976 4731 4732
 }
 
-calabria_area = { #3 (+Lucania)
+calabria_area = { 5070  #3 (+Lucania)
 	123 1934 2984
 }
 
-apulia_area = { #4
+apulia_area = { 5073  #4
 	122 1933 2985 4733
 }
 
@@ -516,7 +516,7 @@ emilia_romagna_area = { #5
 	105 106 113 114 4730
 }
 
-central_italy_area = { #3
+central_italy_area = { 5072  #3
 	119 120 2977
 }
 
@@ -894,12 +894,12 @@ silesia_area = { #4
 	263 264 2966 4238 4723 5014
 }
 
-bohemia_area = { #5
-	 266 2968 2970 4725 4724
+bohemia_area = {  #6
+	266 2968 2970 4725 4724 5068
 }
 
 erzgebirge_area = { #3
-	267 1771 2967
+	267 1771 2967 5067
 }
 
 lusatia_area = { #3
@@ -910,8 +910,8 @@ moravia_area = {
 	265 4237 4726
 }
 
-south_saxony_area = { #4
-	59 61 4744 62
+south_saxony_area = { 5065   #4
+	59 61 4744 62 5064
 }
 
 upper_bavaria_area = { #4
@@ -979,7 +979,7 @@ austria_proper_area = { #5
 	133 134 1770 4761 4762
 }
 
-inner_austria_area = { #4
+inner_austria_area = { 5066  #4
 	128 132 1863 4759
 }
 
@@ -1028,8 +1028,8 @@ hesse_area = { #5
 	81 1762 1876 4774 78
 }
 
-braunschweig_area = { #4
-	57 1758 2971 4773
+braunschweig_area = {  #4
+	57 1758 2971 4773 5061
 }
    
 weser_area = { #4
@@ -1041,11 +1041,11 @@ holstein_area = { #3
 }
 
 lower_saxony_area = { #4
-	44 53 1857 4772
+	44 53 1857 4772 5062
 }
 
-mecklenburg_area = { #5
-	45 46 2996 4749 4786
+mecklenburg_area = {  #5
+	45 46 2996 4749 4786 5063
 }
 
 ########################################

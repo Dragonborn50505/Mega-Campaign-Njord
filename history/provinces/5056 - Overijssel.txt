@@ -1,0 +1,19 @@
+#Written with Eu4 Easy Province Creator by emiroercn
+#Overijssel
+add_core = UTR
+owner = UTR
+controller = UTR
+culture = flemish
+religion = norse_pagan
+hre = no
+base_tax = 3
+base_production = 6
+trade_goods = cloth
+base_manpower = 4
+capital = "Overijssel"
+is_city = yes
+extra_cost = 26
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
