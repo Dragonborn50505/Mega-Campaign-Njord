@@ -1,0 +1,2353 @@
+##### WEST EUROPE MONUMENTS #####
+
+pisatower = {
+	start = 115
+	date = 1372.01.01 #W
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 1 #2
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		OR  = {
+			culture_group = latin
+			culture = roman
+		}
+		has_owner_accepted_culture = yes
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		OR  = {
+			culture_group = latin
+			culture = roman
+		}
+		has_owner_accepted_culture = yes
+	}
+	can_upgrade_trigger = {
+		OR  = {
+			culture_group = latin
+			culture = roman
+		}
+		has_owner_accepted_culture = yes
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { }
+		area_modifier = { 
+			local_governing_cost = -0.25
+		}
+		region_modifier = { }
+		country_modifiers = {
+			institution_spread_from_true_faith = 0.1
+		}
+		on_upgraded = { 
+			owner = {
+				define_advisor = {
+					type = natural_scientist
+					skill = 2
+					religion = root
+					culture = root
+					cost_multiplier = 0.66
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = { 
+			local_governing_cost = -0.5
+		}
+		region_modifier = { }
+		country_modifiers = {
+			institution_spread_from_true_faith = 0.25
+		}
+		on_upgraded = {
+			owner = {
+				define_advisor = {
+					type = natural_scientist
+					skill = 3
+					religion = root
+					culture = root
+					cost_multiplier = 0.5
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { 
+			institution_growth = 3
+		}
+		area_modifier = { 
+			local_governing_cost = -0.75
+		}
+		region_modifier = { }
+		country_modifiers = {
+			institution_spread_from_true_faith = 0.33
+		}
+		on_upgraded = {
+			owner = {
+				define_advisor = {
+					type = natural_scientist
+					skill = 3
+					religion = root
+					culture = root
+					cost_multiplier = 0.25
+				}
+			}
+		}
+	}
+}
+
+colosseum = {
+	# province it starts in
+	start = 118
+	
+	# date built in real life (so anything built during game time will be there if you start a game after that date)
+	date = 80.01.01 
+	
+	#time to build
+	time = {
+		months = 0
+	}
+	
+	#how much to build one
+	build_cost = 0
+	
+	#can we move it?
+	can_be_moved = no
+	
+	#time to move the project one unit of distance, in days
+	move_days_per_unit_distance = 10
+	
+	#tier that the project starts at when first placed in the game (be that at game start or when built by a country as the game progresses)
+	starting_tier = 1 #2
+	
+	#project type
+	type = monument
+
+	#can we build it?
+	build_trigger = {
+		#anyone
+	}
+
+	#what to do when it's built
+	on_built = {
+		show_ambient_object = colosseum
+	}
+	
+	#what to do when it's destroyed
+	on_destroyed = {
+		hide_ambient_object = colosseum
+	}
+
+	#can our country use it?
+	can_use_modifiers_trigger = {
+		#anyone
+	}
+
+	#can our country upgrade it?
+	can_upgrade_trigger = {
+		#anyone
+	}
+
+	#can our country keep it or is it destroyed when we get hold of it?
+	keep_trigger = {
+	}
+
+	#tier data
+	tier_0 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 0
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 0
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 120
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			local_unrest = -1
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			war_exhaustion_cost = -0.1
+			prestige_from_land = 0.25
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 240
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 2500
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+			local_unrest = -1
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			war_exhaustion_cost = -0.2
+			prestige_from_land = 0.5
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 480
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+			local_unrest = -2
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			war_exhaustion_cost = -0.3
+			prestige_from_land = 0.75
+			army_tradition_from_battle = 0.25
+			can_claim_states = yes
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+}
+
+
+brusselscityhall = {
+	# province it starts in
+	start = 92
+	
+	# date built in real life (so anything built during game time will be there if you start a game after that date)
+	date = 1401.01.01 #W 1455 finished
+	
+	#time to build
+	time = {
+		months = 0
+	}
+	
+	#how much to build one
+	build_cost = 0
+	
+	#can we move it?
+	can_be_moved = no
+	
+	#time to move the project one unit of distance, in days
+	move_days_per_unit_distance = 10
+	
+	#tier that the project starts at when first placed in the game (be that at game start or when built by a country as the game progresses)
+	starting_tier = 1
+	
+	#project type
+	type = monument
+
+	#can we build it?
+	build_trigger = {
+		#anyone
+	}
+
+	#what to do when it's built
+	on_built = {
+	}
+	
+	#what to do when it's destroyed
+	on_destroyed = {
+	}
+
+	#can our country use it?
+	can_use_modifiers_trigger = {
+		#anyone
+	}
+
+	#can our country upgrade it?
+	can_upgrade_trigger = {
+		#anyone
+	}
+
+	#can our country keep it or is it destroyed when we get hold of it?
+	keep_trigger = {
+	}
+
+	#tier data
+	tier_0 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 0
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 0
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 120
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		province_modifiers = {
+			trade_value = 1
+			local_governing_cost = -0.25
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			reform_progress_growth = 0.1
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 240
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 2500
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			trade_value = 2
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+			local_governing_cost = -0.25
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			reform_progress_growth = 0.15
+			advisor_pool = 1
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 480
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			trade_value = 3
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+			local_governing_cost = -0.5
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			reform_progress_growth = 0.2
+			advisor_pool = 1
+			administrative_efficiency = 0.05
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+}
+
+globe_theatre = {
+	# province it starts in
+	start = 236		#London
+	
+	# date built in real life (so anything built during game time will be there if you start a game after that date)
+	date = 1444.01.01	#built 1559.01.01, insignificant tier is used to represent unconstructed or destroyed
+	
+	#time to build
+	time = {
+		months = 0
+	}
+	
+	#how much to build one
+	build_cost = 0
+	
+	#can we move it?
+	can_be_moved = yes #wooden #no
+	
+	#time to move the project one unit of distance, in days
+	move_days_per_unit_distance = 10
+	
+	#tier that the project starts at when first placed in the game (be that at game start or when built by a country as the game progresses)
+	starting_tier = 0
+	
+	#project type
+	type = monument
+
+	#can we build it?
+	build_trigger = {		
+		or = {
+			culture_group = british #famous for Shakespeare plays, this limitation represents that
+			culture_group = celts
+		}
+		province_is_or_accepts_culture = yes
+	}
+
+	#what to do when it's built
+	on_built = {
+	}
+	
+	#what to do when it's destroyed
+	on_destroyed = {
+	}
+
+	#can our country use it?
+	can_use_modifiers_trigger = {		#famous for Shakespeare plays, this limitation represents that
+		or = {
+			culture_group = british #famous for Shakespeare plays, this limitation represents that
+			culture_group = celts
+		}
+		province_is_or_accepts_culture = yes
+	}
+
+	#can our country upgrade it?
+	can_upgrade_trigger = {		#famous for Shakespeare plays, this limitation represents that
+		or = {
+			culture_group = british #famous for Shakespeare plays, this limitation represents that
+			culture_group = celts
+		}
+		province_is_or_accepts_culture = yes
+	}
+
+	#can our country keep it or is it destroyed when we get hold of it?
+	keep_trigger = {
+	}
+
+	#tier data
+	tier_0 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 0
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 0
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 120
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			local_tax_modifier = 0.1
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+			local_unrest = -1
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			relation_with_same_culture_group = 5
+			global_tax_modifier = 0.05
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 240
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 2500
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			local_tax_modifier = 0.25
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+			local_unrest = -2
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			relation_with_same_culture_group = 10
+			global_tax_modifier = 0.1
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 480
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			local_tax_modifier = 0.5
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+			local_unrest = -3
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			relation_with_same_culture_group = 15
+			years_of_nationalism = -5
+			global_tax_modifier = 0.15
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+}
+
+mont_saint_michel = {
+	start = 4385 #Cotentin/Cherbourg in Normandy.
+	date = 01.01.709
+	time = { months = 0 }
+	build_cost = 1000
+	can_be_moved = no
+	starting_tier = 1
+	type = monument
+	on_built = { }
+	on_destroyed = { }
+	build_trigger = {
+		OR = {
+			culture_group = french
+			culture_group = british
+		}
+		province_is_or_accepts_culture = yes
+	}
+	can_use_modifiers_trigger = {
+		OR = {
+			culture_group = french
+			culture_group = british
+		}
+		province_is_or_accepts_culture = yes
+	}
+	can_upgrade_trigger = {
+		OR = {
+			culture_group = french
+			culture_group = british
+		}
+		province_is_or_accepts_culture = yes
+	}
+	keep_trigger = { }
+
+ 	tier_0 = {
+ 		upgrade_time = { months = 0 }
+ 		cost_to_upgrade = { factor = 0 }
+ 		province_modifiers = { }
+ 		area_modifier = { }
+ 		country_modifiers = { }
+ 		on_upgraded = { }
+ 	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = {
+			naval_attrition = -0.1
+			church_influence_modifier = 0.05
+		}
+		on_upgraded = {
+			owner = {
+				add_estate_loyalty = {
+					estate = estate_church
+					loyalty = 5
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = {
+			naval_morale = 0.05
+			naval_attrition = -0.15
+			church_influence_modifier = 0.05
+		}
+		on_upgraded = {
+			owner = {
+				add_estate_loyalty = {
+					estate = estate_church
+					loyalty = 10
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = {
+			naval_morale = 0.1
+			naval_attrition = -0.2
+			church_influence_modifier = 0.1
+		}
+		on_upgraded = {
+			owner = {
+				add_estate_loyalty = {
+					estate = estate_church
+					loyalty = 15
+				}
+			}
+		}
+	}
+}
+
+sanktgallabbey = {
+	start = 1870
+	date = 612.01.01 #W
+	time = { months = 0	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 1
+	type = monument
+
+	build_trigger = {
+	}
+
+	on_built = {
+	}
+
+	on_destroyed = {
+	}
+
+	can_use_modifiers_trigger = {
+	}
+
+	can_upgrade_trigger = {
+	}
+
+	keep_trigger = {
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			local_defensiveness = 0.15
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+			monthly_fervor_increase = 0.25
+			papal_influence = 0.5
+			church_power_modifier = 0.05
+			mercenary_discipline = 0.05
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			local_defensiveness = 0.25
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+			monthly_fervor_increase = 0.5
+			papal_influence = 1
+			church_power_modifier = 0.1
+			mercenary_discipline = 0.05
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			local_defensiveness = 0.5
+		}
+		area_modifier = {
+			local_manpower_modifier = 0.15
+		}
+		country_modifiers = {
+			monthly_fervor_increase = 1
+			papal_influence = 2
+			church_power_modifier = 0.15
+			mercenary_discipline = 0.05
+		}
+		on_upgraded = {
+		}
+	}
+}
+
+casadecontratacion = {
+	# province it starts in
+	start = 224
+	
+	# date built in real life (so anything built during game time will be there if you start a game after that date)
+	date = 1444.11.10 #1524 #W
+	
+	#time to build
+	time = {
+		months = 0
+	}
+	
+	#how much to build one
+	build_cost = 0
+	
+	#can we move it?
+	can_be_moved = no
+	
+	#time to move the project one unit of distance, in days
+	move_days_per_unit_distance = 10
+	
+	#tier that the project starts at when first placed in the game (be that at game start or when built by a country as the game progresses)
+	starting_tier = 0
+	
+	#project type
+	type = monument
+
+	#can we build it?
+	build_trigger = {
+		#anyone
+	}
+
+	#what to do when it's built
+	on_built = {
+	}
+	
+	#what to do when it's destroyed
+	on_destroyed = {
+	}
+
+	#can our country use it?
+	can_use_modifiers_trigger = {
+		#anyone
+	}
+
+	#can our country upgrade it?
+	can_upgrade_trigger = {
+		#anyone
+	}
+
+	#can our country keep it or is it destroyed when we get hold of it?
+	keep_trigger = {
+	}
+
+	#tier data
+	tier_0 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 0
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 0
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 120
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			province_trade_power_modifier = 0.15
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			trade_range_modifier = 0.1
+			treasure_fleet_income = 0.1
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+			owner = {
+				add_mercantilism_or_monarch_power = { amount = 1 }
+			}
+		}
+	}
+
+	tier_2 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 240
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 2500
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			province_trade_power_modifier = 0.25
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			trade_range_modifier = 0.25
+			treasure_fleet_income = 0.15
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+			owner = {
+				add_mercantilism_or_monarch_power = { amount = 3 }
+			}
+		}
+	}
+
+	tier_3 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 480
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			province_trade_power_modifier = 0.5
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			trade_range_modifier = 0.33
+			treasure_fleet_income = 0.2
+			free_maintenance_on_expl_conq = yes
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+			owner = {
+				add_mercantilism_or_monarch_power = { amount = 6 }
+			}
+		}
+	}
+}
+
+
+heidelbergcastle = {
+	# province it starts in
+	start = 77
+	
+	# date built in real life (so anything built during game time will be there if you start a game after that date)
+	date = 1225.01.01 #W
+	
+	#time to build
+	time = {
+		months = 0
+	}
+	
+	#how much to build one
+	build_cost = 0
+	
+	#can we move it?
+	can_be_moved = no
+	
+	#time to move the project one unit of distance, in days
+	move_days_per_unit_distance = 10
+	
+	#tier that the project starts at when first placed in the game (be that at game start or when built by a country as the game progresses)
+	starting_tier = 1
+	
+	#project type
+	type = monument
+
+	#can we build it?
+	build_trigger = {
+		#anyone
+	}
+
+	#what to do when it's built
+	on_built = {
+	}
+	
+	#what to do when it's destroyed
+	on_destroyed = {
+	}
+
+	#can our country use it?
+	can_use_modifiers_trigger = {
+		#anyone
+	}
+
+	#can our country upgrade it?
+	can_upgrade_trigger = {
+		#anyone
+	}
+
+	#can our country keep it or is it destroyed when we get hold of it?
+	keep_trigger = {
+	}
+
+	#tier data
+	tier_0 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 0
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 0
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 120
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			local_defensiveness = 0.15
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			diplomatic_upkeep = 1
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 240
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			local_defensiveness = 0.25
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			diplomatic_upkeep = 1
+			diplomatic_reputation = 1
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 480
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			local_garrison_size = 0.25
+			local_defensiveness = 0.33
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			diplomatic_upkeep = 2
+			diplomatic_reputation = 2
+			country_diplomatic_power = 1
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+}
+
+
+arcdetriomphe = {
+	# province it starts in
+	start = 183
+	
+	# date built in real life (so anything built during game time will be there if you start a game after that date)
+	date = 1444.11.10 #1836.07.29
+	
+	#time to build
+	time = {
+		months = 0
+	}
+	
+	#how much to build one
+	build_cost = 0
+	
+	#can we move it?
+	can_be_moved = no
+	
+	#time to move the project one unit of distance, in days
+	move_days_per_unit_distance = 10
+	
+	#tier that the project starts at when first placed in the game (be that at game start or when built by a country as the game progresses)
+	starting_tier = 0
+	
+	#project type
+	type = monument
+
+	#can we build it?
+	build_trigger = {
+		owner = {
+			is_revolutionary = yes
+		}
+	}
+
+	#what to do when it's built
+	on_built = {
+	}
+	
+	#what to do when it's destroyed
+	on_destroyed = {
+	}
+
+	#can our country use it?
+	can_use_modifiers_trigger = {
+		owner = {
+			is_revolutionary = yes
+		}
+	}
+
+	#can our country upgrade it?
+	can_upgrade_trigger = {
+		owner = {
+			is_revolutionary = yes
+		}
+	}
+
+	#can our country keep it or is it destroyed when we get hold of it?
+	keep_trigger = {
+	}
+
+	#tier data
+	tier_0 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 0
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 0
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 120
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			max_revolutionary_zeal = 5
+			yearly_revolutionary_zeal = 0.05
+			special_unit_forcelimit = 0.05		
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 240
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 2500
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			max_revolutionary_zeal = 10
+			yearly_revolutionary_zeal = 0.1
+			special_unit_forcelimit = 0.1
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 480
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			max_revolutionary_zeal = 15
+			yearly_revolutionary_zeal = 0.15
+			special_unit_forcelimit = 0.15
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+}
+
+ME_aula_magna = {
+	start = 92
+	date = 1444.01.01
+	time = { months = 0 }
+	build_cost = 0
+	can_be_moved = no
+	starting_tier = 0 #Not yet constructed
+	type = monument
+	build_trigger = { 
+		OR = {
+			culture = dutch
+			culture = flemish
+			culture = wallonian
+			culture = frisian
+		}
+		has_owner_accepted_culture = yes
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		OR = {
+			culture = dutch
+			culture = flemish
+			culture = wallonian
+			culture = frisian
+		}
+		has_owner_accepted_culture = yes
+	}
+	can_upgrade_trigger = {
+		OR = {
+			culture = dutch
+			culture = flemish
+			culture = wallonian
+			culture = frisian
+		}
+		has_owner_accepted_culture = yes
+	}
+	keep_trigger = { 
+	}
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+
+		province_modifiers = {
+			
+		}
+		
+		area_modifier = { 
+		}
+		country_modifiers = {
+		}
+
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		
+		area_modifier = { 
+		}
+		country_modifiers = {
+			global_autonomy = -0.03
+		}
+		
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					is_part_of_hre = yes
+				}
+			}
+			modifier = {
+				imperial_authority = 0.05
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		
+		area_modifier = { 
+		}
+		country_modifiers = {
+			global_autonomy = -0.05
+			advisor_pool = 1
+		}
+		
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					is_part_of_hre = yes
+				}
+			}
+			modifier = {
+				imperial_authority = 0.1
+				monthly_reform_progress = 0.1
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+
+		province_modifiers = {
+			
+		}
+		
+		area_modifier = { 
+		}
+		country_modifiers = {
+			global_autonomy = -0.07
+			advisor_pool = 1
+			free_dip_policy = 1
+			national_focus_years = -5
+		}
+		
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					is_part_of_hre = yes
+				}
+			}
+			modifier = {
+				imperial_authority = 0.15
+				monthly_reform_progress = 0.2
+			}
+		}
+	}
+}
+
+ME_aachen_palace = {
+	start = 1878
+	date = 795.01.01
+	time = { months = 60 }
+	build_cost = 0
+	can_be_moved = no
+	starting_tier = 1 #that's correct
+	type = monument
+	build_trigger = { 
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+	}
+	can_upgrade_trigger = {
+	}
+	keep_trigger = { 
+	}
+	tier_0 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = {
+			
+		}
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_tax_modifier = 0.25
+		}
+		area_modifier = { }
+		country_modifiers = {
+			reasons_to_elect = 5
+		}
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					is_emperor = yes
+				}
+			}
+			modifier = {
+				diplomatic_reputation = 1
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			tax_income = 12
+			local_tax_modifier = 0.5
+		}
+		area_modifier = { }
+		country_modifiers = {
+			max_absolutism_effect = 0.05
+			reasons_to_elect = 10
+		}
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					is_emperor = yes
+				}
+			}
+			modifier = {
+				max_absolutism = 5
+				diplomatic_reputation = 1
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			tax_income = 24
+			local_tax_modifier = 0.75
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			max_absolutism_effect = 0.1
+			reasons_to_elect = 15
+			governing_capacity = 100
+		}
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					is_emperor = yes
+				}
+			}
+			modifier = {
+				max_absolutism = 10
+				diplomatic_reputation = 1
+				culture_conversion_cost = -0.15
+			}
+		}
+	}
+}
+
+pena_palace = {
+	start = 227 #Lisboa/Lisbon.
+	date = 01.01.1854
+	time = { months = 120 }
+	build_cost = 1000
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = { }
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = { }
+	can_upgrade_trigger = { }
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_defensiveness = 0.15
+		}
+		area_modifier = { }
+		country_modifiers = {
+			nobles_loyalty_modifier = 0.05
+			max_absolutism = 5
+		}
+		on_upgraded = {
+			owner = {
+				add_legitimacy_or_mil_power = { amount = 10 }
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			local_defensiveness = 0.25
+		}
+		area_modifier = { }
+		country_modifiers = {
+			nobles_loyalty_modifier = 0.1
+			max_absolutism = 10
+		}
+		on_upgraded = {
+			owner = {
+				add_legitimacy_or_mil_power = { amount = 15 }
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			local_defensiveness = 0.33
+		}
+		area_modifier = { }
+		country_modifiers = {
+			nobles_loyalty_modifier = 0.15
+			max_absolutism = 15
+			country_admin_power = 1
+		}
+		on_upgraded = {
+			owner = {
+				add_legitimacy_or_mil_power = { amount = 20 }
+			}
+		}
+	}
+}
+
+castel_monte = {
+	start = 1933 #Bari in Apulia.
+	date = 01.01.1240
+	time = { months = 0	}
+	build_cost = 600
+	can_be_moved = no
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		OR = {
+			culture = roman
+			culture_group = latin
+			culture_group = byzantine
+		}
+		province_is_or_accepts_culture = yes
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		OR = {
+			culture = roman
+			culture_group = latin
+			culture_group = byzantine
+		}
+		province_is_or_accepts_culture = yes
+	}
+	can_upgrade_trigger = {
+		OR = {
+			culture = roman
+			culture_group = latin
+			culture_group = byzantine
+		}
+		province_is_or_accepts_culture = yes
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { }
+		area_modifier = {
+			local_defensiveness = 0.1
+		}
+		region_modifier = { }
+		country_modifiers = {
+			cavalry_shock = 0.1
+			nobles_loyalty_modifier = 0.05
+			imperial_authority = 0.05
+		}
+		on_upgraded = {
+			add_or_upgrade_manpower_building = yes
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = {
+			local_defensiveness = 0.25
+		}
+		region_modifier = { }
+		country_modifiers = {
+			cavalry_shock = 0.15
+			nobles_loyalty_modifier = 0.1
+			imperial_authority = 0.05
+		}
+		on_upgraded = {
+			add_or_upgrade_manpower_building = yes
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = {
+			local_defensiveness = 0.33
+		}
+		region_modifier = { }
+		country_modifiers = {
+			cavalry_shock = 0.2
+			nobles_loyalty_modifier = 0.1
+			imperial_authority = 0.1
+		}
+		on_upgraded = {
+			add_or_upgrade_manpower_building = yes
+		}
+	}
+}
+
+rock_of_cashel = {
+	start = 4377 #Ormond in Munster, Ireland.
+	date = 01.01.461
+	time = { months = 0 }
+	build_cost = 0
+	can_be_moved = no
+	starting_tier = 2
+	type = monument
+	on_built = { }
+	on_destroyed = { }
+	build_trigger = {
+		has_owner_accepted_culture = yes
+		OR = {
+			culture_group = celts
+			culture_group = british
+		}
+	}
+	can_use_modifiers_trigger = {
+		has_owner_accepted_culture = yes
+		OR = {
+			culture_group = celts
+			culture_group = british
+		}
+	}
+	can_upgrade_trigger = {
+		has_owner_accepted_culture = yes
+		OR = {
+			culture_group = celts
+			culture_group = british
+		}
+	}
+	keep_trigger = { }
+
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_defensiveness = 0.25
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			same_culture_advisor_cost = -0.05
+			army_tradition_from_battle = 0.25
+		}
+		on_upgraded = { }
+	}
+
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			local_defensiveness = 0.33
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			same_culture_advisor_cost = -0.1
+			army_tradition_from_battle = 0.5
+		}
+		on_upgraded = { }
+	}
+
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			local_defensiveness = 0.5
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			same_culture_advisor_cost = -0.15
+			army_tradition_from_battle = 1
+		}
+		on_upgraded = { }
+	}
+}
+
+chateau_gaillard = {
+	start = 167 #Caux, Normandy.
+	date = 01.01.1196
+	time = { months = 0 }
+	build_cost = 1000
+	can_be_moved = no
+	starting_tier = 1
+	type = monument
+	on_built = { }
+	on_destroyed = { }
+	build_trigger = {
+		OR = {
+			culture_group = british
+			culture = normand
+		}
+		province_is_or_accepts_culture = yes
+	}
+	can_use_modifiers_trigger = {
+		OR = {
+			culture_group = british
+			culture = normand
+		}
+		province_is_or_accepts_culture = yes
+	}
+	can_upgrade_trigger = {
+		OR = {
+			culture_group = british
+			culture = normand
+		}
+		province_is_or_accepts_culture = yes
+	}
+	keep_trigger = { }
+
+ 	tier_0 = {
+ 		upgrade_time = { months = 0 }
+ 		cost_to_upgrade = { factor = 0 }
+ 		province_modifiers = { }
+ 		area_modifier = { }
+ 		country_modifiers = { }
+ 		on_upgraded = { }
+ 	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { }
+		area_modifier = {
+			local_manpower_modifier = 0.05
+		}
+		country_modifiers = {
+			land_maintenance_modifier = -0.05
+			rebel_support_efficiency = 0.25
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = {
+			local_manpower_modifier = 0.15
+		}
+		country_modifiers = {
+			land_maintenance_modifier = -0.05
+			rebel_support_efficiency = 0.33
+			siege_ability = 0.05
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = {
+			local_manpower_modifier = 0.25
+		}
+		country_modifiers = {
+			land_maintenance_modifier = -0.1
+			rebel_support_efficiency = 0.5
+			siege_ability = 0.1
+		}
+		on_upgraded = {
+			owner = {
+				change_ruler_stat = {
+					type = mil
+					amount = 1
+				}
+			}
+		}
+	}
+}
+
+speyer = { #Kaiserdom.
+	start = 77 #Heidelberg.
+	date = 01.01.1025
+	time = { months = 0 }
+	build_cost = 900
+	can_be_moved = no
+	starting_tier = 1
+	type = monument
+	on_built = { }
+	on_destroyed = { }
+	build_trigger = {
+		province_is_or_accepts_religion = {
+			religion = catholic
+		}
+	}
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_religion = {
+			religion = catholic
+		}
+	}
+	can_upgrade_trigger = {
+		province_is_or_accepts_religion = {
+			religion = catholic
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = { }
+		on_upgraded = {	}
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = {
+			improve_relation_modifier = 0.15
+			papal_influence = 0.5
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = {
+			improve_relation_modifier = 0.25
+			imperial_authority = 0.05
+			papal_influence = 1
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = {
+			improve_relation_modifier = 0.33
+			imperial_authority = 0.1
+			papal_influence = 2
+		}
+		on_upgraded = { }
+	}
+}
+
+chambord = {
+	start = 4776 #Blois in Orleanais/Orleans.
+	date = 01.01.1547
+	time = { months = 120 }
+	build_cost = 1000
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = { 
+		culture_group = french
+		province_is_or_accepts_culture = yes
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		culture_group = french
+		province_is_or_accepts_culture = yes
+	}
+	can_upgrade_trigger = {
+		culture_group = french
+		province_is_or_accepts_culture = yes
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = {
+			yearly_absolutism = 0.25
+			reduced_liberty_desire_on_same_continent = 5
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = {
+			yearly_absolutism = 0.25
+			reduced_liberty_desire_on_same_continent = 10
+			nobles_privilege_slots = 1
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = {
+			yearly_absolutism = 0.5
+			reduced_liberty_desire_on_same_continent = 15
+			nobles_privilege_slots = 1
+			max_absolutism = 5
+		}
+		on_upgraded = {
+			owner = {
+				change_ruler_stat = {
+					type = adm
+					amount = 1
+				}
+			}
+		}
+	}
+}
+
+castelvecchio = {
+	start = 108 #Verona.
+	date = 01.01.1354 
+	time = { months = 0 }
+	build_cost = 600
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = { }
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = { }
+	can_upgrade_trigger = { }
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { 
+			local_development_cost = -0.1
+		}
+		area_modifier = {
+			local_defensiveness = 0.1
+		}
+		country_modifiers = {
+			possible_condottieri = 0.33
+			mil_advisor_cost = -0.05
+		}
+		on_upgraded = {
+			owner = {
+				if = {
+					limit = { has_estate = estate_nobles }
+					add_estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 5
+					}
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { 
+			local_development_cost = -0.15
+		}
+		area_modifier = {
+			local_defensiveness = 0.15
+		}
+		country_modifiers = {
+			possible_condottieri = 0.66
+			mil_advisor_cost = -0.15
+		}
+		on_upgraded = {
+			owner = {
+				if = {
+					limit = { has_estate = estate_nobles }
+					add_estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 10
+					}
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { 
+			local_development_cost = -0.2
+		}
+		area_modifier = {
+			local_defensiveness = 0.2
+		}
+		country_modifiers = {
+			possible_condottieri = 1
+			mil_advisor_cost = -0.15
+		}
+		on_upgraded = {
+			owner = {
+				if = {
+					limit = { has_estate = estate_nobles }
+					add_estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 15
+					}
+				}
+			}
+		}
+	}
+}
+
+batalha_monastery = {
+	start = 1851 #Coimbra.
+	date = 01.01.1387
+	time = { months = 0 }
+	build_cost = 1000
+	can_be_moved = no
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_is_or_accepts_religion = {
+			religion = catholic
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_religion = {
+			religion = catholic
+		}
+	}
+	can_upgrade_trigger = {
+		province_is_or_accepts_religion = {
+			religion = catholic
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_tax_modifier = 0.25
+		}
+		area_modifier = { }
+		country_modifiers = {
+			papal_influence = 0.5
+			army_tradition = 0.25
+		}
+		on_upgraded = {
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			local_tax_modifier = 0.5
+		}
+		area_modifier = { }
+		country_modifiers = {
+			establish_order_cost = -0.1
+			papal_influence = 1
+			army_tradition = 0.5
+		}
+		on_upgraded = {
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			local_tax_modifier = 0.75
+		}
+		area_modifier = { }
+		country_modifiers = {
+			establish_order_cost = -0.15
+			papal_influence = 2
+			army_tradition = 1
+		}
+		on_upgraded = {
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 20
+			}
+		}
+	}
+}
