@@ -1,8 +1,8 @@
 #1747 - Caceres
 
-owner = CAS	#Enrique III of Castille
-controller = CAS
-add_core = CAS
+owner = MOR	#Enrique III of Castille
+controller = MOR
+add_core = MOR
 culture = leonese
 religion = catholic
 hre = no
