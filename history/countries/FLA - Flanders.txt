@@ -6,41 +6,42 @@ religion = norse_pagan
 primary_culture = flemish
 capital = 90
 elector = yes
+female = random
 monarch_names = {
-	# Expedition 33
-	"Maelle #1" = 40,
-	"Alicia #1" = 40,
-	"Gustave #0" = 40,
-	"Lune #1" = 40,
-	"Sciel #1" = 40,
-	"Aline #1" = 0,
-	"Clea #1" = 15,
-	"Esquie #0" = 0,
-	"Fran�ois #0" = 0,
-	"Renoir #0" = 15,
-	"Verso #1" = 15,
+    # Expedition 33
+    "Maelle #-40"
+    "Alicia #-40"
+    "Gustave #40"
+    "Lune #-40"
+    "Sciel #-40"
+    "Aline #-0"
+    "Clea #-15"
+    "Esquie #-0"
+    "Francois #0"
+    "Renoir #15"
+    "Verso #15"
 
-	# Arcane
-	"Vi #1" = 15,
-	"Jinx #1" = 40,
-	"Powder #1" = 40,
-	"Silco #0" = 15,
-	"Mel #1" = 0,
+    # Arcane
+    "Vi #-15"
+    "Jinx #-40"
+    "Powder #-40"
+    "Silco #15"
+    "Mel #-0"
 
-	# Murder Drones
-	"Uzi #1" = 40,
-	"N #0" = 15,
-	"V #1" = 0,
-	"Cyn #1" = 40,
+    # Murder Drones
+    "Uzi #-40"
+    "N #15"
+    "V #-0"
+    "Cyn #-40"
 
-	# Lackadaisy
-	"Rocky #0" = 15,
-	"Mordecai #0" = 0,
-	"Ivy #1" = 0,
+    # Lackadaisy
+    "Rocky #15"
+    "Mordecai #0"
+    "Ivy #-0"
 
-	# Game of Thrones
-	"Arya #1" = 15,
-	"Melisandre #1" = 0,
+    # Game of Thrones
+    "Arya #-15"
+    "Melisandre #-0"
 }
 
 1444.11.11= {
