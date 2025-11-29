@@ -1,5 +1,5 @@
-owner = MAR
-controller = MAR
+owner = KRK
+controller = KRK
 capital = "Mayuragiri"
 is_city = yes
 culture = marathi
@@ -8,7 +8,7 @@ trade_goods = grain
 base_tax = 5
 base_production = 4
 base_manpower = 4
-add_core = MAR
+add_core = KRK
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

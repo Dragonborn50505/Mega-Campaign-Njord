@@ -1,5 +1,5 @@
-owner = MER
-controller = MER
+owner = PUN
+controller = PUN
 capital = "Dungarpur"
 is_city = yes
 culture = rajput
@@ -9,6 +9,7 @@ base_tax = 5
 base_production = 3
 base_manpower = 3
 add_core = MER
+add_core = PUN
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

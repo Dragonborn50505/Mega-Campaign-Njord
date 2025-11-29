@@ -1,5 +1,5 @@
-owner = PUN
-controller = PUN
+owner = MUL
+controller = MUL
 capital = "Sialkot"
 is_city = yes
 culture = panjabi
@@ -8,7 +8,8 @@ trade_goods = paper
 base_tax = 6
 base_production = 5
 base_manpower = 5
-add_core = PUN
+add_core = MUL
+add_permanent_claim = PUN
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

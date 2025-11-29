@@ -1,5 +1,5 @@
-owner = Z44
-controller = Z44
+owner = OMA
+controller = OMA
 capital = "Kungirot"
 is_city = yes
 culture = tajik
@@ -8,7 +8,7 @@ trade_goods = livestock
 base_tax = 6
 base_production = 4
 base_manpower = 6
-add_core = Z44
+add_core = OMA
 add_core = TRS
 discovered_by = eastern
 discovered_by = muslim

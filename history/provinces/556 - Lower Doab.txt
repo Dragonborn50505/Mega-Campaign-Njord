@@ -1,5 +1,5 @@
-owner = ODH
-controller = ODH
+owner = PUN
+controller = PUN
 capital = "Allahabad"
 is_city = yes
 culture = avadhi
@@ -10,7 +10,8 @@ base_production = 3
 base_manpower = 2
 extra_cost = 16
 center_of_trade = 2
-add_core = ODH
+add_core = PUN
+add_permanent_claim = ODH
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

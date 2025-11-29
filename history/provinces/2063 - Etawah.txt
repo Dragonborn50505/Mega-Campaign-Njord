@@ -1,5 +1,5 @@
-owner = ODH
-controller = ODH
+owner = PUN
+controller = PUN
 capital = "Etawah"
 is_city = yes
 culture = avadhi
@@ -8,7 +8,7 @@ trade_goods = dyes
 base_tax = 5
 base_production = 4
 base_manpower = 4
-add_core = ODH
+add_core = PUN
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

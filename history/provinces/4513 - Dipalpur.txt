@@ -1,5 +1,5 @@
-owner = PUN
-controller = PUN
+owner = MUL
+controller = MUL
 capital = "Dipalpur"
 is_city = yes
 culture = panjabi
@@ -9,7 +9,8 @@ fort_15th = yes
 base_tax = 6
 base_production = 5
 base_manpower = 6
-add_core = PUN
+add_core = MUL
+add_permanent_claim = PUN
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

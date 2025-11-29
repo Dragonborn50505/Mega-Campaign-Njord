@@ -1,15 +1,15 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #Wolfsburg
-add_core = Z45
-owner = Z45
-controller = Z45
+add_core = BYZ
+owner = BYZ
+controller = BYZ
 culture = lower_saxon
-religion = catholic
+religion = orthodox
 hre = yes
-base_tax = 3
-base_production = 3
+base_tax = 1
+base_production = 1
 trade_goods = grain
-base_manpower = 2
+base_manpower = 1
 capital = "Wolfsburg"
 is_city = yes
 discovered_by = western

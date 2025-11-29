@@ -1,5 +1,5 @@
-owner = BND
-controller = BND
+owner = ODH
+controller = ODH
 capital = "Bandogarh"
 is_city = yes
 culture = vindhyan
@@ -9,6 +9,7 @@ base_tax = 1
 base_production = 3
 base_manpower = 2
 add_core = BND
+add_core = ODH
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

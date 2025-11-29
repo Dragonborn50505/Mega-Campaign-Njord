@@ -1,5 +1,5 @@
-owner = GUJ
-controller = GUJ
+owner = KRK
+controller = KRK
 capital = "Surat"
 is_city = yes
 culture = gujarati
@@ -11,6 +11,7 @@ base_manpower = 6
 extra_cost = 16
 center_of_trade = 2
 add_core = GUJ
+add_core = KRK
 discovered_by = chinese
 discovered_by = east_african
 discovered_by = indian

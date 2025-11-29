@@ -1,5 +1,5 @@
-owner = KLE
-controller = KLE
+owner = KOL
+controller = KOL
 capital = "Kleves"
 is_city = yes
 culture = flemish

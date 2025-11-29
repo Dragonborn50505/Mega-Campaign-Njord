@@ -1,5 +1,5 @@
-owner = PUN
-controller = PUN
+owner = GUG
+controller = GUG
 capital = "Malaun"
 is_city = yes
 culture = nepali
@@ -8,7 +8,7 @@ trade_goods = cotton
 base_tax = 4
 base_production = 6
 base_manpower = 2
-add_core = PUN
+add_core = GUG
 add_core = NPL
 discovered_by = chinese
 discovered_by = indian

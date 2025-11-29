@@ -1,5 +1,5 @@
-owner = DHU
-controller = DHU
+owner = GUG
+controller = GUG
 capital = "Jhansi"
 is_city = yes
 culture = dhundari
@@ -9,6 +9,7 @@ base_tax = 5
 base_production = 4
 base_manpower = 3
 add_core = DHU
+add_core = GUG
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

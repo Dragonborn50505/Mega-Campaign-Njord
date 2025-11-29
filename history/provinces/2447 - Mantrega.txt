@@ -1,5 +1,5 @@
-owner = Z0M
-controller = Z0M
+owner = IME
+controller = IME
 capital = "Matrega"
 is_city = yes
 culture = crimean
@@ -8,6 +8,7 @@ trade_goods = livestock
 base_tax = 1
 base_production = 1
 base_manpower = 1
+add_core = IME
 add_core = Z0M
 discovered_by = eastern
 discovered_by = muslim
