@@ -1,5 +1,5 @@
-owner = LIT
-controller = LIT
+owner = TEU
+controller = TEU
 capital = "Marienburg"
 is_city = yes
 culture = pruthenian
@@ -8,7 +8,7 @@ trade_goods = naval_supplies
 base_tax = 2
 base_production = 1
 base_manpower = 1
-add_core = LIT
+add_core = TEU
 add_core = PRT
 discovered_by = eastern
 discovered_by = muslim

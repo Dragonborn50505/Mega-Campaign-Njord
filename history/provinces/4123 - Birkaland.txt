@@ -1,5 +1,5 @@
-owner = NOR
-controller = NOR
+owner = FIN
+controller = FIN
 capital = "Messukylä"
 is_city = yes
 culture = swedish
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 3
 base_production = 1
 base_manpower = 1
-add_core = NOR
+add_core = FIN
 add_permanent_claim = FIN
 discovered_by = eastern
 discovered_by = western

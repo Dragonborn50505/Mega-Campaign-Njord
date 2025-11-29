@@ -1,5 +1,5 @@
-owner = VPS
-controller = VPS
+owner = EST
+controller = EST
 capital = "Fellin"
 is_city = yes
 culture = dynamic-russian_culture-culture-num1
@@ -8,6 +8,6 @@ trade_goods = livestock
 base_tax = 3
 base_production = 2
 base_manpower = 1
-add_core = VPS
+add_core = EST
 discovered_by = eastern
 discovered_by = western

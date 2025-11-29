@@ -1,6 +1,6 @@
-add_core = DAN
-owner = DAN
-controller = DAN
+add_core = Z2J
+owner = Z2J
+controller = Z2J
 culture = danish
 religion = catholic
 hre = no

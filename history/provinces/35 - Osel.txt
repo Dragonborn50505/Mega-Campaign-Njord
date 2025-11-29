@@ -1,5 +1,5 @@
-owner = VPS
-controller = VPS
+owner = EST
+controller = EST
 capital = "Arensburg"
 is_city = yes
 culture = estonian
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 2
 base_production = 1
 base_manpower = 1
-add_core = VPS
+add_core = EST
 add_permanent_claim = EST
 discovered_by = eastern
 discovered_by = western

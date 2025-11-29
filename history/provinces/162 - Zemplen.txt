@@ -1,5 +1,5 @@
-owner = Z59
-controller = Z59
+owner = Z7C
+controller = Z7C
 capital = "Kassa"
 is_city = yes
 culture = hungarian
@@ -11,7 +11,7 @@ base_production = 7
 base_manpower = 2
 extra_cost = 8
 add_core = HUN
-add_core = Z59
+add_core = Z7C
 add_core = Z5R
 discovered_by = AST
 discovered_by = CRI
