@@ -1,7 +1,7 @@
 #242 - Gwynedd
 
-owner = ENG
-controller = ENG
+owner = Z2A
+controller = Z2A
 culture = welsh
 religion = catholic
 hre = no
@@ -11,7 +11,7 @@ trade_goods = fish
 base_manpower = 1
 capital = "Llangefni"
 is_city = yes
-add_core = ENG
+add_core = Z2A
 add_core = WLS 
 discovered_by = western
 discovered_by = muslim

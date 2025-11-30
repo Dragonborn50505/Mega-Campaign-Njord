@@ -1,8 +1,8 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #Haute-Corse
-add_core = BYZ
-owner = BYZ
-controller = BYZ
+add_core = SAR
+owner = SAR
+controller = SAR
 culture = sardinian
 religion = catholic
 hre = yes

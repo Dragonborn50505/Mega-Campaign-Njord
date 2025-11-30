@@ -1,5 +1,5 @@
-owner = Z35
-controller = Z35
+owner = ALG
+controller = ALG
 capital = "Annaba"
 is_city = yes
 culture = algerian
@@ -8,7 +8,7 @@ trade_goods = naval_supplies
 base_tax = 4
 base_production = 3
 base_manpower = 2
-add_core = Z35
+add_core = ALG
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman

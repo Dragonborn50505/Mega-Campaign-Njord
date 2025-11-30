@@ -1,5 +1,5 @@
-owner = UTR
-controller = UTR
+owner = BRB
+controller = BRB
 capital = "Breda"
 is_city = yes
 culture = flemish
@@ -9,8 +9,7 @@ hre = yes
 base_tax = 2
 base_production = 4
 base_manpower = 4
-add_core = UTR
-add_core = Z6S
+add_core = BRB
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman

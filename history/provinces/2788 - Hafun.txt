@@ -1,5 +1,5 @@
-owner = ARB
-controller = ARB
+owner = YEM
+controller = YEM
 capital = "Hafun"
 is_city = yes
 culture = somali
@@ -8,8 +8,7 @@ trade_goods = incense
 base_tax = 2
 base_production = 1
 base_manpower = 2
-add_core = ADA
-add_core = ARB
+add_core = YEM
 discovered_by = east_african
 discovered_by = indian
 discovered_by = muslim

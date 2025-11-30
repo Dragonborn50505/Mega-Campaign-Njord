@@ -166,34 +166,11 @@ union=
 	end_date="1836.1.1"
 }
 
-union=
-{
-	first="NOR"
-	second="SWE"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
 
 union=
 {
 	first="Z3E"
 	second="Z0E"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="SHL"
-	second="Z45"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="SHL"
-	second="Z4S"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -232,14 +209,6 @@ union=
 
 union=
 {
-	first="AMG"
-	second="GUY"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
 	first="HAB"
 	second="Z5U"
 	start_date="1444.11.11"
@@ -266,22 +235,6 @@ union=
 {
 	first="NOL"
 	second="WSX"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="FKN"
-	second="BAV"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="FKN"
-	second="Z3X"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -376,8 +329,8 @@ union=
 
 union=
 {
-	first="MVA"
-	second="BOH"
+	first="BOH"
+	second="MVA"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -512,30 +465,6 @@ union=
 
 union=
 {
-	first="LEI"
-	second="MTH"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="LEI"
-	second="TRY"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="LEI"
-	second="Y1I"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
 	first="CAS"
 	second="Y19"
 	start_date="1444.11.11"
@@ -612,5 +541,21 @@ union=
 	second="MON"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
+}
+
+union = {
+	first = CAS
+	second = LON
+	#start_date = 1397.6.17
+	start_date = 1444.1.1
+	end_date = 1836.6.20
+}
+
+union = {
+	first = ESX
+	second = MRC
+	#start_date = 1397.6.17
+	start_date = 1444.1.1
+	end_date = 1836.6.20
 }
 

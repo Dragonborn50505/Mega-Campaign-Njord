@@ -1,5 +1,5 @@
-owner = ARB
-controller = ARB
+owner = YEM
+controller = YEM
 capital = "Salalah"
 is_city = yes
 culture = soqotri
@@ -8,8 +8,7 @@ trade_goods = incense
 base_tax = 1
 base_production = 3
 base_manpower = 1
-add_core = ARB
-add_core = MHR
+add_core = YEM
 add_permanent_claim = YEM
 discovered_by = east_african
 discovered_by = indian

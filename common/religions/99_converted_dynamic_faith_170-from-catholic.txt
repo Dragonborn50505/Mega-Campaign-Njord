@@ -19,9 +19,7 @@ christian = {
 	
 }
 		country_as_secondary = {
- 
-		warscore_cost_vs_other_religion = -0.25
-	
+ 	
 
 		land_attrition = -0.2
 	

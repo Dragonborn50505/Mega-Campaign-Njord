@@ -1,6 +1,7 @@
 
-owner = MAZ
-controller = MAZ
+owner = Z38
+controller = Z38
+add_core = Z38
 add_core = MAZ
 culture = polish
 religion = catholic

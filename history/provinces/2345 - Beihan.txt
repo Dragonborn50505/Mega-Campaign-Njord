@@ -1,5 +1,5 @@
-owner = ARB
-controller = ARB
+owner = YEM
+controller = YEM
 capital = "Beihan"
 is_city = yes
 culture = yemeni_culture
@@ -8,8 +8,7 @@ trade_goods = livestock
 base_tax = 7
 base_production = 4
 base_manpower = 6
-add_core = ADE
-add_core = ARB
+add_core = YEM
 add_permanent_claim = YEM
 discovered_by = east_african
 discovered_by = indian

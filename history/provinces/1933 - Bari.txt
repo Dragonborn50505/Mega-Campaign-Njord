@@ -1,5 +1,5 @@
-owner = DAL
-controller = DAL
+owner = TTS
+controller = TTS
 capital = "Bari"
 is_city = yes
 culture = neapolitan
@@ -9,8 +9,7 @@ hre = yes
 base_tax = 5
 base_production = 4
 base_manpower = 3
-add_core = DAL
-add_core = NAP
+add_core = TTS
 add_permanent_claim = TTS
 discovered_by = eastern
 discovered_by = muslim

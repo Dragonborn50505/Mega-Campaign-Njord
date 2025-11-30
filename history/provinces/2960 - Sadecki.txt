@@ -1,5 +1,5 @@
-owner = TIR
-controller = TIR
+owner = Z38
+controller = Z38
 capital = "Nowy Sacz"
 is_city = yes
 culture = polish
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 4
 base_production = 3
 base_manpower = 1
-add_core = POL
+add_core = Z38
 add_core = TIR
 add_permanent_claim = KRA
 discovered_by = AST

@@ -1,8 +1,8 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #Bardowick
-add_core = BYZ
-owner = BYZ
-controller = BYZ
+add_core = SHL
+owner = SHL
+controller = SHL
 culture = lower_saxon
 religion = catholic
 hre = no

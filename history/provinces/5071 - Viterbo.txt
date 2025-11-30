@@ -1,8 +1,8 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #Viterbo
-add_core = BYZ
-owner = BYZ
-controller = BYZ
+add_core = PAP
+owner = PAP
+controller = PAP
 culture = umbrian
 religion = catholic
 hre = no

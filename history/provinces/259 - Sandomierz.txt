@@ -1,5 +1,5 @@
-owner = SIL
-controller = SIL
+owner = Z38
+controller = Z38
 capital = "Sandomierz"
 is_city = yes
 culture = polish
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 2
 base_production = 1
 base_manpower = 5
-add_core = POL
+add_core = Z38
 add_core = SIL
 add_permanent_claim = KRA
 discovered_by = AST

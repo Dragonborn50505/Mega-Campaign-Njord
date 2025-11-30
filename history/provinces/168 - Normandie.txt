@@ -1,5 +1,5 @@
-owner = ESX
-controller = ESX
+owner = NRM
+controller = NRM
 capital = "Caen"
 is_city = yes
 culture = normand
@@ -9,8 +9,7 @@ hre = yes
 base_tax = 3
 base_production = 3
 base_manpower = 2
-add_core = ESX
-add_permanent_claim = NRM
+add_core = NRM
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman

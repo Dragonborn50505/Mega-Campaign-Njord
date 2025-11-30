@@ -1,5 +1,5 @@
-owner = LOI
-controller = LOI
+owner = SCO
+controller = SCO
 capital = "Inverness"
 is_city = yes
 culture = dynamic-scottish-culture-num1
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 1
 base_production = 1
 base_manpower = 2
-add_core = LOI
+add_core = SCO
 add_permanent_claim = HSC
 discovered_by = eastern
 discovered_by = muslim

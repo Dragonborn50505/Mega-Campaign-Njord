@@ -1,11 +1,11 @@
 government = monarchy
 add_government_reform = feudalism_reform
-government_rank = 1
+government_rank = 2
 technology_group = western
-religion = norse_pagan
-primary_culture = flemish
-capital = 4523
-add_accepted_culture = polish
+religion = catholic
+primary_culture = polish
+capital = 257
+elector = yes
 set_country_flag = ZZZ_generated_converter_nation
 1444.11.11= {
 	monarch = {

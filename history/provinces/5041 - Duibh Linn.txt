@@ -1,9 +1,8 @@
 ###Province = Duibh Linn
 
-owner = ENG
-controller = ENG
-add_core = ENG
-add_core = MTH
+owner = LEI
+controller = LEI
+add_core = LEI
 culture = irish
 religion = catholic
 hre = no
