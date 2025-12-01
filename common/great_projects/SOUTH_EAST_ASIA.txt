@@ -369,7 +369,9 @@ kasteel_batavia = {
 			local_defensiveness = 0.15
 			local_assault_fort_ability = -0.05
 		}
-		area_modifier = { }
+		area_modifier = { 
+			local_has_voc_indiamen = yes
+		}
 		region_modifier = { }
 		country_modifiers = {
 			has_voc_indiamen = yes
@@ -384,7 +386,9 @@ kasteel_batavia = {
 			local_defensiveness = 0.25
 			local_garrison_damage = 0.15
 		}
-		area_modifier = { }
+		area_modifier = { 
+			local_has_voc_indiamen = yes
+		}
 		region_modifier = { }
 		country_modifiers = {
 			has_voc_indiamen = yes
@@ -400,12 +404,14 @@ kasteel_batavia = {
 			local_defensiveness = 0.33
 			local_garrison_damage = 0.25
 		}
-		area_modifier = { }
+		area_modifier = { 
+			local_has_voc_indiamen = yes
+		}
 		region_modifier = { }
 		country_modifiers = {
 			has_voc_indiamen = yes
-			naval_forcelimit_modifier = 0.2
-			allowed_voc_indiamen_fraction = 0.2
+			naval_forcelimit_modifier = 0.15
+			allowed_voc_indiamen_fraction = 0.15
 		}
 		on_upgraded = { }
 	}
@@ -450,6 +456,7 @@ three_pagodas = {
 		upgrade_time = { months = 120 }
 		cost_to_upgrade = { factor = 1000 }
 		province_modifiers = {
+			tax_income = 12
 		}
 		area_modifier = { }
 		region_modifier = { }
@@ -462,7 +469,7 @@ three_pagodas = {
 		upgrade_time = { months = 240 }
 		cost_to_upgrade = { factor = 2500 }
 		province_modifiers = {
-			tax_income = 12
+			tax_income = 24
 		}
 		area_modifier = { }
 		region_modifier = { }
@@ -476,7 +483,7 @@ three_pagodas = {
 		upgrade_time = { months = 480 }
 		cost_to_upgrade = { factor = 5000 }
 		province_modifiers = {
-			tax_income = 24
+			tax_income = 48
 		}
 		area_modifier = { }
 		region_modifier = { }
@@ -539,12 +546,13 @@ blackdragonpool = {
 			ae_impact = -0.05
 		}
 		on_upgraded = {
-			define_advisor = {
-				type = natural_scientist
-				skill = 3
-				culture = bai
-				religion = theravada
-				cost_multiplier = 0.75
+			owner = {
+				define_advisor = {
+					type = natural_scientist
+					skill = 3
+					culture = bai
+					cost_multiplier = 0.75
+				}
 			}
 		}
 	}
@@ -560,15 +568,16 @@ blackdragonpool = {
 		region_modifier = { }
 		country_modifiers = {
 			yearly_harmony = 0.1
-			ae_impact = -0.05
+			ae_impact = -0.1
 		}
 		on_upgraded = {
-			define_advisor = {
-				type = natural_scientist
-				skill = 3
-				culture = bai
-				religion = theravada
-				cost_multiplier = 0.5
+			owner = {
+				define_advisor = {
+					type = natural_scientist
+					skill = 3
+					culture = bai
+					cost_multiplier = 0.5
+				}
 			}
 		}
 	}
@@ -584,15 +593,16 @@ blackdragonpool = {
 		region_modifier = { }
 		country_modifiers = {
 			yearly_harmony = 0.15
-			ae_impact = -0.1
+			ae_impact = -0.15
 		}
 		on_upgraded = {
-			define_advisor = {
-				type = natural_scientist
-				skill = 3
-				culture = bai
-				religion = theravada
-				cost_multiplier = 0.25
+			owner = {
+				define_advisor = {
+					type = natural_scientist
+					skill = 3
+					culture = bai
+					cost_multiplier = 0.25
+				}
 			}
 		}
 	}

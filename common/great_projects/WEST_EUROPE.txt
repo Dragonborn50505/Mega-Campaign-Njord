@@ -44,7 +44,9 @@ pisatower = {
 	tier_1 = {
 		upgrade_time = { months = 120 }
 		cost_to_upgrade = { factor = 1000 }
-		province_modifiers = { }
+		province_modifiers = { 
+			institution_growth = 3
+		}
 		area_modifier = { 
 			local_governing_cost = -0.25
 		}
@@ -67,7 +69,9 @@ pisatower = {
 	tier_2 = {
 		upgrade_time = { months = 240 }
 		cost_to_upgrade = { factor = 2500 }
-		province_modifiers = { }
+		province_modifiers = {
+			institution_growth = 3
+		}
 		area_modifier = { 
 			local_governing_cost = -0.5
 		}
@@ -91,7 +95,7 @@ pisatower = {
 		upgrade_time = { months = 480 }
 		cost_to_upgrade = { factor = 5000 }
 		province_modifiers = { 
-			institution_growth = 3
+			institution_growth = 6
 		}
 		area_modifier = { 
 			local_governing_cost = -0.75
@@ -253,7 +257,7 @@ colosseum = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			war_exhaustion_cost = -0.2
-			prestige_from_land = 0.5
+			prestige_from_land = 0.33
 		}
 
 		#what effects happen when this tier is achieved
@@ -284,7 +288,7 @@ colosseum = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			war_exhaustion_cost = -0.3
-			prestige_from_land = 0.75
+			prestige_from_land = 0.5
 			army_tradition_from_battle = 0.25
 			can_claim_states = yes
 		}
@@ -752,6 +756,7 @@ mont_saint_michel = {
 		province_modifiers = { }
 		area_modifier = { }
 		country_modifiers = {
+			movement_speed_onto_off_boat_modifier = 0.25
 			naval_morale = 0.1
 			naval_attrition = -0.2
 			church_influence_modifier = 0.1
@@ -1046,7 +1051,7 @@ casadecontratacion = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			province_trade_power_modifier = 0.5
+			province_trade_power_modifier = 0.33
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -1197,6 +1202,7 @@ heidelbergcastle = {
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
 			local_defensiveness = 0.25
+			local_garrison_size = 0.15
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -1490,7 +1496,9 @@ ME_aula_magna = {
 	tier_1 = {
 		upgrade_time = { months = 120 }
 		cost_to_upgrade = { factor = 1000 }
-		
+		province_modifiers = {
+			
+		}
 		area_modifier = { 
 		}
 		country_modifiers = {
@@ -1511,7 +1519,9 @@ ME_aula_magna = {
 	tier_2 = {
 		upgrade_time = { months = 240 }
 		cost_to_upgrade = { factor = 2500 }
-		
+		province_modifiers = {
+			
+		}
 		area_modifier = { 
 		}
 		country_modifiers = {
@@ -1542,7 +1552,7 @@ ME_aula_magna = {
 		area_modifier = { 
 		}
 		country_modifiers = {
-			global_autonomy = -0.07
+			global_autonomy = -0.075
 			advisor_pool = 1
 			free_dip_policy = 1
 			national_focus_years = -5
@@ -1902,7 +1912,7 @@ rock_of_cashel = {
 		region_modifier = { }
 		country_modifiers = {
 			same_culture_advisor_cost = -0.1
-			army_tradition_from_battle = 0.5
+			army_tradition_from_battle = 0.33
 		}
 		on_upgraded = { }
 	}
@@ -1917,7 +1927,7 @@ rock_of_cashel = {
 		region_modifier = { }
 		country_modifiers = {
 			same_culture_advisor_cost = -0.15
-			army_tradition_from_battle = 1
+			army_tradition_from_battle = 0.5
 		}
 		on_upgraded = { }
 	}
@@ -2015,7 +2025,7 @@ chateau_gaillard = {
 }
 
 speyer = { #Kaiserdom.
-	start = 77 #Heidelberg.
+	start = 52 #Heidelberg.
 	date = 01.01.1025
 	time = { months = 0 }
 	build_cost = 900
@@ -2057,6 +2067,16 @@ speyer = { #Kaiserdom.
 			improve_relation_modifier = 0.15
 			papal_influence = 0.5
 		}
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					is_part_of_hre = yes
+				}
+			}
+			modifier = {
+				global_heathen_missionary_strength = 0.0005
+			}
+		}
 		on_upgraded = { }
 	}
 	tier_2 = {
@@ -2069,6 +2089,16 @@ speyer = { #Kaiserdom.
 			imperial_authority = 0.05
 			papal_influence = 1
 		}
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					is_part_of_hre = yes
+				}
+			}
+			modifier = {
+				global_heathen_missionary_strength = 0.001
+			}
+		}
 		on_upgraded = { }
 	}
 	tier_3 = {
@@ -2080,6 +2110,17 @@ speyer = { #Kaiserdom.
 			improve_relation_modifier = 0.33
 			imperial_authority = 0.1
 			papal_influence = 2
+		}
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					is_part_of_hre = yes
+				}
+			}
+			modifier = {
+				global_heathen_missionary_strength = 0.001
+				diplomatic_reputation = 1
+			}
 		}
 		on_upgraded = { }
 	}
@@ -2125,7 +2166,14 @@ chambord = {
 			yearly_absolutism = 0.25
 			reduced_liberty_desire_on_same_continent = 5
 		}
-		on_upgraded = { }
+		on_upgraded = { 
+			owner = {
+				change_ruler_stat = {
+					type = adm
+					amount = 1
+				}
+			}
+		}
 	}
 	tier_2 = {
 		upgrade_time = { months = 240 }
@@ -2135,9 +2183,15 @@ chambord = {
 		country_modifiers = {
 			yearly_absolutism = 0.25
 			reduced_liberty_desire_on_same_continent = 10
-			nobles_privilege_slots = 1
 		}
-		on_upgraded = { }
+		on_upgraded = { 
+			owner = {
+				change_ruler_stat = {
+					type = adm
+					amount = 1
+				}
+			}
+		}
 	}
 	tier_3 = {
 		upgrade_time = { months = 480 }
@@ -3060,33 +3114,18 @@ beaune_hospices = {
 	type = monument
 	can_be_moved = no
 	build_trigger = {
-		OR = {
-			has_owner_culture = yes
-			owner = {
-				culture_group = french
-				has_cultural_union = yes
-			}
-		}
+		has_owner_accepted_culture = yes
+		culture_group = french
 	}
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		OR = {
-			has_owner_culture = yes
-			owner = {
-				culture_group = french
-				has_cultural_union = yes
-			}
-		}
+		has_owner_accepted_culture = yes
+		culture_group = french
 	}
 	can_upgrade_trigger = {
-		OR = {
-			has_owner_culture = yes
-			owner = {
-				culture_group = french
-				has_cultural_union = yes
-			}
-		}
+		has_owner_accepted_culture = yes
+		culture_group = french
 	}
 	keep_trigger = { }
 	tier_0 = {
@@ -3103,7 +3142,7 @@ beaune_hospices = {
 		cost_to_upgrade = { factor = 1000 }
 		province_modifiers = { }
 		area_modifier = {
-			trade_goods_size_modifier = 0.05
+			trade_goods_size_modifier = 0.15
 		}
 		region_modifier = { }
 		country_modifiers = {
@@ -3120,7 +3159,7 @@ beaune_hospices = {
 			trade_goods_size = 1
 		}
 		area_modifier = {
-			trade_goods_size_modifier = 0.1
+			trade_goods_size_modifier = 0.25
 		}
 		region_modifier = { }
 		country_modifiers = {
@@ -3138,7 +3177,7 @@ beaune_hospices = {
 			trade_goods_size = 2
 		}
 		area_modifier = {
-			trade_goods_size_modifier = 0.15
+			trade_goods_size_modifier = 0.33
 		}
 		region_modifier = { }
 		country_modifiers = {
@@ -3153,7 +3192,7 @@ beaune_hospices = {
 }
 
 aachen_cathedral = {
-	start = 1878 #Aachen.
+	start = 2965 #Aachen.
 	date = 01.01.805
 	time = { months = 120 }
 	build_cost = 1000
@@ -3299,7 +3338,7 @@ holstentor = {
 		upgrade_time = { months = 120 }
 		cost_to_upgrade = { factor = 1000 }
 		province_modifiers = {
-			local_defensiveness = 0.1
+			local_defensiveness = 0.15
 			trade_goods_size = 1
 		}
 		area_modifier = { }
@@ -3315,7 +3354,7 @@ holstentor = {
 		upgrade_time = { months = 240 }
 		cost_to_upgrade = { factor = 2500 }
 		province_modifiers = {
-			local_defensiveness = 0.15
+			local_defensiveness = 0.25
 			trade_goods_size = 1.5
 		}
 		area_modifier = { }
@@ -3331,7 +3370,7 @@ holstentor = {
 		upgrade_time = { months = 480 }
 		cost_to_upgrade = { factor = 5000 }
 		province_modifiers = {
-			local_defensiveness = 0.2
+			local_defensiveness = 0.33
 			trade_goods_size = 2
 		}
 		area_modifier = { }
@@ -3670,7 +3709,7 @@ york_minster = {
 		country_modifiers = {
 			papal_influence = 0.5
 			tolerance_heretic = 0.5
-			global_religious_conversion_resistance = 0.1
+			global_religious_conversion_resistance = 0.25
 		}
 		on_upgraded = { }
 	}
@@ -3683,6 +3722,7 @@ york_minster = {
 		country_modifiers = {
 			papal_influence = 1
 			tolerance_heretic = 1
+			global_religious_conversion_resistance = 0.5
 		}
 		on_upgraded = { }
 	}
@@ -3694,7 +3734,7 @@ york_minster = {
 		region_modifier = { }
 		country_modifiers = {
 			papal_influence = 2
-			global_religious_conversion_resistance = 0.2
+			global_religious_conversion_resistance = 0.75
 			tolerance_heretic = 2
 		}
 		on_upgraded = { }
@@ -3966,7 +4006,7 @@ lanterna = {
 		}
 		region_modifier = { }
 		country_modifiers = {
-			embargo_efficiency = 0.25
+			embargo_efficiency = 0.15
 			ship_power_propagation = 0.05
 		}
 		on_upgraded = { }
@@ -3982,7 +4022,7 @@ lanterna = {
 		}
 		region_modifier = { }
 		country_modifiers = {
-			embargo_efficiency = 0.33
+			embargo_efficiency = 0.25
 			ship_power_propagation = 0.1
 			global_foreign_trade_power = 0.05
 		}
@@ -3999,7 +4039,7 @@ lanterna = {
 		}
 		region_modifier = { }
 		country_modifiers = {
-			embargo_efficiency = 0.5
+			embargo_efficiency = 0.33
 			ship_power_propagation = 0.15
 			global_foreign_trade_power = 0.1
 		}
@@ -4083,7 +4123,7 @@ borgund_stavkirke = {
 }
 
 burresheim = {
-	start = 4768 #Julich, for gameplay reasons. Actually closer to Coblenz or arguably Trier.
+	start = 56 #Julich, for gameplay reasons. Actually closer to Coblenz or arguably Trier.
 	date = 01.01.1157
 	time = { months = 120 }
 	build_cost = 1000
@@ -4260,7 +4300,7 @@ segovia_castle = {
 		country_modifiers = {
 			artillery_cost = -0.1
 			mil_advisor_cost = -0.1
-			artillery_barrage_cost = -0.5
+			artillery_barrage_cost = -0.33
 		}
 		on_upgraded = { }
 	}
@@ -4317,7 +4357,7 @@ alcazar_cristianos = {
 			local_defensiveness = 0.25
 		}
 		area_modifier = {
-			local_friendly_movement_speed = 0.15
+			local_friendly_movement_speed = 0.25
 		}
 		region_modifier = { }
 		country_modifiers = {
@@ -4332,7 +4372,7 @@ alcazar_cristianos = {
 			local_defensiveness = 0.33
 		}
 		area_modifier = {
-			local_friendly_movement_speed = 0.25
+			local_friendly_movement_speed = 0.33
 		}
 		region_modifier = { }
 		country_modifiers = {
@@ -4347,7 +4387,7 @@ alcazar_cristianos = {
 		province_modifiers = { }
 		area_modifier = {
 			local_defensiveness = 0.33
-			local_friendly_movement_speed = 0.5
+			local_friendly_movement_speed = 0.33
 		}
 		region_modifier = { }
 		country_modifiers = {
@@ -4510,7 +4550,6 @@ santiago = { #Santiago de Compostela.
 		}
 		region_modifier = { }
 		country_modifiers = {
-			manpower_in_true_faith_provinces = 0.05
 			allowed_tercio_fraction = 0.05
 		}
 		on_upgraded = { 
@@ -4528,7 +4567,6 @@ santiago = { #Santiago de Compostela.
 		}
 		region_modifier = { }
 		country_modifiers = {
-			manpower_in_true_faith_provinces = 0.1
 			allowed_tercio_fraction = 0.1
 		}
 		on_upgraded = {
@@ -4852,7 +4890,7 @@ charlottenburg = {
 		province_modifiers = { }
 		area_modifier = { }
 		country_modifiers = {
-			diplomatic_upkeep = 1
+			state_governing_cost = -0.05
 			monarch_lifespan = 0.1
 			governing_capacity = 100
 		}
@@ -4874,7 +4912,7 @@ charlottenburg = {
 		province_modifiers = { }
 		area_modifier = { }
 		country_modifiers = {
-			diplomatic_upkeep = 2
+			state_governing_cost = -0.1
 			monarch_lifespan = 0.15
 			governing_capacity = 150
 		}
@@ -4944,6 +4982,7 @@ marburg_university = {
 		country_modifiers = {
 			adm_tech_cost_modifier = -0.1
 			innovativeness_gain = 0.25
+			yearly_innovativeness = 0.1
 		}
 		on_upgraded = { }
 	}
@@ -4978,7 +5017,9 @@ calvin = {
 		province_modifiers = { 
 			institution_growth = 3
 		}
-		area_modifier = { }
+		area_modifier = { 
+			local_tax_modifier = 0.15
+		}
 		country_modifiers = {
 			same_religion_advisor_cost = -0.05
 		}
@@ -5000,7 +5041,9 @@ calvin = {
 		province_modifiers = { 
 			institution_growth = 6
 		}
-		area_modifier = { }
+		area_modifier = { 
+			local_tax_modifier = 0.25
+		}
 		country_modifiers = {
 			same_religion_advisor_cost = -0.1
 		}
@@ -5022,7 +5065,9 @@ calvin = {
 		province_modifiers = { 
 			institution_growth = 12
 		}
-		area_modifier = { }
+		area_modifier = { 
+			local_tax_modifier = 0.33
+		}
 		country_modifiers = {
 			same_religion_advisor_cost = -0.15
 		}
@@ -5321,7 +5366,7 @@ hohensalzburg = {
 		upgrade_time = { months = 120 }
 		cost_to_upgrade = { factor = 1000 }
 		province_modifiers = {
-			local_defensiveness = 0.25
+			local_defensiveness = 0.15
 		}
 		area_modifier = { }
 		country_modifiers = {
@@ -5343,7 +5388,7 @@ hohensalzburg = {
 		upgrade_time = { months = 240 }
 		cost_to_upgrade = { factor = 2500 }
 		province_modifiers = {
-			local_defensiveness = 0.33
+			local_defensiveness = 0.25
 		}
 		area_modifier = { 
 			local_manpower_modifier = 0.15
@@ -5368,7 +5413,7 @@ hohensalzburg = {
 		upgrade_time = { months = 480 }
 		cost_to_upgrade = { factor = 5000 }
 		province_modifiers = {
-			local_defensiveness = 0.5
+			local_defensiveness = 0.33
 		}
 		area_modifier = { 
 			local_manpower_modifier = 0.25
@@ -5724,7 +5769,7 @@ cluny = {
 		}
 		region_modifier = { }
 		country_modifiers = {
-			global_religious_conversion_resistance = 0.1
+			global_religious_conversion_resistance = 0.25
 		}
 		on_upgraded = { }
 	}
@@ -5739,7 +5784,7 @@ cluny = {
 		}
 		region_modifier = { }
 		country_modifiers = {
-			global_religious_conversion_resistance = 0.15
+			global_religious_conversion_resistance = 0.33
 		}
 		on_upgraded = { }
 	}
@@ -5755,7 +5800,7 @@ cluny = {
 		region_modifier = { }
 		country_modifiers = {
 			missionaries = 1
-			global_religious_conversion_resistance = 0.2
+			global_religious_conversion_resistance = 0.5
 		}
 		on_upgraded = { }
 	}
@@ -5919,7 +5964,7 @@ hohenstein = {
 			reasons_to_elect = 5
 		}
 		on_upgraded = {
-			add_base_production = 1
+			add_or_upgrade_courthouse_building = yes
 		}
 	}
 
@@ -5934,7 +5979,7 @@ hohenstein = {
 			reasons_to_elect = 10
 		}
 		on_upgraded = {
-			add_base_production = 2
+			add_or_upgrade_courthouse_building = yes
 		}
 	}
 
@@ -5949,7 +5994,7 @@ hohenstein = {
 			reasons_to_elect = 15
 		}
 		on_upgraded = {
-			add_base_production = 3
+			add_or_upgrade_courthouse_building = yes
 		}
 	}
 }
@@ -6662,7 +6707,7 @@ wernigerode = {
 		}
 		region_modifier = { }
 		country_modifiers = {
-			monthly_governmental_power = 0.5
+			yearly_government_power = 0.25
 		}
 		on_upgraded = { }
 	}
@@ -6677,7 +6722,7 @@ wernigerode = {
 		}
 		region_modifier = { }
 		country_modifiers = {
-			monthly_governmental_power = 0.5
+			yearly_government_power = 0.5
 			mil_tech_cost_modifier = -0.05
 		}
 		on_upgraded = { }
@@ -6694,7 +6739,7 @@ wernigerode = {
 		region_modifier = { }
 		country_modifiers = {
 			mil_tech_cost_modifier = -0.1
-			monthly_governmental_power = 1
+			yearly_government_power = 1
 		}
 		on_upgraded = { }
 	}
@@ -6822,6 +6867,7 @@ marksburg = {
 		area_modifier = { }
 		region_modifier = { }
 		country_modifiers = {
+			max_electors = 1
 		}
 		on_upgraded = { 
 			owner = {
@@ -6843,6 +6889,7 @@ marksburg = {
 		area_modifier = { }
 		region_modifier = { }
 		country_modifiers = {
+			max_electors = 1
 		}
 		on_upgraded = { 
 			owner = {
@@ -6864,6 +6911,7 @@ marksburg = {
 		area_modifier = { }
 		region_modifier = { }
 		country_modifiers = {
+			max_electors = 1
 		}
 		on_upgraded = {
 			owner = {
@@ -6877,7 +6925,7 @@ marksburg = {
 }
 
 marialaach = {
-    start = 1760
+    start = 5064
     date = 01.01.1050 #11th-12th centuries.
 	time = { months = 120 }
 	build_cost = 1000
@@ -6916,7 +6964,7 @@ marialaach = {
 		cost_to_upgrade = { factor = 1000 }
 		province_modifiers = {
 			local_manpower_modifier = 0.15
-			local_governing_cost = -0.5
+			local_governing_cost = -0.25
 		}
 		area_modifier = { }
 		region_modifier = { }
@@ -6928,12 +6976,13 @@ marialaach = {
 		cost_to_upgrade = { factor = 2500 }
 		province_modifiers = {
 			local_manpower_modifier = 0.33
-			local_governing_cost = -0.75
 		}
-		area_modifier = { }
+		area_modifier = { 
+			local_governing_cost = -0.25
+		}
 		region_modifier = { }
 		country_modifiers = {
-			state_governing_cost = -0.05
+			mil_advisor_cost = -0.1
 		}
 		on_upgraded = { }
 	}
@@ -6941,20 +6990,23 @@ marialaach = {
 		upgrade_time = { months = 480 }
 		cost_to_upgrade = { factor = 5000 }
 		province_modifiers = {
-			local_manpower_modifier = 0.5
-			local_governing_cost = -1
 		}
-		area_modifier = { }
+		area_modifier = { 
+			local_manpower_modifier = 0.33
+			local_governing_cost = -0.33
+		}
 		region_modifier = { }
 		country_modifiers = {
-			state_governing_cost = -0.1
+			mil_advisor_cost = -0.15
 		}
-		on_upgraded = { }
+		on_upgraded = { 
+			custom_tooltip = MEGA_maria_laach_unique_TT
+		}
 	}
 }
 
 burg_eltz = {
-	start = 80 #Trier.
+	start = 59 #Trier.
 	date = 01.01.1157
 	time = { months = 120 }
 	build_cost = 1000
@@ -6992,7 +7044,7 @@ burg_eltz = {
 		area_modifier = { }
 		region_modifier = { }
 		country_modifiers = {
-			manpower_against_imperial_enemies = 5
+			manpower_against_imperial_enemies = 5000
 			cav_to_inf_ratio = 0.1
 		}
 		on_upgraded = { }
@@ -7004,7 +7056,7 @@ burg_eltz = {
 		area_modifier = { }
 		region_modifier = { }
 		country_modifiers = {
-			manpower_against_imperial_enemies = 15
+			manpower_against_imperial_enemies = 15000
 			cav_to_inf_ratio = 0.15
 			cavalry_cost = -0.1
 		}
@@ -7017,7 +7069,7 @@ burg_eltz = {
 		area_modifier = { }
 		region_modifier = { }
 		country_modifiers = {
-			manpower_against_imperial_enemies = 30
+			manpower_against_imperial_enemies = 30000
 			cav_to_inf_ratio = 0.2
 			cavalry_cost = -0.1
 			cavalry_power = 0.1
@@ -7027,7 +7079,7 @@ burg_eltz = {
 }
 
 pfeffingen = {
-	start = 165 #Bern. Seems a bit closer to Sundgau but.. nah.
+	start = 1880 #Bern. Seems a bit closer to Sundgau but.. nah.
 	date = 01.01.1135
 	time = { months = 120 }
 	build_cost = 1000
@@ -7269,7 +7321,7 @@ limburg_cathedral = {
 }
 
 kempen = {
-	start = 84 #Dusseldorf.
+	start = 69 #Dusseldorf.
 	date = 01.01.1316
 	time = { months = 120 }
 	build_cost = 1000
@@ -7592,7 +7644,7 @@ viaden = {
 }
 
 hohenschwangau = { #Schwanstein Castle.
-	start = 1868 #Augsburg. Could be in Inntal, but I went with Augsburg for gameplay purposes.
+	start = 65 #Augsburg. Could be in Inntal, but I went with Augsburg for gameplay purposes.
 	date = 01.01.1397 #It's complicated.
 	time = { months = 120 }
 	build_cost = 1000
@@ -7724,7 +7776,9 @@ hohenzollern = {
 			local_defensiveness = 0.25
 		}
 		area_modifier = { }
-		country_modifiers = { }
+		country_modifiers = { 
+			ae_impact = -0.1
+		}
 		on_upgraded = {
 			owner = {
 				define_advisor = {
@@ -7746,6 +7800,7 @@ hohenzollern = {
 		area_modifier = { }
 		country_modifiers = {
 			leader_land_fire = 1
+			ae_impact = -0.1
 		}
 		on_upgraded = {
 			owner = {
@@ -7767,7 +7822,7 @@ hohenzollern = {
 		}
 		area_modifier = { }
 		country_modifiers = {
-			ae_impact = -0.1
+			ae_impact = -0.15
 			leader_land_fire = 1
 		}
 		on_upgraded = {
@@ -7857,7 +7912,7 @@ sigmaringen = {
 }
 
 wartburg = {
-	start = 1762 #Niederhessen.
+	start = 4773 #Niederhessen.
 	date = 01.01.1067
 	time = { months = 120 }
 	build_cost = 1000
@@ -8121,6 +8176,7 @@ glucksburg = {
 			local_hostile_attrition = 1
 		}
 		country_modifiers = {
+			leader_land_manuever = 1
 			movement_speed = 0.05
 		}
 		on_upgraded = { }
@@ -8136,6 +8192,7 @@ glucksburg = {
 		country_modifiers = {
 			movement_speed = 0.1
 			leader_land_manuever = 1
+			max_general_maneuver = 1
 		}
 		on_upgraded = { }
 	}
@@ -8317,6 +8374,7 @@ dunnottar = {
 		region_modifier = { }
 		country_modifiers = {
 			monarch_lifespan = 0.15
+			naval_tradition_from_trade = 0.25
 			nobles_influence_modifier = 0.1
 		}
 		on_upgraded = {
@@ -8668,7 +8726,7 @@ dunluce = {
 }
 
 trinity_college = {
-	start = 373 #Dublin, Leinster, Ireland.
+	start = 5041 #Dublin, Leinster, Ireland.
 	date = 01.01.1592
 	time = { months = 0	}
 	build_cost = 1000
@@ -8767,7 +8825,7 @@ trinity_college = {
 }
 
 newgrange = {
-    start = 373
+    start = 376
     date = 01.01.1 #Neolithic.
 	time = { months = 120 }
 	build_cost = 1000
@@ -9069,7 +9127,7 @@ fu_amsterdam_dike = { #Amsteldijk.
 		region_modifier = { }
 		country_modifiers = { }
 		on_upgraded = { 
-			add_prosperity = 0.25
+			add_prosperity = 25
 		}
 	}
 	tier_2 = {
@@ -9080,9 +9138,11 @@ fu_amsterdam_dike = { #Amsteldijk.
 		}
 		area_modifier = { }
 		region_modifier = { }
-		country_modifiers = { }
+		country_modifiers = { 
+			build_cost = -0.05
+		}
 		on_upgraded = { 
-			add_prosperity = 0.25
+			add_prosperity = 50
 		}
 	}
 	tier_3 = {
@@ -9093,9 +9153,11 @@ fu_amsterdam_dike = { #Amsteldijk.
 		}
 		area_modifier = { }
 		region_modifier = { }
-		country_modifiers = { }
+		country_modifiers = { 
+			build_cost = -0.1
+		}
 		on_upgraded = { 
-			add_prosperity = 0.25
+			add_prosperity = 100
 			add_province_modifier = {
 				name = MEGA_drained_the_swamps
 				duration = 3650
@@ -9368,9 +9430,8 @@ fu_zeeland_dike = { #Middelburg Canal.
 				}
 			}
 			modifier = { 
-				global_prov_trade_power_modifier = 0.1
-				build_time = -0.1
-				build_cost = -0.1
+				global_prov_trade_power_modifier = 0.15
+				build_time = -0.15
 			}
 		}
 	}
@@ -9428,6 +9489,7 @@ fu_den_haag_dike = { #Binnenhof.
 		region_modifier = { }
 		country_modifiers = {
 			nobles_loyalty_modifier = 0.05
+			army_tradition = 0.25
 		}
 		on_upgraded = {
 			if = {
@@ -9450,6 +9512,7 @@ fu_den_haag_dike = { #Binnenhof.
 		country_modifiers = {
 			nobles_loyalty_modifier = 0.1
 			nobles_influence_modifier = 0.05
+			army_tradition = 0.5
 		}
 		on_upgraded = {
 			if = {
@@ -9473,6 +9536,7 @@ fu_den_haag_dike = { #Binnenhof.
 			nobles_loyalty_modifier = 0.15
 			nobles_influence_modifier = 0.1
 			nobles_privilege_slots = 1
+			army_tradition = 1
 		}
 		on_upgraded = {
 			if = {
@@ -9668,37 +9732,51 @@ fu_gent_dike = { #Gravensteen.
 		upgrade_time = { months = 120 }
 		cost_to_upgrade = { factor = 1000 }
 		province_modifiers = { }
-		area_modifier = { }
+		area_modifier = { 
+			local_governing_cost = -0.15
+		}
 		region_modifier = { }
 		country_modifiers = {
 			state_maintenance_modifier = -0.15
+			yearly_absolutism = 0.25
 		}
-		on_upgraded = { }
+		on_upgraded = { 
+			add_or_upgrade_forcelimit_building = yes
+		}
 	}
 	tier_2 = {
 		upgrade_time = { months = 240 }
 		cost_to_upgrade = { factor = 2500 }
 		province_modifiers = { }
-		area_modifier = { }
+		area_modifier = { 
+			local_governing_cost = -0.25
+		}
 		region_modifier = { }
 		country_modifiers = {
 			state_maintenance_modifier = -0.25
 			max_absolutism = 5
+			yearly_absolutism = 0.5
 		}
-		on_upgraded = { }
+		on_upgraded = { 
+			add_or_upgrade_forcelimit_building = yes
+		}
 	}
 	tier_3 = {
 		upgrade_time = { months = 480 }
 		cost_to_upgrade = { factor = 5000 }
 		province_modifiers = { }
-		area_modifier = { }
+		area_modifier = { 
+			local_governing_cost = -0.33
+		}
 		region_modifier = { }
 		country_modifiers = {
 			state_maintenance_modifier = -0.33
 			max_absolutism = 10
-			yearly_absolutism = 0.25
+			yearly_absolutism = 0.5
 		}
-		on_upgraded = { }
+		on_upgraded = { 
+			add_or_upgrade_forcelimit_building = yes
+		}
 	}
 }
 
@@ -9856,7 +9934,7 @@ domtoren = {
 		region_modifier = { }
 		country_modifiers = {
 			imperial_authority = 0.05
-			colonist_placement_chance = 0.05
+			colonist_placement_chance = 0.1
 		}
 		on_upgraded = { }
 	}
@@ -9868,7 +9946,7 @@ domtoren = {
 		region_modifier = { }
 		country_modifiers = {
 			imperial_authority = 0.1
-			colonist_placement_chance = 0.1
+			colonist_placement_chance = 0.15
 			governing_capacity_modifier = 0.05
 		}
 		on_upgraded = { }

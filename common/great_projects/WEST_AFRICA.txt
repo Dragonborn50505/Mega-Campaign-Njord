@@ -178,12 +178,14 @@ osun_osogbo = { #Sacred Grove
 			missionary_maintenance_cost = -0.25
 		}
 		on_upgraded = {
-			define_advisor = {
-				type = natural_scientist
-				skill = 3
-				culture = ROOT
-				religion = ROOT
-				cost_multiplier = 0.75
+			owner = {
+				define_advisor = {
+					type = natural_scientist
+					skill = 3
+					culture = ROOT
+					religion = ROOT
+					cost_multiplier = 0.75
+				}
 			}
 		}
 	}
@@ -201,12 +203,14 @@ osun_osogbo = { #Sacred Grove
 			church_loyalty_modifier = 0.1
 		}
 		on_upgraded = {
-			define_advisor = {
-				type = natural_scientist
-				skill = 3
-				culture = ROOT
-				religion = ROOT
-				cost_multiplier = 0.5
+			owner = {
+				define_advisor = {
+					type = natural_scientist
+					skill = 3
+					culture = ROOT
+					religion = ROOT
+					cost_multiplier = 0.5
+				}
 			}
 		}
 	}
@@ -224,12 +228,14 @@ osun_osogbo = { #Sacred Grove
 			church_loyalty_modifier = 0.15
 		}
 		on_upgraded = {
-			define_advisor = {
-				type = natural_scientist
-				skill = 3
-				culture = ROOT
-				religion = ROOT
-				cost_multiplier = 0.25
+			owner = {
+				define_advisor = {
+					type = natural_scientist
+					skill = 3
+					culture = ROOT
+					religion = ROOT
+					cost_multiplier = 0.25
+				}
 			}
 		}
 	}
@@ -356,7 +362,8 @@ askia = {
 		region_modifier = { }
 		country_modifiers = {
 			army_tradition_decay = -0.005
-			prestige_from_land = 0.5
+			prestige_from_land = 0.25
+			loot_amount = 0.25
 		}
 		on_upgraded = { }
 	}
@@ -368,8 +375,8 @@ askia = {
 		region_modifier = { }
 		country_modifiers = {
 			army_tradition_decay = -0.01
-			prestige_from_land = 0.75
-			loot_amount = 0.25
+			prestige_from_land = 0.33
+			loot_amount = 0.5
 		}
 		on_upgraded = { }
 	}
@@ -381,9 +388,9 @@ askia = {
 		region_modifier = { }
 		country_modifiers = {
 			army_tradition_decay = -0.01
-			prestige_from_land = 1
-			loot_amount = 0.5
-			land_morale = 0.1
+			prestige_from_land = 0.5
+			loot_amount = 0.75
+			land_morale = 0.05
 		}
 		on_upgraded = { }
 	}
@@ -546,7 +553,7 @@ ashanti = {
 		area_modifier = { }
 		region_modifier = { }
 		country_modifiers = {
-			all_estate_loyalty_equilibrium = 0.1
+			all_estate_loyalty_equilibrium = 0.05
 			shock_damage_received = -0.05
 		}
 		on_upgraded = { }
@@ -560,7 +567,7 @@ ashanti = {
 		area_modifier = { }
 		region_modifier = { }
 		country_modifiers = {
-			all_estate_loyalty_equilibrium = 0.1
+			all_estate_loyalty_equilibrium = 0.05
 			shock_damage_received = -0.1
 			shock_damage = 0.05
 		}

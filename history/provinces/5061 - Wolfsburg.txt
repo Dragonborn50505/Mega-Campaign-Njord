@@ -1,8 +1,8 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #Wolfsburg
-add_core = SHL
-owner = SHL
-controller = SHL
+add_core = Z45
+owner = Z45
+controller = Z45
 culture = lower_saxon
 religion = orthodox
 hre = yes

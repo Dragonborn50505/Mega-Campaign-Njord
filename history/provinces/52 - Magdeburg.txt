@@ -1,5 +1,5 @@
-owner = SHL
-controller = SHL
+owner = Z45
+controller = Z45
 capital = "Magdeburg"
 is_city = yes
 culture = saxon
@@ -11,7 +11,7 @@ base_production = 4
 base_manpower = 2
 extra_cost = 16
 center_of_trade = 2
-add_core = SHL
+add_core = Z45
 add_permanent_claim = ANH
 discovered_by = eastern
 discovered_by = muslim

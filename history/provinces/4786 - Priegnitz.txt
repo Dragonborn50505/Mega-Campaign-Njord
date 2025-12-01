@@ -1,5 +1,5 @@
-owner = SHL
-controller = SHL
+owner = Z45
+controller = Z45
 capital = "Pankow"
 is_city = yes
 culture = saxon
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 3
 base_production = 1
 base_manpower = 1
-add_core = SHL
+add_core = Z45
 add_permanent_claim = BRA
 discovered_by = eastern
 discovered_by = muslim

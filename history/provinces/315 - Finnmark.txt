@@ -9,6 +9,6 @@ base_tax = 2
 base_production = 2
 base_manpower = 1
 add_core = NOR
-add_permanent_claim = SMI
+add_core = SMI
 discovered_by = eastern
 discovered_by = western

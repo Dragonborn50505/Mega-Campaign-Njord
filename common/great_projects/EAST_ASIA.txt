@@ -121,6 +121,14 @@ mukdenpalace = {
 		#what effects happen when this tier is achieved
 		on_upgraded = {
 		}
+		conditional_modifier = {
+			trigger = { 
+				mission_completed = mng_nomadic_frontier
+			}
+			modifier = { 
+				cavalry_power = 0.05
+			}
+		}
 	}
 
 	tier_2 = {
@@ -152,6 +160,14 @@ mukdenpalace = {
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
+		}
+		conditional_modifier = {
+			trigger = { 
+				mission_completed = mng_nomadic_frontier
+			}
+			modifier = { 
+				cavalry_power = 0.1
+			}
 		}
 	}
 
@@ -187,6 +203,14 @@ mukdenpalace = {
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
+		}
+		conditional_modifier = {
+			trigger = { 
+				mission_completed = mng_nomadic_frontier
+			}
+			modifier = { 
+				cavalry_power = 0.15
+			}
 		}
 	}
 }
@@ -304,7 +328,7 @@ ama = { #A-Ma Temple.
 		upgrade_time = { months = 120 }
 		cost_to_upgrade = { factor = 1000 }
 		province_modifiers = {
-			trade_value_modifier = 0.1
+			trade_value_modifier = 0.15
 		}
 		area_modifier = { }
 		region_modifier = { }
@@ -318,7 +342,7 @@ ama = { #A-Ma Temple.
 		upgrade_time = { months = 240 }
 		cost_to_upgrade = { factor = 2500 }
 		province_modifiers = {
-			trade_value_modifier = 0.2
+			trade_value_modifier = 0.25
 		}
 		area_modifier = { }
 		region_modifier = { }
@@ -332,7 +356,7 @@ ama = { #A-Ma Temple.
 		upgrade_time = { months = 480 }
 		cost_to_upgrade = { factor = 5000 }
 		province_modifiers = {
-			trade_value_modifier = 0.3
+			trade_value_modifier = 0.33
 		}
 		area_modifier = { }
 		region_modifier = { }
@@ -453,6 +477,7 @@ longmen = {
 		region_modifier = { }
 		country_modifiers = {
 			yearly_karma_decay = 0.01
+			imperial_mandate = 0.01
 		}
 		on_upgraded = { 
 			owner = {
@@ -472,7 +497,7 @@ longmen = {
 		region_modifier = { }
 		country_modifiers = {
 			yearly_karma_decay = 0.03
-			imperial_mandate = 0.01
+			imperial_mandate = 0.02
 		}
 		on_upgraded = { 
 			owner = {
@@ -551,6 +576,14 @@ tai = { #Jade Emperor Peak.
 		country_modifiers = {
 			vassal_income = 0.05
 		}
+		conditional_modifier = {
+			trigger = { 
+				empire_of_china_reform_passed = tributary_embassies_decision
+			}
+			modifier = { 
+				diplomatic_upkeep = 1
+			}
+		}
 		on_upgraded = { 
 			owner = {
 				change_ruler_stat = {
@@ -570,6 +603,14 @@ tai = { #Jade Emperor Peak.
 		country_modifiers = {
 			vassal_manpower_bonus = 0.1
 			vassal_income = 0.1
+		}
+		conditional_modifier = {
+			trigger = { 
+				empire_of_china_reform_passed = tributary_embassies_decision
+			}
+			modifier = { 
+				diplomatic_upkeep = 2
+			}
 		}
 		on_upgraded = { 
 			owner = {
@@ -591,6 +632,14 @@ tai = { #Jade Emperor Peak.
 			vassal_manpower_bonus = 0.15
 			vassal_forcelimit_bonus = 0.15
 			vassal_income = 0.15
+		}
+		conditional_modifier = {
+			trigger = { 
+				empire_of_china_reform_passed = tributary_embassies_decision
+			}
+			modifier = { 
+				diplomatic_upkeep = 3
+			}
 		}
 		on_upgraded = {
 			owner = {
@@ -650,6 +699,14 @@ purplecloud = {
 		region_modifier = { }
 		country_modifiers = {
 		}
+		conditional_modifier = {
+			trigger = { 
+				empire_of_china_reform_passed = reform_the_military_branch_decision
+			}
+			modifier = { 
+				global_regiment_cost = -0.05
+			}
+		}
 		on_upgraded = { }
 	}
 	tier_2 = {
@@ -664,6 +721,14 @@ purplecloud = {
 		region_modifier = { }
 		country_modifiers = {
 			land_attrition = -0.1
+		}
+		conditional_modifier = {
+			trigger = { 
+				empire_of_china_reform_passed = reform_the_military_branch_decision
+			}
+			modifier = { 
+				global_regiment_cost = -0.1
+			}
 		}
 		on_upgraded = { }
 	}
@@ -680,6 +745,15 @@ purplecloud = {
 		country_modifiers = {
 			land_attrition = -0.15
 			fire_damage_received = -0.05
+		}
+		conditional_modifier = {
+			trigger = { 
+				empire_of_china_reform_passed = reform_the_military_branch_decision
+			}
+			modifier = { 
+				global_regiment_cost = -0.1
+				regiment_manpower_usage = -0.05
+			}
 		}
 		on_upgraded = {
 		}
@@ -922,7 +996,9 @@ yellowcranetower = {
 		country_modifiers = {
 			production_efficiency = 0.1
 		}
-		on_upgraded = { }
+		on_upgraded = { 
+			custom_tooltip = MEGA_yellow_crane_tower_unique_TT
+		}
 	}
 }
 
@@ -1023,6 +1099,7 @@ temple_of_heaven = {
 			church_influence_modifier = 0.1
 		}
 		on_upgraded = {
+			custom_tooltip = MEGA_temple_of_heaven_unique_TT
 			owner = {
 				if = {
 					limit = {
@@ -1420,7 +1497,7 @@ qiao = { #Zaizhong Hall.
 		region_modifier = { }
 		country_modifiers = {
 			envoy_travel_time = -0.1
-			embargo_efficiency = 0.25
+			embargo_efficiency = 0.15
 		}
 		on_upgraded = { }
 	}
@@ -1436,7 +1513,7 @@ qiao = { #Zaizhong Hall.
 		region_modifier = { }
 		country_modifiers = {
 			envoy_travel_time = -0.15
-			embargo_efficiency = 0.33
+			embargo_efficiency = 0.25
 		}
 		on_upgraded = { }
 	}
@@ -1452,9 +1529,10 @@ qiao = { #Zaizhong Hall.
 		region_modifier = { }
 		country_modifiers = {
 			envoy_travel_time = -0.25
-			embargo_efficiency = 0.5
+			embargo_efficiency = 0.33
 		}
 		on_upgraded = { 
+			custom_tooltip = MEGA_qiao_unique_TT
 		}
 	}
 }
@@ -1590,10 +1668,11 @@ hanging_temple = {
 		upgrade_time = { months = 120 }
 		cost_to_upgrade = { factor = 1000 }
 		province_modifiers = {
-			local_assault_fort_ability = -0.1
+			local_assault_fort_ability = -0.15
+			local_defensiveness = 0.15
 		}
 		area_modifier = { 
-			local_manpower_modifier = 0.1
+			local_manpower_modifier = 0.15
 		}
 		region_modifier = { }
 		country_modifiers = {
@@ -1606,9 +1685,10 @@ hanging_temple = {
 		cost_to_upgrade = { factor = 2500 }
 		province_modifiers = {
 			local_assault_fort_ability = -0.25
+			local_defensiveness = 0.25
 		}
 		area_modifier = { 
-			local_manpower_modifier = 0.15
+			local_manpower_modifier = 0.25
 		}
 		region_modifier = { }
 		country_modifiers = {
@@ -1621,9 +1701,10 @@ hanging_temple = {
 		cost_to_upgrade = { factor = 5000 }
 		province_modifiers = {
 			local_assault_fort_ability = -0.33
+			local_defensiveness = 0.33
 		}
 		area_modifier = { 
-			local_manpower_modifier = 0.2
+			local_manpower_modifier = 0.33
 		}
 		region_modifier = { }
 		country_modifiers = {
@@ -1672,7 +1753,7 @@ baoen = {
 		area_modifier = { }
 		region_modifier = { }
 		country_modifiers = {
-			missionary_maintenance_cost = -0.1
+			missionary_maintenance_cost = -0.15
 			church_loyalty_modifier = 0.05
 		}
 		on_upgraded = {
@@ -2125,7 +2206,7 @@ yuelu = {
 			diplomats = 1
 		}
 		on_upgraded = {
-			custom_tooltip = BM_yuelu_TT
+			custom_tooltip = MEGA_yuelu_unique_TT
 		}
 	}
 }
@@ -2293,7 +2374,7 @@ iron_pagoda = {
 		area_modifier = { }
 		region_modifier = { }
 		country_modifiers = {
-			artillery_cost = -0.2
+			artillery_cost = -0.15
 			artillery_power = 0.1
 			leader_land_fire = 1
 		}
@@ -2489,7 +2570,7 @@ gongchen = {
 			supply_limit_modifier = 0.5
 		}
 		country_modifiers = { 
-			global_supply_limit_modifier = 0.1
+			global_supply_limit_modifier = 0.15
 		}
 		on_upgraded = {
 			owner = {
@@ -2638,7 +2719,7 @@ hwangnyongsa = {
 		upgrade_time = { months = 120 }
 		cost_to_upgrade = { factor = 1000 }
 		province_modifiers = {
-			local_institution_spread = 0.15
+			local_institution_spread = 0.25
 		}
 		area_modifier = { }
 		region_modifier = { }
@@ -2653,7 +2734,7 @@ hwangnyongsa = {
 		upgrade_time = { months = 240 }
 		cost_to_upgrade = { factor = 2500 }
 		province_modifiers = {
-			local_institution_spread = 0.25
+			local_institution_spread = 0.33
 		}
 		area_modifier = { }
 		region_modifier = { }
@@ -2669,7 +2750,7 @@ hwangnyongsa = {
 		upgrade_time = { months = 480 }
 		cost_to_upgrade = { factor = 5000 }
 		province_modifiers = {
-			local_institution_spread = 0.33
+			local_institution_spread = 0.5
 		}
 		area_modifier = { }
 		region_modifier = { }
@@ -2968,7 +3049,7 @@ banaue = {
 			trade_goods_size = 1
 		}
 		area_modifier = { 
-			trade_goods_size_modifier = 0.1
+			trade_goods_size_modifier = 0.15
 		}
 		region_modifier = { }
 		country_modifiers = {
@@ -2984,7 +3065,7 @@ banaue = {
 			trade_goods_size = 2
 		}
 		area_modifier = { 
-			trade_goods_size_modifier = 0.15
+			trade_goods_size_modifier = 0.25
 		}
 		region_modifier = { }
 		country_modifiers = {
@@ -3001,7 +3082,7 @@ banaue = {
 			trade_goods_size = 3
 		}
 		area_modifier = { 
-			trade_goods_size_modifier = 0.2
+			trade_goods_size_modifier = 0.33
 		}
 		region_modifier = { 
 			local_manpower_modifier = 0.05

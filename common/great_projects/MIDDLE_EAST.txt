@@ -171,7 +171,7 @@ painted_churches = { #of Troodos.
 		upgrade_time = { months = 120 }
 		cost_to_upgrade = { factor = 1000 }
 		province_modifiers = {
-			local_development_cost = -0.1
+			local_development_cost = -0.15
 		}
 		area_modifier = { }
 		region_modifier = { }
@@ -187,7 +187,7 @@ painted_churches = { #of Troodos.
 		upgrade_time = { months = 240 }
 		cost_to_upgrade = { factor = 2500 }
 		province_modifiers = {
-			local_development_cost = -0.15
+			local_development_cost = -0.2
 		}
 		area_modifier = { }
 		region_modifier = { }
@@ -204,7 +204,7 @@ painted_churches = { #of Troodos.
 		upgrade_time = { months = 480 }
 		cost_to_upgrade = { factor = 5000 }
 		province_modifiers = {
-			local_development_cost = -0.2
+			local_development_cost = -0.25
 		}
 		area_modifier = { }
 		region_modifier = { }
@@ -439,11 +439,11 @@ saint_thaddeus = {
 			local_monthly_devastation = -0.15
 		}
 		area_modifier = {
-			local_development_cost = 0.05
+			local_development_cost = -0.1
 		}
 		region_modifier = { }
 		country_modifiers = {
-			missionary_maintenance_cost = -0.05
+			missionary_maintenance_cost = -0.15
 		}
 		on_upgraded = { }
 	}
@@ -454,11 +454,11 @@ saint_thaddeus = {
 			local_monthly_devastation = -0.25
 		}
 		area_modifier = {
-			local_development_cost = 0.15
+			local_development_cost = -0.2
 		}
 		region_modifier = { }
 		country_modifiers = {
-			missionary_maintenance_cost = -0.15
+			missionary_maintenance_cost = -0.25
 			tolerance_heretic = 1
 		}
 		on_upgraded = { }
@@ -470,11 +470,13 @@ saint_thaddeus = {
 			local_monthly_devastation = -0.33
 		}
 		area_modifier = {
-			local_development_cost = -0.25
+			local_development_cost = -0.3
 		}
 		region_modifier = { }
 		country_modifiers = {
 			development_cost_in_primary_culture = -0.05
+			missionary_maintenance_cost = -0.33
+			tolerance_heretic = 1
 		}
 		on_upgraded = { }
 	}
@@ -672,7 +674,7 @@ vardzia = {
 
 me_grand_palace = {
 	start = 446
-	date = 1900.01.01
+	date = 1320.01.01
 	time = {
 		months = 120
 	}
@@ -811,7 +813,7 @@ me_grand_palace = {
 
 me_skull_pyramid = {
 	start = 446
-	date = 1900.01.01
+	date = 1360.01.01
 	time = {
 		months = 120
 	}
@@ -1043,6 +1045,16 @@ ctesiphon = {
 			monthly_splendor = 0.5
 			cavalry_cost = -0.1
 		}
+		conditional_modifier = {
+			trigger = { 
+				owner = {
+					cavalry_fraction = 0.15
+				}
+			}
+			modifier = { 
+				cavalry_shock = 0.15
+			}
+		}
 		on_upgraded = { }
 	}
 	tier_2 = {
@@ -1056,6 +1068,16 @@ ctesiphon = {
 			monthly_splendor = 1
 			cavalry_cost = -0.15
 		}
+		conditional_modifier = {
+			trigger = { 
+				owner = {
+					cavalry_fraction = 0.25
+				}
+			}
+			modifier = { 
+				cavalry_shock = 0.25
+			}
+		}
 		on_upgraded = { }
 	}
 	tier_3 = {
@@ -1068,6 +1090,16 @@ ctesiphon = {
 			adm_advisor_cost = -0.2
 			monthly_splendor = 2
 			cavalry_cost = -0.2
+		}
+		conditional_modifier = {
+			trigger = { 
+				owner = {
+					cavalry_fraction = 0.33
+				}
+			}
+			modifier = { 
+				cavalry_shock = 0.5
+			}
 		}
 		on_upgraded = { }
 	}
@@ -1142,7 +1174,7 @@ krak_des_chevaliers = { #Christian monument in the Middle East. Don't feel like 
 		region_modifier = { }
 		country_modifiers = {
 			papal_influence = 1
-			cavalry_power = 0.05
+			cavalry_power = 0.1
 			enforce_religion_cost = -0.25
 		}
 		on_upgraded = {
@@ -1167,7 +1199,7 @@ krak_des_chevaliers = { #Christian monument in the Middle East. Don't feel like 
 		region_modifier = { }
 		country_modifiers = {
 			papal_influence = 2
-			cavalry_power = 0.1
+			cavalry_power = 0.15
 			enforce_religion_cost = -0.33
 		}
 		on_upgraded = {
@@ -1413,6 +1445,17 @@ bazaar_tabriz = {
 				}
 			}
 		}
+		conditional_modifier = {
+			trigger = { 
+				trading_bonus = {
+					trade_goods = silk
+					value = yes
+				}
+			}
+			modifier = { 
+				trade_steering = 0.05
+			}
+		}
 	}
 	tier_2 = {
 		upgrade_time = { months = 240 }
@@ -1436,6 +1479,17 @@ bazaar_tabriz = {
 				}
 			}
 		}
+		conditional_modifier = {
+			trigger = { 
+				trading_bonus = {
+					trade_goods = silk
+					value = yes
+				}
+			}
+			modifier = { 
+				trade_steering = 0.1
+			}
+		}
 	}
 	tier_3 = {
 		upgrade_time = { months = 480 }
@@ -1457,6 +1511,17 @@ bazaar_tabriz = {
 					skill = 3
 					cost_multiplier = 0.25
 				}
+			}
+		}
+		conditional_modifier = {
+			trigger = { 
+				trading_bonus = {
+					trade_goods = silk
+					value = yes
+				}
+			}
+			modifier = { 
+				trade_steering = 0.15
 			}
 		}
 	}
@@ -1708,6 +1773,7 @@ al-azm = {
 		region_modifier = { }
 		country_modifiers = {
 			administrative_efficiency = 0.05
+			advisor_pool = 1
 		}
 		on_upgraded = {
 			owner = {
@@ -1731,6 +1797,8 @@ al-azm = {
 		region_modifier = { }
 		country_modifiers = {
 			administrative_efficiency = 0.05
+			free_policy = 1
+			advisor_pool = 1
 		}
 		on_upgraded = {
 			owner = {
@@ -1785,13 +1853,13 @@ sheikh_safi = {
 		upgrade_time = { months = 120 }
 		cost_to_upgrade = { factor = 1000 }
 		province_modifiers = {
-			local_unrest = -1
+			local_manpower_modifier = 0.25
 		}
 		area_modifier = { }
 		region_modifier = { }
 		country_modifiers = {
 			monarch_lifespan = 0.05
-			accept_vassalization_reasons = 5
+			qizilbash_loyalty_modifier = 0.05
 		}
 		on_upgraded = { }
 	}
@@ -1800,13 +1868,13 @@ sheikh_safi = {
 		cost_to_upgrade = { factor = 2500 }
 		province_modifiers = { }
 		area_modifier = {
-			local_unrest = -1
+			local_manpower_modifier = 0.25
 		}
 		region_modifier = { }
 		country_modifiers = {
 			monarch_lifespan = 0.1
-			accept_vassalization_reasons = 10
-			advisor_pool = 1
+			qizilbash_loyalty_modifier = 0.1
+			qizilbash_influence_modifier = 0.05
 		}
 		on_upgraded = { }
 	}
@@ -1815,13 +1883,13 @@ sheikh_safi = {
 		cost_to_upgrade = { factor = 5000 }
 		province_modifiers = { }
 		area_modifier = { 
-			local_unrest = -2
+			local_manpower_modifier = 0.33
 		}
 		region_modifier = {}
 		country_modifiers = {
 			monarch_lifespan = 0.15
-			accept_vassalization_reasons = 15
-			advisor_pool = 2
+			qizilbash_loyalty_modifier = 0.15
+			qizilbash_influence_modifier = 0.1
 		}
 		on_upgraded = { }
 	}
@@ -2057,10 +2125,13 @@ fu_ali_qapu = {
 		upgrade_time = { months = 120 }
 		cost_to_upgrade = { factor = 1000 }
 		province_modifiers = { }
-		area_modifier = { }
+		area_modifier = { 
+			local_has_qizilbash = yes
+		}
 		region_modifier = { }
 		country_modifiers = {
-			diplomatic_annexation_cost = -0.1
+			has_qizilbash = yes
+			allowed_qizilbash_fraction = 0.05
 			governing_capacity = 50
 		}
 		on_upgraded = {
@@ -2078,11 +2149,13 @@ fu_ali_qapu = {
 		upgrade_time = { months = 240 }
 		cost_to_upgrade = { factor = 2500 }
 		province_modifiers = { }
-		area_modifier = { }
+		area_modifier = { 
+			local_has_qizilbash = yes
+		}
 		region_modifier = { }
 		country_modifiers = {
-			diplomatic_upkeep = 1
-			diplomatic_annexation_cost = -0.15
+			has_qizilbash = yes
+			allowed_qizilbash_fraction = 0.1
 			governing_capacity = 100
 		}
 		on_upgraded = {
@@ -2100,11 +2173,13 @@ fu_ali_qapu = {
 		upgrade_time = { months = 480 }
 		cost_to_upgrade = { factor = 5000 }
 		province_modifiers = { }
-		area_modifier = { }
+		area_modifier = { 
+			local_has_qizilbash = yes
+		}
 		region_modifier = { }
 		country_modifiers = {
-			diplomatic_upkeep = 2
-			diplomatic_annexation_cost = -0.25
+			has_qizilbash = yes
+			allowed_qizilbash_fraction = 0.15
 			governing_capacity = 150
 		}
 		on_upgraded = {
@@ -2171,7 +2246,7 @@ alkarak_castle = {
 		region_modifier = { }
 		country_modifiers = {
 			governing_capacity = 100
-			cavalry_shock = 0.15
+			land_morale = 0.05
 		}
 		on_upgraded = { }
 	}
@@ -2188,8 +2263,7 @@ alkarak_castle = {
 		region_modifier = { }
 		country_modifiers = {
 			governing_capacity = 150
-			cavalry_shock = 0.25
-			leader_land_manuever = 1
+			land_morale = 0.1
 		}
 		on_upgraded = { }
 	}
@@ -2531,6 +2605,7 @@ yazd_windcatchers = {
 		region_modifier = { }
 		country_modifiers = {
 			merc_maintenance_modifier = -0.15
+			merc_leader_army_tradition = 0.15
 		}
 		on_upgraded = {
 		}
@@ -2548,6 +2623,8 @@ yazd_windcatchers = {
 		region_modifier = { }
 		country_modifiers = {
 			merc_maintenance_modifier = -0.2
+			merc_leader_army_tradition = 0.25
+			mercenary_manpower = 0.15
 		}
 		on_upgraded = {
 		}
@@ -2811,10 +2888,10 @@ fu_blue_mosque = {
 	tier_2 = {
 		upgrade_time = { months = 240 }
 		cost_to_upgrade = { factor = 2500 }
-		province_modifiers = {
-			local_tax_modifier = 0.5
+		province_modifiers = { }
+		area_modifier = { 
+			local_tax_modifier = 0.33
 		}
-		area_modifier = { }
 		region_modifier = { }
 		country_modifiers = {
 			global_heretic_missionary_strength = 0.01
@@ -2826,10 +2903,10 @@ fu_blue_mosque = {
 	tier_3 = {
 		upgrade_time = { months = 480 }
 		cost_to_upgrade = { factor = 5000 }
-		province_modifiers = {
-			local_tax_modifier = 0.75
+		province_modifiers = { }
+		area_modifier = { 
+			local_tax_modifier = 0.5
 		}
-		area_modifier = { }
 		region_modifier = { }
 		country_modifiers = {
 			global_heretic_missionary_strength = 0.02
@@ -2874,7 +2951,9 @@ ghazni = {
 		region_modifier = {
 			supply_limit_modifier = 0.25
 		}
-		country_modifiers = { }
+		country_modifiers = { 
+			global_supply_limit_modifier = 0.1
+		}
 		on_upgraded = { }
 	}
 	tier_2 = {
@@ -2908,6 +2987,7 @@ ghazni = {
 		country_modifiers = {
 			global_supply_limit_modifier = 0.25
 			army_tradition_decay = -0.01
+			land_attrition = -0.1
 		}
 		on_upgraded = { }
 	}

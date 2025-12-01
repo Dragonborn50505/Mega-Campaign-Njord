@@ -1,2 +1,15 @@
 ﻿l_english:
- ME_ADD_NAVY_TRADITION_OR_DIP_POWER: "All the excess §YNavy Tradition§! will be converted into §G3§! §YDiplomatic Power§! per 1 §YNavy Tradition§!."
+ ME_ADD_NAVY_TRADITION_OR_DIP_POWER:0 "All the excess §YNavy Tradition§! will be converted into §G3§! §YDiplomatic Power§! per 1 §YNavy Tradition§!."
+
+
+ MEGA_stanne_unique_TT:0 "The '§YSpymaster§!' Advisor will now also grant scaling on level: \n Morale Damage: §G+2.0%§!"
+ MEGA_fasil_ghebbi_unique_TT:0 "The '§YMilitary Engineer§!' Advisor will now also grant scaling on level: \n Fort Maintenance: §G-3.0%§!"
+ MEGA_mary_zion_unique_TT:0 "The '§YReligious Culture§!' Clergy Privilege will now also grant: \n Land Morale: §G+5.0%§! \n"
+ MEGA_yellow_crane_tower_unique_TT:0 "The '§YEunuch Land Rights§!' Eunuch Privilege will no longer cost Influence, Max Absolutism, crownland, and also grant: \n Interest Per Annum: §G-0.25§! \n"
+ MEGA_temple_of_heaven_unique_TT:0 "The '§YInstitutionalized Shizus§!' Shizu Privilege will no longer cost Influence or Max Absolutism, and also grant: \n Prestige: §G+0.25§! \n"
+ MEGA_qiao_unique_TT:0 "The '§YMonopoly on Mining and Smelting§!' Qinwang Privilege will no longer cost Max Absolutism, grant §G+50.0%§! more ¤, and §G+2§! more Mercantilism"
+ MEGA_yuelu_unique_TT:0 "The '§YImperial Council§!' Eunuch Privilege will no longer cost Influence or Max Absolutism and also grant: \n National Unrest: §G-1.00§! \n"
+ MEGA_magnup_kale_unique_TT:0 "The '§YNobility Officer Rights§!' Nobility Privilege will no longer cost Influence or Max Absolutism and also grant: \n General Cost: §G-10.0%§! \n"
+ MEGA_mir_castle_unique_TT:0 "The '§YGrant Court Positions§!' Nobility Privilege will no longer cost Influence or Max Absolutism and also grant the following modifier scaling on §GLoyalty§!: \n Land Force Limit: §G+10.0%§! \n"
+ MEGA_kisvarda_unique_TT:0 "The '§YStatesman of the Nobility§!' Nobility Privilege will no longer cost Influence or Max Absolutism and also grant: \n Diplomatic Annexation Cost: §G-10.0%§! \n"
+ MEGA_maria_laach_unique_TT:0 "The '§YInquisitor§!' Advisor will now also grant scaling on level: \n Morale Damage Received: §G+2.0%§!"
