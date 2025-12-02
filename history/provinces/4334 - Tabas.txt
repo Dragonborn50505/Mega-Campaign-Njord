@@ -1,5 +1,5 @@
-owner = Z6F
-controller = Z6F
+owner = ILK
+controller = ILK
 capital = "Tabas"
 is_city = yes
 culture = khorasani
@@ -8,7 +8,7 @@ trade_goods = wool
 base_tax = 4
 base_production = 4
 base_manpower = 2
-add_core = KHO
+add_core = ILK
 add_core = Z6F
 discovered_by = indian
 discovered_by = muslim

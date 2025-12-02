@@ -1,5 +1,5 @@
-owner = Z5H
-controller = Z5H
+owner = YOR
+controller = YOR
 capital = "Vizianagaram"
 is_city = yes
 culture = telegu
@@ -11,7 +11,7 @@ base_manpower = 2
 extra_cost = 8
 center_of_trade = 1
 add_core = GOC
-add_core = Z5H
+add_core = YOR
 add_permanent_claim = ORI
 discovered_by = chinese
 discovered_by = indian

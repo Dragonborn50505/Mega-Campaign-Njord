@@ -1,5 +1,5 @@
-owner = ARM
-controller = ARM
+owner = Z60
+controller = Z60
 capital = "Bayazid"
 is_city = yes
 culture = armenian
@@ -8,6 +8,7 @@ trade_goods = wool
 base_tax = 5
 base_production = 4
 base_manpower = 4
+add_core = Z60
 add_core = ARM
 discovered_by = east_african
 discovered_by = eastern

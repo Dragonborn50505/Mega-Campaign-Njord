@@ -1,5 +1,5 @@
-owner = Y1Y
-controller = Y1Y
+owner = Z4T
+controller = Z4T
 capital = "Syghnak"
 is_city = yes
 culture = oghuz
@@ -8,7 +8,7 @@ trade_goods = livestock
 base_tax = 1
 base_production = 1
 base_manpower = 1
-add_core = OGZ
+add_core = Z4T
 add_core = Y1Y
 discovered_by = KAS
 discovered_by = muslim

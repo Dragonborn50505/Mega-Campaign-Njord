@@ -1,5 +1,5 @@
-owner = Z4G
-controller = Z4G
+owner = ILK
+controller = ILK
 capital = "Teheran"
 is_city = yes
 culture = persian
@@ -10,7 +10,7 @@ base_production = 1
 base_manpower = 2
 extra_cost = 8
 center_of_trade = 1
-add_core = PER
+add_core = ILK
 add_core = Z4G
 discovered_by = indian
 discovered_by = muslim

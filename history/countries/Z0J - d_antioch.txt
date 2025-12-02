@@ -1,12 +1,12 @@
 government = monarchy
 add_government_reform = feudal_theocracy
 government_rank = 1
-technology_group = nomad_group
-religion = sunni
-primary_culture = oghuz
+technology_group = western
+religion = catholic
+primary_culture = seleucian
 capital = 2313
 religious_school = hanafi_school
-add_accepted_culture = seleucian
+add_accepted_culture = al_suryah_arabic
 set_country_flag = ZZZ_generated_converter_nation
 1444.11.11= {
 	monarch = {

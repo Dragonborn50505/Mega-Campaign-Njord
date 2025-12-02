@@ -1,5 +1,5 @@
-owner = PUN
-controller = PUN
+owner = ODH
+controller = ODH
 capital = "Kora"
 is_city = yes
 culture = avadhi
@@ -8,8 +8,7 @@ trade_goods = cotton
 base_tax = 4
 base_production = 3
 base_manpower = 2
-add_core = PUN
-add_permanent_claim = ODH
+add_core = ODH
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

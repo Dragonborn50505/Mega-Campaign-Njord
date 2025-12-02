@@ -1,5 +1,5 @@
-owner = AFG
-controller = AFG
+owner = ILK
+controller = ILK
 capital = "Ardabil"
 is_city = yes
 culture = oghuz
@@ -8,7 +8,7 @@ trade_goods = dyes
 base_tax = 5
 base_production = 4
 base_manpower = 3
-add_core = AFG
+add_core = ILK
 add_core = OGZ
 discovered_by = eastern
 discovered_by = muslim

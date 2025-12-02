@@ -1,5 +1,5 @@
-owner = MUL
-controller = MUL
+owner = GUG
+controller = GUG
 capital = "Hisar"
 is_city = yes
 culture = kanauji
@@ -9,7 +9,7 @@ base_tax = 5
 base_production = 4
 base_manpower = 2
 add_core = DLH
-add_core = MUL
+add_core = GUG
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

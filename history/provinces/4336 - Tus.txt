@@ -1,5 +1,5 @@
-owner = Z31
-controller = Z31
+owner = ILK
+controller = ILK
 capital = "Tun"
 is_city = yes
 culture = khorasani
@@ -8,7 +8,6 @@ trade_goods = spices
 base_tax = 4
 base_production = 4
 base_manpower = 3
-add_core = KHO
 add_core = Z31
 discovered_by = indian
 discovered_by = muslim

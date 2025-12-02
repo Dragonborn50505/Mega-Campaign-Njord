@@ -1,5 +1,5 @@
-owner = Z44
-controller = Z44
+owner = Z4T
+controller = Z4T
 capital = "Atakent"
 is_city = yes
 culture = tajik
@@ -9,6 +9,7 @@ base_tax = 2
 base_production = 3
 base_manpower = 1
 add_core = TRS
+add_core = Z4T
 add_core = Z44
 discovered_by = KAS
 discovered_by = muslim
