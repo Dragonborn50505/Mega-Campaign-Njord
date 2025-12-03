@@ -1,6 +1,6 @@
-owner = MOS
-controller = MOS
-capital = "Moskva"
+owner = UKR
+controller = UKR
+capital = "the generator"
 is_city = yes
 culture = russian
 religion = orthodox
@@ -11,6 +11,7 @@ base_manpower = 2
 extra_cost = 16
 center_of_trade = 2
 add_core = MOS
+add_permanent_claim = UKR
 discovered_by = GOL
 discovered_by = eastern
 discovered_by = nomad_group

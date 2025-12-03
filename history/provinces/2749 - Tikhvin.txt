@@ -1,5 +1,5 @@
-owner = VPS
-controller = VPS
+owner = UKR
+controller = UKR
 capital = "Tikhvin"
 is_city = yes
 culture = novgorodian

@@ -1,5 +1,5 @@
-owner = SMO
-controller = SMO
+owner = RYA
+controller = RYA
 capital = "Kaluga"
 is_city = yes
 culture = ryazanian
@@ -8,7 +8,8 @@ trade_goods = grain
 base_tax = 1
 base_production = 1
 base_manpower = 2
-add_core = SMO
+add_core = RYA
+add_core = RYA
 discovered_by = GOL
 discovered_by = KAZ
 discovered_by = eastern

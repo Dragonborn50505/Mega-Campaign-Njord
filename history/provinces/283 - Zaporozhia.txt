@@ -1,5 +1,5 @@
-owner = Z7P
-controller = Z7P
+owner = CRI
+controller = CRI
 capital = "Sich"
 is_city = yes
 culture = pecheneg

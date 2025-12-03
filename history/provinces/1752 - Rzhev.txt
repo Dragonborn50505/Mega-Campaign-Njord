@@ -1,5 +1,5 @@
-owner = SMO
-controller = SMO
+owner = UKR
+controller = UKR
 capital = "Rzhev"
 is_city = yes
 culture = russian

@@ -1,5 +1,5 @@
-owner = Z3B
-controller = Z3B
+owner = CRI
+controller = CRI
 capital = "Mansur"
 is_city = yes
 culture = crimean

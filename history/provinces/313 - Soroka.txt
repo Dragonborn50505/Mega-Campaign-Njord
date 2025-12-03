@@ -1,5 +1,5 @@
-owner = BJA
-controller = BJA
+owner = VPS
+controller = VPS
 capital = "Soroka"
 is_city = yes
 culture = dynamic-samoyed-culture-num1
@@ -8,7 +8,7 @@ trade_goods = fur
 base_tax = 2
 base_production = 1
 base_manpower = 1
-add_core = BJA
+add_core = VPS
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

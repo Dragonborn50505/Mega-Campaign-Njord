@@ -1,5 +1,5 @@
-owner = NOV
-controller = NOV
+owner = UKR
+controller = UKR
 capital = "Novgorod"
 is_city = yes
 culture = novgorodian

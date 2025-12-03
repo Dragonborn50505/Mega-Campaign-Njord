@@ -1,5 +1,5 @@
-owner = Z5X
-controller = Z5X
+owner = VPS
+controller = VPS
 capital = "Velsk"
 is_city = yes
 culture = vepsian
