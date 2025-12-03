@@ -1,6 +1,6 @@
 ck2_converter_generated = yes
 graphical_culture = easterngfx
-color = { 96 131 80 }
+color = { 153 0 0 }
 revolutionary_colors = { 0 13 5 }
 historical_idea_groups = {
 	expansion_ideas
@@ -53,10 +53,10 @@ monarch_names = {
 	"Gavriil #0" = 0
 	"Grigoriy #0" = 0
 	"Iosif #0" = 0
-	"Isaak #0" = 0
-	"Ivan #3" = 60
+	"Isak #0" = 0
+	"Nickolas #3" = 60
 	"Kirill #0" = 0
-	"Konstantin #0" = 15
+	"Konstantinos #0" = 15
 	"Lavrentiy #0" = 0
 	"Lazar #0" = 0
 	"Lev #0" = 0
