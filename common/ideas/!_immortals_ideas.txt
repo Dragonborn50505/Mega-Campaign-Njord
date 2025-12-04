@@ -7,9 +7,11 @@ immortals_ideas = {
 		global_manpower_modifier = 0.25
 	}
 	trigger = {
-		tag = IMM
+		OR = {
+			tag = IMM
+			tag = FRS
+		}
 		religion_group = zoroastrian_group
-		government = theocracy
 	}
 	free = yes
 	
