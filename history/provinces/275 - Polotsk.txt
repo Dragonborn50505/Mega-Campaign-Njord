@@ -1,5 +1,5 @@
-owner = PSK
-controller = PSK
+owner = EST
+controller = EST
 capital = "Polotsk"
 is_city = yes
 culture = novgorodian
@@ -10,8 +10,7 @@ base_tax = 3
 base_production = 2
 base_manpower = 2
 add_core = NOV
-add_core = PSK
-add_core = Z9H
+add_core = EST
 discovered_by = eastern
 discovered_by = nomad_group
 discovered_by = western
