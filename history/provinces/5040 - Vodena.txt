@@ -1,5 +1,5 @@
-owner = TUR
-controller = TUR
+owner = Z5A
+controller = Z5A
 culture = greek
 religion = orthodox
 capital = "Vodina"
@@ -9,7 +9,7 @@ base_tax = 2
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = TUR
+add_core = Z5A
 add_core = BYZ
 
 

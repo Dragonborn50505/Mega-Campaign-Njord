@@ -1,5 +1,5 @@
-owner = Z78
-controller = Z78
+owner = Z1D
+controller = Z1D
 capital = "Belz"
 is_city = yes
 culture = dynamic-mongol-russian_culture-culture-num1
@@ -10,7 +10,6 @@ base_tax = 1
 base_production = 1
 base_manpower = 2
 add_core = Z78
-add_permanent_claim = Z1D
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

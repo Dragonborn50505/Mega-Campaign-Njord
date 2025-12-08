@@ -112,8 +112,29 @@ union=
 
 union=
 {
-	first="Z18"
+	first="HAB"
 	second="Z34"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+union=
+{
+	first="HAB"
+	second="Z18"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+union=
+{
+	first="HAB"
+	second="STY"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+union=
+{
+	first="HAB"
+	second="TIR"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }

@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = uparaja_reform
 government_rank = 1
 technology_group = nomad_group
-religion = mahayana
+religion = zurvanism
 primary_culture = turko_iranian
 capital = 2999
 1444.11.11= {
@@ -14,7 +14,7 @@ capital = 2999
 		mil = 4
 		birth_date = 1390.3.28
 		female = yes
-		religion = mahayana
+		religion = zurvanism
 		culture = turko_iranian
 	}
 	add_ruler_personality = industrious_personality
@@ -28,7 +28,7 @@ capital = 2999
 		country_of_origin = ORM
 		birth_date = 1394.5.27
 		death_date = 1454.5.27
-		religion = mahayana
+		religion = zurvanism
 		culture = turko_iranian
 	}
 	add_queen_personality = pious_personality

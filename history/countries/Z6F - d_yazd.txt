@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = feudal_theocracy
 government_rank = 1
 technology_group = muslim
-religion = sunni
+religion = qarmatian
 primary_culture = tajik
 capital = 433
 religious_school = hanafi_school
@@ -16,7 +16,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		dip = 4
 		mil = 4
 		birth_date = 1419.9.20
-		religion = sunni
+		religion = qarmatian
 		culture = tajik
 	}
 	add_ruler_personality = free_thinker_personality
@@ -31,7 +31,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		birth_date = 1419.6.6
 		death_date = 1479.6.6
 		female = yes
-		religion = sunni
+		religion = qarmatian
 		culture = tajik
 	}
 	add_queen_personality = free_thinker_personality
@@ -46,7 +46,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		birth_date = 1421.7.17
 		death_date = 1486.7.17
 		claim = 89
-		religion = sunni
+		religion = qarmatian
 		culture = tajik
 	}
 	add_heir_personality = greedy_personality

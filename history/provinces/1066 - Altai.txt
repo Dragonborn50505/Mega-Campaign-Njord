@@ -1,5 +1,5 @@
-owner = Z4T
-controller = Z4T
+owner = Z07
+controller = Z07
 capital = "Altai Uriankhai"
 is_city = yes
 culture = khalkha
@@ -9,7 +9,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 add_core = KLK
-add_core = Z4T
+add_core = Z07
 add_core = Z8O
 discovered_by = KHA
 discovered_by = OIR

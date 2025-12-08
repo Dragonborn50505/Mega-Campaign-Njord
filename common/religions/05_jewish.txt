@@ -103,7 +103,6 @@ jewish_group = {
 			}
 		}
 		
-		heretic = { KARAITE }
 	}
 	karaite_faith = { #
 		icon = 51
@@ -209,7 +208,5 @@ jewish_group = {
 				}
 			}
 		}
-		
-		heretic = { SAMARITAN }
 	}
 }

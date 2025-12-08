@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = uparaja_reform
 government_rank = 1
 technology_group = nomad_group
-religion = mahayana
+religion = nestorian
 primary_culture = dynamic-uyghur-culture-num2
 capital = 2122
 add_accepted_culture = uyghur
@@ -15,7 +15,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		dip = 3
 		mil = 5
 		birth_date = 1421.7.14
-		religion = mahayana
+		religion = nestorian
 		culture = dynamic-uyghur-culture-num2
 	}
 	add_ruler_personality = martial_educator_personality
@@ -30,7 +30,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		birth_date = 1416.4.12
 		death_date = 1476.4.12
 		female = yes
-		religion = mahayana
+		religion = nestorian
 		culture = uyghur
 	}
 	add_queen_personality = intricate_web_weaver_personality
@@ -45,7 +45,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		birth_date = 1441.5.10
 		death_date = 1506.5.10
 		claim = 89
-		religion = mahayana
+		religion = nestorian
 		culture = dynamic-uyghur-culture-num2
 	}
 	add_heir_personality = obsessive_perfectionist_personality

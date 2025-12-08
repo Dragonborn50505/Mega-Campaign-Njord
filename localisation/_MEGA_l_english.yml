@@ -1,7 +1,12 @@
 ﻿l_english:
+
+ #BM MOD ADDITIONS:
  ME_ADD_NAVY_TRADITION_OR_DIP_POWER:0 "All the excess §YNavy Tradition§! will be converted into §G3§! §YDiplomatic Power§! per 1 §YNavy Tradition§!."
+ BM_2nd_idea_group_dev_cost: "Dev Cost Compensation"
+ desc_BM_2nd_idea_group_dev_cost: "§G-10%§! Dev Cost compensation due to removal of dev cost from Infrastructure Ideas"
+ BM_2nd_idea_group_dev_cost_TT: "We have either finished §G1§! §TFull Idea Group§! from the £adm£ Admin Category or finished §G2§! §TFull Idea Groups§! regardless of £adm£, £dip£ or £mil£ category"
 
-
+ #Great Projects:
  MEGA_stanne_unique_TT:0 "The '§YSpymaster§!' Advisor will now also grant scaling on level: \n Morale Damage: §G+2.0%§!"
  MEGA_fasil_ghebbi_unique_TT:0 "The '§YMilitary Engineer§!' Advisor will now also grant scaling on level: \n Fort Maintenance: §G-3.0%§!"
  MEGA_mary_zion_unique_TT:0 "The '§YReligious Culture§!' Clergy Privilege will now also grant: \n Land Morale: §G+5.0%§! \n"
@@ -13,3 +18,12 @@
  MEGA_mir_castle_unique_TT:0 "The '§YGrant Court Positions§!' Nobility Privilege will no longer cost Influence or Max Absolutism and also grant the following modifier scaling on §GLoyalty§!: \n Land Force Limit: §G+10.0%§! \n"
  MEGA_kisvarda_unique_TT:0 "The '§YStatesman of the Nobility§!' Nobility Privilege will no longer cost Influence or Max Absolutism and also grant: \n Diplomatic Annexation Cost: §G-10.0%§! \n"
  MEGA_maria_laach_unique_TT:0 "The '§YInquisitor§!' Advisor will now also grant scaling on level: \n Morale Damage Received: §G+2.0%§!"
+
+ #Empire Reforms
+ MEGA_reichsreform_unique_TT:0 "Every §YMember§! of the @HRE §YHoly Roman Empire§! will be awarded: \n Gain §G+25.00§! Reform Progress."
+ MEGA_reichsregiment_unique_TT:0 "Every §YFree City§! in the @HRE §YHoly Roman Empire§! will be awarded: \n Capital: Add or Upgrade their §YCourthouse Building§!. \n If a §YTown Hall§! is present: §G+1§! £adm£, £dip£ and £mil£ instead."
+ MEGA_emperor_reichsstabilitaet_unique_TT:0 "Every §YMember§! of the @HRE §YHoly Roman Empire§! will be awarded: \n Gain §G+1§! Stability or £adm£ §G+50§! Points"
+ MEGA_gemeinerpfennig_unique_TT:0 "Electors will gain ¤ §G+5§! and the Emperor will gain ¤ §G+10§! for every Member of the @HRE §YHoly Roman Empire§!."
+ MEGA_emperor_landsknechtswesen_unique_TT:0 "Every §YMember§! of the @HRE §YHoly Roman Empire§! will be granted a §G+5.0%§! Army Professionalism and a free §YGeneral§! scaling with §YArmy Tradition§! and Pip Modifiers"
+ MEGA_emperor_landfriede_unique_TT:0 "Every §YMember§! in the @HRE §YHoly Roman Empire§! will be awarded: \n Capital: Add or Upgrade their §YCourthouse Building§!. \n If a §YTown Hall§! is present: §G+1§! £adm£, £dip£ and £mil£ instead."
+ MEGA_hofgericht_unique_TT:0 "The §YEmperor§! of the @HRE §YHoly Roman Empire§! will be awarded: \n Gain §G+100.00§! Reform Progress."

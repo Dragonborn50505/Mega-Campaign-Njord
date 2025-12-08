@@ -1,5 +1,5 @@
-owner = TIR
-controller = TIR
+owner = URB
+controller = URB
 capital = "Ancona"
 is_city = yes
 culture = umbrian
@@ -9,7 +9,6 @@ hre = yes
 base_tax = 2
 base_production = 3
 base_manpower = 5
-add_core = TIR
 add_core = URB
 add_permanent_claim = PAP
 discovered_by = eastern

@@ -1,5 +1,5 @@
-owner = Z72
-controller = Z72
+owner = ILK
+controller = ILK
 capital = "Ghuriyan"
 is_city = yes
 culture = khorasani
@@ -8,7 +8,7 @@ trade_goods = livestock
 base_tax = 5
 base_production = 4
 base_manpower = 2
-add_core = KHO
+add_core = ILK
 add_core = Z72
 discovered_by = indian
 discovered_by = muslim

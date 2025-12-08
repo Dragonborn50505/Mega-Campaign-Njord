@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = western
-religion = catholic
+religion = adamites
 primary_culture = italian
 capital = 2247
 add_accepted_culture = berber
@@ -17,7 +17,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		mil = 4
 		birth_date = 1426.8.12
 		female = yes
-		religion = catholic
+		religion = adamites
 		culture = italian
 	}
 	add_ruler_personality = charismatic_negotiator_personality
@@ -31,7 +31,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		country_of_origin = Z51
 		birth_date = 1426.5.29
 		death_date = 1486.5.29
-		religion = catholic
+		religion = adamites
 		culture = berber
 	}
 	add_queen_personality = righteous_personality
@@ -46,7 +46,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		birth_date = 1431.6.18
 		death_date = 1496.6.18
 		claim = 89
-		religion = catholic
+		religion = adamites
 		culture = italian
 	}
 	add_heir_personality = malevolent_personality

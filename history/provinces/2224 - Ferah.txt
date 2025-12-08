@@ -1,5 +1,5 @@
-owner = Z87
-controller = Z87
+owner = ILK
+controller = ILK
 capital = "Ferah"
 is_city = yes
 culture = khorasani
@@ -8,7 +8,7 @@ trade_goods = livestock
 base_tax = 3
 base_production = 1
 base_manpower = 2
-add_core = KHO
+add_core = ILK
 add_core = Y0G
 add_core = Z87
 discovered_by = indian

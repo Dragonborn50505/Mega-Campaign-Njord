@@ -1,5 +1,5 @@
-owner = VRN
-controller = VRN
+owner = LUC
+controller = LUC
 capital = "Lucca"
 is_city = yes
 culture = tuscan
@@ -11,7 +11,7 @@ base_production = 3
 base_manpower = 2
 extra_cost = 8
 center_of_trade = 1
-add_core = VRN
+add_core = LUC
 add_permanent_claim = TUS
 discovered_by = eastern
 discovered_by = muslim

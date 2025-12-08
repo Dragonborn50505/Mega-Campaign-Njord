@@ -1,5 +1,5 @@
-owner = Z76
-controller = Z76
+owner = Z07
+controller = Z07
 capital = "Shekty"
 is_city = yes
 culture = oghuz
@@ -10,7 +10,7 @@ base_production = 1
 base_manpower = 1
 add_core = OGZ
 add_core = Z76
-add_permanent_claim = Z07
+add_core = Z07
 discovered_by = KAZ
 discovered_by = KZH
 discovered_by = muslim

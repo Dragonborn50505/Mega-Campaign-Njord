@@ -1,4 +1,7 @@
 capital = "As"
+owner = Z61
+controller = Z61
+add_core = Z61
 culture = ostyaki
 religion = siberian_pagan
 trade_goods = unknown

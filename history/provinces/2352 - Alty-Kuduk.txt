@@ -1,5 +1,5 @@
-owner = Z8N
-controller = Z8N
+owner = Z07
+controller = Z07
 capital = "Alty-Kuduk"
 is_city = yes
 culture = oghuz
@@ -9,6 +9,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 add_core = OGZ
+add_core = Z07
 add_core = Z8N
 discovered_by = KAS
 discovered_by = KAZ

@@ -1,5 +1,5 @@
-owner = Z3W
-controller = Z3W
+owner = ILK
+controller = ILK
 capital = "Sabzevar"
 is_city = yes
 culture = khorasani
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 3
 base_production = 1
 base_manpower = 2
-add_core = KHO
+add_core = ILK
 add_core = Z3W
 discovered_by = indian
 discovered_by = muslim

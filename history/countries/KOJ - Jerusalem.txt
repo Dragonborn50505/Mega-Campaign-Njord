@@ -1,9 +1,9 @@
-government = republic
-add_government_reform = free_city
+government = theocracy
+add_government_reform = crusading_kingdom_reform
 government_rank = 1
-technology_group = muslim
+technology_group = western
 religion = catholic
-primary_culture = al_suryah_arabic
+primary_culture = frencharab
 capital = 1854
 mercantilism = 25
 1444.11.11= {
@@ -15,7 +15,7 @@ mercantilism = 25
 		mil = 3
 		birth_date = 1410.6.15
 		religion = catholic
-		culture = al_suryah_arabic
+		culture = frencharab
 	}
 	add_ruler_personality = malevolent_personality
 	add_ruler_personality = obsessive_perfectionist_personality

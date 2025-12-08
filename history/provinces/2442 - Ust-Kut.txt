@@ -1,7 +1,4 @@
-owner = Z0K
-controller = Z0K
 capital = "Ust-Kut"
-is_city = yes
 culture = khalkha
 religion = mahayana
 trade_goods = unknown

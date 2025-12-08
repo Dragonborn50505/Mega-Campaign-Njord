@@ -2,7 +2,7 @@ government = tribal
 add_government_reform = steppe_horde
 government_rank = 2
 technology_group = muslim
-religion = mahayana
+religion = manichean
 primary_culture = mazandarani
 capital = 416
 1444.11.11= {
@@ -13,7 +13,7 @@ capital = 416
 		dip = 4
 		mil = 3
 		birth_date = 1404.12.26
-		religion = mahayana
+		religion = manichean
 		culture = mazandarani
 	}
 	add_ruler_personality = expansionist_personality
@@ -43,7 +43,7 @@ capital = 416
 		birth_date = 1427.6.9
 		death_date = 1492.6.9
 		claim = 89
-		religion = mahayana
+		religion = manichean
 		culture = mazandarani
 	}
 	add_heir_personality = bold_fighter_personality

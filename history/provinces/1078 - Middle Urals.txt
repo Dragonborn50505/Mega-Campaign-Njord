@@ -1,7 +1,4 @@
-owner = Z61
-controller = Z61
 capital = "Neromkar"
-is_city = yes
 culture = kirgiz
 religion = mahayana
 trade_goods = unknown

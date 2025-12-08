@@ -1,5 +1,5 @@
-owner = Z24
-controller = Z24
+owner = ILK
+controller = ILK
 capital = "Ahangaran"
 is_city = yes
 culture = khorasani
@@ -8,7 +8,7 @@ trade_goods = wool
 base_tax = 4
 base_production = 1
 base_manpower = 3
-add_core = KHO
+add_core = ILK
 add_core = Z24
 discovered_by = KAS
 discovered_by = indian

@@ -1,3 +1,6 @@
+owner = Z07
+controller = Z07
+add_core = Z07
 capital = "Pegaya Orda"
 culture = mongol
 religion = mahayana

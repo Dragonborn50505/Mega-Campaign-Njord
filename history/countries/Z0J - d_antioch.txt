@@ -1,8 +1,8 @@
-government = monarchy
-add_government_reform = feudal_theocracy
+government = theocracy
+add_government_reform = crusading_kingdom_reform
 government_rank = 1
 technology_group = western
-religion = catholic
+religion = monothelite
 primary_culture = seleucian
 capital = 2313
 religious_school = hanafi_school
@@ -16,8 +16,8 @@ set_country_flag = ZZZ_generated_converter_nation
 		mil = 3
 		birth_date = 1.1.1
 		regent = yes
-		religion = sunni
-		culture = oghuz
+		religion = monothelite
+		culture = seleucian
 	}
 	heir = {
 		name = "Kutlug"
@@ -28,8 +28,8 @@ set_country_flag = ZZZ_generated_converter_nation
 		birth_date = 1431.7.19
 		death_date = 1496.7.19
 		claim = 89
-		religion = sunni
-		culture = oghuz
+		religion = monothelite
+		culture = seleucian
 	}
 }
 1444.11.11= {

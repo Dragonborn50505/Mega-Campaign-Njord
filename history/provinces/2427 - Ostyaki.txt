@@ -1,7 +1,6 @@
+capital = "Beloyarskiy"
 owner = Z61
 controller = Z61
-capital = "Beloyarskiy"
-is_city = yes
 culture = nogaybak
 religion = siberian_pagan
 trade_goods = fur
