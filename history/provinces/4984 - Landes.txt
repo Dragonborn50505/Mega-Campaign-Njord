@@ -1,7 +1,7 @@
 # 174 Gascogne - Principal cities: Bordeaux
 
-owner = ENG
-controller = ENG
+owner = AMG
+controller = AMG
 capital = "Labrit"
 is_city = yes
 culture = gascon
@@ -13,7 +13,7 @@ trade_goods = wine
 base_manpower = 1
 add_core = GUY
 add_core = FRA
-add_core = ENG
+add_core = AMG
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

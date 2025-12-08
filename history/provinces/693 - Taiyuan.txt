@@ -1,5 +1,5 @@
-owner = MNG
-controller = MNG
+owner = CCP
+controller = CCP
 capital = "Taiyuan"
 is_city = yes
 culture = jin
@@ -10,6 +10,6 @@ base_production = 6
 base_manpower = 3
 center_of_trade = 1
 add_core = JIN
-add_core = MNG
+add_core = CCP
 discovered_by = chinese
 discovered_by = nomad_group

@@ -1,5 +1,5 @@
-owner = Z4W
-controller = Z4W
+owner = Z0Q
+controller = Z0Q
 capital = "al-Qurna"
 is_city = yes
 culture = al_iraqiya_arabic
@@ -9,7 +9,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 2
 add_core = IRQ
-add_core = Z4W
+add_core = Z0Q
 discovered_by = BYZ
 discovered_by = east_african
 discovered_by = indian

@@ -1,5 +1,5 @@
-owner = FOI
-controller = FOI
+owner = AMG
+controller = AMG
 capital = "Foix"
 is_city = yes
 culture = catalan
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 1
 base_production = 4
 base_manpower = 2
-add_core = FOI
+add_core = AMG
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman

@@ -1,5 +1,5 @@
-owner = JGD
-controller = JGD
+owner = GUJ
+controller = GUJ
 capital = "Khambhat"
 is_city = yes
 culture = mongol
@@ -10,7 +10,7 @@ base_production = 3
 base_manpower = 2
 extra_cost = 24
 center_of_trade = 3
-add_core = JGD
+add_core = GUJ
 add_core = PTL
 discovered_by = chinese
 discovered_by = east_african

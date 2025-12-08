@@ -1,5 +1,5 @@
-owner = MNG
-controller = MNG
+owner = CCP
+controller = CCP
 capital = "Tianshui"
 is_city = yes
 culture = xibei
@@ -9,6 +9,6 @@ base_tax = 2
 base_production = 2
 base_manpower = 1
 add_core = CSH
-add_core = MNG
+add_core = CCP
 discovered_by = chinese
 discovered_by = nomad_group

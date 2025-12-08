@@ -1,5 +1,5 @@
-owner = YOR
-controller = YOR
+owner = MAD
+controller = MAD
 capital = "Madurai"
 is_city = yes
 culture = tamil
@@ -10,7 +10,7 @@ base_production = 4
 base_manpower = 5
 extra_cost = 8
 center_of_trade = 1
-add_core = YOR
+add_core = MAD
 add_permanent_claim = MAD
 discovered_by = chinese
 discovered_by = east_african

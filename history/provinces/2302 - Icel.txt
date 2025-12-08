@@ -1,5 +1,5 @@
-owner = Z1W
-controller = Z1W
+owner = RUM
+controller = RUM
 capital = "Ermenek"
 is_city = yes
 culture = turkish
@@ -9,7 +9,7 @@ base_tax = 5
 base_production = 3
 base_manpower = 3
 add_core = TUR
-add_core = Z1H
+add_core = RUM
 add_core = Z1W
 discovered_by = eastern
 discovered_by = muslim

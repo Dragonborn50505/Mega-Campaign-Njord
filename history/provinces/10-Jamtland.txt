@@ -1,5 +1,5 @@
-owner = NOR
-controller = NOR
+owner = Z3Z
+controller = Z3Z
 capital = "Frösön"
 is_city = yes
 culture = norwegian
@@ -8,6 +8,6 @@ trade_goods = fur
 base_tax = 1
 base_production = 4
 base_manpower = 2
-add_core = NOR
+add_core = Z3Z
 discovered_by = eastern
 discovered_by = western

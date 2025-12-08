@@ -1,5 +1,5 @@
-owner = Y0T
-controller = Y0T
+owner = BPI
+controller = BPI
 capital = "Baku"
 is_city = yes
 culture = dynamic-mongol-persian-culture-num1
@@ -9,7 +9,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 3
 extra_cost = 10
-add_core = Y0T
+add_core = BPI
 add_permanent_claim = SRV
 discovered_by = eastern
 discovered_by = muslim

@@ -1,5 +1,5 @@
-owner = Z05
-controller = Z05
+owner = Z08
+controller = Z08
 capital = "Markam"
 is_city = yes
 culture = nepali
@@ -9,7 +9,7 @@ base_tax = 2
 base_production = 1
 base_manpower = 1
 add_core = NPL
-add_core = Z05
+add_core = Z08
 discovered_by = chinese
 discovered_by = indian
 discovered_by = nomad_group

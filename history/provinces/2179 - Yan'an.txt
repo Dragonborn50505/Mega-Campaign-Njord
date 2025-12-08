@@ -1,5 +1,5 @@
-owner = MNG
-controller = MNG
+owner = CCP
+controller = CCP
 capital = "Yan'an"
 is_city = yes
 culture = jin
@@ -8,7 +8,7 @@ trade_goods = grain
 base_tax = 3
 base_production = 3
 base_manpower = 2
-add_core = MNG
+add_core = CCP
 add_core = QIN
 discovered_by = chinese
 discovered_by = nomad_group

@@ -1,5 +1,5 @@
-owner = Z7Z
-controller = Z7Z
+owner = Z5T
+controller = Z5T
 capital = "Gao"
 is_city = yes
 culture = songhai
@@ -11,6 +11,6 @@ base_manpower = 1
 extra_cost = 8
 center_of_trade = 1
 add_core = SON
-add_core = Z7Z
+add_core = Z5T
 add_permanent_claim = Z2T
 discovered_by = sub_saharan

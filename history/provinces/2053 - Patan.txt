@@ -1,5 +1,5 @@
-owner = PUN
-controller = PUN
+owner = GUJ
+controller = GUJ
 capital = "Patan"
 is_city = yes
 culture = rajput
@@ -9,7 +9,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 2
 add_core = MER
-add_core = PUN
+add_core = GUJ
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

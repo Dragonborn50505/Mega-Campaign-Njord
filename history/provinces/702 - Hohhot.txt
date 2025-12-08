@@ -1,5 +1,5 @@
-owner = MNG
-controller = MNG
+owner = CCP
+controller = CCP
 capital = "Hohhot"
 is_city = yes
 culture = mongol
@@ -9,6 +9,6 @@ base_tax = 4
 base_production = 4
 base_manpower = 4
 add_core = KHA
-add_core = MNG
+add_core = CCP
 discovered_by = chinese
 discovered_by = nomad_group

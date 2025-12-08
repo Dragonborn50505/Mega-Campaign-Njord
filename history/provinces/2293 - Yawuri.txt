@@ -1,5 +1,5 @@
-owner = OYO
-controller = OYO
+owner = KTS
+controller = KTS
 capital = "Birnin Yawuri"
 is_city = yes
 culture = yorumba
@@ -8,5 +8,5 @@ trade_goods = coffee
 base_tax = 2
 base_production = 1
 base_manpower = 1
-add_core = OYO
+add_core = KTS
 discovered_by = sub_saharan

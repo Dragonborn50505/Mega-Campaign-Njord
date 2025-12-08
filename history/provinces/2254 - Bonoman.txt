@@ -1,5 +1,5 @@
-owner = KNG
-controller = KNG
+owner = ASH
+controller = ASH
 capital = "Bono Manso"
 is_city = yes
 culture = aka
