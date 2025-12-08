@@ -1,5 +1,5 @@
-owner = MOS
-controller = MOS
+owner = UKR
+controller = UKR
 capital = "Moskva"
 is_city = yes
 culture = russian
