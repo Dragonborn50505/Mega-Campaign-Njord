@@ -1,6 +1,6 @@
-owner = UKR
-controller = UKR
-capital = "the generator"
+owner = MOS
+controller = MOS
+capital = "Moskva"
 is_city = yes
 culture = russian
 religion = orthodox

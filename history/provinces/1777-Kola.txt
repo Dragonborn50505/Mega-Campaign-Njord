@@ -1,5 +1,5 @@
-owner = Z3Z
-controller = Z3Z
+owner = VPS
+controller = VPS
 capital = "Kola"
 is_city = yes
 culture = sapmi
@@ -9,7 +9,6 @@ base_tax = 2
 base_production = 1
 base_manpower = 1
 add_core = SMI
-add_core = Z3Z
 discovered_by = eastern
 discovered_by = western
 native_size = 2

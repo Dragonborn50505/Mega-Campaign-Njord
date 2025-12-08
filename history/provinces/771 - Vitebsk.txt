@@ -1,5 +1,5 @@
-owner = PLT
-controller = PLT
+owner = EST
+controller = EST
 capital = "Vitebsk"
 is_city = yes
 culture = byelorussian
@@ -9,6 +9,7 @@ base_tax = 1
 base_production = 3
 base_manpower = 2
 add_core = PLT
+add_core = EST
 discovered_by = eastern
 discovered_by = nomad_group
 discovered_by = western
