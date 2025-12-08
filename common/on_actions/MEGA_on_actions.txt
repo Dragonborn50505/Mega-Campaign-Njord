@@ -1,0 +1,100 @@
+on_expanded_infrastructure = {
+	if = {
+		limit = {
+			owner = { has_idea = BM_efficient_construction_plans }
+		}
+		random_list = {
+			33 = { add_base_tax = 1 }
+			33 = { add_base_production = 1 }
+			33 = { add_base_manpower = 1 }
+		}
+	}
+}
+
+#ROOT = province that was centralized in
+on_centralized_state = {
+	if = {
+		limit = {
+			owner = { has_idea = BM_centralization }
+		}
+		area = {
+			limit = {
+				owned_by = ROOT
+			}
+			add_or_extend_province_modifier_effect = { MODIFIER = BM_admin_ideas_centralization_mechanic DURATION = 3650 }
+		}
+	}
+}
+
+on_diplomatic_annex = {
+	events = {
+		610
+		appanages_event.1
+		BM_scripted_effect_event.1
+	}
+	FRA = { 
+		if = {
+			limit = {
+				has_estate_privilege = estate_nobles_french_strong_duchies
+				NOT = { 
+					any_subject_country = {
+						capital_scope = { region = france_region }
+						culture_group = french
+					}
+				}
+			}
+			remove_estate_privilege = estate_nobles_french_strong_duchies
+		}
+	}
+}
+
+on_harmonized_buddhism = {
+	add_adm_power = 100
+	add_dip_power = 100
+	add_mil_power = 100
+}
+on_harmonized_christian = {
+	add_adm_power = 100
+	add_dip_power = 100
+	add_mil_power = 100
+}
+on_harmonized_dharmic = {
+	add_adm_power = 100
+	add_dip_power = 100
+	add_mil_power = 100
+}
+on_harmonized_jewish_group = {
+	add_adm_power = 100
+	add_dip_power = 100
+	add_mil_power = 100
+}
+on_harmonized_mahayana = {
+	add_adm_power = 100
+	add_dip_power = 100
+	add_mil_power = 100
+}
+on_harmonized_muslim = {
+	add_adm_power = 100
+	add_dip_power = 100
+	add_mil_power = 100
+}
+on_harmonized_pagan = {
+	add_adm_power = 100
+	add_dip_power = 100
+	add_mil_power = 100
+}
+on_harmonized_shinto = {
+	add_adm_power = 100
+	add_dip_power = 100
+	add_mil_power = 100
+}
+on_harmonized_vajrayana = {
+	add_adm_power = 100
+	add_dip_power = 100
+	add_mil_power = 100
+}
+on_harmonized_zoroastrian_group = {
+	add_adm_power = 100
+	add_dip_power = 100
+	add_mil_power = 100
+}

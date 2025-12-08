@@ -1,5 +1,5 @@
-owner = EST
-controller = EST
+owner = PSK
+controller = PSK
 capital = "Velikiye Luki"
 is_city = yes
 culture = novgorodian
@@ -9,7 +9,8 @@ base_tax = 5
 base_production = 3
 base_manpower = 2
 add_core = NOV
-add_core = EST
+add_core = PSK
+add_core = Z3I
 discovered_by = eastern
 discovered_by = nomad_group
 discovered_by = western

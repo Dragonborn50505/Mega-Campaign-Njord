@@ -1,5 +1,5 @@
-owner = VPS
-controller = VPS
+owner = BJA
+controller = BJA
 capital = "Kholmogory"
 is_city = yes
 culture = dynamic-samoyed-culture-num1
@@ -11,7 +11,7 @@ base_production = 1
 base_manpower = 3
 extra_cost = 16
 center_of_trade = 2
-add_core = VPS
+add_core = BJA
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

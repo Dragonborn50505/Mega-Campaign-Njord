@@ -1,5 +1,5 @@
-owner = CRI
-controller = CRI
+owner = Y1S
+controller = Y1S
 capital = "Lubnie"
 is_city = yes
 culture = ruthenian
@@ -10,6 +10,7 @@ base_production = 4
 base_manpower = 2
 add_core = KIE
 add_core = Z6E
+add_core = Y1S
 add_permanent_claim = CRI
 discovered_by = eastern
 discovered_by = muslim

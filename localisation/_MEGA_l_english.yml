@@ -6,6 +6,27 @@
  desc_BM_2nd_idea_group_dev_cost: "§G-10%§! Dev Cost compensation due to removal of dev cost from Infrastructure Ideas"
  BM_2nd_idea_group_dev_cost_TT: "We have either finished §G1§! §TFull Idea Group§! from the £adm£ Admin Category or finished §G2§! §TFull Idea Groups§! regardless of £adm£, £dip£ or £mil£ category"
 
+ BM_efficient_construction_plans: "Efficient Construction Plans"
+ BM_efficient_construction_plans_desc: "Our efficient planning around construction allows us to complete orders of work without cutting any corners.\nDevelopment from Expanding Infrastructure: §G+1§!"
+
+ BM_centralization: "Centralization"
+ BM_centralization_desc: "If we centralize the state then we will find it easier to advance the ideas and agenda of the center over the regions.\nCentralizing states will double the bonuses for §G25§! years."
+ BM_admin_ideas_centralization_mechanic: "Centralized State"
+ desc_BM_admin_ideas_centralization_mechanic: ""
+
+ BM_integrated_elites: "Integrated Elites"
+ BM_integrated_elites_desc: "By bringing the ruling elite of our subject nations into our government we can smoothen the process of integrating their provinces significantly.\nIntegrating Subjects now grants: §G5.0%§! Crown Land"
+
+ BM_benevolence: "Benevolence"
+ BM_benevolence_desc: "Our nation is a bastion of tolerance and enlightenment. By ensuring that all other nations know this, we can foster better relations abroad.\nHarmonizing now grants §G100§! of every Monarch Power"
+
+ BM_general_colonization_law: "General Colonization Law"
+ BM_general_colonization_law_desc: "By adopting a law allowing free movement of foreign people to our colonies we'll be sure to lure a wider range of future settlers.\nAll Colonial Subjects also gets §G+10§! Settler Increase and §G5.0%§! Settler Chance"
+ BM_general_colonization_law_subject: "Colonization Laws Instituted"
+ BM_general_colonization_law_subject_desc: ""
+
+
+
  #Great Projects:
  MEGA_stanne_unique_TT:0 "The '§YSpymaster§!' Advisor will now also grant scaling on level: \n Morale Damage: §G+2.0%§!"
  MEGA_fasil_ghebbi_unique_TT:0 "The '§YMilitary Engineer§!' Advisor will now also grant scaling on level: \n Fort Maintenance: §G-3.0%§!"
@@ -27,3 +48,89 @@
  MEGA_emperor_landsknechtswesen_unique_TT:0 "Every §YMember§! of the @HRE §YHoly Roman Empire§! will be granted a §G+5.0%§! Army Professionalism and a free §YGeneral§! scaling with §YArmy Tradition§! and Pip Modifiers"
  MEGA_emperor_landfriede_unique_TT:0 "Every §YMember§! in the @HRE §YHoly Roman Empire§! will be awarded: \n Capital: Add or Upgrade their §YCourthouse Building§!. \n If a §YTown Hall§! is present: §G+1§! £adm£, £dip£ and £mil£ instead."
  MEGA_hofgericht_unique_TT:0 "The §YEmperor§! of the @HRE §YHoly Roman Empire§! will be awarded: \n Gain §G+100.00§! Reform Progress."
+
+ #TRIGGERED MODIFIERS:
+ high_american_tech_mod:0 "High American civilization"
+ eastern_tech_mod:0 "Eastern European civilization"
+ ottoman_tech_mod:0 "Anatolian civilization"
+ muslim_tech_mod:0 "Muslim civilization"
+ indian_tech_mod:0 "Indian civilization"
+ east_african_tech_mod:0 "East African civilization"
+ chinese_tech_mod:0 "Chinese civilization"
+ sub_saharan_tech_mod:0 "West African civilization"
+ central_african_tech_mod:0 "Central African civilization"
+ nomad_group_tech_mod:0 "Nomad civilization"
+ mesoamerican_tech_mod:0 "Mesoamerican civilization"
+ andean_tech_mod:0 "Andean civilization"
+ north_american_tech_mod:0 "North American civilization"
+ south_american_tech_mod:0 "South American civilization"
+ aboriginal_tech_tech_mod:0 "Aboriginal civilization"
+ polynesian_tech_tech_mod:0 "Polynesian civilization"
+
+ social_conservatism_title:0 "Social conservatism"
+ desc_social_conservatism:0 "In this emerging modern world new ideas are still not so easily accepted"
+
+
+ BM_reduced_diplomatic_travel_time_1:0 "Invention of the Flute"
+ desc_BM_reduced_diplomatic_travel_time_1:0 "Popularized in the Dutch Republic in the 16th century, the Flute has been used as a dedicated vessel to transport cargo across the North Sea and later the Atlantic Ocean ever since the 14th century. Being able to carry twice the cargo compared to other vessels as well as being efficiently crewed by a much smaller crew made the Flute a very lucrative and manpower efficient vessel."
+
+ BM_reduced_diplomatic_travel_time_2:0 "Invention of the Brig"
+ desc_BM_reduced_diplomatic_travel_time_2:0 "A Brig is a type of sailing vessel defined by its rig: two masts which are both squar-rigged and became a popular merchant vessel for traversing the Transatlantic Ocean due to its speed and durability. The Royal Navy used Brigs for combat training and in 1759 conducted 4395 voyages transporting coal to London alone."
+
+ BM_reduced_diplomatic_travel_time_3:0 "Invention of the Merchantman"
+ desc_BM_reduced_diplomatic_travel_time_3:0 "The Merchantman doesn't refer to a single type of ship, but rather the standardization of merchant vessels that came due to the ever expanding networks of trade across the world. This, in part with growing military navies, made it so merchant ships no longer needed to be able to convert freely from civilian to military use, and could solely be dedicated towards trade and cargo transport."
+
+ BM_reduced_diplomatic_travel_time_4:0 "Invention of the Trabakul"
+ desc_BM_reduced_diplomatic_travel_time_4:0 "The Trabàccolo or Trabakul, depending on whether you speak Italian or Croatian, was a type of Adriatic Sea sailing 'coaster'. Though this ship was both smaller and therefore less able to carry goods and conduct trade, it was an important stepping stone to the popularization of 'coasters', civilian ships designed to travel fast and lightly across small bodies of water such as lakes and along coastlines. Many diplomats, philantrophists and entreprenaurs as well as the growing middle-class along the Adriatic opted for this type of ship."
+
+ BM_reduced_diplomatic_travel_time_5:0 "Invention of the East Indiaman"
+ desc_BM_reduced_diplomatic_travel_time_5:0 "The East Indiaman was a general name given to any merchant ship operating under the charter or licence of the East India Companies of the European trading powers such as the EIC or VOC. The East Indiaman wast the culmination of hundreds of years of refinement in shipbuilding in the pursuit of profit and colonization."
+
+# Advisor: # Couldn't think of better names for advisors, pls no judge.
+ #Decision/events:
+ BM_get_specific_advisor_title: "£sea_advisor_logo£Recruit Specific Advisor"
+ BM_get_specific_advisor_desc: "No one reads this anyway."
+ sea_advisor_event.0.t: "Recruit Specific Advisor"
+ sea_advisor_event.0.d: "Don't want to risk losing too much cash to RNG? Then you came to the right place. We got wide range of advisors to hire, all in their own categories. Go ahead, see what you like. And if you can't find anything good, you can always return for next time. The doors are open as long as you have the ducats."
+ sea_advisor_event.0.0: "Perhaps another time."
+ sea_advisor_event.0.01: "Go Back."
+ sea_advisor_event.0.a: "Check Administrative Advisors."
+ sea_advisor_event.0.b: "Check Diplomatic Advisors."
+ sea_advisor_event.0.c: "Check Military Advisors."
+ sea_advisor_event.1.t: "Administrative Advisors"
+ sea_advisor_event.2.t: "Diplomatic Advisors"
+ sea_advisor_event.3.t: "Military Advisors"
+ sea_advisor_event.1.d: "Keep in mind that the advisors will be low skilled, since they're somewhat new for the job, so if you want to up their skill, you have to pay from your own pockets."
+ # Events: ADM
+ sealand_events.1.t: "Administrative Advisors"
+ sealand_events.1.3: "£sea_prestige£Yearly Prestige: §G+1.00§!"
+ sealand_events.1.12: "£sea_stability_cost_modifier£ Stability Cost Modifier: §G-10.0%§!"
+ sealand_events.1.14: "£sea_inflation_reduction£ Yearly Inflation Reduction: §G+0.10§!"
+ sealand_events.1.15: "£sea_global_tax_modifier£ National Tax Modifier: §G+10.0%§!"
+ sealand_events.1.16: "£sea_production_efficiency£ Production Efficiency: §G+10.0%§!"
+ sealand_events.1.17: "£sea_global_unrest£ National Unrest: §G-2.00§!"
+ sealand_events.1.18: "£sea_global_missionary_strength£ Missionary Strength: §G+2.0§!"
+ # Events: DIP
+ sealand_events.2.t: "Diplomatic Advisors"
+ sealand_events.2.5: "£sea_diplomatic_reputation£ Diplomatic Reputation: §G+1.00§!"
+ sealand_events.2.6: "£sea_improve_relation_modifier£ Improve Relations: §G+20.0%§!"
+ sealand_events.2.8: "£sea_spy_offence£ Spy Network Construction: §G+25.%§!"
+ sealand_events.2.11: "£sea_trade_efficiency£ Trade Efficiency: §G+10.0%§!"
+ sealand_events.2.12: "£sea_global_tariffs£ Global Tariffs: §G+10.0%§!"
+ sealand_events.2.13: "£sea_range£ Colonial Range: §G+20.0%§!"
+ sealand_events.2.15: "£sea_naval_morale£ Morale of Navies: §G+10.0%§!"
+ # Events: MIL
+ sealand_events.3.t: "Military Advisors"
+ sealand_events.3.2: "£sea_land_morale£ Morale of Armies: §G+10.0%§!"
+ sealand_events.3.3: "£sea_discipline£ Discipline: §G+5.0%§!"
+ sealand_events.3.13: "£sea_reinforce_speed£ Reinforce Speed: §G+33.0%§!"
+ sealand_events.3.14: "£sea_global_manpower_modifier£ National Manpower Modifier: §G+10.0%§!"
+ sealand_events.3.15: "£sea_land_forcelimit_modifier£ Land Force Limit Modifier: §G+10.0%§!"
+ sealand_events.3.16: "£sea_land_maintenance_modifier£ Land Maintenance Modifier: §G-10.0%§!"
+ sealand_events.3.20: "£sea_defensiveness£ Fort Defence: §G+20.0%§!"
+
+ #ECONOMIC GOLDEN AGE
+ BM_economic_golden_era_title: "Enter Economic Golden Era"
+ BM_economic_golden_era_desc: ""
+ BM_in_economic_golden_era: "Economic Golden Era"
+ desc_BM_in_economic_golden_era: ""

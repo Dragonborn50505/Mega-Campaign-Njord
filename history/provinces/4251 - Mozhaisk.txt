@@ -9,6 +9,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 2
 add_core = UKR
+add_core = SMO
 discovered_by = GOL
 discovered_by = KAZ
 discovered_by = eastern

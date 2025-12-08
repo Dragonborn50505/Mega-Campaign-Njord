@@ -1,0 +1,45 @@
+merc_local_imperial_knights_company = {
+    regiments_per_development = 0.025
+    cavalry_weight = 1
+    artillery_weight = 0.0
+	cavalry_cap = 14
+    trigger = {
+		has_government_attribute = enables_imperial_knights
+	}
+	cost_modifier = 0.75
+	modifier = {
+		reinforce_speed = -0.33
+		cavalry_shock = 0.5
+	}
+}
+
+merc_garde_ecossaise_company = {
+    regiments_per_development = 0.02
+    cavalry_weight = 0.1
+    artillery_weight = 0.1
+	max_size = 30
+    trigger = {
+		has_country_flag = fee_garde_ecossaise
+	}
+	sprites = { sco_base_sprite_pack   }
+	cost_modifier = 0.25
+	modifier = {
+		reinforce_speed = 0.3
+		shock_damage_received = -0.1
+	}
+}
+
+merc_local_qizilbash_company = {
+    regiments_per_development = 0.050
+    cavalry_weight = 0.5
+    artillery_weight = 0.0
+    trigger = {
+		has_government_attribute = enables_qizilbash_company
+	}
+	cost_modifier = 0.50
+	modifier = {
+		cavalry_power = 0.2
+		movement_speed = 0.2
+		reinforce_speed = 0.25
+	}
+}
