@@ -107,7 +107,6 @@ country_decisions = {
 			}
 			set_country_flag = formed_sardinia_piedmont_flag
 			add_prestige = 10
-			add_government_reform = kingdom_of_sardinia_reform
 			if = {
 				limit = {
 					primary_culture = sardinian

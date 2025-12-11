@@ -3,7 +3,7 @@
 add_core = UTR
 owner = UTR
 controller = UTR
-culture = flemish
+culture = dutch
 religion = norse_pagan
 hre = yes
 base_tax = 3

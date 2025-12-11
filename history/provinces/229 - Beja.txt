@@ -9,7 +9,6 @@ fort_15th = yes
 base_tax = 1
 base_production = 4
 base_manpower = 3
-add_core = GAL
 add_core = MOR
 discovered_by = eastern
 discovered_by = muslim

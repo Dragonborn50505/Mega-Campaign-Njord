@@ -1,0 +1,16 @@
+# CB for vassalization missions
+cb_vassalize_indian_lord = {
+	valid_for_subject = no
+
+	prerequisites = {
+		FROM = { is_subject = no }
+		is_neighbor_of = FROM
+		ROOT = { capital_scope = { continent = europe } }
+		FROM = { capital_scope = { superregion = india_superregion } }
+		any_owned_province = { superregion = india_superregion  }
+		NOT = { has_global_flag = european_meddling_overruled }
+		FROM = { has_disaster = european_meddling }
+	}
+
+	war_goal = take_capital_vassalize
+}

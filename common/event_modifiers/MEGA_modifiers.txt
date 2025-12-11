@@ -4,3 +4,60 @@ MEGA_drained_the_swamps = {
 	local_manpower_modifier = 0.1
 	local_production_efficiency = 0.15
 }
+
+MEGA_reverse_danishification = {
+	local_culture_conversion_cost = -0.2
+	local_culture_conversion_time = -0.2
+}
+
+MEGA_hansa_kontor_owned_by_hansa = {
+	province_trade_power_modifier = 0.2
+	local_development_cost = -0.1
+}
+
+MEGA_hamburg_colonisation_craze = {
+	colonists = 1
+	colony_development_boost = 1
+}
+
+MEGA_hamburg_baltic_sea_protectors = {
+	naval_forcelimit_modifier = 0.2
+	naval_tradition_from_trade = 0.25
+}
+
+MEGA_hamburg_the_russian_connection = {
+	trade_steering = 0.2
+	merchants = 1
+}
+
+MEGA_hamburg_queen_of_the_league = {
+	province_trade_power_value = 5
+	trade_value_modifier = 0.25
+	monthly_splendor = 1
+}
+
+MEGA_hamburg_hansa_contacts_in_london = {
+	trade_efficiency = 0.1
+	merchants = 1
+}
+
+MEGA_epstein_island_2_electric_boogaloo = {
+	local_unrest = -1
+	local_development_cost = -0.15
+	local_missionary_strength = -0.001
+}
+
+MEGA_great_khan_khubilai = {
+	horde_unity = 0.5
+	nomadic_tribes_loyalty_modifier = 0.2
+	movement_speed = 0.1
+	cavalry_cost = -0.2
+	monarch_lifespan = 0.25
+}
+
+MEGA_mongol_empire_still_standing = {
+	land_maintenance_modifier = -0.25
+	land_forcelimit = 20
+	global_manpower = 20
+	global_tax_income = 120
+}

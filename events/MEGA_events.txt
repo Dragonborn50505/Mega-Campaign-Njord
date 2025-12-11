@@ -1,0 +1,171 @@
+namespace = MEGA_events
+
+country_event = {	#AI fix
+	id = MEGA_events.1
+	title = MEGA_events.1.t
+	desc = MEGA_events.1.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SHL
+	}
+	
+	option = {
+		name = MEGA_events.1.a
+		change_tag = HAM
+		on_change_tag_effect = yes
+		remove_non_electors_emperors_from_empire_effect = yes
+		if = {
+			limit = {
+				NOT = {
+					government_rank = 2
+				}
+			}
+			set_government_rank = 2
+		}
+		set_capital = 44
+		add_prestige_or_monarch_power = { amount = 10 }
+		change_government = republic
+		add_government_reform = peasants_republic
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		if = {
+			limit = {
+				NOT = { was_tag = HAM }
+			}
+			swap_non_generic_missions = yes
+		}
+	}
+}
+
+country_event = {	#AI fix
+	id = MEGA_events.2
+	title = MEGA_events.2.t
+	desc = MEGA_events.2.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		tag = Z07
+	}
+
+	immediate = {
+		hidden_effect = {
+			change_tag = KHA
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = {
+						government_rank = 2
+					}
+				}
+				set_government_rank = 2
+			}
+			set_capital = 466
+			add_prestige_or_monarch_power = { amount = 100 }
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			if = {
+				limit = {
+					NOT = { was_tag = KHA }
+				}
+				swap_non_generic_missions = yes
+			}
+			add_country_modifier = {
+				name = MEGA_mongol_empire_still_standing
+				duration = -1
+			}
+		}
+	}
+	
+	option = {
+		name = MEGA_events.1.a
+		add_ruler_modifier = {
+			name = MEGA_great_khan_khubilai
+		}
+	}
+}
+
+country_event = {	#Indian cores fix
+	id = MEGA_events.3
+	title = MEGA_events.3.t
+	desc = MEGA_events.3.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+	trigger = {
+		tag = MNG #xd load bearing Ming
+	}
+
+	immediate = {
+		#MYSORE CORES
+		mysore_area = {
+			add_core = MYS
+		}
+		2032 = {
+			add_core = MYS
+		}
+		538 = {
+			add_core = MYS
+		}
+		4414 = {
+			add_core = MYS
+		}
+		#KELADI
+		kanara_area = {
+			add_core = KLN
+		}
+		2033 = {
+			add_core = KLN
+		}
+		#KOLATHUND
+		4413 = {
+			add_core = KLT
+		}
+		2029 = {
+			add_core = KLT
+		}
+		#CALICUT
+		534 = {
+			add_core = MAB
+		}
+		#CALICUT
+		535 = {
+			add_core = KOC
+		}
+		#VENAD
+		537 = {
+			add_core = VND
+		}
+		4410 = {
+			add_core = VND
+		}
+		#MADURAI
+		madura_area = {
+			add_core = MAD
+		}
+		kongu_area = {
+			add_core = MAD
+		}
+		tanjore_area = {
+			add_core = MAD
+		}
+	}
+	
+	option = {
+		name = MEGA_events.3.a
+	}
+}

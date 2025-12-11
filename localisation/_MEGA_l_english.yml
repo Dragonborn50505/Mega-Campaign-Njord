@@ -134,3 +134,23 @@
  BM_economic_golden_era_desc: ""
  BM_in_economic_golden_era: "Economic Golden Era"
  desc_BM_in_economic_golden_era: ""
+
+
+
+ #HAMBURG MISSIONS
+ hsa_london_channel_mission_no_friends:0 "If we complete this mission by achieving Trade Power or Privateer Power we will receive:"
+ hsa_london_channel_mission_yes_friends:0 "If we complete this mission diplomatically we and our ally will receive:"
+ hsa_edinburgh_mission_no_friends:0 "If we complete this mission by owning the provinces directly we will receive:"
+ hsa_dominate_commerce_mission_unique_reward_TT:0 "The '§YPromote Mercantilism§!' Burghers Privilege will no longer cost Influence, Max Absolutism, or give negative loyalty. We will also gain: \n Production Efficiency: §G+10.0%§! \n"
+
+
+
+
+ #ESTATES
+ estate_church_muslim_turuq: "Support the Turuq"
+ estate_church_muslim_turuq_desc: ""
+ estate_church_muslim_turuq_tt: "Getting at least §Y50 Piety§! towards §YMysticism§! will also give us:\n    Morale Damage: §G+10.0%§!"
+
+ estate_burghers_promote_mercantilism: "Promote Mercantilism"
+ estate_burghers_promote_mercantilism_desc: "Mercantilism as an idea is growing in our country. We may choose to favor the faction backing this ideal and reap the benefits that comes from it ourselves."
+ show_mercantile_bonuses: "This §YPrivilege§! will give bonuses based on our £mercantilism_text_icon£ §YMercantilism§!:\n\nAt least §M20.0%§! Mercantilism:\nCenter of Trade Upgrade Cost: §G-10.0%§!\n\nAt least §M40.0%§! Mercantilism:\nDevelopment Cost: §G-5.0%§!\n\nAt least §M60.0%§! Mercantilism:\nColonists: §G+1§!\n\nAt least §M80.0%§! Mercantilism:\nGoods Produced Modifier: §G+10.0%§!"

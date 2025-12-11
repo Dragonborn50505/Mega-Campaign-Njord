@@ -3,7 +3,7 @@
 add_core = FRI
 owner = FRI
 controller = FRI
-culture = flemish
+culture = frisian
 religion = norse_pagan
 hre = yes
 base_tax = 5

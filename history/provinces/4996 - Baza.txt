@@ -2,7 +2,7 @@
 
 owner = EOM
 controller = EOM
-culture = andalucian
+culture = moroccan
 religion = sunni
 capital = "Baza"
 trade_goods = livestock

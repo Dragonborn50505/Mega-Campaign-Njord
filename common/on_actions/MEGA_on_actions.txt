@@ -49,52 +49,109 @@ on_diplomatic_annex = {
 }
 
 on_harmonized_buddhism = {
-	add_adm_power = 100
-	add_dip_power = 100
-	add_mil_power = 100
+	if = {
+		limit = {
+			has_idea = BM_benevolence
+		}
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
 }
 on_harmonized_christian = {
-	add_adm_power = 100
-	add_dip_power = 100
-	add_mil_power = 100
+	if = {
+		limit = {
+			has_idea = BM_benevolence
+		}
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
 }
 on_harmonized_dharmic = {
-	add_adm_power = 100
-	add_dip_power = 100
-	add_mil_power = 100
+	if = {
+		limit = {
+			has_idea = BM_benevolence
+		}
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
 }
 on_harmonized_jewish_group = {
-	add_adm_power = 100
-	add_dip_power = 100
-	add_mil_power = 100
+	if = {
+		limit = {
+			has_idea = BM_benevolence
+		}
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
 }
 on_harmonized_mahayana = {
-	add_adm_power = 100
-	add_dip_power = 100
-	add_mil_power = 100
+	if = {
+		limit = {
+			has_idea = BM_benevolence
+		}
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
 }
 on_harmonized_muslim = {
-	add_adm_power = 100
-	add_dip_power = 100
-	add_mil_power = 100
+	if = {
+		limit = {
+			has_idea = BM_benevolence
+		}
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
 }
 on_harmonized_pagan = {
-	add_adm_power = 100
-	add_dip_power = 100
-	add_mil_power = 100
+	if = {
+		limit = {
+			has_idea = BM_benevolence
+		}
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
 }
 on_harmonized_shinto = {
-	add_adm_power = 100
-	add_dip_power = 100
-	add_mil_power = 100
+	if = {
+		limit = {
+			has_idea = BM_benevolence
+		}
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
 }
 on_harmonized_vajrayana = {
-	add_adm_power = 100
-	add_dip_power = 100
-	add_mil_power = 100
+	if = {
+		limit = {
+			has_idea = BM_benevolence
+		}
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
 }
 on_harmonized_zoroastrian_group = {
-	add_adm_power = 100
-	add_dip_power = 100
-	add_mil_power = 100
+	if = {
+		limit = {
+			has_idea = BM_benevolence
+		}
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
+}
+
+on_startup = {
+	events = {
+		MEGA_events.3 #Indian Cores Fix
+		MEGA_events.2 #Mongol Empire xd xd
+	}
 }
