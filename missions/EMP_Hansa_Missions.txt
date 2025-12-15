@@ -32,6 +32,7 @@ hanseatic_expansion_tree = {
 				name = thriving_arms_industry
 				duration = 3650
 			}
+			custom_tooltip = empty_line_tt
 			if =  {
 				limit = { 
 					has_dlc = "Rights of Man"
@@ -41,6 +42,13 @@ hanseatic_expansion_tree = {
 			} 
 			custom_tooltip = empty_line_tt
 			mecklenburg_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_saxony_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -81,7 +89,6 @@ hanseatic_expansion_tree = {
 
 		effect = {
 			add_adm_power = 50
-			custom_tooltip = empty_line_tt
 			capital_scope = {
 				add_trade_modifier = {
 					who = root
@@ -94,10 +101,11 @@ hanseatic_expansion_tree = {
 			2996 = {
 				add_or_upgrade_trade_building = yes
 				change_culture = lower_saxon
-				create_units_of_type_in_province = {
+				add_unit_construction = {
 					amount = 5
-					unit_type = galley
-					who = root
+					type = galley
+					speed = 1
+					cost = 0
 				}
 			}
 			custom_tooltip = empty_line_tt
@@ -115,6 +123,20 @@ hanseatic_expansion_tree = {
 					}
 					add_permanent_claim = ROOT
 				}
+			}
+			vorpommern_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hinter_pommern_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -168,7 +190,6 @@ hanseatic_return_visby_tree = {
 				name = MEGA_hamburg_baltic_sea_protectors
 				duration = 7300
 			}
-			custom_tooltip = empty_line_tt
 			if = { 
 				limit = { has_dlc = "Leviathan" }
 				25 = { 
@@ -193,7 +214,16 @@ hanseatic_return_visby_tree = {
 					add_permanent_claim = root
 				}
 			}
-			43 = { #Danzig
+			west_prussia_area = { #Danzig
+				if = {
+					limit = {
+						NOT = { is_core = root }
+						NOT = { is_permanent_claim = root }
+					}
+					add_permanent_claim = root
+				}
+			}
+			east_prussia_area = { #Danzig
 				if = {
 					limit = {
 						NOT = { is_core = root }
@@ -238,7 +268,6 @@ hanseatic_return_visby_tree = {
 				name = MEGA_hamburg_the_russian_connection
 				duration = 7300
 			}
-			custom_tooltip = empty_line_tt
 			add_mercantilism_or_monarch_power = { amount = 5 }
 			custom_tooltip = empty_line_tt
 			310 = {
@@ -248,6 +277,7 @@ hanseatic_return_visby_tree = {
 					power = 50
 					key = hsa_hansa_in_novgorod
 				}
+				add_or_upgrade_trade_building = yes
 			}
 		}
 	}
@@ -283,15 +313,22 @@ lubeck_misc_tree = {
 		}
 
 		effect = {
-			add_country_modifier = {
-				name = hanseatic_bookkeeping_modifier
-				duration = 7300
-			}
+			add_dip_power = 50
+			change_reform_progress_effect = { amount = 50 }
+			custom_tooltip = empty_line_tt
 			add_estate_loyalty = {
 				estate = estate_burghers 
 				loyalty = 20 
 			}
-			add_dip_power = 50
+			custom_tooltip = empty_line_tt
+			add_country_modifier = {
+				name = hanseatic_bookkeeping_modifier
+				duration = 7300
+			}
+			custom_tooltip = MEGA_upgrade_burghers_bookkeeping_TT
+			hidden_effect = {
+				set_country_flag = MEGA_upgrade_burghers_bookkeeping_flag
+			}
 		}
 	}
 }
@@ -327,11 +364,12 @@ hanseatic_united_tree = {
 		effect = {
 			capital_scope = {
 				add_province_triggered_modifier = krantor_crane
+				add_or_upgrade_shipyard_building = yes
+				add_or_upgrade_dock_building = yes
 				add_province_modifier = { 
 					name = capital_expansion_modifier
 					duration = 3650 
 				}
-				add_or_upgrade_shipyard_building = yes
 			}
 		}
 	}
@@ -362,6 +400,7 @@ hanseatic_united_tree = {
 			}
 			capital_scope = {
 				add_or_upgrade_trade_building = yes
+				custom_tooltip = empty_line_tt
 				add_province_modifier = {
 					name = MEGA_hamburg_queen_of_the_league
 					duration = 7300
@@ -389,10 +428,16 @@ hanseatic_united_tree = {
 		
 		effect = {
 			add_mercantilism_or_monarch_power = { amount = 5 }
+			custom_tooltip = empty_line_tt
 			add_country_modifier = {
 				name = "hsa_advance_our_interests_modifier"
 				duration = 10950
 			}
+			custom_tooltip = empty_line_tt
+			add_years_of_trade_income = {
+				years = 2
+			}
+			custom_tooltip = empty_line_tt
 			custom_tooltip = hsa_dominate_commerce_mission_unique_reward_TT
 			hidden_effect = {
 				set_country_flag = MEGA_buffed_promote_mercantilism_flag
@@ -446,18 +491,19 @@ hanseatic_london_tree = {
 
 		effect = {
 			add_dip_power = 50
+			custom_tooltip = empty_line_tt
 			add_country_modifier = {
 				name = MEGA_hamburg_hansa_contacts_in_london
 				duration = 10950
 			}
 			236 = {
+				add_or_upgrade_shipyard_building = yes
 				add_trade_modifier = {
 					who = root
 					duration = -1
 					power = 30
 					key = hsa_london_steelyard
 				}
-				add_or_upgrade_shipyard_building = yes
 			}
 		}
 	}	
@@ -505,10 +551,11 @@ hanseatic_sound_toll_tree = {
 			}
 			custom_tooltip = empty_line_tt
 			44 = {
-				create_units_of_type_in_province = {
+				add_unit_construction = {
 					amount = 5
-					unit_type = light_ship
-					who = root
+					type = light_ship
+					speed = 1
+					cost = 0
 				}
 			}
 			custom_tooltip = empty_line_tt
@@ -553,51 +600,26 @@ hanseatic_sound_toll_tree = {
 		}
 
 		effect = {
-			if = {
+			western_norway = {
 				limit = {
-					exists = NOR
-					NOT = { NOR = { is_subject = yes } }
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
 				}
-				add_casus_belli = {
-					target = NOR
-					type = cb_vassalize_mission
-					months = 120
-				}
+				add_permanent_claim = ROOT
 			}
-			else = {
-				western_norway = {
-					limit = {
-						NOT = { is_core = root }
-						NOT = { is_permanent_claim = root }
-					}
-					add_permanent_claim = ROOT
-				}
-				eastern_norway = {
-					limit = {
-						NOT = { is_core = root }
-						NOT = { is_permanent_claim = root }
-					}
-					add_permanent_claim = ROOT
-				}
-				northern_norway = {
-					limit = {
-						NOT = { is_core = root }
-						NOT = { is_permanent_claim = root }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			custom_tooltip = empty_line_tt
-			if = {
+			eastern_norway = {
 				limit = {
-					exists = SWE
-					NOT = { SWE = { is_subject = yes } }
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
 				}
-				add_casus_belli = {
-					target = SWE
-					type = cb_vassalize_mission
-					months = 120
+				add_permanent_claim = ROOT
+			}
+			northern_norway = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
 				}
+				add_permanent_claim = ROOT
 			}
 			custom_tooltip = empty_line_tt
 			denmark_area = {
@@ -717,6 +739,7 @@ hanseatic_sound_toll_tree = {
 		effect = {
 			add_prestige_or_monarch_power = { amount = 20 }
 			add_mercantilism_or_monarch_power = { amount = 3 }
+			custom_tooltip = empty_line_tt
 			add_estate_loyalty = {
 				estate = estate_burghers
 				loyalty = 10
@@ -749,7 +772,6 @@ hanseatic_sound_toll_tree = {
 					duration = 7300
 				}
 			}
-			custom_tooltip = empty_line_tt
 			subarctic_islands_area = {
 				limit = {
 					NOT = { is_core = root }
@@ -827,6 +849,7 @@ hanseatic_britain_tree = {
 					}
 				}
 			}
+			custom_tooltip = empty_line_tt
 			custom_tooltip = hsa_london_channel_mission_yes_friends
 			tooltip = {
 				97 = {
@@ -1006,6 +1029,7 @@ hanseatic_britain_tree = {
 						key = hsa_hanseatic_channel
 					}
 				}
+				custom_tooltip = empty_line_tt
 				249 = {
 					add_province_modifier = {
 						name = MEGA_hansa_kontor_owned_by_hansa
@@ -1027,34 +1051,11 @@ hanseatic_britain_tree = {
 						name = MEGA_hansa_kontor_owned_by_hansa
 						duration = 7300
 					}
-					owner = {
-						add_mercantilism_or_monarch_power = { amount = 3 }
-						1975 = {
-							add_trade_modifier = {
-								who = root
-								duration = 7300
-								power = 15
-								key = hsa_hanseatic_channel
-							}
-						}
-					}
 				}
-				custom_tooltip = empty_line_tt
 				248 = {
 					add_province_modifier = {
 						name = MEGA_hansa_kontor_owned_by_hansa
 						duration = 7300
-					}
-					owner = {
-						add_mercantilism_or_monarch_power = { amount = 3 }
-						1975 = {
-							add_trade_modifier = {
-								who = root
-								duration = 7300
-								power = 15
-								key = hsa_hanseatic_channel
-							}
-						}
 					}
 				}
 				custom_tooltip = empty_line_tt
@@ -1161,6 +1162,7 @@ hanseatic_britain_tree = {
 			create_explorer = {
 				tradition = 80
 			}
+			custom_tooltip = empty_line_tt
 			north_atlantic_area = { #Iceland, F„r”arna + Hjaltland
 				if = {
 					limit = {
@@ -1216,6 +1218,7 @@ hanseatic_colonisation_tree = {
 				duration = 7300
 			}
 			newfoundland_area = { add_base_production = 2 }
+			custom_tooltip = empty_line_tt
 			add_mercantilism_or_monarch_power = { amount = 5 }
 		}
 	}
@@ -1314,11 +1317,12 @@ hanseatic_shipwright_tree = {
 		}
 
 		effect = {
+			add_navy_tradition_or_dip_power = { amount = 15 }
+			custom_tooltip = empty_line_tt
 			add_country_modifier = {
 				name = hanseatic_merchant_navy_modifier
 				duration = 9125			
 			}
-			add_navy_tradition_or_dip_power = { amount = 15 }
 			if =  {
 				limit = { 
 					has_dlc = "Rights of Man"
@@ -1387,10 +1391,11 @@ hanseatic_shipwright_tree = {
 			}
 			custom_tooltip = empty_line_tt
 			1874 = {
-				create_units_of_type_in_province = {
+				add_unit_construction = {
 					amount = 3
-					unit_type = heavy_ship
-					who = root
+					type = heavy_ship
+					speed = 1
+					cost = 0
 				}
 			}
 			custom_tooltip = empty_line_tt
@@ -1510,10 +1515,17 @@ hanseatic_united_tree_2 = {
 		}
 
 		effect = {
+			add_stability_or_adm_power = yes
+			add_prestige_or_monarch_power = { amount = 50 }
+			custom_tooltip = empty_line_tt
 			add_country_modifier = { 
 				name = "hsa_united_league_modifier"
 				duration = -1
 			}
+			add_years_of_trade_income = {
+				years = 5
+			}
+			custom_tooltip = empty_line_tt
 			override_country_name = HANSEATIC_LEAGUE
 			set_country_flag = is_hanseatic_league_flag
 		}

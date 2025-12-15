@@ -7980,6 +7980,7 @@ hsa_danzig_merchants_in_league_modifier = {
 }
 hsa_influx_of_trade_and_foreigners_modifier = {
 	global_institution_spread = 0.2 
+	merchants = 1
 	trade_efficiency = 0.1 
 }
 hsa_mercantile_burgermeister_modifier = {
@@ -8007,7 +8008,8 @@ hsa_valuable_mineral_abundance_modifier = {
 	interest = -1 
 }
 hsa_wealth_of_the_hansa_modifier = {
-	global_tax_income = 6
+	global_own_trade_power = 0.1
+	trade_efficiency = 0.1
 }
 hsa_recruiting_from_league_modifier = {
 	global_manpower_modifier = 0.15 
@@ -8022,6 +8024,7 @@ hsa_recruiting_from_league_modifier3 = {
 }
 hsa_lubeck_law_modifier = {
 	local_autonomy = -0.05
+	local_unrest = -1
 }
 hsa_secured_pomeranian_coast_modifier = {
 	embargo_efficiency =  0.5
@@ -8139,6 +8142,8 @@ hsa_safe_seaways_modifier = {
 }
 hsa_pride_eagle_of_the_fleet_modifier = {
 	flagship_durability = 0.5
+	flagship_morale = 0.5
+	max_flagships = 1
 	cannons_for_hunting_pirates_in_fleet = 1
 	number_of_cannons_flagship_modifier = 0.5
 }
@@ -8176,10 +8181,10 @@ hsa_northern_alliance_of_trade_cities1_modifier = {
 hsa_center_of_mineral_trade = {
 	local_gold_depletion_chance_modifier = -0.25
 	local_development_cost_modifier = -0.05
+	trade_goods_size = 2
 }
 hsa_maritime_hegemon_modifier = {
 	naval_forcelimit_modifier = 0.2
-	own_coast_naval_combat_bonus = 1
 	navy_tradition = 1
 }
 capital_expansion_modifier = {

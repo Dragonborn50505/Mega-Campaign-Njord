@@ -1140,10 +1140,6 @@ christ_order = {
             has_port = no
         }
         modifier = {
-            factor = 1000
-            area = estremadura_area
-        }
-        modifier = {
             factor = 0
             OR = {
                 area = alentejo_area

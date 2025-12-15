@@ -15,41 +15,46 @@ lubeck_missions_1 = {
 			province_id = 38 
 		}
 		trigger = {
-			OR = {
-				38 = { country_or_non_sovereign_subject_holds = ROOT }
-				AND = {
-					RIG = {
-						is_in_trade_league_with = ROOT 
-						has_opinion = {
-							who = ROOT 
-							value = 125 
+			38 = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner = {
+						OR = {
+							is_in_trade_league_with = root
+							has_opinion = {
+								who = HAM
+								value = 100
+							}
 						}
 					}
-					army_size = 8 
 				}
 			}
 		}
 		effect = {
-			38 = { add_base_production = 2 }
-			if = {
-				limit = {
-					RIG = { is_in_trade_league_with = ROOT }
-				}
-				add_dip_power = 50 
-				add_mercantilism = 1 
-			}
-			if = {
-				limit = {
-					RIG = {
-						is_in_trade_league_with = ROOT 
-						has_opinion = {
-							who = ROOT 
-							value = 125 
+			38 = { 
+				if = {
+					limit = { 
+						NOT = {
+							country_or_non_sovereign_subject_holds = ROOT
 						}
 					}
-					hre_size = 1
+					add_permanent_claim = root
 				}
-				RIG = { set_in_empire = yes }
+				add_base_production = 2 
+				add_or_upgrade_production_building = yes
+				add_great_project_tier = {
+					type = blackheads
+					tier = 1
+				}
+			}
+			custom_tooltip = empty_line_tt
+			1926 = {
+				add_trade_modifier = {
+					who = root
+					duration = 7300
+					power = 25
+					key = aju_trade_influence
+				}
 			}
 		}
 	}
@@ -69,7 +74,7 @@ lubeck_missions_1 = {
 						alliance_with = ROOT 
 						has_opinion = {
 							who = ROOT 
-							value = 125 
+							value = 100 
 						}
 					}
 					trade_share = {
@@ -81,25 +86,30 @@ lubeck_missions_1 = {
 		}
 		effect = {
 			country_event = { id = flavor_hsa.5 } #flavor_hsa.5
-			custom_tooltip = hsa_every_league_member_wealth_tt
-			hidden_effect = {
-				every_country = {
-					limit = { is_in_trade_league_with = ROOT }
-					add_country_modifier = {
-						name = hsa_wealth_of_the_hansa_modifier
-						duration = 3650 
+			custom_tooltip = empty_line_tt
+			310 = {
+				add_base_production = 1
+				add_base_manpower = 1
+				if = {
+					limit = { 
+						310 = {
+							NOT = {
+								country_or_non_sovereign_subject_holds = ROOT 
+							}
+						}
 					}
-					capital_scope = {
-						random_list = {
-							40 = {
-								add_base_tax = 1 
-							}
-							50 = {
-								add_base_production = 1 
-							}
-							10 = {
-								add_base_manpower = 1 
-							}
+					owner = {
+						add_country_modifier = {
+							name = hsa_wealth_of_the_hansa_modifier
+							duration = 3650 
+						}
+					}
+				}
+				else = {
+					root = {
+						add_country_modifier = {
+							name = hsa_wealth_of_the_hansa_modifier
+							duration = 3650 
 						}
 					}
 				}
@@ -124,7 +134,7 @@ lubeck_missions_1 = {
 					owner = {
 						has_opinion = {
 							who = ROOT
-							value = 125
+							value = 100
 						}
 						is_at_war = no
 					}
@@ -148,9 +158,11 @@ lubeck_missions_1 = {
 				limit = {
 					12 = { country_or_non_sovereign_subject_holds = ROOT }
 				}
-				add_mercantilism = 2 
+				12 = {
+					add_base_production = 2
+					add_or_upgrade_naval_defense_building = yes
+				}
 			}
-			custom_tooltip = general_tooltip_dynamic_reward
 		}
 	}
 	
@@ -175,7 +187,16 @@ lubeck_missions_1 = {
 					development = 25 
 				}
 				6 = {
-					country_or_non_sovereign_subject_holds = ROOT 
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						owner = {
+							has_opinion = {
+								who = ROOT
+								value = 100
+							}
+							is_at_war = no
+						}
+					}
 					OR = {
 						has_building = workshop 
 						has_building = counting_house 
@@ -185,25 +206,14 @@ lubeck_missions_1 = {
 			}
 		}
 		effect = {
-			if = {
-				limit = {
-					6 = { country_or_non_sovereign_subject_holds = ROOT }
-				}
-				6 = { 
-					if = {
-						limit = {
-							NOT = { has_building = counting_house }
-						}
-						remove_building = workshop 
-						add_building = counting_house 
-					}
-					else = { add_base_production = 2 }
+			country_event = { id = flavor_hsa.6 } #flavor_hsa.6
+			custom_tooltip = empty_line_tt
+			6 = {
+				add_base_production = 1
+				owner = {
+					add_mercantilism_or_monarch_power = { amount = 3 }
 				}
 			}
-			else = {
-				country_event = { id = flavor_hsa.6 } #flavor_hsa.6
-			}
-			custom_tooltip = general_tooltip_dynamic_reward
 		}
 	}
 	
@@ -213,39 +223,35 @@ lubeck_missions_1 = {
 		position = 9
 		provinces_to_highlight = { province_id = 23 }
 		trigger = {
-			OR = {
-				23 = { country_or_non_sovereign_subject_holds = ROOT }
-				23 = {
+			23 = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
 					owner = {
 						has_opinion = {
-							value = 125
-							who = ROOT 
+							who = ROOT
+							value = 100
 						}
-					}	
+						is_at_war = no
+					}
 				}
 			}
 			light_ship_fraction = 0.3
 		}
 		effect = {
-			if = {
-				limit = {
-					23 = {
-						owner = {
-							has_opinion = {
-								value = 125
-								who = ROOT 	
-							}
+			country_event = { id = flavor_hsa.7 } #flavor_hsa.7
+			tooltip = {
+				23 = {
+					if = {
+						limit = { 
+							province_has_center_of_trade_of_level = 3
 						}
+						add_base_production = 2
+					}
+					else = {
+						add_center_of_trade_level = 1
 					}
 				}
-				country_event = { id = flavor_hsa.7 } #flavor_hsa.7
 			}
-			else = {
-				23 = {
-					add_center_of_trade_level = 1 
-				}
-			}
-			custom_tooltip = general_tooltip_dynamic_reward
 		}
 	}
 	
@@ -269,11 +275,6 @@ lubeck_missions_1 = {
 			}
 		}
 		trigger = {
-			OR = {
-				dip = 4 
-				ruler_has_personality = charismatic_negotiator_personality
-				ruler_has_personality = silver_tongue_personality
-			}
 			if = {
 				limit = { government = republic }
 				OR = {
@@ -285,119 +286,53 @@ lubeck_missions_1 = {
 				diplomat = 1 
 				statesman = 1 
 			}
-			if = {
-				limit = { 
-					is_in_trade_league = yes
-				}
-				calc_true_if = {
-					all_country = {
-						has_opinion = {
-							who = ROOT
-							value = 100
-						}
-						OR = {
-							is_in_trade_league_with = ROOT
-							is_subject_of = ROOT
-						}
-					}
-					amount = 3
-				}
-			}
-			else = {
-				calc_true_if = {
-					all_country = {
-						is_subject_of = ROOT
-						has_opinion = {
-							who = ROOT
-							value = 100
-						}
-					}
-					amount = 2
-				}
-			}
 		}
 		effect = {
-			if = {
-				limit = { has_reform = frequent_elections_reform }
-				add_stability_or_adm_power = yes 
-				add_ruler_modifier = {
-					name = hsa_fresh_administration_modifier
-					duration = 10950 
-				}
+			add_stability_or_adm_power = yes 
+			custom_tooltip = empty_line_tt
+			add_ruler_modifier = {
+				name = hsa_fresh_administration_modifier
+				duration = -1 
 			}
-			else_if = {
-				limit = { 
-					OR = {
-						has_reform = consolidation_of_power_reform 
-						has_reform = consolidate_power_in_doge_reform
-					}
-				}
-				add_country_modifier = { 
-					name = hsa_longterm_admin_modifier 
-					duration = 9125 
-				}
-				if = { 
-					limit = {
-						adm = 5
-						NOT = { adm = 6 }
-					}
-					change_adm = 1 
-				}
-				else = { add_adm_power = 50 }
-				if = { 
-					limit = {
-						dip = 5
-						NOT = { dip = 6 }
-					}
-					change_dip = 1 
-				}
-				else = { add_dip_power = 50 }
-				if = { 
-					limit = {
-						mil = 5
-						NOT = { mil = 6 }
-					}
-					change_mil = 1 
-				}
-				else = { add_mil_power = 50 }
+			add_ruler_modifier = {
+				name = hsa_diplomatic_powerhouse 
+				duration = -1 
 			}
-			else_if = {
-				limit = { has_reform = consolidate_power_in_cities_reform }
-				custom_tooltip = hsa_every_league_member_and_subject_adm_power_and_50_opinion_tt 
-				hidden_effect = {
-					every_country = {
-						limit = {
-							OR = {
-								is_in_trade_league_with = ROOT 
-								is_subject_of = ROOT 
-							}
-						}
-						add_adm_power = 100
-						add_opinion = {
-							who = ROOT  
-							modifier = hsa_allowed_regional_admin_opinion_modifier 
-						}
-					}
-				}
-				change_government_reform_progress = 100 
+			add_country_modifier = {
+				name = hsa_hanseatic_diets_modifier 
+				duration = 7300 
 			}
-			else_if = {
-				limit = { has_reform = lottery_reform }
-				add_ruler_modifier = {
-					name = hsa_diplomatic_powerhouse 
-					duration = 10950 
-				}
+			add_country_modifier = { 
+				name = hsa_longterm_admin_modifier 
+				duration = 7300 
 			}
-			else = {
-				add_country_modifier = {
-					name = hsa_hanseatic_diets_modifier 
-					duration = 7300 
+			custom_tooltip = empty_line_tt
+			change_government_reform_progress = 100 
+			custom_tooltip = empty_line_tt
+			if = { 
+				limit = {
+					adm = 5
+					NOT = { adm = 6 }
 				}
-				add_republican_tradition = 5
-				add_legitimacy = 10 
-				add_devotion = 10 
+				change_adm = 1 
 			}
-			custom_tooltip = general_tooltip_dynamic_reward 
+			else = { add_adm_power = 100 }
+			if = { 
+				limit = {
+					dip = 5
+					NOT = { dip = 6 }
+				}
+				change_dip = 1 
+			}
+			else = { add_dip_power = 100 }
+			if = { 
+				limit = {
+					mil = 5
+					NOT = { mil = 6 }
+				}
+				change_mil = 1 
+			}
+			else = { add_mil_power = 100 }
 		}
 	}
 	
@@ -430,8 +365,6 @@ lubeck_missions_1 = {
 					}
 				}
 			}
-			change_dip = 1 
-			change_adm = 1 
 		}
 	}
 }
@@ -454,26 +387,19 @@ lubeck_missions_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			OR = {
-				AND = { 
-					GOT = { 
-						is_in_trade_league_with = ROOT 
+			25 = {
+				OR = {
+					base_production = 7 
+					province_has_center_of_trade_of_level = 2 
+				}
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner = {
 						has_opinion = {
-							who = ROOT 
-							value = 150 
+							who = ROOT
+							value = 100
 						}
-					}
-				}
-				25 = { country_or_non_sovereign_subject_holds = ROOT } 
-			}
-			if = { 
-				limit = { 
-					25 = { country_or_non_sovereign_subject_holds = ROOT } 
-				}
-				25 = {
-					OR = {
-						base_production = 7 
-						province_has_center_of_trade_of_level = 2 
+						is_at_war = no
 					}
 				}
 			}
@@ -506,7 +432,18 @@ lubeck_missions_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			43 = { country_or_non_sovereign_subject_holds = ROOT }
+			43 = { 
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner = {
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+						is_at_war = no
+					}
+				}
+			}
 			OR = {
 				faction_influence = {
 					faction = mr_traders
@@ -533,12 +470,28 @@ lubeck_missions_2 = {
 		}
 		trigger = {
 			west_prussia_area = {
-				type = all 
-				country_or_non_sovereign_subject_holds = ROOT 
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner = {
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+						is_at_war = no
+					}
+				}
 			}
 			east_prussia_area = {
-				type = all 
-				country_or_non_sovereign_subject_holds = ROOT 
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner = {
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+						is_at_war = no
+					}
+				}
 			}
 		}
 		effect = {
@@ -555,22 +508,18 @@ lubeck_missions_2 = {
 		provinces_to_highlight = {
 			province_id = 45 
 			NOT = {
-				OR = {
-					has_building = marketplace 
-					has_building = trade_depot
-					has_building = stock_exchange
+				AND = {
+					has_trade_building_trigger = yes
+					num_of_times_improved = 4 
 				}
-				num_of_times_improved = 4 
 			}
 		}
 		trigger = {
 			45 = {
-				OR = {
-					has_building = marketplace 
-					has_building = trade_depot
-					has_building = stock_exchange
+				AND = {
+					has_trade_building_trigger = yes
+					num_of_times_improved = 4 
 				}
-				num_of_times_improved = 4 
 			}
 		}
 		effect = {
@@ -616,104 +565,48 @@ lubeck_missions_2 = {
 			else = { statesman = 2 }			
 		}
 		effect = {
-			if = {
-				limit = {
-					faction_influence = {
-						faction = mr_traders 
-						influence = 50
-					}
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				custom_tooltip = empty_line_tt
+				add_province_modifier = {
+					name = hsa_mercantile_burgermeister_modifier
+					duration = 7300 
 				}
-				capital_scope = {
-					add_province_modifier = {
-						name = hsa_mercantile_burgermeister_modifier
-						duration = 7300 
-					}
+				add_province_modifier = {
+					name = hsa_guild_burgermeister_modifier
+					duration = 7300 
 				}
-				hidden_effect = {
-					every_country = {
-						limit = { is_in_trade_league_with = ROOT }
-						capital_scope = {
-							add_province_modifier = {
-								name = hsa_mercantile_burgermeister_modifier
-								duration = 7300 
-							}
-						}
-					}
+				add_province_modifier = {
+					name = hsa_aristocrat_burgermeister_modifier
+					duration = 7300 
 				}
 			}
-			else_if = {
-				limit = {
-					faction_influence = {
-						faction = mr_guilds 
-						influence = 50
-					}
-				}
-				capital_scope = {
-					add_province_modifier = {
-						name = hsa_guild_burgermeister_modifier
-						duration = 7300 
-					}
-				}
-				hidden_effect = {
-					every_country = {
-						limit = { is_in_trade_league_with = ROOT }
-						capital_scope = {
-							add_province_modifier = {
-								name = hsa_guild_burgermeister_modifier
-								duration = 7300 
-							}
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					faction_influence = {
-						faction = mr_aristocrats 
-						influence = 50
-					}
-				}
-				capital_scope = {
-					add_province_modifier = {
-						name = hsa_aristocrat_burgermeister_modifier
-						duration = 7300 
-					}
-					add_base_manpower = 1 
-				}
-				hidden_effect = {
-					every_country = {
-						limit = { is_in_trade_league_with = ROOT }
-						capital_scope = {
-							add_province_modifier = {
-								name = hsa_aristocrat_burgermeister_modifier
-								duration = 7300 
-							}
-							add_base_manpower = 1
-						}
-					}
-				}
-			}
-			else = {
-				capital_scope = {
-					add_province_modifier = {
-						name = hsa_mercantile_burgermeister_modifier
-						duration = 7300 
-					}
-				}
-				hidden_effect = {
-					every_country = {
-						limit = { is_in_trade_league_with = ROOT }
-						capital_scope = {
-							add_province_modifier = {
-								name = hsa_mercantile_burgermeister_modifier
-								duration = 7300 
-							}
-						}
-					}
-				}
-			}
-			custom_tooltip = general_tooltip_dynamic_reward
+			custom_tooltip = empty_line_tt
 			custom_tooltip = hsa_every_league_member_gets_this_reward_tt
+			hidden_effect = {
+				every_country = {
+					limit = { is_in_trade_league_with = ROOT }
+					capital_scope = {
+						add_base_tax = 1
+						add_base_production = 1
+						add_base_manpower = 1
+						add_province_modifier = {
+							name = hsa_mercantile_burgermeister_modifier
+							duration = 7300 
+						}
+						add_province_modifier = {
+							name = hsa_guild_burgermeister_modifier
+							duration = 7300 
+						}
+						add_province_modifier = {
+							name = hsa_aristocrat_burgermeister_modifier
+							duration = 7300 
+						}
+					}
+				}
+			}
 		}
 	}	
 
@@ -732,10 +625,13 @@ lubeck_missions_2 = {
 		trigger = { 
 			share_of_starting_income = 5
 			grown_by_development = 50
-			all_owned_province = {
-				development = 10 
-				NOT = { unrest = 1 }
-				NOT = { devastation = 1 }
+			calc_true_if = {
+				amount = 30
+				all_owned_province = {
+					development = 10 
+					NOT = { unrest = 1 }
+					NOT = { devastation = 1 }
+				}
 			}
 		}
 		effect = {
@@ -743,16 +639,16 @@ lubeck_missions_2 = {
 				name = hsa_strong_mercantile_union_modifier
 				duration = 10950 
 			}
-			custom_tooltip = hsa_every_league_member_gets_prosperity_and_25_trust_towards_you_tt
+			capital_scope = { add_prosperity = 100 }
+			custom_tooltip = hsa_every_league_member_gets_this_reward_tt
 			hidden_effect = {
 				every_country = {
 					limit = { is_in_trade_league_with = ROOT }
 					capital_scope = { add_prosperity = 100 }
-					add_trust = {
-						who = ROOT 
-						value = 25 
-						mutual = yes 
-					}
+				}
+				add_country_modifier = {
+					name = hsa_strong_mercantile_union_modifier
+					duration = 10950 
 				}
 			}
 		}
@@ -788,8 +684,9 @@ lubeck_missions_2 = {
 						base_production = 5
 					}
 					4742 = {
-						owner = {
-							OR = {
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							owner = {
 								AND = {
 									alliance_with = ROOT 
 									has_opinion = {
@@ -797,6 +694,8 @@ lubeck_missions_2 = {
 										value = 150 
 									}
 								}
+							}
+							owner = {
 								AND = {
 									is_in_trade_league_with = ROOT 
 									has_opinion = {
@@ -814,8 +713,9 @@ lubeck_missions_2 = {
 			if = {
 				limit = {
 					4742 = {
-						owner = {
-							OR = {
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							owner = {
 								AND = {
 									alliance_with = ROOT 
 									has_opinion = {
@@ -823,6 +723,8 @@ lubeck_missions_2 = {
 										value = 150 
 									}
 								}
+							}
+							owner = {
 								AND = {
 									is_in_trade_league_with = ROOT 
 									has_opinion = {
@@ -847,10 +749,6 @@ lubeck_missions_2 = {
 							duration = 9125
 						}
 					}
-				}
-				add_country_modifier = {
-					name = hsa_valuable_mineral_abundance_modifier
-					duration = 9125
 				}
 			}
 			else = {
@@ -883,7 +781,6 @@ lubeck_missions_2 = {
 				name = hsa_valuable_mineral_abundance_modifier
 				duration = 9125
 			}
-			custom_tooltip = general_tooltip_dynamic_reward
 		}
 	}
 }
@@ -904,55 +801,11 @@ lubeck_missions_3 = {
 			manpower_percentage = 0.6
 		}
 		effect = {
-			if = {
-				limit = {
-					is_trade_league_leader = yes 
-				}
-				custom_tooltip = hsa_reward_scales_with_number_of_members_tt
+			add_country_modifier = {
+				name = hsa_recruiting_from_league_modifier3
+				duration = 7300 
 			}
-			if = {
-				limit = { 
-					calc_true_if = {
-						all_country = {
-							is_in_trade_league_with = ROOT
-						}
-						amount = 6
-					}
-				}
-				add_country_modifier = {
-					name = hsa_recruiting_from_league_modifier3
-					duration = 7300 
-				}
-			}
-			else_if = {
-				limit = { 
-					calc_true_if = {
-						all_country = {
-							is_in_trade_league_with = ROOT
-						}
-						amount = 5
-					}
-				}
-				add_country_modifier = {
-					name = hsa_recruiting_from_league_modifier2
-					duration = 5475 
-				}
-			}
-			else_if = {
-				limit = {
-					calc_true_if = {
-						all_country = {
-							is_in_trade_league_with = ROOT
-						}
-						amount = 1
-					}
-				}
-				add_country_modifier = {
-					name = hsa_recruiting_from_league_modifier
-					duration = 3650 
-				}
-			}
-			else = { add_army_tradition = 20 }
+			 add_army_tradition_or_mil_power = { amount = 20 }
 			lower_saxony_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -1002,56 +855,60 @@ lubeck_missions_3 = {
 		required_missions = { hsa_young_men_lubeck }
 		position = 2 
 		provinces_to_highlight = {
-			area = mecklenburg_area 
+			OR = {
+				area = mecklenburg_area 
+				area = mittelmark_area
+				area = vorpommern_area
+				area = hinter_pommern_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			OR = {
-				AND = {
-					development_in_provinces = {
-						value = 35 
-						area = mecklenburg_area 
-					}
-					2996 = { country_or_non_sovereign_subject_holds = ROOT }
-					46 = { country_or_non_sovereign_subject_holds = ROOT }
-				}
-				mecklenburg_area = {
-					type = all 
-					country_or_non_sovereign_subject_holds = ROOT 
-				}
+			mecklenburg_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			mittelmark_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			vorpommern_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			hinter_pommern_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
 			}
 		}
 		effect = {
-			create_general = { tradition = 50 }
-			hinter_pommern_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+			create_general_scaling_with_tradition_and_pips = {
+				tradition = 50
+				add_shock = 1
+			}
+			custom_tooltip = empty_line_tt
+			mecklenburg_area = {
+				add_province_modifier = {
+					name = hsa_lubeck_law_modifier
+					duration = 5475
 				}
-				add_permanent_claim = ROOT
+			}
+			mittelmark_area = {
+				add_province_modifier = {
+					name = hsa_lubeck_law_modifier
+					duration = 5475
+				}
 			}
 			vorpommern_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+				add_province_modifier = {
+					name = hsa_lubeck_law_modifier
+					duration = 5475
 				}
-				add_permanent_claim = ROOT
 			}
-			if = {
-				limit = {
-					NOT = { mission_completed = hsa_impose_lubeck_law }
-				}
-				custom_tooltip = hsa_if_lubeck_law_complete_tt
-			}
-			if = {
-				limit = { mission_completed = hsa_impose_lubeck_law }
-				mecklenburg_area = {
-					limit = { country_or_non_sovereign_subject_holds = ROOT }
-					add_province_modifier = {
-						name = hsa_lubeck_law_modifier
-						duration = 5475
-					}
-					add_devastation = -20
+			hinter_pommern_area = {
+				add_province_modifier = {
+					name = hsa_lubeck_law_modifier
+					duration = 5475
 				}
 			}
 		}
@@ -1070,26 +927,13 @@ lubeck_missions_3 = {
 		}
 		trigger = {
 			OR = {
-				AND = {
-					hinter_pommern_area = {
-						type = all 
-						country_or_non_sovereign_subject_holds = ROOT 
-					}
-					vorpommern_area = {
-						type = all 
-						country_or_non_sovereign_subject_holds = ROOT 
-					}
+				development_in_provinces = {
+					value = 25
+					area = vorpommern_area
 				}
-				AND = { 
-					47 = {
-						country_or_non_sovereign_subject_holds = ROOT 
-						num_of_times_improved = 4 
-						province_has_center_of_trade_of_level = 2
-					}
-					1858 = {
-						country_or_non_sovereign_subject_holds = ROOT 
-						num_of_times_improved = 4 
-					}
+				development_in_provinces = {
+					value = 25
+					area = hinter_pommern_area
 				}
 			}
 		}
@@ -1117,7 +961,7 @@ lubeck_missions_3 = {
 					duration = -1
 				}
 			}
-			add_mercantilism = 3 
+			add_mercantilism_or_monarch_power = { amount = 3 }
 		}
 	}
 	
@@ -1146,6 +990,9 @@ lubeck_missions_3 = {
 			}
 		}
 		effect = {
+			add_adm_power = 100 
+			change_reform_progress_effect = { amount = 50 }
+			custom_tooltip = empty_line_tt
 			define_advisor = {
 				type = treasurer
 				skill = 3 
@@ -1153,7 +1000,6 @@ lubeck_missions_3 = {
 				cost_multiplier = 0.3
 				name = "Luca Pacioli" 
 			}
-			add_adm_power = 100 
 		}
 	}
 	
@@ -1163,11 +1009,8 @@ lubeck_missions_3 = {
 		position = 8 
 		provinces_to_highlight = { province_id = 45 }
 		trigger = {
-			OR = {
-				45 = { num_of_times_improved = 10 }
-				monthly_adm = 10 
-			}
 			45 = { 
+				num_of_times_improved = 10
 				OR = {
 					has_building = courthouse
 					has_building = town_hall
@@ -1176,6 +1019,7 @@ lubeck_missions_3 = {
 		}
 		effect = {
 			country_event = { id = flavor_hsa.10 } #flavor_hsa.10
+			custom_tooltip = empty_line_tt
 			45 = {
 				add_province_modifier = {
 					name = hsa_expand_the_hansehalle_modifier
@@ -1274,28 +1118,15 @@ lubeck_missions_3 = {
 			}
 		}
 		effect = {
-			if = {
-				limit = {
-					is_trade_league_leader = yes 
-				}
-				custom_tooltip = hsa_vassalize_lib_desire_trade_league_tt
-				hidden_effect = {
-					every_country = {
-						limit = {
-							is_in_trade_league_with = ROOT 
-						}
-						ROOT = { vassalize = PREV }
-						add_liberty_desire = -50
-					}
-				}
-			}
 			capital_scope = {
 				add_scaled_local_adm_power = 10 
 				add_scaled_local_dip_power = 10 
 				add_scaled_local_mil_power = 10
 			}
 			custom_tooltip = hsa_based_on_the_development_of_our_capital_tt
+			custom_tooltip = empty_line_tt
 			country_event = { id = flavor_hsa.26 } #flavor_hsa.26
+			custom_tooltip = empty_line_tt
 			custom_tooltip = hsa_diplomatic_upkeep_boost_tt
 			hidden_effect = {
 				if = { 
@@ -1357,19 +1188,19 @@ lubeck_missions_4 = {
 		required_missions = { hsa_young_men_lubeck }
 		position = 2 
 		provinces_to_highlight = {
-			OR = {
-				province_id = 1857
-				province_id = 53 
-				province_id = 4772
-			}
+			area = lower_saxony_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			1857 = { country_or_non_sovereign_subject_holds = ROOT }
-			53 = { country_or_non_sovereign_subject_holds = ROOT }
-			4772 = { country_or_non_sovereign_subject_holds = ROOT }
+			lower_saxony_area = {
+				country_or_non_sovereign_subject_holds = root
+			}
 		}
 		effect = {
+			add_country_modifier = {
+				name = hsa_lower_saxon_drittel_modifier 
+				duration = 5475
+			}
 			weser_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -1377,173 +1208,21 @@ lubeck_missions_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			custom_tooltip = empty_line_tt
 			add_country_modifier = {
-				name = hsa_lower_saxon_drittel_modifier 
-				duration = 5475
+				name = hsa_development_works_of_the_hansa_modifier6
+				duration = 5475 
 			}
-			custom_tooltip = hsa_hamburg_dev_per_member
+			custom_tooltip = hsa_every_league_member_gets_this_reward_tt
 			hidden_effect = {
-				if = {
-					limit = {
-						HAM = { 
-							is_in_trade_league_with = ROOT 
-								has_opinion = {
-								who = ROOT 
-								value = 160 
-							}
-						}
-						calc_true_if = {
-							all_country = {
-								is_in_trade_league_with = ROOT
-							}
-							amount = 6
-						}
+				every_country = {
+					limit = { 
+						is_in_trade_league_with = ROOT 
 					}
 					add_country_modifier = {
 						name = hsa_development_works_of_the_hansa_modifier6
 						duration = 5475 
 					}
-					every_country = {
-						limit = { is_in_trade_league_with = ROOT }
-						add_country_modifier = {
-							name = hsa_development_works_of_the_hansa_modifier6
-							duration = 5475 
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						HAM = { 
-							is_in_trade_league_with = ROOT 
-								has_opinion = {
-								who = ROOT 
-								value = 160 
-							}
-						}
-						calc_true_if = {
-							all_country = {
-								is_in_trade_league_with = ROOT
-							}
-							amount = 5
-						}
-					}
-					add_country_modifier = {
-						name = hsa_development_works_of_the_hansa_modifier5
-						duration = 5475 
-					}
-					every_country = {
-						limit = { is_in_trade_league_with = ROOT }
-						add_country_modifier = {
-							name = hsa_development_works_of_the_hansa_modifier5
-							duration = 5475 
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						HAM = { 
-							is_in_trade_league_with = ROOT 
-								has_opinion = {
-								who = ROOT 
-								value = 160 
-							}
-						}
-						calc_true_if = {
-							all_country = {
-								is_in_trade_league_with = ROOT
-							}
-							amount = 4
-						}
-					}
-					add_country_modifier = {
-						name = hsa_development_works_of_the_hansa_modifier4
-						duration = 5475 
-					}
-					every_country = {
-						limit = { is_in_trade_league_with = ROOT }
-						add_country_modifier = {
-							name = hsa_development_works_of_the_hansa_modifier4
-							duration = 5475 
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						HAM = { 
-							is_in_trade_league_with = ROOT 
-								has_opinion = {
-								who = ROOT 
-								value = 160 
-							}
-						}
-						calc_true_if = {
-							all_country = {
-								is_in_trade_league_with = ROOT
-							}
-							amount = 3
-						}
-					}
-					add_country_modifier = {
-						name = hsa_development_works_of_the_hansa_modifier3
-						duration = 5475 
-					}
-					every_country = {
-						limit = { is_in_trade_league_with = ROOT }
-						add_country_modifier = {
-							name = hsa_development_works_of_the_hansa_modifier3
-							duration = 5475 
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						HAM = { 
-							is_in_trade_league_with = ROOT 
-								has_opinion = {
-								who = ROOT 
-								value = 160 
-							}
-						}
-						calc_true_if = {
-							all_country = {
-								is_in_trade_league_with = ROOT
-							}
-							amount = 2
-						}
-					}
-					add_country_modifier = {
-						name = hsa_development_works_of_the_hansa_modifier2
-						duration = 5475 
-					}
-					every_country = {
-						limit = { is_in_trade_league_with = ROOT }
-						add_country_modifier = {
-							name = hsa_development_works_of_the_hansa_modifier2
-							duration = 5475 
-						}
-					}
-				}
-				else = {
-					add_country_modifier = {
-						name = hsa_development_works_of_the_hansa_modifier1
-						duration = 5475 
-					}
-					every_country = {
-						limit = { is_in_trade_league_with = ROOT }
-						add_country_modifier = {
-							name = hsa_development_works_of_the_hansa_modifier1
-							duration = 5475 
-						}
-					}
-				}
-				if = {
-					limit = {
-						HAM = {
-							is_in_trade_league_with = ROOT 
-							owns = 44 
-						}
-					}
-					44 = { change_trade_goods = salt }
 				}
 			}
 		}
@@ -1558,18 +1237,16 @@ lubeck_missions_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			OR = {
-				weser_area = { country_or_non_sovereign_subject_holds = ROOT }
-				AND = { 
-					OLD = { is_in_trade_league_with = ROOT }
-					BRE = { is_in_trade_league_with = ROOT }
-					54 = { country_or_non_sovereign_subject_holds = ROOT }
-					4771 = { country_or_non_sovereign_subject_holds = ROOT }
-				}
+			weser_area = { 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			development_in_provinces = {
+				value = 35
+				area = weser_area
 			}
 		}
 		effect = {
-			
+			add_years_of_income = 0.5 
 			1876 = { #Rhineland
 				add_trade_modifier = {
 					who = ROOT
@@ -1578,29 +1255,20 @@ lubeck_missions_4 = {
 					key = hsa_secured_inland_trade
 				}
 			}
-			add_years_of_income = 0.5 
-			if = {
-				limit =  {
-					BRE = {
-						is_in_trade_league_with = ROOT 
-						owns = 1874 
-					}
-				}
-				1874 = { add_center_of_trade_level = 1 }
-				BRE = { add_mercantilism = 1 }
+			custom_tooltip = empty_line_tt
+			1874 = { 
+				add_center_of_trade_level = 1
+				add_province_modifier = {
+					name = hsa_mercantile_stronghold_of_the_hansa_modifier
+					duration = 9125
+				} 
 			}
-			if = {
-				limit = {
-					FRN = {
-						is_in_trade_league_with = ROOT 
-						owns = 1876 
-					}
-				}
-				1876 = {
-					add_province_modifier = {
-						name = hsa_mercantile_stronghold_of_the_hansa_modifier
-						duration = 9125
-					}
+			custom_tooltip = empty_line_tt
+			1876 = {
+				add_center_of_trade_level = 1
+				add_province_modifier = {
+					name = hsa_mercantile_stronghold_of_the_hansa_modifier
+					duration = 9125
 				}
 			}
 		}
@@ -1617,10 +1285,8 @@ lubeck_missions_4 = {
 				army_tradition = 80
 			}
 			total_development = 350 
-			OR = {
-				full_idea_group = quality_ideas 
-				full_idea_group = offensive_ideas 
-				full_idea_group = quantity_ideas 
+			has_completed_idea_group_of_category = {
+				mil_ideas = yes
 			}
 		}
 		effect = {
@@ -1740,6 +1406,7 @@ lubeck_missions_4 = {
 			}
 			OR = {
 				economic_ideas = 2 
+				infrastructure_ideas = 2
 				trade_ideas = 2 
 				capital_scope = { base_production = 10 }
 			}
@@ -1749,28 +1416,8 @@ lubeck_missions_4 = {
 				name = hsa_shipwrights_naval_expansion_modifier 
 				duration = 7300 
 			}
-			if = {
-				limit = {
-					capital_scope = { 
-						has_port = yes
-						has_building = shipyard 
-						NOT = { has_building = grand_shipyard }
-					}
-				}
-				capital_scope = {
-					remove_building = shipyard 
-					add_building = grand_shipyard 
-				}
-			}
-			else_if = {
-				limit = {
-					capital_scope = { 
-						has_port = yes
-						NOT = { has_building = shipyard }
-						NOT = { has_building = grand_shipyard }
-					}
-				}
-				capital_scope = { add_building = shipyard }
+			capital_scope = {
+				add_or_upgrade_shipyard_building = yes
 			}
 			custom_tooltip = hsa_every_league_member_gets_this_reward_tt
 			hidden_effect = {
@@ -1779,11 +1426,11 @@ lubeck_missions_4 = {
 						is_in_trade_league_with = ROOT 
 						capital_scope = { 
 							has_port = yes
-							NOT = { has_building = grand_shipyard }
-							NOT = { has_building = shipyard }
 						}
 					}
-					capital_scope = { add_building = shipyard }
+					capital_scope = {
+						add_or_upgrade_shipyard_building = yes
+					}
 				}
 				every_country = {
 					limit = {
@@ -1809,11 +1456,11 @@ lubeck_missions_4 = {
 			num_of_light_ship = 10 
 		}
 		effect = {
-			add_navy_tradition = 15 
 			add_country_modifier = {
 				name = hsa_hanseatic_trade_fleet_modifier
 				duration = 10950
 			}
+			add_navy_tradition_or_dip_power = { amount = 15 }
 		}
 	}
 	
@@ -1825,7 +1472,6 @@ lubeck_missions_4 = {
 			area = newfoundland_area 
 		}
 		trigger = {
-			exploration_ideas = 1
 			navy_size = 55
 		}
 		effect = {
@@ -1869,11 +1515,6 @@ lubeck_missions_5 = {
 			num_of_allies = 2 
 		}
 		effect = {
-			add_casus_belli = {
-				target = DTT
-				type = cb_vassalize_mission
-				months = 180
-			}
 			holstein_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -1881,6 +1522,14 @@ lubeck_missions_5 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			jutland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			custom_tooltip = empty_line_tt
 			if = {
 				limit = { hre_size = 1 }
 				emperor = {
@@ -1924,26 +1573,24 @@ lubeck_missions_5 = {
 							}
 						}
 					}
-					1775 = { add_core = ROOT }
+					holstein_area = { add_core = ROOT }
 				}
 			}
 			add_country_modifier = {
 				name = hsa_victory_in_holstein_modifier
 				duration = 7300
 			}
-			if = {
-				limit = {	
-					DAN = {
-						NOT = {
-							has_opinion = {
-								who = ROOT 
-								value = 0 
+			custom_tooltip = hsa_reduce_denmark_trade_tt 
+			hidden_effect = {
+				if = {
+					limit = { 
+						45 = {
+							trade_share = {
+								country = root 
+								share = 20
 							}
 						}
 					}
-				}
-				custom_tooltip = hsa_reduce_denmark_trade_tt 
-				hidden_effect = {
 					45 = { #Lubeck
 						add_trade_modifier = {
 							who = DAN
@@ -2008,8 +1655,6 @@ lubeck_missions_5 = {
 					}
 				}
 			}
-			4163 = { add_permanent_claim = ROOT }
-			17 = { add_permanent_claim = ROOT }
 		}
 	}
 	
@@ -2031,8 +1676,8 @@ lubeck_missions_5 = {
 				name = hsa_high_seas_navy_modifier
 				duration = 9125 
 			}
+			add_mercantilism_or_monarch_power = { amount = 5 }
 			45 = { add_trade_node_income = 10 }
-			add_mercantilism = 5
 		}
 	}
 	
@@ -2057,9 +1702,20 @@ lubeck_missions_5 = {
 		}
 		effect = {
 			create_admiral = {
-				tradition = 50 
-				add_fire = 1 
-				add_shock = 1 
+				tradition = 100
+				add_fire = 1
+				add_shock = 1
+				add_manuever = 1
+			}
+			custom_tooltip = empty_line_tt
+			add_navy_tradition_or_dip_power = { amount = 20 }
+			44 = {
+				add_unit_construction = {
+					amount = 5
+					type = heavy_ship
+					speed = 1
+					cost = 0
+				}
 			}
 		}
 	}
@@ -2071,31 +1727,7 @@ lubeck_missions_5 = {
 		provinces_to_highlight = { province_id = 45 }
 		trigger = {
 			45 = {
-				OR = {
-					has_building = shipyard 
-					has_building = grand_shipyard 
-				}
-			}
-			if = {
-				limit = {
-					45 = { trade_goods = naval_supplies }
-				}
-				45 = {
-					OR = {
-						has_manufactory_trigger = yes 
-						has_building = workshop 
-						has_building = counting_house 
-					}
-				}
-			}
-			else = { 
-				OR = {
-					faction_influence = {
-						faction = mr_guilds 
-						influence = 50
-					}
-					years_of_income = 1 
-				}
+				has_shipyard_building_trigger = yes
 			}
 		}
 		effect = {
@@ -2128,10 +1760,14 @@ lubeck_missions_5 = {
 			add_country_modifier = {
 				name = hsa_safe_seaways_modifier 
 				duration = 7300 
-			}	
+			}
+			add_country_modifier = {
+				name = MEGA_hansa_marine_pilots
+				duration = -1
+			}
 			define_advisor = {
 				type = naval_reformer 
-				cost_multiplier = 0.5 
+				cost_multiplier = 0.25
 				skill = 3 
 			}
 		}

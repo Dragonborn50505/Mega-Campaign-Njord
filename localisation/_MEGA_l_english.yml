@@ -39,6 +39,7 @@
  MEGA_mir_castle_unique_TT:0 "The '§YGrant Court Positions§!' Nobility Privilege will no longer cost Influence or Max Absolutism and also grant the following modifier scaling on §GLoyalty§!: \n Land Force Limit: §G+10.0%§! \n"
  MEGA_kisvarda_unique_TT:0 "The '§YStatesman of the Nobility§!' Nobility Privilege will no longer cost Influence or Max Absolutism and also grant: \n Diplomatic Annexation Cost: §G-10.0%§! \n"
  MEGA_maria_laach_unique_TT:0 "The '§YInquisitor§!' Advisor will now also grant scaling on level: \n Morale Damage Received: §G+2.0%§!"
+ MEGA_fu_acemi_oglan_unique_TT:0 "Recruiting '§YAdmirals§!' will grant §G+10.0§! Navy Tradition. \n"
 
  #Empire Reforms
  MEGA_reichsreform_unique_TT:0 "Every §YMember§! of the @HRE §YHoly Roman Empire§! will be awarded: \n Gain §G+25.00§! Reform Progress."
@@ -141,9 +142,11 @@
  hsa_london_channel_mission_no_friends:0 "If we complete this mission by achieving Trade Power or Privateer Power we will receive:"
  hsa_london_channel_mission_yes_friends:0 "If we complete this mission diplomatically we and our ally will receive:"
  hsa_edinburgh_mission_no_friends:0 "If we complete this mission by owning the provinces directly we will receive:"
- hsa_dominate_commerce_mission_unique_reward_TT:0 "The '§YPromote Mercantilism§!' Burghers Privilege will no longer cost Influence, Max Absolutism, or give negative loyalty. We will also gain: \n Production Efficiency: §G+10.0%§! \n"
 
 
+ MEGA_upgrade_mercantilism_TT:0 "The '§YPromote Mercantilism§!' Burghers Privilege will no longer cost Influence, Max Absolutism, or give negative Loyalty. We will also gain: \n Production Efficiency: §G+10.0%§! \n"
+ MEGA_upgrade_burghers_bookkeeping_TT:0 "The '§YPromote Burghers Bookkeeping§!' Burghers Privilege will no longer cost Influence or Max Absolutism. It will also grant the following modifier scaling on Loyalty: \n Reform Progress Growth: §G25.0%§! \n"
+ MEGA_upgrade_free_enterprise_TT:0 "The '§YFree Enterprise§!' Burghers Privilege will no longer cost Influence or Max Absolutism. We will also gain: \n Trade Efficiency §G+5.0%§! \n Burghers Privilege: §G+1§!"
 
 
  #ESTATES

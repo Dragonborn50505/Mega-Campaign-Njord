@@ -8,6 +8,7 @@ MEGA_drained_the_swamps = {
 MEGA_reverse_danishification = {
 	local_culture_conversion_cost = -0.2
 	local_culture_conversion_time = -0.2
+	local_development_cost = -0.1
 }
 
 MEGA_hansa_kontor_owned_by_hansa = {
@@ -41,6 +42,12 @@ MEGA_hamburg_hansa_contacts_in_london = {
 	merchants = 1
 }
 
+MEGA_hansa_marine_pilots = {
+	has_marines = yes
+	allowed_marine_fraction = 0.2
+	sailors_recovery_speed = 0.25
+}
+
 MEGA_epstein_island_2_electric_boogaloo = {
 	local_unrest = -1
 	local_development_cost = -0.15
@@ -60,4 +67,23 @@ MEGA_mongol_empire_still_standing = {
 	land_forcelimit = 20
 	global_manpower = 20
 	global_tax_income = 120
+}
+
+
+# Peace Treaties:
+pte_protect_religious_bretheren_modifier = {
+	global_heretic_missionary_strength = -1
+	tolerance_heretic = 2
+}
+
+pte_fleet_disarmament_modifier = {
+	naval_forcelimit_modifier = -0.5
+	global_ship_cost = 0.1
+	naval_maintenance_modifier = 0.15
+}
+
+pte_army_disarmament_modifier = {
+	land_forcelimit_modifier = -0.33
+	global_regiment_cost = 0.1
+	land_maintenance_modifier = 0.15
 }

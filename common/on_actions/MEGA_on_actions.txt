@@ -155,3 +155,33 @@ on_startup = {
 		MEGA_events.2 #Mongol Empire xd xd
 	}
 }
+
+on_admiral_recruited = {
+	if = {
+		limit = {
+			owns_core_province = 1874
+			1874 = {
+				has_great_project = {
+					type = fu_acemi_oglan
+					tier = 3
+				}
+			}
+		}
+		add_navy_tradition_or_dip_power = { amount = 10 }
+	}
+}
+
+on_admiral_recruited_effect = {
+	if = {
+		limit = {
+			owns_core_province = 1874
+			1874 = {
+				has_great_project = {
+					type = fu_acemi_oglan
+					tier = 3
+				}
+			}
+		}
+		add_navy_tradition_or_dip_power = { amount = 10 }
+	}
+}

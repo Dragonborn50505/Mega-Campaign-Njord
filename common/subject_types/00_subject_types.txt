@@ -290,6 +290,14 @@ vassal = {
 			}
 		}
 	}
+	modifier_subject = {
+		modifier = MEGA_blood_tax_modifier
+		trigger = {
+			overlord = {
+				has_government_attribute = enables_blood_tax
+			}
+		}
+	}
 
 	overlord_opinion_modifier = is_vassal
 	subject_opinion_modifier = is_vassal
@@ -355,6 +363,14 @@ march = {
 			overlord = {
 				has_government_attribute = same_religion_subject_bonus
 				religion = PREV
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = MEGA_blood_tax_modifier
+		trigger = {
+			overlord = {
+				has_government_attribute = enables_blood_tax
 			}
 		}
 	}
@@ -505,6 +521,14 @@ appanage = {
 	modifier_overlord = {
 		modifier = appanage_overlord
 	}
+	modifier_subject = {
+		modifier = MEGA_blood_tax_modifier
+		trigger = {
+			overlord = {
+				has_government_attribute = enables_blood_tax
+			}
+		}
+	}
 }
 
 personal_union = {
@@ -574,6 +598,14 @@ personal_union = {
 			overlord = { has_government_attribute = personal_union_war_contribution }
 		}
 		modifier = pu_subject_bonus
+	}
+	modifier_subject = {
+		modifier = MEGA_blood_tax_modifier
+		trigger = {
+			overlord = {
+				has_government_attribute = enables_blood_tax
+			}
+		}
 	}
 
 	overlord_opinion_modifier = in_union
@@ -680,6 +712,14 @@ client_march = {
 			overlord = {
 				has_government_attribute = same_religion_subject_bonus
 				religion = PREV
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = MEGA_blood_tax_modifier
+		trigger = {
+			overlord = {
+				has_government_attribute = enables_blood_tax
 			}
 		}
 	}
@@ -1653,6 +1693,14 @@ incorporated_vassal = {
 			overlord = {
 				has_government_attribute = same_religion_subject_bonus
 				religion = PREV
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = MEGA_blood_tax_modifier
+		trigger = {
+			overlord = {
+				has_government_attribute = enables_blood_tax
 			}
 		}
 	}

@@ -675,6 +675,14 @@ country_event = {
 	
 	option = {
 		name = "plati_ck_new_flavor.EVTOPTA9"							#Interesting, just FYI
+		tooltip = {
+			KHA = {
+				add_country_modifier = {
+					name = MEGA_mongol_empire_still_standing
+					duration = -1
+				}
+			}
+		}
 	}
 }
 country_event = {

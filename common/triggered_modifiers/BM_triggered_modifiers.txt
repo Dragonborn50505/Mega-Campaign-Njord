@@ -1,13 +1,3 @@
-BM_cossack_buff = {
-	potential = {
-		has_estate = estate_cossacks
-	}
-	trigger = {
-		has_estate = estate_cossacks
-	}
-	cav_to_inf_ratio = 0.25
-}
-
 BM_2nd_idea_group_dev_cost = {
 	potential = {
 		hidden_trigger = {
@@ -56,7 +46,6 @@ BM_AI_collapse_of_ming = {
 		NOT = {
 			is_year = 1750
 		}
-		ai = yes
 	}	
 	
 	trigger = {
@@ -66,6 +55,7 @@ BM_AI_collapse_of_ming = {
 		NOT = {
 			is_year = 1750
 		}
+		
 	}
 	manpower_recovery_speed = 0.75
 	army_tradition_decay = 0.002

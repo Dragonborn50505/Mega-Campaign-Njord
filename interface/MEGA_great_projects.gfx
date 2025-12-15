@@ -1622,4 +1622,19 @@ spriteTypes = {
 		name = "GFX_great_project_kuelap"
 		texturefile = "gfx//interface//great_projects//great_project_kuelap.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_great_project_me_timurid_palace"
+		texturefile = "gfx//interface//great_projects//great_project_me_timurid_palace.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_great_project_skull_pyramid"
+		texturefile = "gfx//interface//great_projects//great_project_skull_pyramid.dds"
+	}
+			
+	spriteType = {
+		name = "GFX_great_project_fu_acemi_oglan"
+		texturefile = "gfx//interface//great_projects//great_project_fu_acemi_oglan.dds"
+	}
 }
