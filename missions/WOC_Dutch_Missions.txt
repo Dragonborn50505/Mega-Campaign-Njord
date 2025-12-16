@@ -220,7 +220,7 @@ NED_1_1 = {
 				num_of_buildings_in_province = 4
 				value = 10
 			}
-			monthly_income = 200
+			monthly_income = 100
 		} 
 	
 		effect = {  
@@ -1147,7 +1147,7 @@ NED_2_1 = {
 			NOT = { any_known_country = { navy_size = ROOT } }
 			navy_size = 250
 			navy_tradition = 75
-			monthly_income = 300
+			monthly_income = 150
 		} 
 
 		effect = {  
@@ -1758,7 +1758,7 @@ NED_3_1 = {
 			OR = {
 				AND = {
 					trade_income_percentage = 0.3
-					monthly_income = 200
+					monthly_income = 100
 				}
 				AND = {
 					trader = 3
@@ -2092,7 +2092,7 @@ NED_3_1 = {
 				}
 				value = 30
 			}
-			monthly_income = 500
+			monthly_income = 250
 		} 
 	
 		effect = {  
@@ -2732,10 +2732,10 @@ NED_4_1 = {
 				NOT = {
 					great_power_rank = 2
 				}
-				monthly_income = 400
+				monthly_income = 200
 			}
 			else = {
-				monthly_income = 600
+				monthly_income = 300
 			}
 			has_adm_advisor_3 = yes
 			has_dip_advisor_3 = yes

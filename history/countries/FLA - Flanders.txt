@@ -44,6 +44,11 @@ monarch_names = {
     "Melisandre #-0"
 }
 
+historical_friend = AMG
+historical_friend = FKN
+
+mercantilism = 25
+
 1444.11.11= {
 	monarch = {
 		name = "Renoir"

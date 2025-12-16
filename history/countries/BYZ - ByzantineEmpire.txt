@@ -5,6 +5,7 @@ technology_group = eastern
 religion = orthodox
 primary_culture = greek
 capital = 151
+historical_rival = SAR
 1444.11.11= {
 	monarch = {
 		name = "Paul"
