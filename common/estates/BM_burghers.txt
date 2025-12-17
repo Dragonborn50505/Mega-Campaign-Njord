@@ -1,0 +1,8 @@
+estate_burghers = { # It shows up as an error but should work still since its adding to the already existing estate_nobles vanilla file
+	privileges = {
+		### BM ###
+		estate_burghers_bandeirantes
+		estate_burghers_sagres_naval_school
+		estate_burghers_promote_mercantilism
+	}
+}

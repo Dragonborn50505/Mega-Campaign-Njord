@@ -10,6 +10,7 @@ country_event = {	#AI fix
 		NOT = {
 			manpower_percentage = 0.5
 		}
+		ai = yes
 	}
 
 	mean_time_to_happen = {
@@ -30,6 +31,7 @@ country_event = {	#AI fix
 
 	trigger = {
 		adm_tech = 4
+		ai = yes
 	}
 
 	mean_time_to_happen = {
@@ -57,6 +59,7 @@ country_event = {	#AI fix
 
 	trigger = {
 		adm_tech = 6
+		ai = yes
 	}
 
 	mean_time_to_happen = {
@@ -84,6 +87,7 @@ country_event = {	#AI fix
 	picture = TRADEGOODS_eventPicture
 
 	trigger = {
+		ai = yes
 		adm_tech = 8
 	}
 

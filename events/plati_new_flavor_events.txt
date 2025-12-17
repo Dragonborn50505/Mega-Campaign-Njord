@@ -681,6 +681,9 @@ country_event = {
 					name = MEGA_mongol_empire_still_standing
 					duration = -1
 				}
+				add_ruler_modifier = {
+					name = MEGA_great_khan_khubilai
+				}
 			}
 		}
 	}

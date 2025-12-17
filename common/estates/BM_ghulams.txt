@@ -1,0 +1,7 @@
+estate_ghulams = { # It shows up as an error but should work still since its adding to the already existing estate_nobles vanilla file
+	privileges = {
+		### BM ###
+		estate_ghulams_governor_positions
+		estate_ghulams_trade_privileges
+	}
+}

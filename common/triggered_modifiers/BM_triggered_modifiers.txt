@@ -286,10 +286,46 @@ high_american_tech_mod = {
 }
 
 
-
-
-
-
+# HIGHER PROVINCE WAR SCORE COST
+MEGA_HIGHER_PROVINCE_WAR_SCORE_COST_1 = {
+	potential = {
+		is_year = 1444
+		NOT = {
+			is_year = 1500
+		}
+	}
+	trigger = {
+		is_year = 1444
+	}
+	
+	province_warscore_cost = 0.3
+}
+MEGA_HIGHER_PROVINCE_WAR_SCORE_COST_2 = {
+	potential = {
+		is_year = 1500
+		NOT = {
+			is_year = 1550
+		}
+	}
+	trigger = {
+		is_year = 1500
+	}
+	
+	province_warscore_cost = 0.2
+}
+MEGA_HIGHER_PROVINCE_WAR_SCORE_COST_3 = {
+	potential = {
+		is_year = 1550
+		NOT = {
+			is_year = 1600
+		}
+	}
+	trigger = {
+		is_year = 1550
+	}
+	
+	province_warscore_cost = 0.1
+}
 
 
 BM_reduced_diplomatic_travel_time_1 = {
@@ -344,4 +380,107 @@ BM_reduced_diplomatic_travel_time_5 = {
 		dip_tech = 26
 	}
 	envoy_travel_time = -0.5
+}
+
+BM_hab_reorganize_the_imperial_army_triggered_modifier = {
+	potential = {
+		has_reform = reorganize_the_imperial_army
+	}
+	trigger = {
+		is_at_war = no
+	}
+
+	land_maintenance_modifier = -0.15
+	naval_maintenance_modifier = -0.15
+	merc_maintenance_modifier = -0.05
+}
+
+BM_militant_orders = {
+	potential = {
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+		}
+		has_government_attribute = enable_militant_orders
+	}	
+	
+	trigger = {
+		at_war_with_religious_enemy = yes	
+	}
+
+	manpower_recovery_speed = 0.25
+	army_tradition = 1
+
+}
+
+
+BM_academy_of_artillery = {
+	potential = {
+		has_government_attribute = enables_artillery_academia
+	}	
+	
+	trigger = {
+		army_tradition = 75
+	}
+
+	artillery_shock = 1
+
+}
+
+BM_melfi_constitution = {
+	potential = {
+		has_government_attribute = enables_liber_augustalis
+	}	
+	
+	trigger = {
+		legitimacy = 90
+	}
+
+	all_estate_loyalty_equilibrium = 0.05
+
+}
+
+BM_officers_of_the_sword = {
+	potential = {
+		has_government_attribute = enables_officers_of_the_sword
+	}	
+	
+	trigger = {
+		army_tradition = 50
+	}
+
+	prestige = 1
+
+}
+
+
+BM_silk_traders = {
+	potential = {
+		has_government_attribute = enables_silk_traders
+	}	
+	
+	trigger = {
+		trading_bonus = {
+			trade_goods = silk
+			value = yes
+		}
+	}
+
+	trade_efficiency = 0.15
+
+}
+BM_swiss_fighting_defensive_wars = {
+	potential = {
+		has_government_attribute = BM_swiss_fighting_defensive_wars
+	}	
+	
+	trigger = {
+		is_in_war = {
+			defenders = root
+		}
+	}
+
+	hostile_attrition = 1
+	defensiveness = 0.15
+
 }

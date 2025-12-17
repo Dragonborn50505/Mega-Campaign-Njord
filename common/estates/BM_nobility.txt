@@ -1,0 +1,10 @@
+estate_nobles = { # It shows up as an error but should work still since its adding to the already existing estate_nobles vanilla file
+	privileges = {
+		### BM ###
+		estate_nobles_kreditwerk_appointment
+		estate_nobles_muscovite_strong_duchies
+		estate_nobles_capitanias_herditarias
+		estate_nobles_magnate_law_privilege
+		estate_nobles_establish_serfdom
+	}
+}
