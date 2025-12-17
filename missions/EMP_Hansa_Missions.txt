@@ -28,11 +28,11 @@ hanseatic_expansion_tree = {
 
 		effect = {
 			add_army_tradition_or_mil_power = { amount = 10 }
+			custom_tooltip = empty_line_tt
 			add_country_modifier = {
 				name = thriving_arms_industry
 				duration = 3650
 			}
-			custom_tooltip = empty_line_tt
 			if =  {
 				limit = { 
 					has_dlc = "Rights of Man"

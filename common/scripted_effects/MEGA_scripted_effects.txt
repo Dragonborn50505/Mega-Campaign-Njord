@@ -45,3 +45,17 @@ add_navy_tradition_or_dip_power = {
 		}
 	]
 }
+
+remove_all_age_of_discovery_modifiers = {
+	if = {
+		limit = {
+			NOT = { current_age = age_of_discovery }
+		}
+		if = {
+			limit = { 
+				has_country_modifier = MEGA_all_the_hordes_must_kill_each_other_modifier
+			}
+			remove_country_modifier = MEGA_all_the_hordes_must_kill_each_other_modifier
+		}
+	}
+}

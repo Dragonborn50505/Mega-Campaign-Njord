@@ -1,0 +1,56 @@
+#hansa gov
+trade_confederation_reform = {
+	icon = "free_city"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = merchant_republic
+	potential = {
+		has_reform = trade_confederation_reform
+	}
+	trigger = {
+		has_reform = trade_confederation_reform
+	}
+	boost_income = yes
+	duration = 4
+	factions = {
+		mr_traders
+		mr_aristocrats
+		mr_guilds
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			NOT = { has_dlc = "Mare Nostrum" }
+		}
+		can_use_trade_post = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Mare Nostrum"
+			NOT = { has_dlc = "Res Publica" }
+		}
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			has_dlc = "Mare Nostrum"
+		}
+		can_use_trade_post = yes
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	modifiers = {
+		max_absolutism = -10
+		merchants = 1
+	}
+	custom_attributes = {
+		is_merchant_republic = yes
+		extra_trade_goods_from_naval_supplies = yes
+		enable_mercantilism_bonuses = yes
+		elections_increase_factions_influence = yes
+		locked_government_type = yes
+	}
+}

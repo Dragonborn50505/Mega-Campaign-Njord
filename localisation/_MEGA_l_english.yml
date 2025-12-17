@@ -26,21 +26,6 @@
  BM_general_colonization_law_subject_desc: ""
 
 
-
- #Great Projects:
- MEGA_stanne_unique_TT:0 "The '§YSpymaster§!' Advisor will now also grant scaling on level: \n Morale Damage: §G+2.0%§!"
- MEGA_fasil_ghebbi_unique_TT:0 "The '§YMilitary Engineer§!' Advisor will now also grant scaling on level: \n Fort Maintenance: §G-3.0%§!"
- MEGA_mary_zion_unique_TT:0 "The '§YReligious Culture§!' Clergy Privilege will now also grant: \n Land Morale: §G+5.0%§! \n"
- MEGA_yellow_crane_tower_unique_TT:0 "The '§YEunuch Land Rights§!' Eunuch Privilege will no longer cost Influence, Max Absolutism, crownland, and also grant: \n Interest Per Annum: §G-0.25§! \n"
- MEGA_temple_of_heaven_unique_TT:0 "The '§YInstitutionalized Shizus§!' Shizu Privilege will no longer cost Influence or Max Absolutism, and also grant: \n Prestige: §G+0.25§! \n"
- MEGA_qiao_unique_TT:0 "The '§YMonopoly on Mining and Smelting§!' Qinwang Privilege will no longer cost Max Absolutism, grant §G+50.0%§! more ¤, and §G+2§! more Mercantilism"
- MEGA_yuelu_unique_TT:0 "The '§YImperial Council§!' Eunuch Privilege will no longer cost Influence or Max Absolutism and also grant: \n National Unrest: §G-1.00§! \n"
- MEGA_magnup_kale_unique_TT:0 "The '§YNobility Officer Rights§!' Nobility Privilege will no longer cost Influence or Max Absolutism and also grant: \n General Cost: §G-10.0%§! \n"
- MEGA_mir_castle_unique_TT:0 "The '§YGrant Court Positions§!' Nobility Privilege will no longer cost Influence or Max Absolutism and also grant the following modifier scaling on §GLoyalty§!: \n Land Force Limit: §G+10.0%§! \n"
- MEGA_kisvarda_unique_TT:0 "The '§YStatesman of the Nobility§!' Nobility Privilege will no longer cost Influence or Max Absolutism and also grant: \n Diplomatic Annexation Cost: §G-10.0%§! \n"
- MEGA_maria_laach_unique_TT:0 "The '§YInquisitor§!' Advisor will now also grant scaling on level: \n Morale Damage Received: §G+2.0%§!"
- MEGA_fu_acemi_oglan_unique_TT:0 "Recruiting '§YAdmirals§!' will grant §G+10.0§! Navy Tradition. \n"
-
  #Empire Reforms
  MEGA_reichsreform_unique_TT:0 "Every §YMember§! of the @HRE §YHoly Roman Empire§! will be awarded: \n Gain §G+25.00§! Reform Progress."
  MEGA_reichsregiment_unique_TT:0 "Every §YFree City§! in the @HRE §YHoly Roman Empire§! will be awarded: \n Capital: Add or Upgrade their §YCourthouse Building§!. \n If a §YTown Hall§! is present: §G+1§! £adm£, £dip£ and £mil£ instead."
@@ -71,6 +56,12 @@
  social_conservatism_title:0 "Social conservatism"
  desc_social_conservatism:0 "In this emerging modern world new ideas are still not so easily accepted"
 
+ MEGA_HIGHER_PROVINCE_WAR_SCORE_COST_1:0 "Increased Province War Score Cost"
+ desc_MEGA_HIGHER_PROVINCE_WAR_SCORE_COST_1:0 "Our state-apparatus is not sufficiently developed to conquer more territories than the state can muster. With time and the invention of new technologies this will improve."
+ MEGA_HIGHER_PROVINCE_WAR_SCORE_COST_2:0 "Increased Province War Score Cost"
+ desc_MEGA_HIGHER_PROVINCE_WAR_SCORE_COST_2:0 "In time it has become apparent that with a more centralized bureaucracy with administrative bodies run by educated officials employed directly by the state we can afford to directly conquer more territories."
+ MEGA_HIGHER_PROVINCE_WAR_SCORE_COST_3:0 "Increased Province War Score Cost"
+ desc_MEGA_HIGHER_PROVINCE_WAR_SCORE_COST_3:0 "The many and long wars of the first half of the 16th century have led to an international diplomatic system where the integration of territorial bodies has become increasingly easier."
 
  BM_reduced_diplomatic_travel_time_1:0 "Invention of the Flute"
  desc_BM_reduced_diplomatic_travel_time_1:0 "Popularized in the Dutch Republic in the 16th century, the Flute has been used as a dedicated vessel to transport cargo across the North Sea and later the Atlantic Ocean ever since the 14th century. Being able to carry twice the cargo compared to other vessels as well as being efficiently crewed by a much smaller crew made the Flute a very lucrative and manpower efficient vessel."
@@ -157,3 +148,80 @@
  estate_burghers_promote_mercantilism: "Promote Mercantilism"
  estate_burghers_promote_mercantilism_desc: "Mercantilism as an idea is growing in our country. We may choose to favor the faction backing this ideal and reap the benefits that comes from it ourselves."
  show_mercantile_bonuses: "This §YPrivilege§! will give bonuses based on our £mercantilism_text_icon£ §YMercantilism§!:\n\nAt least §M20.0%§! Mercantilism:\nCenter of Trade Upgrade Cost: §G-10.0%§!\n\nAt least §M40.0%§! Mercantilism:\nDevelopment Cost: §G-5.0%§!\n\nAt least §M60.0%§! Mercantilism:\nColonists: §G+1§!\n\nAt least §M80.0%§! Mercantilism:\nGoods Produced Modifier: §G+10.0%§!"
+
+
+
+ #Events:
+ MEGA_events.1.t:0 "Peasants and Burghers Revolt"
+ MEGA_events.1.d:0 "The Regency of Widukind II Fróilaz-Traba, a foreign prince from Galicia, has since the passing of the late Prince Widukind I sparked much controversy. With ever-increasing taxes and tariffs on the peasantry and burgher guilds, most notably on the selling of fish, grain and salt, it seems that a breaking point has been reached. With thousands of armed peasants rising up against the forces of the Duchy in Ditmarschen, Lauenburg and Bremen, the Burgher Guilds in Hamburg and Lübeck have themselves banded together with foreign mercenaries, storming the royal palace and taking Widukind II prisoner. The members of the Regency, choosing their lives over action against the instability, has fled across the Danish straits into Sjaelland. \n \nWith the peasantry and burgher guilds now de-facto in power. The various leaders of the guilds and peasant bands have agreed to meet in Hamburg to decide the future of Holstein and the Electorate-Duchy."
+ MEGA_events.1.a:0 "Long live the Republic!"
+
+ MEGA_events.2.t:0 "If you see this event then somethings wrong"
+ MEGA_events.2.d:0 "Kill yourself"
+ MEGA_events.2.a:0 "Ok"
+
+ MEGA_events.3.t:0 "Proclamation of the Hanseatic League"
+ MEGA_events.3.d:0 "With the toppling of the Nobles, the ousting of the Regency of Widukind II, and Widukind himself stripped of his princely titles and placed in house arrest, the representatives from various peasant bands, burgher guilds and the Hansa merchants met today in Hamburg to decide the future of the Electorate-Duchy. The results of these discussions has placed the peasantry firmly as a Fourth Estate, with many privileges granted and secured. The Burgher Guilds have also been granted much autonomy within the cities, with tariffs and taxes revoked to ensure their economic freedom. The Hansa merchants, however, have seemingly come out on top of these discussions, with a 'Hansa-led Oligopoly' under the rule of Aedelbrecht von Hassel, one of the last members of the von Hassel dynastic family that used to rule the lands. A message has been sent to the Emperor of the Holy Roman Empire promising to continue the Electorate-Duchy, now an Electorate-Republic, as a strong continuing member of the Empire."
+ MEGA_events.3.a:0 "Long live the Electorate-Republic! Long live the Hanseatic League!"
+
+ MEGA_events.5.t:0 "Ascension of the Great Khan"
+ MEGA_events.5.d:0 "The Mongol Empire, still sprawing across Eurasia, has so far been held together by the iron will and fearsome rule of the Khan. Total subjugation of the tribal leaders and tributary states are enforced by the feared cavalry hordes of the Khan. But with the recent passing of the aging Great Khan Khubilai, an emergency kurultai has elevated his youngest son- an accomplished but ruthless general- to the 'Skull Throne'. Always lacking his father's patience for compromise, the new Khan has embarked on a rule through total terror, ordering the immediate execution of prominent leaders suspected of disloyalty. \n \nThese purgers has fractured the fragile balance of power. Steppe clans now mobilize their hosts and there are talks of revolts and frontiers governors declaring autonomy. The Mongol Empire seemingly exits its previous harmonious stability, and enters into a violent struggle of survival."
+ MEGA_events.5.a:0 "By blood we rule, by blood we fall."
+
+ MEGA_events.6.t:0 "Rebellions in the Mongol Empire"
+ MEGA_events.6.d:0 "Several pressures has turned the newly appointed Great Khan's recent purges into a catalyst for empire-wide unrest rather than a show of strength. The old power balance between Mongol elites and its Tatar, Khitan, Oghuz and other subjects has finally eroded into outright hatred. Generations of settled rule have tied the empire's economy to cities, guilds and agricultural taxes rather than plunder. Persian, Chinese and Turkic administrators and nobles wield increasing influence across the Empire's territories, who often play the rival Mongol clans against one another. Provincial governors, more keen on keeping their economic and political influences have begun declaring independence to protect their own interest rather than swearing fealty to a violent Great Khan. \n \nWith these mounting troubles, neighbouring states- long contained by Mongol dominance- sense weakness and have stopped paying their yearly tributes, quietly supporting revolts with arms, gold and advisors. Border regions facing both internal instability and foreign threats, choose self-rule as a matter of survival."
+ MEGA_events.6.a:0 "The authority of the Great Khan is fragmenting."
+
+ MEGA_events.7.t:0 "Proclamation of the Greater Usun Mongols"
+ MEGA_events.7.d:0 "Sparked by the Great Khan's purges, the uprising of the Usun Mongols, a powerful and ancient tribe rooted in western Mongolia, has proven the weakness of the new Khan's authority. The Usun Mongols has managed to rally many disaffected clans across the Mongol heartland, uniting into the Greater Usun Mongol Federation. Led by a rival kurultai near the sacred grazing lands of the Altai frontier, the Greater Usun Mongols has attracted many smaller tribes, fearful of further purges, which has strengthened their numbers considerably. \n \nThe declaration has sent shockwaves throughout the Empire. For the first time, a major Mongol power has openly challenged the authority of the Great Khan and the Mongol Empire as a whole. Other autonomous regions watch closely, carefully studying and planning their own destinys independent of the Great Khan's illegitimate rule."
+
+ MEGA_events.8.t:0 "Troubles in the Eastern Territories"
+ MEGA_events.8.d:0 "In the eastern territories of the empire, the Chahar- long one of the most influential Mongol tribes- move swiftly as the empire continues to fracture. Long-standing rivals of the Oirats, who remain only semi-loyal to the Great Khan, the Chahar see an opportunity to break free from both control of the Great Khan and the influence of the Oirats. The leader of the Chahar horde assert that the eastern steppe must be ruled by a Khan who can command loyalty through strength and tradition, not fear. With this, the Chahar has elevated its own Khan, claiming the mandate to preserve order in the east. \n \nThe Oirats, still nominally loyal to the Great Khan, has openly declared the Chahar proclamation as an insurrection against the Khan. Skirmishes has erupted along the eastern frontier as Khan-backed forces clash with the Chahar cavalry."
+ MEGA_events.8.a:0 "The Great Khan is grasping for legitimacy."
+
+ MEGA_events.9.t:0 "The Cumans and the City of Sarai"
+ MEGA_events.9.d:0 "A similar unraveling has now gripped the Empire's western borders. There, the Cumans, long-subjugated steppe warriors and experienced frontier auxiliaries of the Mongol Empire have risen up in open revolt against the Khan. Exploiting the chaos of civil war and the absence of the Khan's armies, they have managed to seize Sarai, the great city that used to serve as the western capital of the Mongol Empire and a symbol of its dominon over the Volga Steppe. The fall of Sarai is a devastating blow. Cut off from reinforcements and facing coordinated Cuman uprisings, the Great Khan has abandoned the west entirely, fleeing eastward into Central Asia to preserve what remains of his authority. Imperial administrators and loyal nobles scatter, while the Cumans proclaim the city liberated from Mongol rule, positioning themselves as masters of the western steppe and the Volga river. \n \nYet Mongol power in the west has not vanished completely. In the aftermath of Sarai’s capture, scattered Khan-loyal tribes, veteran generals, and remnants of imperial tumens rally together. From this desperate coalition emerges the Great Horde— a mobile, hard-hitting cavalry army bound not by territory, but by loyalty to the idea of the Khaganate itself. Their mission is singular and uncompromising: the recapture of Sarai and the restoration of order in the west. Raiding Cuman supply lines and crushing smaller rebel forces, the Great Horde has taken it upon themselves to rule the western territories and the Volga Steppe in the absence of the Great Khan. \n \nAs the Great Horde rides west to meet the Cuman forces -the Empire itself has split into civil war and anarchy."
+ MEGA_events.9.a:0 "The Age of the Mongols has ended."
+
+ MEGA_events.10.t:0 "The Collapse of the Mongols"
+ MEGA_events.10.d:0 "The Great Khan, now barely ruling from Central Asia, commands loyalty in name only, his authority drowned out by constant war and betrayal. As the Chahar and Oirats duke it out in the east, the Great Horde and Cumans fight for the legendary city of Sarai. As cities burn, and the roads that once bound the Mongol Empire and Eurasia are left absent of trade, with only the occasional marching of cavalry hordes, the Mongol armies turn on another, fighting not for empire but for their own survival. By the mid 1400's, the Mongol Empire exists only in memory and as a chapter in future history books."
+ MEGA_events.10.a:0 "The greatest empire the world has known is no longer."
+
+ #Modifiers:
+ MEGA_drained_the_swamps:0 "Draining the swamps"
+ MEGA_reverse_danishification:0 "Reverse Danish Influence"
+ MEGA_hansa_kontor_owned_by_hansa:0 "Hansa Kontor"
+ MEGA_hamburg_colonisation_craze:0 "New World Colonization Effort"
+ MEGA_hamburg_baltic_sea_protectors:0 "Baltic Sea Protectors"
+ MEGA_hamburg_the_russian_connection:0 "The Russian Connection"
+ MEGA_hamburg_queen_of_the_league:0 "Queen of the Hanseatic League"
+ MEGA_hamburg_hansa_contacts_in_london:0 "The London Hansa Kontor"
+ MEGA_hansa_marine_pilots:0 "Hanseatic Marine Pilots"
+ MEGA_epstein_island_2_electric_boogaloo:0 "Epstein Island"
+ MEGA_great_khan_khubilai:0 "Great Khan Khubilai"
+ MEGA_mongol_empire_still_standing:0 "The Mongol Khaganate"
+ MEGA_weak_khan:0 "Bloodthirsty Great Khan"
+ MEGA_the_hamburg_league:0 "The Hamburg League"
+ MEGA_all_the_hordes_must_kill_each_other_modifier:0 "Mongol Horde"
+
+
+
+
+
+ #Government Reforms:
+ trade_confederation_reform:0 "Hansa Trade Confederation"
+ trade_confederation_reform_desc:0 "The loose collective of Hansa Cities has united together in a Trade Confederation. Though officially an alliance between the various Hansa cities and its merchants and guilds, the Confederation follow a common goal of increased commerce, expansion of trade routes, and the development of further economic activity. With this, laws and regulations bind the Hansa together in a network of codes of practice with the Hanseting, the federal courts- and commerce-office, serving as a parliamentary order where the Hansa members can voice their concerns and vote on important matters."
+
+ #Custom Attributes:
+ mechanic_enable_mercantilism_bonuses_yes:0 "Grants increased §YTrade Efficiency§! scaling with £mercantilism_text_icon£ Mercantilism: \n Trade Efficiency §G+1.5%§! for every §Y10§! £mercantilism_text_icon£ Mercantilism"
+
+ Home_Market_1:0 "Mercantilist Practices"
+ Home_Market_2:0 "Mercantilist Practices"
+ Home_Market_3:0 "Mercantilist Practices"
+ Home_Market_4:0 "Mercantilist Practices"
+ Home_Market_5:0 "Mercantilist Practices"
+ Home_Market_6:0 "Mercantilist Practices"
+ Home_Market_7:0 "Mercantilist Practices"
+ Home_Market_8:0 "Mercantilist Practices"
+ Home_Market_9:0 "Mercantilist Practices"
+ Home_Market_10:0 "Mercantilist Practices"

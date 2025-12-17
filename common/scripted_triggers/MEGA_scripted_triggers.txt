@@ -80,3 +80,10 @@ has_2_idea_or_1_adm_groups = {
 		}
 	}
 }
+
+estate_turkic_tribes_is_valid = {
+	OR = {
+		has_government_attribute = enables_nomadic_tribes
+		is_tribal = yes
+	}
+}

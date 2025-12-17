@@ -6,10 +6,19 @@ country_event = {	#AI fix
 	desc = MEGA_events.1.d
 	picture = TRADEGOODS_eventPicture
 
-	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 10
+	}
 
 	trigger = {
 		tag = SHL
+	}
+
+	immediate = {
+		country_event = {
+			id = MEGA_events.3
+			days = 5
+		}
 	}
 	
 	option = {
@@ -42,7 +51,7 @@ country_event = {	#AI fix
 	}
 }
 
-country_event = {	#AI fix
+country_event = {	#Mong Empire Fix
 	id = MEGA_events.2
 	title = MEGA_events.2.t
 	desc = MEGA_events.2.d
@@ -50,7 +59,7 @@ country_event = {	#AI fix
 
 	is_triggered_only = yes
 
-	major = yes
+	hidden = yes
 
 	trigger = {
 		tag = Z07
@@ -58,6 +67,7 @@ country_event = {	#AI fix
 
 	immediate = {
 		hidden_effect = {
+			set_country_flag = MEGA_when_dies_ruler_dies_kill_the_mongol_empire
 			change_tag = KHA
 			on_change_tag_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes
@@ -85,18 +95,28 @@ country_event = {	#AI fix
 				name = MEGA_mongol_empire_still_standing
 				duration = -1
 			}
+			add_country_modifier = {
+				name = MEGA_HIDDEN_MONGOL_THINGY_LOL
+				duration = -1
+			}
+			every_subject_country = {
+				add_country_modifier_for_age = {
+					name = MEGA_all_the_hordes_must_kill_each_other_modifier
+					age = age_of_discovery
+				}
+			}
 		}
 	}
 	
 	option = {
-		name = MEGA_events.1.a
+		name = MEGA_events.2.a
 		add_ruler_modifier = {
 			name = MEGA_great_khan_khubilai
 		}
 	}
 }
 
-country_event = {	#Indian cores fix
+country_event = {	#news event that the Hamburg League gains power in Holstein
 	id = MEGA_events.3
 	title = MEGA_events.3.t
 	desc = MEGA_events.3.d
@@ -104,68 +124,735 @@ country_event = {	#Indian cores fix
 
 	is_triggered_only = yes
 
+	trigger = {
+		tag = HAM
+	}
+
+	major = yes
+
+	major_trigger = {
+		capital_scope = {
+			superregion = europe_superregion
+		}
+	}
+
+	option = {
+		name = MEGA_events.3.a
+		add_ruler_modifier = {
+			name = MEGA_the_hamburg_league
+			duration = -1
+		}
+		add_government_reform = trade_confederation_reform
+		define_ruler = { #Same stats as my heir would have had
+			adm = 4
+			dip = 5
+			mil = 4
+			name = "Aedelbrecht"
+			dynasty = "von Hassel"
+			age = 12
+			culture = lower_saxon
+			force_republican_names = yes
+		}
+	}
+}
+
+
+country_event = {
+	id = MEGA_events.4
+	title = MEGA_events.4.t
+	desc = MEGA_events.4.d
+	picture = WESTERNISATION_eventPicture
 	hidden = yes
 
 	trigger = {
-		tag = MNG #xd load bearing Ming
+		has_government_attribute = enable_mercantilism_bonuses
+		OR = {
+			AND = {
+				NOT = { mercantilism = 10 }
+				OR = {
+					has_country_modifier = Home_Market_1
+					has_country_modifier = Home_Market_2
+					has_country_modifier = Home_Market_3
+					has_country_modifier = Home_Market_4
+					has_country_modifier = Home_Market_5
+					has_country_modifier = Home_Market_6
+					has_country_modifier = Home_Market_7
+					has_country_modifier = Home_Market_8
+					has_country_modifier = Home_Market_9
+					has_country_modifier = Home_Market_10
+				}
+			}
+			AND = {
+				mercantilism = 10
+				NOT = { mercantilism = 20 }
+				NOT = { has_country_modifier = Home_Market_1 }
+			}
+			AND = {
+				mercantilism = 20
+				NOT = { mercantilism = 30 }
+				NOT = { has_country_modifier = Home_Market_2 }
+			}
+			AND = {
+				mercantilism = 30
+				NOT = { mercantilism = 40 }
+				NOT = { has_country_modifier = Home_Market_3 }
+			}
+			AND = {
+				mercantilism = 40
+				NOT = { mercantilism = 50 }
+				NOT = { has_country_modifier = Home_Market_4 }
+			}
+			AND = {
+				mercantilism = 50
+				NOT = { mercantilism = 60 }
+				NOT = { has_country_modifier = Home_Market_5 }
+			}
+			AND = {
+				mercantilism = 60
+				NOT = { mercantilism = 70 }
+				NOT = { has_country_modifier = Home_Market_6 }
+			}
+			AND = {
+				mercantilism = 70
+				NOT = { mercantilism = 80 }
+				NOT = { has_country_modifier = Home_Market_7 }
+			}
+			AND = {
+				mercantilism = 80
+				NOT = { mercantilism = 90 }
+				NOT = { has_country_modifier = Home_Market_8 }
+			}
+			AND = {
+				mercantilism = 90
+				NOT = { mercantilism = 100 }
+				NOT = { has_country_modifier = Home_Market_9 }
+			}
+			AND = {
+				mercantilism = 100
+				NOT = { has_country_modifier = Home_Market_10 }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 30
 	}
 
 	immediate = {
-		#MYSORE CORES
-		mysore_area = {
-			add_core = MYS
+		if = {
+			limit = {
+				NOT = { mercantilism = 10 }
+			}
+			remove_country_modifier = Home_Market_1
+			remove_country_modifier = Home_Market_2
+			remove_country_modifier = Home_Market_3
+			remove_country_modifier = Home_Market_4
+			remove_country_modifier = Home_Market_5
+			remove_country_modifier = Home_Market_6
+			remove_country_modifier = Home_Market_7
+			remove_country_modifier = Home_Market_8
+			remove_country_modifier = Home_Market_9
+			remove_country_modifier = Home_Market_10
 		}
-		2032 = {
-			add_core = MYS
+		else_if = {
+			limit = {
+				mercantilism = 10
+				NOT = { mercantilism = 20 }
+			}
+			add_country_modifier = {
+				name = Home_Market_1
+				duration = -1
+			}
+			remove_country_modifier = Home_Market_2
+			remove_country_modifier = Home_Market_3
+			remove_country_modifier = Home_Market_4
+			remove_country_modifier = Home_Market_5
+			remove_country_modifier = Home_Market_6
+			remove_country_modifier = Home_Market_7
+			remove_country_modifier = Home_Market_8
+			remove_country_modifier = Home_Market_9
+			remove_country_modifier = Home_Market_10
 		}
-		538 = {
-			add_core = MYS
+		else_if = {
+			limit = {
+				mercantilism = 20
+				NOT = { mercantilism = 30 }
+			}
+			add_country_modifier = {
+				name = Home_Market_2
+				duration = -1
+			}
+			remove_country_modifier = Home_Market_1
+			remove_country_modifier = Home_Market_3
+			remove_country_modifier = Home_Market_4
+			remove_country_modifier = Home_Market_5
+			remove_country_modifier = Home_Market_6
+			remove_country_modifier = Home_Market_7
+			remove_country_modifier = Home_Market_8
+			remove_country_modifier = Home_Market_9
+			remove_country_modifier = Home_Market_10
 		}
-		4414 = {
-			add_core = MYS
+		else_if = {
+			limit = {
+				mercantilism = 30
+				NOT = { mercantilism = 40 }
+			}
+			add_country_modifier = {
+				name = Home_Market_3
+				duration = -1
+			}
+			remove_country_modifier = Home_Market_1
+			remove_country_modifier = Home_Market_2
+			remove_country_modifier = Home_Market_4
+			remove_country_modifier = Home_Market_5
+			remove_country_modifier = Home_Market_6
+			remove_country_modifier = Home_Market_7
+			remove_country_modifier = Home_Market_8
+			remove_country_modifier = Home_Market_9
+			remove_country_modifier = Home_Market_10
 		}
-		#KELADI
-		kanara_area = {
-			add_core = KLN
+		else_if = {
+			limit = {
+				mercantilism = 40
+				NOT = { mercantilism = 50 }
+			}
+			add_country_modifier = {
+				name = Home_Market_4
+				duration = -1
+			}
+			remove_country_modifier = Home_Market_1
+			remove_country_modifier = Home_Market_2
+			remove_country_modifier = Home_Market_3
+			remove_country_modifier = Home_Market_5
+			remove_country_modifier = Home_Market_6
+			remove_country_modifier = Home_Market_7
+			remove_country_modifier = Home_Market_8
+			remove_country_modifier = Home_Market_9
+			remove_country_modifier = Home_Market_10
 		}
-		2033 = {
-			add_core = KLN
+		else_if = {
+			limit = {
+				mercantilism = 50
+				NOT = { mercantilism = 60 }
+			}
+			add_country_modifier = {
+				name = Home_Market_5
+				duration = -1
+			}
+			remove_country_modifier = Home_Market_1
+			remove_country_modifier = Home_Market_2
+			remove_country_modifier = Home_Market_3
+			remove_country_modifier = Home_Market_4
+			remove_country_modifier = Home_Market_6
+			remove_country_modifier = Home_Market_7
+			remove_country_modifier = Home_Market_8
+			remove_country_modifier = Home_Market_9
+			remove_country_modifier = Home_Market_10
 		}
-		#KOLATHUND
-		4413 = {
-			add_core = KLT
+		else_if = {
+			limit = {
+				mercantilism = 60
+				NOT = { mercantilism = 70 }
+			}
+			add_country_modifier = {
+				name = Home_Market_6
+				duration = -1
+			}
+			remove_country_modifier = Home_Market_1
+			remove_country_modifier = Home_Market_2
+			remove_country_modifier = Home_Market_3
+			remove_country_modifier = Home_Market_4
+			remove_country_modifier = Home_Market_5
+			remove_country_modifier = Home_Market_7
+			remove_country_modifier = Home_Market_8
+			remove_country_modifier = Home_Market_9
+			remove_country_modifier = Home_Market_10
 		}
-		2029 = {
-			add_core = KLT
+		else_if = {
+			limit = {
+				mercantilism = 70
+				NOT = { mercantilism = 80 }
+			}
+			add_country_modifier = {
+				name = Home_Market_7
+				duration = -1
+			}
+			remove_country_modifier = Home_Market_1
+			remove_country_modifier = Home_Market_2
+			remove_country_modifier = Home_Market_3
+			remove_country_modifier = Home_Market_4
+			remove_country_modifier = Home_Market_5
+			remove_country_modifier = Home_Market_6
+			remove_country_modifier = Home_Market_8
+			remove_country_modifier = Home_Market_9
+			remove_country_modifier = Home_Market_10
 		}
-		#CALICUT
-		534 = {
-			add_core = MAB
+		else_if = {
+			limit = {
+				mercantilism = 80
+				NOT = { mercantilism = 90 }
+			}
+			add_country_modifier = {
+				name = Home_Market_8
+				duration = -1
+			}
+			remove_country_modifier = Home_Market_1
+			remove_country_modifier = Home_Market_2
+			remove_country_modifier = Home_Market_3
+			remove_country_modifier = Home_Market_4
+			remove_country_modifier = Home_Market_5
+			remove_country_modifier = Home_Market_6
+			remove_country_modifier = Home_Market_7
+			remove_country_modifier = Home_Market_9
+			remove_country_modifier = Home_Market_10
 		}
-		#CALICUT
-		535 = {
-			add_core = KOC
+		else_if = {
+			limit = {
+				mercantilism = 90
+				NOT = { mercantilism = 100 }
+			}
+			add_country_modifier = {
+				name = Home_Market_9
+				duration = -1
+			}
+			remove_country_modifier = Home_Market_1
+			remove_country_modifier = Home_Market_2
+			remove_country_modifier = Home_Market_3
+			remove_country_modifier = Home_Market_4
+			remove_country_modifier = Home_Market_5
+			remove_country_modifier = Home_Market_6
+			remove_country_modifier = Home_Market_7
+			remove_country_modifier = Home_Market_8
+			remove_country_modifier = Home_Market_10
 		}
-		#VENAD
-		537 = {
-			add_core = VND
+		else_if = {
+			limit = {
+				mercantilism = 100
+			}
+			add_country_modifier = {
+				name = Home_Market_10
+				duration = -1
+			}
+			remove_country_modifier = Home_Market_1
+			remove_country_modifier = Home_Market_2
+			remove_country_modifier = Home_Market_3
+			remove_country_modifier = Home_Market_4
+			remove_country_modifier = Home_Market_5
+			remove_country_modifier = Home_Market_6
+			remove_country_modifier = Home_Market_7
+			remove_country_modifier = Home_Market_8
+			remove_country_modifier = Home_Market_9
 		}
-		4410 = {
-			add_core = VND
-		}
-		#MADURAI
-		madura_area = {
-			add_core = MAD
-		}
-		kongu_area = {
-			add_core = MAD
-		}
-		tanjore_area = {
-			add_core = MAD
+	}
+
+	option = {
+		name = BM_government_reforms.6.a
+
+	}
+}
+
+country_event = {	#Khubilai Khan dies and no one fucking likes his corrupt son who just killed a bunch of disloyal tribal leaders
+	id = MEGA_events.5
+	title = MEGA_events.5.t
+	desc = MEGA_events.5.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		tag = KHA
+	}
+
+	immediate = {
+		clr_country_flag = MEGA_when_dies_ruler_dies_kill_the_mongol_empire #To prevent from events fucking
+		country_event = {
+			id = MEGA_events.6
+			days = 720
 		}
 	}
 	
 	option = {
-		name = MEGA_events.3.a
+		name = MEGA_events.5.a
+		add_ruler_modifier = {
+			name = MEGA_weak_khan
+			duration = -1
+		}
+		add_stability = -1
+		add_estate_loyalty = {
+			estate = estate_nomadic_tribes
+			loyalty = -25
+		}
+	}
+}
+
+country_event = {	#Khubilai Khan dies and no one fucking likes his corrupt son
+	id = MEGA_events.6
+	title = MEGA_events.6.t
+	desc = MEGA_events.6.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		tag = KHA
+	}
+
+	immediate = {
+		random_owned_province = {
+			limit = {
+				area = uliastai_area
+			}
+			spawn_rebels = {
+				size = 1
+				type = tribal_rebels
+				estate = estate_nomadic_tribes
+			}
+			add_unrest = 10
+		}
+		random_owned_province = {
+			limit = {
+				area = kazakhstan_area
+			}
+			spawn_rebels = {
+				size = 1
+				type = tribal_rebels
+				estate = estate_nomadic_tribes
+			}
+			add_unrest = 10
+		}
+		random_owned_province = {
+			limit = {
+				area = kazakhstan_area
+			}
+			spawn_rebels = {
+				size = 1
+				type = tribal_rebels
+				estate = estate_nomadic_tribes
+			}
+			add_unrest = 10
+		}
+		create_vassal = CHH
+		create_vassal = Z0V
+		create_vassal = Z0H
+		create_vassal = Z2Z
+		create_vassal = Z0W
+		create_vassal = Z71
+		create_vassal = Z8N
+		create_vassal = Z76
+		create_vassal = ZUN
+		create_vassal = Z7B
+		create_vassal = Z26
+		create_vassal = Z5P
+		every_owned_province = {
+			limit = {
+				OR = {
+					area = xilin_gol_area
+					area = outer_mongolia_area
+					area = central_mongolia_area
+				}
+			}
+			add_core = OIR
+		}
+		every_owned_province = {
+			limit = {
+				OR = {
+					area = xilin_gol_area
+					area = chahar_area
+					area = inner_mongolia_area
+				}
+			}
+			add_core = CHH
+		}
+		every_owned_province = {
+			limit = {
+				OR = {
+					area = astrakhan_area
+					area = lower_yik_area
+				}
+			}
+			add_core = Z1T
+		}
+		every_owned_province = {
+			limit = {
+				OR = {
+					area = nogai_area
+					area = bashkiria_area
+					area = volga_area
+					area = samara_area
+				}
+			}
+			add_core = GOL
+		}
+		country_event = {
+			id = MEGA_events.7 #Greater Usun Mongols unite into one
+			days = 240
+			random = 120
+		}
+		country_event = {
+			id = MEGA_events.8 #Chahar and Oirat annex eastern territories, war ensures between them both
+			days = 480
+			random = 120
+		}
+		country_event = {
+			id = MEGA_events.9 #Cumania Rises up, Khans "Golden Horde" fights them
+			days = 720
+			random = 120
+		}
+		country_event = {
+			id = MEGA_events.10 #Total collapse of the Mongol Empire
+			days = 960
+			random = 120
+		}
+	}
+	
+	option = {
+		name = MEGA_events.6.a
+		add_prestige = -25
+		hidden_effect = {
+			every_subject_country = {
+				add_manpower = 5
+				add_mil_power = 50
+				add_prestige = 25
+				add_liberty_desire = 25
+				add_opinion = {
+					who = KHA
+					modifier = executed_monarch
+				}
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.7 #Greater Usun Mongols unite into one
+	title = MEGA_events.7.t
+	desc = MEGA_events.7.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		tag = KHA
+	}
+
+	immediate = {
+		Z5P = {
+			grant_independence = yes
+			inherit = Z0H
+			inherit = Z26
+			inherit = Z0Y
+			inherit = Z3T
+			inherit = Z28
+			inherit = Z58
+			inherit = Z2M
+			inherit = Z7B
+			add_treasury = 250
+			add_country_modifier_for_age = {
+				name = MEGA_all_the_hordes_must_kill_each_other_modifier
+				age = age_of_discovery
+			}
+		}
+	}
+	
+	option = {
+		name = MEGA_events.7.a
+		add_horde_unity = -10
+		add_manpower = -10
+		Z5P = {
+			add_manpower = 10
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.8 #Chahar and Oirat annex eastern territories, war ensures between them both
+	title = MEGA_events.8.t
+	desc = MEGA_events.8.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = KHA
+	}
+
+	major = yes
+	
+	immediate = {
+		create_vassal = OIR
+		OIR = {
+			grant_independence = yes
+			add_treasury = 150
+			capital = {
+				build_to_forcelimit = {
+					infantry = 0.2
+					cavalry = 0.8
+				}
+			}
+			add_country_modifier_for_age = {
+				name = MEGA_all_the_hordes_must_kill_each_other_modifier
+				age = age_of_discovery
+			}
+		}
+		CHH = {
+			grant_independence = yes
+			add_treasury = 150
+			capital = {
+				build_to_forcelimit = {
+					infantry = 0.2
+					cavalry = 0.8
+				}
+			}
+			add_country_modifier_for_age = {
+				name = MEGA_all_the_hordes_must_kill_each_other_modifier
+				age = age_of_discovery
+			}
+		}
+	}
+	
+	option = {
+		name = MEGA_events.8.a
+		add_horde_unity = -20
+		add_manpower = -15
+		CHH = {
+			add_manpower = 7.5
+		}
+		OIR = {
+			add_manpower = 7.5
+			declare_war_with_cb = {
+				casus_belli = cb_core
+				who = CHH
+				war_goal_province = 723
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.9 #Cumania Rises up, Khans "Golden Horde" fights them
+	title = MEGA_events.9.t
+	desc = MEGA_events.9.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = KHA
+	}
+
+	major = yes
+
+	immediate = {
+		set_capital = 1075
+		create_vassal = GOL
+	}
+	
+	option = {
+		name = MEGA_events.9.a
+		add_horde_unity = -30
+		add_stability = -1
+		add_manpower = -20
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					is_core = Z1T
+				}
+				cede_province = Z1T
+				remove_core = KHA
+			}
+			Z1T = {
+				grant_independence = yes
+				add_manpower = 10
+				add_treasury = 200
+				capital = {
+					build_to_forcelimit = {
+						infantry = 0.2
+						cavalry = 0.8
+					}
+				}
+				add_country_modifier_for_age = {
+					name = MEGA_all_the_hordes_must_kill_each_other_modifier
+					age = age_of_discovery
+				}
+			}
+			GOL = {
+				grant_independence = yes
+				add_manpower = 10
+				add_treasury = 200
+				capital = {
+					build_to_forcelimit = {
+						infantry = 0.2
+						cavalry = 0.8
+					}
+				}
+				add_country_modifier_for_age = {
+					name = MEGA_all_the_hordes_must_kill_each_other_modifier
+					age = age_of_discovery
+				}
+			}
+		}
+		GOL = {
+			declare_war_with_cb = {
+				casus_belli = cb_tribal_feud
+				who = Z1T
+				war_goal_province = 466
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.10 #Total collapse of the Mongol Empire
+	title = MEGA_events.10.t
+	desc = MEGA_events.10.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = KHA
+	}
+
+	major = yes
+
+	immediate = {
+		release_all_possible_countries = yes
+		every_subject_country = {
+			add_country_modifier_for_age = {
+				name = MEGA_all_the_hordes_must_kill_each_other_modifier
+				age = age_of_discovery
+			}
+			grant_independence = yes
+		}
+		every_core_province = {
+			limit = {
+				NOT = {
+					owned_by = root
+				}
+			}
+			remove_core = ROOT
+		}
+		remove_country_modifier = MEGA_HIDDEN_MONGOL_THINGY_LOL
+	}
+	
+	option = {
+		name = MEGA_events.10.a
+		add_horde_unity = -100
+		add_stability = -6
+		kill_ruler = yes
+		if = {
+			limit = { 
+				has_heir = yes
+			}
+			kill_heir = {
+				allow_new_heir = no
+			}
+		}
 	}
 }

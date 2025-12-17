@@ -986,6 +986,7 @@ tributary_state = {
 	diplomacy_subject_sprite = GFX_diplomacy_amtributary
 
 	# Properties:
+	pays_overlord = 0.2
 	can_fight_independence_war = no
 	joins_overlords_wars = no
 	joins_colonial_wars = no
@@ -1928,7 +1929,7 @@ soyurghal_subject_type = {
 	
 	place_relative_on_throne = no
 	
-	pays_overlord = 0
+	pays_overlord = 0.1
 	forcelimit_to_overlord = 0.2
 	naval_forcelimit_to_overlord = 0.2		
 	manpower_to_overlord = 0.2
