@@ -16361,7 +16361,7 @@ FKN_ideas = {
 		defensiveness = 0.2
 	}
 	fkn_free_knights_of_franconia = {
-		cavalry_power = 0.10
+		infantry_power = 0.1
 	}
 	franconian_wine = { #in WBG_ideas
 		#production_efficiency = 0.1

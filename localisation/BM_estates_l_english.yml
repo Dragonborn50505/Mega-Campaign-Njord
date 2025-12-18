@@ -127,7 +127,7 @@
  BM_estate_peasants_guild_assembly_revoke_tooltip: "Removes "Collectivised Community" modifier from all affected provinces"
  estate_peasants_fight_the_elite: "Fight The Elite"
  estate_peasants_fight_the_elite_desc: "Fear the peasantry who in their righteous fury will overthrow the oppressive nobility."
- BM_fight_the_elite_Tooltip: "Being at war with Monarchies will grant us: \n §G-10.0%§! Morale Damage Received \n §G+10.0%§! Peasants Loyalty"
+ BM_fight_the_elite_Tooltip: "Being at war with Monarchies will grant us: \n Morale Damage Received: §G-10.0%§!  \n Peasants Loyalty: §G+10.0%§! "
  
  #AGENDAS
  estate_peasants_develop_grain: "Increase Grain Production in [agenda_province.GetName]."

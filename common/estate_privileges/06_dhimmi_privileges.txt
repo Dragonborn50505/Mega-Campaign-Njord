@@ -268,9 +268,18 @@ estate_dhimmi_dhimmi_nobles = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.05
-	penalties = {
+	conditional_modifier = {
+		trigger = { NOT = { has_government_attribute = BM_buff_promote_the_dhimmi_nobles } }
+		modifier = { 
 		church_loyalty_modifier = -0.05
 		nobles_loyalty_modifier = -0.05
+	}
+	}
+	conditional_modifier = {
+		trigger = { has_government_attribute = BM_buff_promote_the_dhimmi_nobles }
+		modifier = { 
+			global_tax_modifier = 0.15
+		}
 	}
 	benefits = {
 		free_leader_pool = 1
@@ -414,6 +423,7 @@ estate_dhimmi_guaranteed_autonomy = {
 			NOT = { religion_group = root }
 		}
 		NOT = { has_unlocked_estate_privilege = { estate_privilege = estate_dhimmi_guarantee_of_traditions } }
+		NOT = { has_estate_privilege = estate_turkic_tribes_nomadic_tolerance }
 	}
 	on_granted = {
 		custom_tooltip = estate_dhimmi_guaranteed_autonomy_effect_tooltip
