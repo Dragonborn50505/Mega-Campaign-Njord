@@ -775,6 +775,12 @@
  Peasant_Council: "Peasants Council"
  desc_Peasant_Council: ""
 
+ peasant_council_reform: "Council of 48"
+ peasant_council_reform_desc: "Our nation is not governed by feudal lords or bishops, but by the council of our best and brightest, so unlike the more organized nations, we are in no need of frequent elections to have excellent governance."
+
+ peasant_militia_reform: "Peasant Militia"
+ peasant_militia_reform_desc: "Our marshes are deep, our roads small and fortified. Any who dare cross them will find no rabble of farmers, but a well-trained and well-organized peasant militia. Their formation and use of the land hinders any attempts at bombardment or flanking. 'Wohr di, Goor, de Buur, de kump!'"
+
  mechanic_enables_bear_arms_yes: "Right to Bear Arms: Unlocks the '§YRight to Bear Arms§!' Privilege for the Peasants, which allows us to increase our Infantry Combat Ability."
 
  

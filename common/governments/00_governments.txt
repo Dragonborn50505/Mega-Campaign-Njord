@@ -113,7 +113,7 @@ monarchy = {
 				#Turkomen
 				turkoman_ottoman_institutions
 				pronoiar_monarchy_reform #custom nation
-				#Egypt
+				#Egypt 
 				egyptian_government_reform
 				#1.37
 				ayyubid_dynasty
@@ -541,9 +541,9 @@ monarchy = {
 				two_treatises_reform
 				the_leviathan_reform
 				the_social_contract_reform
-				foreign_ghulams_reform
 				#BM
 				legitimation_through_representation_reform
+				foreign_ghulams_reform
 			}
 		}
 		absolute_rule_vs_constitutional = {
@@ -786,9 +786,11 @@ republic = {
 				#Mamluks
 				egyptian_government_reform
 				city_alliance_reform
+				turkoman_ottoman_institutions
 				# BM
 				florentine_republic
 				viceroyalty_government_reform
+				trade_confederation_reform
 			}
 		}
 		republican_virtues = {
@@ -896,6 +898,7 @@ republic = {
 				#1.36
 				legacy_of_the_safavid_reform
 				state_madrasas_reform
+				#BM
 				sanskritization_reform
 				shakti_the_supreme_deity_reform
 			}
@@ -1217,6 +1220,7 @@ tribal = {
 			reforms = {
 				religious_societies_reform
 				lip_service_reform
+				#BM
 				sanskritization_reform
 				shakti_the_supreme_deity_reform
 			}
@@ -1406,6 +1410,7 @@ theocracy = {
 				#Egypt
 				egyptian_government_reform
 				blood_theocracy_reform
+				turkoman_ottoman_institutions
 			}
 		}
 		internal_vs_external_mission = {
@@ -1431,6 +1436,7 @@ theocracy = {
 				german_swiss_reform
 				german_swabian_reform
 				german_other_reform
+				#BM
 				order_of_the_swan_reform
 			}
 		}
@@ -1480,6 +1486,7 @@ theocracy = {
 				anglican_state_church_reform
 				#1.36
 				legacy_of_the_safavid_reform
+				#BM
 				sanskritization_reform
 				shakti_the_supreme_deity_reform
 			}

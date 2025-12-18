@@ -213,7 +213,7 @@
  trade_confederation_reform_desc:0 "The loose collective of Hansa Cities has united together in a Trade Confederation. Though officially an alliance between the various Hansa cities and its merchants and guilds, the Confederation follow a common goal of increased commerce, expansion of trade routes, and the development of further economic activity. With this, laws and regulations bind the Hansa together in a network of codes of practice with the Hanseting, the federal courts- and commerce-office, serving as a parliamentary order where the Hansa members can voice their concerns and vote on important matters."
 
  #Custom Attributes:
- mechanic_enable_mercantilism_bonuses_yes:0 "Grants increased §YTrade Efficiency§! scaling with £mercantilism_text_icon£ Mercantilism: \n Trade Efficiency §G+1.5%§! for every §Y10§! £mercantilism_text_icon£ Mercantilism"
+ mechanic_enable_mercantilism_bonuses_yes:0 "\nGrants increased §YTrade Efficiency§! scaling with £mercantilism_text_icon£ Mercantilism: \n Trade Efficiency §G+1.5%§! for every §Y10§! £mercantilism_text_icon£ Mercantilismn"
 
  Home_Market_1:0 "Mercantilist Practices"
  Home_Market_2:0 "Mercantilist Practices"

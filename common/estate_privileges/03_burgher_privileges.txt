@@ -370,6 +370,23 @@ estate_burghers_commercial_board_of_advice = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	conditional_modifier = {
+		trigger = {
+			has_reform = kreditwerk_reform
+		}
+		modifier = {
+			max_absolutism = 5
+			stability_cost_modifier = -0.1
+		}
+	}
+	influence_scaled_conditional_modifier = {
+		trigger = {
+			has_government_attribute = BM_buff_merchant_guild_commercial_advisory_board
+		}
+		modifier = {
+			placed_merchant_power_modifier = 0.25
+		}
+	}
 	ai_will_do = {
 		factor = 9
 		modifier = {
@@ -394,6 +411,7 @@ estate_burghers_new_world_charter = {
 			num_of_colonists = 1
 			num_of_colonies = 1
 		}
+		NOT = { has_unlocked_estate_privilege = estate_burghers_bandeirantes }
 	}
 	penalties = {
 		global_tariffs = -0.10
@@ -404,7 +422,9 @@ estate_burghers_new_world_charter = {
 	}
 	on_granted = {
 		if = {
-			limit = { has_dlc = "Domination" }
+			limit = { has_dlc = "Domination"
+				NOT = { TAG = POR }
+			}
 			enable_estate_action = {
 				estate_action = GRANT_NEW_WORLD_CHARTER_BURGHERS
 			}
@@ -415,7 +435,9 @@ estate_burghers_new_world_charter = {
 	}
 	on_invalid = {
 		if = {
-			limit = { has_dlc = "Domination" }
+			limit = { has_dlc = "Domination" 
+				NOT = { TAG = POR }
+			}
 			disable_estate_action = {
 				estate_action = GRANT_NEW_WORLD_CHARTER_BURGHERS
 			}
@@ -430,7 +452,9 @@ estate_burghers_new_world_charter = {
 	}
 	on_revoked = {
 		if = {
-			limit = { has_dlc = "Domination" }
+			limit = { has_dlc = "Domination"
+				NOT = { TAG = POR }
+			}
 			disable_estate_action = {
 				estate_action = GRANT_NEW_WORLD_CHARTER_BURGHERS
 			}
@@ -2756,6 +2780,12 @@ estate_burghers_financial_demand = {
 	benefits = {
 		global_tax_modifier = 0.1
 	}
+	conditional_modifier = {
+		trigger = { has_government_attribute = BM_french_buff_merchant_guild_financial_aid }
+		modifier = {
+			global_prov_trade_power_modifier = 0.15
+		}
+	}
 	
 	on_granted = {
 		enable_estate_action = {
@@ -2859,6 +2889,16 @@ estate_burghers_promote_burgher_bookkeeping = {
 	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
+	}
+	conditional_modifier = {
+		trigger = {
+			has_reform = kreditwerk_reform
+		}
+		modifier = {
+			interest = -0.25
+			inflation_reduction = 0.05
+			max_absolutism = 5
+		}
 	}
 	ai_will_do = {
 		factor = 10
@@ -3069,6 +3109,14 @@ estate_burghers_nile_goods_transport = {
 	}
 	benefits = {
 		global_ship_trade_power = 0.2
+	}
+
+	conditional_modifier = {
+		trigger = { has_country_flag = mam_upgrade_private_trade_fleets_flag }
+		modifier = { 
+			global_ship_trade_power = 0.1 
+			burghers_influence_modifier = -0.1
+		}
 	}
 
 	loyalty_scaled_conditional_modifier = {

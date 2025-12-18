@@ -407,7 +407,8 @@ estate_janissary_self_appointed_aghas = {
 		}
 	}
 	penalties = { 
-		leader_cost = 0.15
+		leader_cost = -0.2
+		army_tradition_decay = 0.01
 	}
 	ai_will_do = {
 		factor = 1
@@ -838,14 +839,15 @@ estate_janissary_military_reactionaries = {
 	}
 	on_revoked_province = {}
 	penalties = {
-		discipline = -0.15
-		army_tradition_decay = 0.01
-		special_unit_forcelimit = -0.25
+		land_maintenance_modifier = 0.1
+		reinforce_cost_modifier = 0.1
 	}
 	on_invalid = {}
 	on_invalid_province = {}
 	on_cooldown_expires = {}
-	modifier_by_land_ownership = {}
+	modifier_by_land_ownership = {
+		discipline = -0.2
+	}
 	#conditional_modifier = {
 	#	trigger = { }
 	#	modifier = { }
@@ -890,7 +892,9 @@ estate_janissary_puppet_sultan = {
 	on_invalid = {}
 	on_invalid_province = {}
 	on_cooldown_expires = {}
-	modifier_by_land_ownership = {}
+	modifier_by_land_ownership = {
+		global_tax_modifier = -0.5
+	}
 	#conditional_modifier = {
 	#	trigger = { }
 	#	modifier = { }
