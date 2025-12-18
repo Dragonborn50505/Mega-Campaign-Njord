@@ -15879,7 +15879,9 @@ ADU_ideas = {
 	}
     
 	trigger = {
-		tag = ADU
+		OR = {
+			tag = EOM
+		}
 	}
 	free = yes        #will be added at load.
     
