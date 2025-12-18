@@ -639,6 +639,7 @@ hanseatic_sound_toll_tree = {
 					name = MEGA_reverse_danishification
 					duration = 3650
 				}
+				add_nationalism = -20
 			}
 			jutland_area = {
 				limit = {
@@ -648,6 +649,7 @@ hanseatic_sound_toll_tree = {
 					name = MEGA_reverse_danishification
 					duration = 3650
 				}
+				add_nationalism = -20
 			}
 		}
 	}

@@ -1,0 +1,23 @@
+country_decisions = {
+
+    goon = {
+        major = no
+
+        potential = {
+            tag = SAR    # CHANGE THIS to your desired country tag
+        }
+
+        allow = {
+            
+        }
+
+        effect = {
+            add_prestige = -100
+        }
+
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+}
