@@ -124,7 +124,7 @@ parliamentary_order_reform = {
 		stability_cost_modifier = -0.10
 	}
 	custom_attributes = {
-		enables_peasant_estate = yes
+		enable_vladislavs_provincial_establishment = yes
 	}
 	ai = {
 		factor = 100
