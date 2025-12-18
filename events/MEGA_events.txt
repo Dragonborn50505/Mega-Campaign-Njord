@@ -128,20 +128,8 @@ country_event = {	#news event that the Hamburg League gains power in Holstein
 		tag = HAM
 	}
 
-	major = yes
 
-	major_trigger = {
-		capital_scope = {
-			superregion = europe_superregion
-		}
-	}
-
-	option = {
-		name = MEGA_events.3.a
-		add_ruler_modifier = {
-			name = MEGA_the_hamburg_league
-			duration = -1
-		}
+	immediate = {
 		add_government_reform = trade_confederation_reform
 		define_ruler = { #Same stats as my heir would have had
 			adm = 4
@@ -152,6 +140,14 @@ country_event = {	#news event that the Hamburg League gains power in Holstein
 			age = 12
 			culture = lower_saxon
 			force_republican_names = yes
+		}
+	}
+	
+	option = {
+		name = MEGA_events.3.a
+		add_ruler_modifier = {
+			name = MEGA_the_hamburg_league
+			duration = -1
 		}
 	}
 }

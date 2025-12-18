@@ -29,7 +29,7 @@ NDefines.NCountry.DISINHERIT_PRESTIGE_HIT = -25
 NDefines.NCountry.MINIMUM_POLICY_TIME = 5
 NDefines.NCountry.NAT_FOCUS_YEARS = 15
 NDefines.NCountry.CONVERSION_COOLDOWN_SECONDARY = 60
-NDefines.NCountry.EXPLOIT_COOLDOWN_MONTHS = 1
+NDefines.NCountry.EXPLOIT_COOLDOWN_MONTHS = 60
 
 --Ncountry for upgrading gov rank
 NDefines.NCountry.MIN_PRESTIGE_FOR_GOV_RANK_2 = 25
