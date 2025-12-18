@@ -1,5 +1,5 @@
-owner = VPS
-controller = VPS
+owner = MOS
+controller = MOS
 capital = "Mologa"
 is_city = yes
 culture = russian

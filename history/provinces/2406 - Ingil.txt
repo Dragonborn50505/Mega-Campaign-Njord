@@ -1,5 +1,5 @@
-owner = Z4H
-controller = Z4H
+owner = CRI
+controller = CRI
 capital = "Kyzy-Kermen"
 is_city = yes
 culture = crimean

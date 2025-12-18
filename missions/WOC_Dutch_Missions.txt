@@ -2730,7 +2730,7 @@ NED_4_1 = {
 					}
 				}
 				NOT = {
-					great_power_rank = 2
+					great_power_rank = 5
 				}
 				monthly_income = 200
 			}
