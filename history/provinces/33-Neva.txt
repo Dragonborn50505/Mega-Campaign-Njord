@@ -4,7 +4,9 @@ capital = "New London"
 is_city = yes
 culture = novgorodian
 religion = orthodox
-trade_goods = coal
+latent_trade_goods = {
+    coal
+}
 fort_15th = yes
 base_tax = 1
 base_production = 1
