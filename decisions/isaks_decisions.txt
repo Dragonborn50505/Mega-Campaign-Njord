@@ -43,7 +43,7 @@ country_decisions = {
 
             add_country_modifier = {
                 name = frostpunk_emergency_shift_active
-                duration = 3285
+                duration = 3000
             }
         }
 
@@ -55,6 +55,7 @@ country_decisions = {
 	}
 
 }
+
 
 
 
