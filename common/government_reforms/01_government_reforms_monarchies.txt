@@ -1229,7 +1229,11 @@ tanistry_reform = {
 	icon = "tanistry"
 	allow_normal_conversion = yes
 	potential = {
-		primary_culture = irish
+		OR = {
+			primary_culture = irish
+			primary_culture = dynamic-normand-culture-num1
+		}
+		
 	}
 	nation_designer_trigger = {
 		primary_culture = irish
@@ -1265,7 +1269,10 @@ irish_highkingdom_reform = {
 		}
 	}
 	trigger = {
-		primary_culture = irish
+		OR = {
+			primary_culture = irish
+			primary_culture = dynamic-normand-culture-num1
+		}
 	}
 	nation_designer_trigger = {
 		primary_culture = irish

@@ -1,11 +1,11 @@
 government = monarchy
 add_government_reform = feudalism_reform
-government_rank = 3
+government_rank = 2
 technology_group = western
 religion = catholic
-primary_culture = sardinian
+primary_culture = moroccan
 capital = 4566
-add_accepted_culture = moroccan
+add_accepted_culture = sardinian
 set_country_flag = ZZZ_generated_converter_nation
 1444.11.11= {
 	monarch = {
