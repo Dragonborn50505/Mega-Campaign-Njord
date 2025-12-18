@@ -1062,6 +1062,7 @@ country_event = {
 		}
 		else = {
 			define_ruler = {
+				dynasty = "Dessendre"
 			}
 		}
 		if = {
