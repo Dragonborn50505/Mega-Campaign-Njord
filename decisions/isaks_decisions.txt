@@ -4,7 +4,7 @@ country_decisions = {
         major = no
 
         potential = {
-            tag = SAR    # CHANGE THIS to your desired country tag
+            tag = SAR    
         }
 
         allow = {
@@ -39,16 +39,12 @@ country_decisions = {
         effect = {
             add_stability = -6
 			add_prestige = -20
-			add_corruption = 20
+			add_corruption = 17
 
             add_country_modifier = {
                 name = frostpunk_emergency_shift_active
-                duration = 1825
+                duration = 3650
             }
-
-			#global_tax_modifier = -1.0              # -100% tax
-			#production_efficiency = 1.0              # +100% production
-			#land_forcelimit = 30                     # +30 force limit
         }
 
         ai_will_do = {
@@ -59,3 +55,4 @@ country_decisions = {
 	}
 
 }
+
