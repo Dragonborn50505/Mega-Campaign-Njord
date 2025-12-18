@@ -38,8 +38,8 @@ country_decisions = {
 
         effect = {
             add_stability = -6
-			add_prestige = -20
-			add_corruption = 21
+			add_prestige = -10
+			add_corruption = 15
 
             add_country_modifier = {
                 name = frostpunk_emergency_shift_active
@@ -55,5 +55,6 @@ country_decisions = {
 	}
 
 }
+
 
 
