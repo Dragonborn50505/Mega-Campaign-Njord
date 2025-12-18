@@ -133,7 +133,7 @@ converted_turkana_pagan_rebels = {
 	}
 
 	can_negotiate_trigger = {
-		religion_group = 
+		religion_group = pagan
 	}
 
 	can_enforce_trigger = {
@@ -144,7 +144,7 @@ converted_turkana_pagan_rebels = {
 
 	demands_enforced_effect = {
 		if = {
-			limit = { NOT = { religion_group =  } }
+			limit = { NOT = { religion_group = pagan } }
 			add_prestige = -50
 			every_owned_province = {
 				limit = { has_rebel_faction = REB }

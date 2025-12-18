@@ -283,24 +283,6 @@ on_new_monarch = {
 	}
 }
 
-on_five_year_pulse_4 = {
-	random_events = {
-		2000 = 0
-		200 = peasants_estate_events.1 #Swedish Peasant Estate
-		300 = peasants_estate_events.2
-		200 = peasants_estate_events.3
-		100 = peasants_estate_events.4
-		100 = peasants_estate_events.5
-		100 = peasants_estate_events.6
-	}
-}
-
-monthly_pulse = {
-	ge_country_peasant_council_update = yes
-	ge_country_french_court_update = yes
-	ge_on_monthly_pulse_effect = yes
-}
-
 on_post_adm_advisor_fired = {
 	ge_country_peasant_council_update = yes
 	ge_country_french_court_update = yes

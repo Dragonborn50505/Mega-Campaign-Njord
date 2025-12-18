@@ -10,7 +10,7 @@ haruriyyah_ideas = {
 		tag = HYY
 		religion_group = muslim
 		NOT = { religion = sunni }
-		NOT = { religion = shia }
+		NOT = { religion = shiite }
 		NOT = { religion = yazidi }
 		OR = {
 			government = theocracy

@@ -16,9 +16,9 @@
  desc_BM_free_colonist: ""
 
  #ECONOMIC GOLDEN AGE
- BM_economic_golden_era_title: "Enter Economic Golden Era"
+ BM_economic_golden_era_title: "Enter Military Golden Era"
  BM_economic_golden_era_desc: ""
- BM_in_economic_golden_era: "Economic Golden Era"
+ BM_in_economic_golden_era: "Military Golden Era"
  desc_BM_in_economic_golden_era: ""
 
 

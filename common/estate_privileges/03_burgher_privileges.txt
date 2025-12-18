@@ -411,7 +411,6 @@ estate_burghers_new_world_charter = {
 			num_of_colonists = 1
 			num_of_colonies = 1
 		}
-		NOT = { has_unlocked_estate_privilege = estate_burghers_bandeirantes }
 	}
 	penalties = {
 		global_tariffs = -0.10

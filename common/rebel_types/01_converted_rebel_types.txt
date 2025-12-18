@@ -15981,4 +15981,4 @@ hattian_pagan_rebels = {
 			force_converted = yes
 		}
 	}
-
+}

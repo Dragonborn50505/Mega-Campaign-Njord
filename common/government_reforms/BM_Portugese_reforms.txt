@@ -155,7 +155,7 @@ portuguese_overseas_administration_reform = {
 		tag = POR
 	}
 	trigger = {
-		mission_completed = gc_por_indian_investment2
+		mission_completed = gc_por_establishes_foothold_brazil
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10

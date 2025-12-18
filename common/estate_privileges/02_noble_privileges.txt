@@ -1156,7 +1156,6 @@ estate_nobles_strong_duchies = {
 			}
 		}
 		NOT = { has_estate_privilege = estate_nobles_french_strong_duchies }
-		NOT = { has_estate_privilege = estate_nobles_muscovite_strong_duchies }
 	}
 	can_select = {
 		custom_trigger_tooltip = {
@@ -3625,7 +3624,6 @@ estate_nobles_expedition_rights = {
 	is_valid = {
 		has_dlc = "Domination"
 		has_any_exploration_idea = yes
-		NOT = { has_estate_privilege = estate_burghers_bandeirantes }
 	}
 	loyalty_scaled_conditional_modifier = {
 		trigger = {

@@ -113,29 +113,6 @@ BM_enable_slave_settlements_province_update = {
 	}
 }
 
-
-ge_kreditwerk_appointments_province_update = {
-	if = {
-		limit = {
-			owner = {
-				has_government_attribute = enables_kreditwerk_appointments
-			}
-			OR = {
-				base_tax = 5
-				development = 15
-			}
-		}
-		add_province_modifier = {
-			name = GE_Kreditwork
-			duration = -1
-			hidden = yes
-		}
-	}
-	else = {
-		remove_province_modifier = GE_Kreditwork
-	}
-}
-
 BM_magedburg_rights_province_update = {
 	if = {
 		limit = {
@@ -777,14 +754,5 @@ ge_country_peasant_council_update = {
 	}
 	else = {
 		remove_country_modifier = Peasant_Council
-	}
-}
-
-BM_jesuit_mission_rights_province_update = {
-	if = {
-		limit = {
-			has_province_modifier = jesuit_mission_rights_province_modifier
-		}
-		remove_province_modifier = jesuit_mission_rights_province_modifier
 	}
 }

@@ -423,7 +423,6 @@ estate_dhimmi_guaranteed_autonomy = {
 			NOT = { religion_group = root }
 		}
 		NOT = { has_unlocked_estate_privilege = { estate_privilege = estate_dhimmi_guarantee_of_traditions } }
-		NOT = { has_estate_privilege = estate_turkic_tribes_nomadic_tolerance }
 	}
 	on_granted = {
 		custom_tooltip = estate_dhimmi_guaranteed_autonomy_effect_tooltip
