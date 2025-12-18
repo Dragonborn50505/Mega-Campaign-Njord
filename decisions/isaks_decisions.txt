@@ -27,8 +27,8 @@ country_decisions = {
         potential = {
             NOT = { has_country_modifier = frostpunk_emergency_shift_active }
 			OR = {
-			tag = RUS
-			tag = UKR
+                tag = RUS
+                tag = UKR
 			}
         }
 
@@ -41,10 +41,11 @@ country_decisions = {
 			add_prestige = -20
 			add_corruption = 20
 
-            set_variable = {
-                which = emergency_shift
-                value = 1
+            add_country_modifier = {
+                name = frostpunk_emergency_shift_active
+                duration = 1825
             }
+
 			#global_tax_modifier = -1.0              # -100% tax
 			#production_efficiency = 1.0              # +100% production
 			#land_forcelimit = 30                     # +30 force limit

@@ -1,0 +1,3 @@
+frostpunk_emergency_shift_active = {
+	
+}
