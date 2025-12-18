@@ -39,11 +39,11 @@ country_decisions = {
         effect = {
             add_stability = -6
 			add_prestige = -10
-			add_corruption = 15
+			add_corruption = 18
 
             add_country_modifier = {
                 name = frostpunk_emergency_shift_active
-                duration = 3650
+                duration = 3285
             }
         }
 
@@ -55,6 +55,7 @@ country_decisions = {
 	}
 
 }
+
 
 
 
