@@ -1,5 +1,5 @@
-owner = Y11
-controller = Y11
+owner = MOS
+controller = MOS
 capital = "Rostov"
 is_city = yes
 culture = uralic

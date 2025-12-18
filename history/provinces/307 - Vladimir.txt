@@ -1,5 +1,5 @@
-owner = Y1R
-controller = Y1R
+owner = MOS
+controller = MOS
 capital = "Vladimir"
 is_city = yes
 culture = russian
