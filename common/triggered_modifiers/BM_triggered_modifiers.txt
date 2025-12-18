@@ -18,7 +18,7 @@ BM_2nd_idea_group_dev_cost = {
 
 fp = {
 	potential = {
-		OR={
+		OR = {
 			tag = UKR
 			tag = RUS
 		}
@@ -28,6 +28,7 @@ fp = {
             which = emergency_shift
             value = 1
         }
+		has_country_modifier = frostpunk_emergency_shift_active
 	}
 	land_forcelimit_modifier = 0.5
 	land_maintenance_modifier = -0.4

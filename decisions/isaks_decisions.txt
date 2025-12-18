@@ -41,9 +41,18 @@ country_decisions = {
 			add_prestige = -10
 			add_corruption = 18
 
-            add_country_modifier = {
-                name = frostpunk_emergency_shift_active
-                duration = 3000
+            hidden_effect = {
+                add_country_modifier = {
+                    name = frostpunk_emergency_shift_active
+                    duration = 3000
+                    hidden = yes
+                }
+            }
+            tooltip = {
+                add_country_modifier = {
+                    name = frostpunk_emergency_shift_active_fake_tooltip
+                    duration = 3000
+                }
             }
         }
 
