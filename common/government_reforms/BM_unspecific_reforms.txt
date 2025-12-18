@@ -321,9 +321,13 @@ franconian_salic_law_reform = {
 		}
 	}
 	modifiers = {
-		legitimacy = -0.25
-		global_manpower_modifier = 0.1
-		cavalry_cost = -0.15
+		legitimacy = 0.25
+		manpower_in_accepted_culture_provinces = 0.1
+		nobles_influence_modifier = 0.1
+	}
+	custom_attributes = {
+		recruiting_generals_increases_nobles_loyalty = yes
+		on_fort_built_nobles_loyalty = yes
 	}
 	ai = {
 		factor = 50

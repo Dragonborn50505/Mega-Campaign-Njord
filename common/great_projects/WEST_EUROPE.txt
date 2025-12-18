@@ -1441,7 +1441,7 @@ arcdetriomphe = {
 }
 
 ME_aula_magna = {
-	start = 92
+	start = 99
 	date = 1444.01.01
 	time = { months = 0 }
 	build_cost = 0
@@ -4770,7 +4770,7 @@ charles_bridge = {
 }
 
 fu_vladislav_hall = {
-	start = 266 #Prague.
+	start = 4981 #Prague.
 	date = 01.01.870
 	time = { months = 0	}
 	build_cost = 1000
@@ -4818,6 +4818,7 @@ fu_vladislav_hall = {
 		cost_to_upgrade = { factor = 1000 }
 		province_modifiers = {
 			local_manpower_modifier = 0.25
+			local_regiment_cost = -0.25
 		}
 		area_modifier = { }
 		country_modifiers = {
@@ -4832,12 +4833,12 @@ fu_vladislav_hall = {
 	tier_2 = {
 		upgrade_time = { months = 240 }
 		cost_to_upgrade = { factor = 2500 }
-		province_modifiers = {
-			local_manpower_modifier = 0.33
+		province_modifiers = { }
+		area_modifier = { 
+			local_manpower_modifier = 0.25
+			local_regiment_cost = -0.25
 		}
-		area_modifier = { }
 		country_modifiers = {
-			free_mil_policy = 1
 			nobles_loyalty_modifier = 0.1
 			nobles_influence_modifier = 0.05
 		}
@@ -4850,18 +4851,19 @@ fu_vladislav_hall = {
 	tier_3 = {
 		upgrade_time = { months = 480 }
 		cost_to_upgrade = { factor = 5000 }
-		province_modifiers = {
-			local_manpower_modifier = 0.5
+		province_modifiers = { }
+		area_modifier = { 
+			local_manpower_modifier = 0.33
+			local_regiment_cost = -0.33
 		}
-		area_modifier = { }
 		country_modifiers = {
-			free_mil_policy = 1
+			global_regiment_cost = -0.1
 			nobles_loyalty_modifier = 0.15
 			nobles_influence_modifier = 0.1
 		}
 		on_upgraded = { 
 			owner = {
-				add_legitimacy_or_mil_power = { amount = 15 }
+				add_legitimacy_or_mil_power = { amount = 25 }
 			}
 		}
 	}
@@ -9116,7 +9118,7 @@ klingentorturm = {
 }
 
 fu_amsterdam_dike = { #Amsteldijk.
-	start = 97
+	start = 1931
 	date = 01.01.1650
 	time = { months = 120 }
 	build_cost = 1000
@@ -9200,16 +9202,23 @@ fu_amsterdam_dike = { #Amsteldijk.
 		}
 		on_upgraded = { 
 			add_prosperity = 100
-			add_province_modifier = {
-				name = MEGA_drained_the_swamps
-				duration = 3650
+			owner = {
+				every_owned_province = {
+					limit = {
+						area = frisia_area
+					}
+					add_province_modifier = {
+						name = MEGA_drained_the_swamps
+						duration = 3650
+					}
+				}
 			}
 		}
 	}
 }
 
 fu_admiralty_amsterdam = {
-	start = 97
+	start = 100
 	date = 01.01.1597
 	time = { months = 120 }
 	build_cost = 1000

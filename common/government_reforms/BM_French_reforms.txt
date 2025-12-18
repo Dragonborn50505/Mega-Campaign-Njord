@@ -39,7 +39,6 @@ noblesse_d_epee_reform = {
 	}
 	trigger = {
 		has_reform = absolutist_france_reform
-		has_unlocked_government_reform = { government_reform = noblesse_d_epee_reform }
 	}
 	modifiers = {
 		army_tradition = 0.5
@@ -69,10 +68,9 @@ generalites_reform = {
 	}
 	trigger = {
 		has_reform = absolutist_france_reform
-		has_unlocked_government_reform = { government_reform = absolutist_france_reform }
 	}
 	modifiers = {
-		global_autonomy = -0.03
+		global_autonomy = -0.025
 		centralize_state_cost = -0.25
 		global_tax_modifier = 0.1
 	}
@@ -102,7 +100,6 @@ bourgeoisie_aristocracy_reform = {
 	}
 	trigger = {
 		has_reform = absolutist_france_reform
-		has_unlocked_government_reform = { government_reform = bourgeoisie_aristocracy_reform }
 	}
 	modifiers = {
 		burghers_loyalty_modifier = 0.05
