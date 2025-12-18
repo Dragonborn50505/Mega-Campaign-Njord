@@ -1736,6 +1736,7 @@ burgundian_state_reform = {
 	}
 	custom_attributes = {
 		winning_war_increases_legitimacy = yes
+		battles_on_own_territory_bonus_tradition = yes
 	}
 	ai = {
 		factor = 1

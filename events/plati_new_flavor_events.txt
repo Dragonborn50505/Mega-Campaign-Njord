@@ -659,6 +659,11 @@ country_event = {
 				duration = -1												#Once per campaign
 				hidden = yes											#Debug timer modifier, stays hidden
 			}
+			MOS = {
+				every_owned_province = {
+					add_core = ROOT
+				}
+			}
 			random_known_country = {
 				limit = {
 					is_nomad = yes

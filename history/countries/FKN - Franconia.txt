@@ -1,12 +1,13 @@
 government = monarchy
-add_government_reform = austrian_archduchy_reform
-government_rank = 1
+add_government_reform = frankonian_kingdom
+government_rank = 3
 technology_group = western
 religion = catholic
 primary_culture = franconian
 capital = 67
 elector = yes
 historical_friend = FLA
+historical_friend = SHL
 1444.11.11= {
 	monarch = {
 		name = "Wilbert"
