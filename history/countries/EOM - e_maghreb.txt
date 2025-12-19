@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 government_rank = 2
 technology_group = western
 religion = catholic
-primary_culture = andalusian
+primary_culture = andalucian
 capital = 4566
 add_accepted_culture = sardinian
 set_country_flag = ZZZ_generated_converter_nation
@@ -16,7 +16,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		mil = 4
 		birth_date = 1414.11.14
 		religion = catholic
-		culture = andalusian
+		culture = andalucian
 	}
 	add_ruler_personality = righteous_personality
 	add_ruler_personality = tactical_genius_personality
@@ -45,7 +45,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		birth_date = 1440.11.14
 		claim = 89
 		religion = catholic
-		culture = andalusian
+		culture = andalucian
 	}
 	add_heir_personality = free_thinker_personality
 	add_heir_personality = tactical_genius_personality
