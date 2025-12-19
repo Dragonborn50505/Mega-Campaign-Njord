@@ -188,7 +188,7 @@ Z43_orthodoxy2 = {
 
 recently_spawned_rebels = {
 	tax_income = -2
-
+}
 #Netherlands
 MEGA_the_korps_mariniers = {
 	shock_damage = 0.15
