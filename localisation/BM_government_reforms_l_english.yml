@@ -570,6 +570,16 @@
  guild_dominance_reform: "Guild Dominance"
  guild_dominance_reform_desc: "The various merchant, craftsmen, artisan and financial guilds across the Low Countries has always held a lot of power. By granting them access to the government through official channels we will be able to let our guilds expand their influence and expertise across our country."
 
+ korps_mariniers_reform: "Korps Mariniers"
+ korps_mariniers_reform_desc: ""
+
+ last_expedition_reform: "The Last Expedition"
+ last_expedition_reform_desc: ""
+
+ lumiere_admin_reform_reform: "The Painters & Writers Guild"
+ lumiere_admin_reform_desc: ""
+
+
  magnate_govenors_reform: "Magnate Governors"
  magnate_govenors_reform_desc: "By dividing our land in regions dominated by powerful nobles, we can use them to function as lord paramounts, capably organizing the regions making it much easier to hold control over vast lands."
  mechanic_enables_serfdom_yes: "Serfdom: Unlocks the '§YSerdom§!' privilege for the Nobility, granting §G+15.0%§! Governing Capacity Modifier but §R-50.0%§! Tax Modifier based on Nobility Land Ownership."
