@@ -11,11 +11,10 @@ emperor_reichsreform = {
 		imperial_ban_allowed = yes
 		custom_tooltip = MEGA_reichsreform_unique_TT
 		hidden_effect = {
-			every_country = {
-				limit = {
-					is_part_of_hre = yes
+			emperor = {
+				country_event = {
+					id = MEGA_misc.5
 				}
-				change_reform_progress_effect = { amount = 25 }
 			}
 		}
 	}
@@ -40,13 +39,9 @@ emperor_reichsregiment = {
 	on_effect = {
 		custom_tooltip = MEGA_reichsregiment_unique_TT
 		hidden_effect = {
-			every_country = {
-				limit = {
-					is_part_of_hre = yes
-					has_reform = free_city
-				}
-				capital = {
-					add_or_upgrade_courthouse_building = yes
+			emperor = {
+				country_event = {
+					id = MEGA_misc.6
 				}
 			}
 		}
@@ -73,11 +68,10 @@ emperor_reichsstabilitaet = {
 		custom_tooltip = "EXPAND_EMPIRE_CB"
 		custom_tooltip = MEGA_emperor_reichsstabilitaet_unique_TT
 		hidden_effect = {
-			every_country = {
-				limit = {
-					is_part_of_hre = yes
+			emperor = {
+				country_event = {
+					id = MEGA_misc.7
 				}
-				add_stability_or_adm_power = yes
 			}
 		}
 	}
@@ -100,18 +94,9 @@ emperor_gemeinerpfennig = {
 	on_effect = {
 		custom_tooltip = MEGA_gemeinerpfennig_unique_TT
 		hidden_effect = {
-			every_country = {
-				limit = {
-					is_part_of_hre = yes
-					NOT = {
-						is_emperor = yes
-					}
-				}
-				emperor = {
-					add_treasury = 10
-				}
-				every_elector = {
-					add_treasury = 5
+			emperor = {
+				country_event = {
+					id = MEGA_misc.8
 				}
 			}
 		}
@@ -189,12 +174,10 @@ emperor_landsknechtswesen = {
 	on_effect = {
 		custom_tooltip = MEGA_emperor_landsknechtswesen_unique_TT
 		hidden_effect = {
-			every_country = {
-				limit = {
-					is_part_of_hre = yes
+			emperor = {
+				country_event = {
+					id = MEGA_misc.9
 				}
-				create_general_scaling_with_tradition_and_pips = yes
-				add_army_professionalism = 0.05
 			}
 		}
 	}
@@ -215,22 +198,16 @@ emperor_landfriede = {
 		local_institution_spread = 0.2
 	}
 	on_effect = {
-		internal_hre_cb = no
-
+		custom_tooltip = MEGA_emperor_landfriede_unique_TT
 		hidden_effect = {
-			custom_tooltip = MEGA_emperor_landfriede_unique_TT
-			every_country = {
-				limit = {
-					is_part_of_hre = yes
-				}
-				capital = {
-					add_or_upgrade_courthouse_building = yes
+			emperor = {
+				country_event = {
+					id = MEGA_misc.10
 				}
 			}
 		}
 	}
 	off_effect = {
-		internal_hre_cb = yes
 	}
 	required_reform = emperor_landsknechtswesen
 	gui_container = mainline

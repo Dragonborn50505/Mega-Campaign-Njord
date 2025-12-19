@@ -4779,9 +4779,8 @@ fu_vladislav_hall = {
 	type = monument
 	build_trigger = {
 		OR = {
-			culture = czech
-			culture = czech_new
-			culture = dynamic-hungarian-culture-num1
+			culture_group = scandinavian
+			culture_group = germanic
 		}
 		province_is_or_accepts_culture = yes
 	}
@@ -4789,17 +4788,15 @@ fu_vladislav_hall = {
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
 		OR = {
-			culture = czech
-			culture = czech_new
-			culture = dynamic-hungarian-culture-num1
+			culture_group = scandinavian
+			culture_group = germanic
 		}
 		province_is_or_accepts_culture = yes
 	}
 	can_upgrade_trigger = {
 		OR = {
-			culture = czech
-			culture = czech_new
-			culture = dynamic-hungarian-culture-num1
+			culture_group = scandinavian
+			culture_group = germanic
 		}
 		province_is_or_accepts_culture = yes
 	}
