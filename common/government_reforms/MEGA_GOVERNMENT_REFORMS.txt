@@ -95,3 +95,63 @@ frankonian_kingdom = {
 		}
 	}
 }
+
+ccp_secretariat = {
+	icon = "ccp"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	potential = {
+		tag = CCP
+	}
+	trigger = {
+		tag = CCP
+	}
+
+	fixed_rank = 1
+
+	maintain_dynasty = yes
+
+	custom_attributes = {
+		has_unify_china_cb = yes
+	}
+
+	modifiers = {
+		manpower_recovery_speed = 0.33
+		morale_damage_received = -0.05
+		land_attrition = -0.2
+		governing_capacity = 750
+	}
+}
+prc_juche = {
+	icon = "prc"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	potential = {
+		tag = PRC
+	}
+	trigger = {
+		tag = PRC
+	}
+
+	fixed_rank = 3
+
+	maintain_dynasty = yes
+
+	conditional = {
+		allow = { has_dlc = "Mandate of Heaven" }
+		has_meritocracy = yes
+		factions = {}
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+		has_unify_china_cb = yes
+	}
+
+	modifiers = {
+		global_manpower_modifier = 0.15
+		morale_damage_received = -0.1
+		governing_capacity = 500
+		meritocracy = 0.5
+	}
+}

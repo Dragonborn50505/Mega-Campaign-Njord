@@ -1,10 +1,10 @@
 owner = Z43
 controller = Z43
-capital = "Biga"
+capital = "Troia"
 is_city = yes
 culture = dynamic-greek-culture-num3
 religion = orthodox
-trade_goods = naval_supplies
+trade_goods = dyes
 base_tax = 8
 base_production = 2
 base_manpower = 3

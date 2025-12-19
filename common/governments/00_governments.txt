@@ -15,6 +15,8 @@ monarchy = {
 				solomonic_empire
 				#Specific:
 				chinese_warlord
+				ccp_secretariat
+				prc_juche
 				grand_duchy_reform
 				daimyo
 				indep_daimyo

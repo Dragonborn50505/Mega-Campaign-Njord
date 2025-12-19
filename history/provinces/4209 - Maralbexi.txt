@@ -1,5 +1,5 @@
-owner = Z2Q
-controller = Z2Q
+owner = CHG
+controller = CHG
 capital = "Maralbexi"
 is_city = yes
 culture = uyghur
@@ -9,7 +9,7 @@ base_tax = 1
 base_production = 2
 base_manpower = 1
 add_core = KAS
-add_core = Z2Q
+add_core = CHG
 discovered_by = chinese
 discovered_by = indian
 discovered_by = nomad_group

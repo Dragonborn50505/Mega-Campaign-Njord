@@ -853,3 +853,175 @@ country_event = {
 		}
 	}
 }
+
+country_event = {	#Silly
+	id = MEGA_events.6767
+	title = MEGA_events.6767.t
+	desc = MEGA_events.6767.d
+	picture = BAD_WITH_MONARCH_eventPicture
+
+
+
+	trigger = {
+		tag = BYZ
+		NOT = { has_country_flag = silly }
+	}
+
+	immediate = {
+		set_country_flag = silly
+		Z43 = {
+			country_event = {
+				id = MEGA_events.6767
+			}
+		}
+	}
+	
+	option = {
+		name = MEGA_events.6767.a
+		add_casus_belli = {
+			type = cb_restore_personal_union
+			target = Z43
+			months = 120
+		}
+		Z43 = {
+			add_casus_belli = {
+				type = cb_restore_personal_union
+				target = BYZ
+				months = 120
+			}
+		}
+	}
+}
+
+country_event = {
+	id = MEGA_events.6768
+	title = MEGA_events.6768.t
+	desc = MEGA_events.6768.d
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	trigger = {
+		tag = Z43
+		2296 = {
+			owned_by = Z43
+			has_siege = yes
+			controlled_by = Z43
+		}
+		NOT = { has_country_flag = siege_of_troy }
+	}
+
+	mean_time_to_happen = {
+		days = 365
+	}
+
+	option = {
+		name = MEGA_events.6768.a
+		set_country_flag = siege_of_troy
+		add_war_exhaustion = -5
+		add_manpower = 2.5
+	}
+}
+
+country_event = {
+	id = MEGA_events.6769
+	title = MEGA_events.6769.t
+	desc = MEGA_events.6769.d
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	trigger = {
+		tag = Z43
+		2296 = {
+			owned_by = Z43
+			NOT = { controlled_by = Z43 }
+		}
+		NOT = { has_country_flag = fall_of_troy }
+	}
+
+	option = {
+		name = MEGA_events.6769.a
+		clr_country_flag = siege_of_troy
+		set_country_flag = fall_of_troy
+		add_prestige = -15
+		2296 = {
+			add_great_project_tier = {
+				type = troy
+				tier = -1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = MEGA_events.6770
+	title = MEGA_events.6770.t
+	desc = MEGA_events.6770.d
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	trigger = {
+		NOT = {tag = Z43}
+		owns = 2296
+		NOT = { has_country_flag = sack_of_troy }
+	}
+
+	option = {
+		name = MEGA_events.6770.a
+		set_country_flag = sack_of_troy
+		add_prestige = 15
+		add_splendor = 1000
+		add_treasury = 1000
+		2296 = {
+			add_devastation = 50
+			destroy_great_project = {
+				type = troy
+			}
+		}
+	}
+}
+
+country_event = {
+	id = MEGA_events.6771
+	title = MEGA_events.6771.t
+	desc = MEGA_events.6771.d
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	trigger = {
+		tag = Z43
+		NOT = { has_country_flag = Z43_ortho_def }
+		religion = orthodox
+		is_defender_of_faith = yes
+	}
+
+	option = {
+		name = MEGA_events.6771.a
+		set_country_flag = Z43_ortho_def
+		add_patriarch_authority = 0.10
+		add_papal_influence = 10
+		add_prestige = 10
+	}
+}
+
+country_event = {
+	id = MEGA_events.6772
+	title = MEGA_events.6772.t
+	desc = MEGA_events.6772.d
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	trigger = {
+		tag = Z43
+		2296 = {
+			has_most_province_trade_power = Z43
+		}
+		NOT = { has_country_flag = aegean_trade }
+		dip_tech = 5
+	}
+
+	option = {
+		name = MEGA_events.6772.a
+		set_country_flag = aegean_trade
+		2296 = {
+			center_of_trade = 2
+		}
+		151 = {
+			add_trade_node_income = 12
+		}
+	}
+}

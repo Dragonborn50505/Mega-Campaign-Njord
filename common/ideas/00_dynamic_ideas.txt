@@ -1017,6 +1017,7 @@ dynamic-greek-culture-num3_ideas = {
 	}
 	trigger = {
 		culture = dynamic-greek-culture-num3
+		NOT = { tag = Z43 }
 	}
 	free = yes
 

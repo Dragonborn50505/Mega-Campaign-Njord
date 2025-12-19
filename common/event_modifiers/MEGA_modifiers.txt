@@ -158,3 +158,34 @@ BM_in_economic_golden_era = {
 	max_revolutionary_zeal = 10
 	monthly_arabic_trade_influence_power = 0.25
 }
+
+#Random Flavour Stuff
+
+recent_orthodox_settlement = {
+	global_unrest = 1
+	tax_income = 12
+}
+
+orthodoxy_established = {
+	missionaries = 1
+	missionary_maintenance_cost = -0.5
+	global_missionary_strength = 0.01
+}
+
+heeded_oracles = {
+	yearly_patriarch_authority = 0.0025
+	papal_influence = 1
+}
+
+Z43_orthodoxy = {
+	global_missionary_strength = 0.02
+	missionary_maintenance_cost = -0.2
+}
+
+Z43_orthodoxy2 = {
+	tax_income = -2
+}
+
+recently_spawned_rebels = {
+	tax_income = -2
+}

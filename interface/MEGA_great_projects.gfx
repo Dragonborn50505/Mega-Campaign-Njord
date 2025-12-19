@@ -5,6 +5,10 @@ spriteTypes = {
 		texturefile = "gfx//interface//great_projects//great_project_pisatower.dds"
 	}
 	spriteType = {
+		name = "GFX_great_project_troy"	
+		texturefile = "gfx//interface//great_projects//great_project_troy.dds"
+	}
+	spriteType = {
 		name = "GFX_great_project_colosseum"	
 		texturefile = "gfx//interface//great_projects//great_project_colosseum.dds"
 	}

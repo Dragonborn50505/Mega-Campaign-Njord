@@ -134,22 +134,6 @@ FRA_ideas = {
 	}
 }
 
-PRU_ideas = {
-	trigger = {
-		OR = {
-			tag = PRU
-			AND = {
-				culture_group = germanic
-				is_subject = no
-				MIL = 5
-				NOT = {
-					num_of_cities = 10
-				}
-			}
-		}
-	}
-}
-
 POR_ideas = {
 	trigger = {
 		OR = {

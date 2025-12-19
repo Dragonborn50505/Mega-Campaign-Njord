@@ -487,15 +487,6 @@ dependency=
 dependency=
 {
 	subject_type="tributary_state"
-	first="AFG"
-	second="NAX"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-dependency=
-{
-	subject_type="tributary_state"
 	first="Z0R"
 	second="Y0J"
 	start_date="1444.11.11"
@@ -511,23 +502,6 @@ dependency=
 	end_date="1836.1.1"
 }
 
-dependency=
-{
-	subject_type="tributary_state"
-	first="AFG"
-	second="Y21"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-dependency=
-{
-	subject_type="tributary_state"
-	first="AFG"
-	second="Z1G"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
 
 dependency=
 {
@@ -538,14 +512,6 @@ dependency=
 	end_date="1836.1.1"
 }
 
-dependency=
-{
-	subject_type="tributary_state"
-	first="AFG"
-	second="Z1X"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
 
 dependency=
 {
@@ -607,6 +573,15 @@ dependency=
 	subject_type="vassal"
 	first="ILK"
 	second="SIS"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+dependency=
+{
+	subject_type="vassal"
+	first="MNG"
+	second="CCP"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -722,44 +697,8 @@ dependency=
 dependency=
 {
 	subject_type="tributary_state"
-	first="AFG"
-	second="Z31"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-dependency=
-{
-	subject_type="tributary_state"
-	first="AFG"
-	second="Z43"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-dependency=
-{
-	subject_type="tributary_state"
-	first="AFG"
-	second="Z5C"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-dependency=
-{
-	subject_type="tributary_state"
 	first="Z4T"
 	second="Z5Y"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-dependency=
-{
-	subject_type="tributary_state"
-	first="AFG"
-	second="Z6M"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
