@@ -835,7 +835,6 @@ republic = {
 				support_state_reform
 				#BM
 				support_borghese_reform
-				guild_dominance_reform
 				independence_reform
 				peasant_council_reform
 			}
@@ -855,6 +854,7 @@ republic = {
 				legislative_assembly_reform
 				national_constituent_reform
 				national_assembly_reform
+				guild_dominance_reform
 				ven_promissione_ducale_reform
 			}
 		}
@@ -1050,6 +1050,8 @@ republic = {
 				chinampa_farms_reform
 				#BM
 				frederick_wilhelm_reforms_prussia
+				#MEGA
+				lumiere_admin_reform
 			}
 		}
 		consolidation_of_power_category = {
@@ -1065,6 +1067,8 @@ republic = {
 				revolutionary_council_reform
 				#1.37
 				orangist_stadholders_reform
+				#MEGA
+				last_expedition_reform
 			}
 		}
 		guiding_principle_of_administration = {
@@ -1077,6 +1081,8 @@ republic = {
 				equality_principle_reform
 				imperial_principle_reform
 				enlightened_principle_reform
+				#MEGA
+				korps_mariniers_reform
 			}
 		}
 		electorate = {

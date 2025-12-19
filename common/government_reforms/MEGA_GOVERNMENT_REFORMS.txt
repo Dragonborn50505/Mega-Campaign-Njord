@@ -56,6 +56,127 @@ trade_confederation_reform = {
 }
 
 
+#Dragonborn Larp
+last_expedition_reform = {
+	icon = dutch_tulip_field
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = NED
+			has_reform = last_expedition_reform
+		}
+	}
+	trigger = {
+		OR = {
+			tag = NED
+			has_reform = last_expedition_reform
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = MEGA_the_last_expedition
+			duration = -1 
+		}
+		add_country_modifier = {
+			name = fra_vanguard_guard_modifier
+			duration = -1 
+		}
+	}
+	removed_effect = {
+		remove_country_modifier = MEGA_the_last_expedition
+		remove_country_modifier = fra_vanguard_guard_modifier
+	}
+	modifiers = {
+		allowed_rev_guard_fraction = 0.2
+	}
+
+	ai = {
+		factor = 1
+	}
+}
+
+#Dragonborn Larp
+lumiere_admin_reform = {
+	icon = economy_industry
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = NED
+			has_reform = lumiere_admin_reform
+		}
+	}
+	trigger = {
+		OR = {
+			tag = NED
+			has_reform = lumiere_admin_reform
+		}
+	}
+	modifiers = {
+		development_cost = -0.05
+		
+	}
+	custom_attributes = {
+		enables_writers_painters_guild = yes
+	}
+
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				writers_painters_guild = yes
+			}
+		}
+	}
+
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				writers_painters_guild = yes
+			}
+		}
+	}
+
+	ai = {
+		factor = 1
+	}
+}
+
+
+#Dutch
+korps_mariniers_reform = {
+	icon = dutch_guilds
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = dutch
+			primary_culture = flemish
+			has_reform = korps_mariniers_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = dutch
+			primary_culture = flemish
+			has_reform = korps_mariniers_reform
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = MEGA_the_korps_mariniers
+			duration = -1 
+		}
+	}
+	removed_effect = {
+		remove_country_modifier = MEGA_the_korps_mariniers
+	}
+	modifiers = {
+		sailors_recovery_speed = 0.33
+	}
+	custom_attributes = {
+		marine_buff = yes	#Marines -20% Manpower Usage
+	}
+	ai = {
+		factor = 1
+	}
 #Frankonian gov
 frankonian_kingdom = {
 	icon = "apostolic_kingdom"
