@@ -177,4 +177,42 @@ korps_mariniers_reform = {
 	ai = {
 		factor = 1
 	}
+#Frankonian gov
+frankonian_kingdom = {
+	icon = "apostolic_kingdom"
+	allow_normal_conversion = yes
+	potential = {
+		religion_group = christian
+		OR = {
+			tag = FKN
+			was_tag = FKN
+		}
+	}
+	legacy_equivalent = feudal_monarchy
+	valid_for_nation_designer = no
+
+	nation_designer_trigger = {
+		primary_culture = franconian
+		religion_group = christian
+	}
+
+	modifiers = {
+		manpower_in_true_faith_provinces = 0.1
+		monthly_splendor = 1
+		prestige = 0.5
+	}
+
+	custom_attributes = {
+		GER_taking_age_rewards_gives_stability = yes
+	}
+
+	conditional = {
+		allow = { 
+			has_dlc = "Winds of Change" 
+			has_dlc = "Golden Century"
+		}
+		custom_attributes = {
+			order_of_the_dragon_unlocked = yes
+		}
+	}
 }

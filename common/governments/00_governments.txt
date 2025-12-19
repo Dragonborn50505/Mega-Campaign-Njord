@@ -148,6 +148,8 @@ monarchy = {
 				ARA_crown_of_aragon
 				tai_and_ahom_reform
 				guhilawat_reform
+				#MEGA
+				frankonian_kingdom
 			}
 		}
 		hereditary_vs_nobility = {

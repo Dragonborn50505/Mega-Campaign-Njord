@@ -4,7 +4,7 @@ country_decisions = {
         major = no
 
         potential = {
-            tag = SAR    # CHANGE THIS to your desired country tag
+            tag = SAR    
         }
 
         allow = {
@@ -19,5 +19,53 @@ country_decisions = {
             factor = 0
         }
     }
+	
+
+    frostpunk_emergency_shift = {
+        major = yes
+
+        potential = {
+            NOT = { has_country_modifier = frostpunk_emergency_shift_active }
+			OR = {
+                tag = RUS
+                tag = UKR
+			}
+        }
+
+        allow = {
+            stability = 3
+        }
+
+        effect = {
+            add_stability = -6
+			add_prestige = -10
+			add_corruption = 18
+
+            hidden_effect = {
+                add_country_modifier = {
+                    name = frostpunk_emergency_shift_active
+                    duration = 3000
+                    hidden = yes
+                }
+            }
+            tooltip = {
+                add_country_modifier = {
+                    name = frostpunk_emergency_shift_active_fake_tooltip
+                    duration = 3000
+                }
+            }
+        }
+
+        ai_will_do = {
+            factor = 0
+        }
+    
+
+	}
 
 }
+
+
+
+
+

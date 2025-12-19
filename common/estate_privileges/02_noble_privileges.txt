@@ -3375,7 +3375,7 @@ estate_nobles_statesman_servitude = {
 	}
 	conditional_modifier = {
 		trigger = { 
-			owns_core_province = 1953
+			owns_core_province = 4126
 			1953 = {
 				has_great_project = {
 					type = kisvarda

@@ -6,12 +6,16 @@ vladislavs_provincial_establishment_reform = {
 	potential = {
 		OR = {
 			primary_culture = czech
+			primary_culture = czech_new
+			primary_culture = dynamic-hungarian-culture-num1
 			has_reform = vladislavs_provincial_establishment_reform
 		}
 	}
 	trigger = {
 		OR = {
 			primary_culture = czech
+			primary_culture = czech_new
+			primary_culture = dynamic-hungarian-culture-num1
 			has_reform = vladislavs_provincial_establishment_reform
 		}
 	}
@@ -36,12 +40,16 @@ restored_land_establishment_reform = {
 	potential = {
 		OR = {
 			primary_culture = czech
+			primary_culture = czech_new
+			primary_culture = dynamic-hungarian-culture-num1
 			has_reform = restored_land_establishment_reform
 		}
 	}
 	trigger = {
 		OR = {
 			primary_culture = czech
+			primary_culture = czech_new
+			primary_culture = dynamic-hungarian-culture-num1
 			has_reform = restored_land_establishment_reform
 		}
 		NOT = {
@@ -70,12 +78,16 @@ german_aristocracy_reform = {
 	potential = {
 		OR = {
 			primary_culture = czech
+			primary_culture = czech_new
+			primary_culture = dynamic-hungarian-culture-num1
 			has_reform = german_aristocracy_reform
 		}
 	}
 	trigger = {
 		OR = {
 			primary_culture = czech
+			primary_culture = czech_new
+			primary_culture = dynamic-hungarian-culture-num1
 			has_reform = german_aristocracy_reform
 		}
 	}

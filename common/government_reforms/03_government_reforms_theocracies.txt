@@ -99,6 +99,7 @@ crusading_kingdom_reform = {
 	monastic = yes
 	custom_attributes = {
 		monastic_order = yes
+		free_religious_culture = yes
 	}
 	fixed_rank = 2
 }
@@ -109,6 +110,10 @@ teutonic_bishopric_reform = {
 		NOT = { tag = PAP }
 		OR = {
 			tag = PRU
+			AND = {
+				tag = NGF
+				was_tag = PRU
+			}
 			have_had_reform = teutonic_bishopric_reform
 		}
 	}
@@ -116,9 +121,9 @@ teutonic_bishopric_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 30
 	modifiers = {
-		papal_influence = 0.5
-		church_power_modifier = 0.1
-		monthly_fervor_increase = 0.25
+		papal_influence = 1
+		church_power_modifier = 0.15
+		monthly_fervor_increase = 0.5
 		war_exhaustion = -0.02
 		church_loyalty_modifier = 0.1
 		manpower_in_true_faith_provinces = 0.1
@@ -135,6 +140,10 @@ prussian_theocratic_reform = {
 			AND = {
 				tag = PRU
 				NOT = { map_setup = map_setup_random }
+			}
+			AND = {
+				tag = NGF
+				was_tag = PRU
 			}
 			AND = {
 				tag = GER
@@ -194,7 +203,7 @@ prussian_theocratic_reform = {
 		monthly_militarized_society = 0.05
 		global_autonomy = -0.075
 		devotion = -0.5
-		max_absolutism = 10
+		max_absolutism = 30
 		manpower_in_true_faith_provinces = 0.15
 		governing_capacity_modifier = -0.5
 	}
@@ -499,6 +508,7 @@ papacy_reform = {
 
 	custom_attributes = {
 		locked_government_type = yes
+		BM_church_sanctuaries_buff = yes
 	}
 }
 
@@ -991,6 +1001,7 @@ mission_to_civilize_reform = {
 	}
 	modifiers = {
 		colonist_placement_chance = 0.1
+		native_assimilation = 0.5
 		native_uprising_chance = -0.5
 	}
 }
@@ -1002,10 +1013,10 @@ mission_to_kill_pirates_reform = {
 		num_of_ports = 1
 	}
 	modifiers = {
-		global_sailors_modifier = 0.2
+		global_sailors_modifier = 0.25
 		naval_forcelimit_modifier = 0.25
 		capture_ship_chance = 0.33
-		allowed_marine_fraction = 0.1
+		allowed_marine_fraction = 0.25
 	}
 }
 
@@ -1120,6 +1131,7 @@ education_of_the_advisors_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		advisor_cost = -0.15
+		advisor_pool = 1
 	}
 }
 
@@ -1318,6 +1330,7 @@ partial_secularisation_reform = {
 	modifiers = {
 		tolerance_of_heathens_capacity = 1
 		tolerance_of_heretics_capacity = 1
+		innovativeness_gain = 0.25
 	}
 }
 
@@ -1451,6 +1464,7 @@ safeguard_holy_sites_reform = {
 		brahmins_other_loyalty_modifier = 0.1
 		jains_loyalty_modifier = 0.1
 		defensiveness = 0.15
+		global_tax_modifier = 0.15
 	}
 }
 

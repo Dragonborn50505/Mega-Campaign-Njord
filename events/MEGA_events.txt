@@ -19,6 +19,7 @@ country_event = {	#AI fix
 			id = MEGA_events.3
 			days = 5
 		}
+		set_country_flag = MEGA_the_peasants_league_rallied
 	}
 	
 	option = {

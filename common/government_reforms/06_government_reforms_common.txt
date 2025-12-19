@@ -227,6 +227,7 @@ governmental_purbias_register_reform = {
 		technology_group = indian
 	}
 	modifiers = {
+		allowed_rajput_fraction = 0.1
 		recover_army_morale_speed = 0.05
 		rajput_influence_modifier = 0.1
 		rajput_loyalty_modifier = 0.05
@@ -322,7 +323,7 @@ penal_colonies_reform = {
 	}
 	modifiers = {
 		expel_minorities_cost = -1
-		colonist_placement_chance = 0.05
+		colonist_placement_chance = 0.1
 	}
 	ai = {
 		factor = 0.1
@@ -651,6 +652,7 @@ i_am_the_church_reform = {
 		devotion = 0.5
 		max_absolutism = 10
 		appoint_cardinal_cost = -0.1
+		cb_on_religious_enemies = yes
 	}
 	effect = {
 		hidden_effect = {
@@ -1129,11 +1131,13 @@ state_and_shrines_intertwined_reform = {
 		religion = shinto
 	}
 	modifiers = {
+		tolerance_own = 1
 		church_loyalty_modifier = 0.15
 		religious_unity = 0.25
 	}
 	custom_attributes = {
-		enables_divine_idea_group = yes
+		on_church_built_clergy_loyalty = yes
+		recruiting_generals_increases_church_loyalty = yes
 	}
 	
 	ai = {
@@ -1390,6 +1394,7 @@ secularization_of_the_state_reform = {
 	modifiers = {
 		rr_girondists_influence = 0.1
 		no_religion_penalty = yes
+		yearly_innovativeness = 0.1
 	}
 	
 	ai = {
@@ -1579,6 +1584,7 @@ fiqh_laws_reform = {
 	modifiers = {
 		global_missionary_strength = 0.02
 		church_loyalty_modifier = 0.1
+		church_influence_modifier = 0.1
 	}
 
 	custom_attributes = {
@@ -1610,6 +1616,7 @@ sufism_decree_reform = {
 	modifiers = {
 		diplomats = 1
 		dhimmi_loyalty_modifier = 0.1
+		dhimmi_influence_modifier = 0.1
 	}
 	
 	conditional = {
@@ -1796,6 +1803,13 @@ defensive_stance_reform = {
 	
 	ai = {
 		factor = 1
+		modifier = {
+			factor = 1
+			OR = {
+				is_subject_of_type = march
+				is_subject_of_type = client_march
+			}
+		}
 	}
 }
 
@@ -1838,7 +1852,7 @@ cavalry_warfare_reform = {
 		}
 	}
 	modifiers = {
-		cav_to_inf_ratio = 0.1
+		cav_to_inf_ratio = 0.2
 		cavalry_cost = -0.1
 	}
 	
@@ -1872,7 +1886,7 @@ amphibious_specialization_reform = {
 	modifiers = {
 		regiment_disembark_speed = 0.25
 		transport_attrition = -0.25
-		allowed_marine_fraction = 0.1
+		allowed_marine_fraction = 0.25
 	}
 	effect = {
 		hidden_effect = {
@@ -2007,7 +2021,7 @@ maritime_military_reform = {
 	modifiers = {
 		navy_tradition_decay = -0.01
 		naval_morale = 0.1
-		global_ship_cost = -0.05
+		global_ship_cost = -0.1
 	}
 	
 	ai = {
@@ -2221,6 +2235,7 @@ wei_suo_system_reform = {
 	}
 	modifiers = {
 		global_regiment_cost = -0.15
+		global_regiment_recruit_speed = -0.15
 	}
 	custom_attributes = {
 		improved_military_buildings = yes	#Barracks, Regimental Camps and Soldier Househols are buffed 
@@ -2314,7 +2329,7 @@ eight_banners_reform = {
 	}
 	modifiers = {
 		amount_of_banners = 0.25
-		army_tradition_decay = -0.005
+		cav_to_inf_ratio = 0.25
 		movement_speed = 0.1
 	}
 	custom_attributes = {
@@ -2390,7 +2405,8 @@ ashigaru_reform = {
 	}
 	modifiers = {
 		army_tradition_from_battle = 0.5
-		infantry_cost = -0.1
+		infantry_cost = -0.2
+		land_forcelimit_modifier = 0.1
 	}
 	
 	ai = {
@@ -2415,6 +2431,7 @@ early_bushido_code_reform = {
 		}
 	}
 	modifiers = {
+		amount_of_samurai = 4
 		allowed_samurai_fraction = 0.1
 		army_tradition_decay = -0.01
 	}
@@ -2446,7 +2463,7 @@ the_righteous_army_reform = {
 	}
 	modifiers = {
 		recover_army_morale_speed = 0.15
-		defensiveness = 0.25
+		garrison_growth = 0.25
 	}
 	custom_attributes = {
 		has_righteous_army = yes	#Can enact the righteous army
@@ -2576,6 +2593,8 @@ the_maratha_army_reform = {
 		maratha_loyalty_modifier = 0.1
 		maratha_privilege_slots = 1
 		reinforce_speed = 0.2
+		cav_to_inf_ratio = 0.25
+		cavalry_power = 0.1
 	}
 	custom_attributes = {
 		seizing_land_no_rebels_from_estate_maratha = yes
@@ -3012,8 +3031,8 @@ compagnie_dordonnance_reform = {
 	}
 	modifiers = {
 		drill_decay_modifier = -0.33
+		drill_gain_modifier = 0.33
 		army_tradition_decay = -0.005
-		cav_to_inf_ratio = 0.1
 		global_regiment_cost = -0.05
 	}
 	
@@ -3046,6 +3065,8 @@ musketeers_reform = {
 		}
 	}
 	modifiers = {
+		recover_army_morale_speed = 0.1
+		land_morale = 0.05
 		has_musketeer = yes
 		allowed_musketeer_fraction = 0.2
 		nobles_influence_modifier = -0.1
@@ -3081,6 +3102,7 @@ gendarmes_reform = {
 	}
 	modifiers = {
 		cavalry_power = 0.1 
+		cav_to_inf_ratio = 0.2
 		nobles_loyalty_modifier = 0.05
 		morale_damage = 0.05
 	}
@@ -3333,8 +3355,7 @@ manrent_reform = {
 	modifiers = {
 		nobles_loyalty_modifier = 0.05
 		nobles_influence_modifier = 0.1
-		global_manpower_modifier = 0.1
-		vassal_forcelimit_bonus = 0.33
+		global_manpower_modifier = 0.3
 	}
 	
 	ai = {
@@ -3364,7 +3385,7 @@ staatse_leger_reform = {
 	}
 	modifiers = {
 		movement_speed = 0.1
-		drill_gain_modifier = 0.5
+		mercenary_cost = -0.25
 		reinforce_speed = 0.25
 	}
 	custom_attributes = {
@@ -3419,7 +3440,7 @@ watergeuzen_reform = {
 	}
 	modifiers = {
 		capture_ship_chance = 0.2
-		allowed_marine_fraction = 0.1
+		disengagement_chance = 0.2
 		sea_repair = yes
 	}
 	
@@ -3463,6 +3484,7 @@ allotment_system = {
 		#has_carolean = yes
 		manpower_in_own_culture_provinces = 0.15
 		manpower_in_accepted_culture_provinces = 0.1
+		amount_of_carolean = 0.1
 		#amount_of_carolean = 0.25
 	}
 
@@ -3555,6 +3577,10 @@ lessons_of_the_hussite_wars_reform = {
 		NOT = { tag = PRU }
 		NOT = { tag = POL }
 		NOT = { tag = PLC }
+		AND = {
+			NOT = { tag = NGF }
+			NOT = { was_tag = PRU }
+		}
 	}
 	trigger = {
 		if = {
@@ -3566,7 +3592,8 @@ lessons_of_the_hussite_wars_reform = {
 		}
 	}
 	modifiers = {
-		global_defender_dice_roll_bonus = 1 
+		morale_damage_received = -0.1
+		reinforce_speed = 0.2
 	}
 	
 	ai = {
@@ -3799,6 +3826,8 @@ new_world_exploitation_reform = {
 	}
 	modifiers = {
 		colonists = 1 
+		global_tariffs = 0.15
+		reduced_liberty_desire_on_other_continent = 10
 	}
 	custom_attributes = {
 		extra_trade_goods_for_colonial_subjects = yes
@@ -3926,6 +3955,7 @@ embrace_the_economic_theory_reform = {
 	}
 	modifiers = {
 		interest = -0.5
+		production_efficiency = 0.1
 		inflation_reduction = 0.2
 	}
 	ai = {
@@ -4106,7 +4136,7 @@ reform_the_samurai_reform = {
 	modifiers = {
 		drill_gain_modifier = 0.5
 		army_tradition = 0.5
-		allowed_samurai_fraction = 0.05
+		allowed_samurai_fraction = 0.1
 	}
 	effect = {
 		custom_tooltip = jap_samurai_get_fire_damage_tt
@@ -4181,7 +4211,7 @@ consulate_of_the_sea = {
 		trade_efficiency = 0.1
 		global_trade_power = 0.1
 		burghers_loyalty_modifier = 0.05
-		
+		has_galleass = yes
 	}
 	
 	conditional = {
@@ -4335,7 +4365,8 @@ turkoman_ottoman_institutions = {
 	}
 	modifiers = {
 		years_of_nationalism = -10
-		governing_capacity = 100
+		governing_capacity = 150
+		yearly_government_power = 1
 	}
 	conditional = {
 		allow = { 
@@ -4349,6 +4380,9 @@ turkoman_ottoman_institutions = {
 		government_abilities = {
 			tribal_federation_mechanic
 		}
+	}
+	custom_attributes = {
+		enables_estate_nomadic_tribes = yes
 	}
 	ai = {
 		factor = 3
@@ -4385,10 +4419,11 @@ divided_aristocracy_reform = {
 		has_unlocked_government_reform = { government_reform = divided_aristocracy_reform }
 	}
 	modifiers = {
-		nobles_influence_modifier = -0.15
-		qizilbash_influence_modifier = -0.15
-		ghulams_influence_modifier = -0.15
-		max_absolutism = 10
+		nobles_influence_modifier = -0.1
+		qizilbash_influence_modifier = -0.1
+		ghulams_influence_modifier = -0.1
+		max_absolutism = 15
+		max_absolutism_effect = 0.05
 	}
 	custom_attributes = {
 		can_sell_crownland_to_single_estates = yes
@@ -4413,7 +4448,9 @@ modernized_furusiyya_reform = {
 		
 	}
 	modifiers = {
-		allowed_mamluks_fraction = 0.05
+		allowed_mamluks_fraction = 0.1
+		drill_gain_modifier = 0.25
+		drill_decay_modifier = -0.25
 	}
 
 	custom_attributes = {
@@ -4656,10 +4693,11 @@ ayyubid_high_command = {
 	modifiers = {
 		max_general_shock = 2
 		general_cost = -0.1
-		free_land_leader_pool = 2
+		mil_advisor_cost = -0.1
 	}
 	custom_attributes = {
 		army_tradition_for_generals = yes
+		army_tradition_on_stackwipe = yes
 	}
 	trigger = {
 		custom_trigger_tooltip = {
@@ -5265,7 +5303,10 @@ apostolic_kingdom = {
 	icon = "apostolic_kingdom"
 	allow_normal_conversion = yes
 	potential = {
-		religion = catholic
+		OR = {
+			religion_group = christian
+			religion = tengri_pagan_reformed
+		}
 		OR = {
 			tag = HUN
 			was_tag = HUN
@@ -5276,7 +5317,7 @@ apostolic_kingdom = {
 
 	nation_designer_trigger = {
 		primary_culture = hungarian
-		religion = catholic
+		religion_group = christian
 	}
 
 	modifiers = {

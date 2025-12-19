@@ -7469,6 +7469,9 @@ HAM_ideas = {
 	
 	trigger = {
 		tag = HAM
+		NOT = {
+			has_country_flag = MEGA_the_peasants_league_rallied
+		}
 	}
 	free = yes		#will be added at load.
 	
@@ -10684,7 +10687,10 @@ DTT_ideas = {
 		horde_unity = 1
 	}
 	trigger = {
-		tag = DTT
+		OR = {
+			tag = DTT
+			has_country_flag = MEGA_the_peasants_league_rallied
+		}
 	}
 	free = yes
 	dtt_resistance_against_feudalism = {
