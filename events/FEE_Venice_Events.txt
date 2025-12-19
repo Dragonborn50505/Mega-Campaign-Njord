@@ -388,27 +388,13 @@ country_event = {
 
 		add_mil_power = -100
 		add_years_of_income = -0.5
-		custom_tooltip = FEE_VEN_FANTI_MAR_TT
-		tooltip = {
-			random_owned_province = {
-				limit = {
-					has_port = yes
-				}
-				add_permanent_province_modifier = {
-					name = fee_ven_fanti_mar
-					duration = -1
-				}
+		random_owned_area = {
+			limit = {
+				is_in_capital_area = yes
 			}
-		}
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					has_port = yes
-				}
-				add_permanent_province_modifier = {
-					name = fee_ven_fanti_mar
-					duration = -1
-				}
+			add_permanent_province_modifier = {
+				name = fee_ven_fanti_mar
+				duration = -1
 			}
 		}
 	}
@@ -543,7 +529,7 @@ country_event = {
 			factor = 50
 		}
 
-		change_religious_influence_equivalent_fee = { remove = 25 }
+		add_papal_influence = -15
 		add_legitimacy_equivalent = { amount = 10 republican_tradition = 5 }
 		112 = {
 			add_base_production = 1
@@ -557,7 +543,7 @@ country_event = {
 	option = {
 		name = FEE_Venice_Events.13.OPT2
 
-		change_religious_influence_equivalent_fee = { add = 50 }
+		add_papal_influence = 25
 		add_stability_or_adm_power = yes
 	}
 }
@@ -620,7 +606,7 @@ country_event = {
 
 		add_mil_power = 50
 		add_stability_or_adm_power = yes
-		change_religious_influence_equivalent_fee = { add = 50 }
+		add_papal_influence = 25
 	}
 }
 
@@ -904,7 +890,7 @@ country_event = {
 
 		add_treasury = -25
 		add_splendor = 100
-		change_religious_influence_equivalent_fee = { add = 15 }
+		add_papal_influence = 15
 	}
 }
 
@@ -1039,28 +1025,13 @@ country_event = {
 	option = {
 		name = FEE_Venice_Events.25.OPT1
 
-		if = {
-			limit = {
-				is_expanded_mod_active = { mod = advisor_types }
-			}
-			define_advisor = {
-				name = "Cristoforo Moro"
-				type = ate_advisor_state_administrator
-				culture = venetian
-				religion = ROOT
-				skill = 2
-				discount = yes
-			}
-		}
-		else = {
-			define_advisor = {
-				name = "Cristoforo Moro"
-				type = treasurer
-				culture = venetian
-				religion = ROOT
-				skill = 2
-				discount = yes
-			}
+		define_advisor = {
+			name = "Cristoforo Moro"
+			type = treasurer
+			culture = venetian
+			religion = ROOT
+			skill = 2
+			discount = yes
 		}
 		4729 = {
 			if = {
@@ -1532,346 +1503,6 @@ country_event = {
 	}
 }
 
-# Athleta Christi et Defensor Fidei
-country_event = {
-	id = FEE_Venice_Events.32
-	title = FEE_Venice_Events.32.T
-	desc = FEE_Venice_Events.32.D
-	picture = CONQUEST_eventPicture
-
-	fire_only_once = yes
-
-	trigger = {
-		is_or_was_tag = { tag = VEN }
-		is_in_war = {
-			attacker_leader = ROOT
-			casus_belli = cb_crusade
-			defender_leader = TUR
-		}
-		has_country_modifier = fee_ven_turko_venetian_wars
-		NOT = { exists = ALB }
-		is_year = 1463
-		NOT = { is_year = 1468 }
-		any_owned_province = {
-			OR = {
-				area = albania_area
-				culture = albanian
-			}
-			controlled_by = TUR
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 12
-	}
-
-	option = {
-		name = FEE_Venice_Events.32.OPT1
-
-		random_owned_province = {
-			limit = {
-				OR = {
-					area = albania_area
-					culture = albanian
-				}
-				controlled_by = ROOT
-			}
-			infantry = ROOT
-			infantry = ROOT
-			infantry = ROOT
-			ROOT = {
-				create_general = {
-					tradition = 50
-					culture = albanian
-				}
-			}
-			change_controller = ROOT
-		}
-	}
-}
-
-# Albanian Rebellions
-country_event = {
-	id = FEE_Venice_Events.33
-	title = FEE_Venice_Events.33.T
-	desc = FEE_Venice_Events.33.D
-	picture = BORDER_TENSION_eventPicture
-
-	fire_only_once = yes
-
-	trigger = {
-		is_or_was_tag = { tag = VEN }
-		is_in_war = {
-			attacker_leader = ROOT
-			casus_belli = cb_crusade
-			defender_leader = TUR
-		}
-		has_country_modifier = fee_ven_turko_venetian_wars
-		NOT = { exists = ALB }
-		is_year = 1463
-		NOT = { is_year = 1468 }
-		TUR = {
-			any_owned_province = {
-				OR = {
-					area = albania_area
-					culture = albanian
-				}
-			}
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 12
-	}
-
-	option = {
-		name = FEE_Venice_Events.33.OPT1
-		ai_chance = {
-			factor = 1
-		}
-
-		add_years_of_income = -0.5
-		TUR = {
-			random_owned_province = {
-				limit = {
-					OR = {
-						area = albania_area
-						culture = albanian
-					}
-					controlled_by = TUR
-				}
-				hidden_effect = {
-					if = {
-						limit = {
-							NOT = { is_core = ALB }
-						}
-						add_core = ALB
-						add_nationalism = 5
-					}
-				}
-				spawn_rebels = {
-					type = nationalist_rebels
-					size = 3
-					leader_dynasty = "Kastrioti"
-					friend = ROOT
-					separatists_target = ALB
-					win = yes
-				}
-			}
-		}
-	}
-
-	option = {
-		name = FEE_Venice_Events.33.OPT2
-		ai_chance = {
-			factor = 2
-		}
-
-		add_prestige = -5
-		if = {
-			limit = { religion = catholic }
-			add_papal_influence = -15
-		}
-	}
-}
-
-# Siege of Negroponte
-country_event = {
-	id = FEE_Venice_Events.34
-	title = FEE_Venice_Events.34.T
-	desc = FEE_Venice_Events.34.D
-	picture = SIEGE_eventPicture
-
-	fire_only_once = yes
-
-	trigger = {
-		is_or_was_tag = { tag = VEN }
-		is_in_war = {
-			attacker_leader = ROOT
-			casus_belli = cb_crusade
-			defender_leader = TUR
-		}
-		has_country_modifier = fee_ven_turko_venetian_wars
-		is_year = 1463
-		NOT = { is_year = 1479 }
-		3003 = {
-			owned_by = ROOT
-			controlled_by = TUR
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 12
-	}
-
-	option = {
-		name = FEE_Venice_Events.34.OPT1
-		ai_chance = {
-			factor = 1
-		}
-
-		add_treasury = -60
-		add_sailors = -360
-		add_manpower = -1
-		TUR = {
-			add_treasury = 60
-			add_sailors = 360
-			add_manpower = 1
-		}
-		3003 = {
-			add_base_tax = -1
-			add_base_manpower = -1
-		}
-	}
-}
-
-# Nicolò Canale
-country_event = {
-	id = FEE_Venice_Events.35
-	title = FEE_Venice_Events.35.T
-	desc = FEE_Venice_Events.35.D
-	picture = ADVISOR_eventPicture
-
-	fire_only_once = yes
-
-	trigger = {
-		is_or_was_tag = { tag = VEN }
-		is_in_war = {
-			attacker_leader = ROOT
-			casus_belli = cb_crusade
-			defender_leader = TUR
-		}
-		has_country_modifier = fee_ven_turko_venetian_wars
-		is_year = 1463
-		NOT = { is_year = 1479 }
-	}
-
-	mean_time_to_happen = {
-		months = 12
-	}
-
-	option = {
-		name = FEE_Venice_Events.35.OPT1
-		ai_chance = {
-			factor = 1
-		}
-
-		if = {
-			limit = {
-				is_expanded_mod_active = { mod = advisor_types }
-			}
-			define_advisor = {
-				name = "Nicolo Canale"
-				type = ate_advisor_galley_captain
-				culture = venetian
-				religion = ROOT
-				skill = 2
-				discount = yes
-			}
-		}
-		else = {
-			define_advisor = {
-				name = "Nicolo Canale"
-				type = naval_reformer
-				culture = venetian
-				religion = ROOT
-				skill = 2
-				discount = yes
-			}
-		}
-	}
-}
-
-# Giacomo Loredan
-country_event = {
-	id = FEE_Venice_Events.36
-	title = FEE_Venice_Events.36.T
-	desc = FEE_Venice_Events.36.D
-	picture = GENERALS_DISCUSSING_eventPicture
-
-	fire_only_once = yes
-
-	trigger = {
-		is_or_was_tag = { tag = VEN }
-		is_in_war = {
-			attacker_leader = ROOT
-			casus_belli = cb_crusade
-			defender_leader = TUR
-		}
-		has_country_modifier = fee_ven_turko_venetian_wars
-		is_year = 1463
-		NOT = { is_year = 1479 }
-	}
-
-	mean_time_to_happen = {
-		months = 12
-	}
-
-	option = {
-		name = FEE_Venice_Events.36.OPT1
-		ai_chance = {
-			factor = 1
-		}
-
-		define_admiral = {
-			name = "Giacomo Loredan"
-			fire = 3
-			shock = 4
-			manuever = 4
-			siege = 0
-		}
-	}
-}
-
-# Turks in Friuli!
-country_event = {
-	id = FEE_Venice_Events.37
-	title = FEE_Venice_Events.37.T
-	desc = FEE_Venice_Events.37.D
-	picture = BAD_WITH_MONARCH_eventPicture
-
-	fire_only_once = yes
-
-	trigger = {
-		is_or_was_tag = { tag = VEN }
-		is_in_war = {
-			attacker_leader = ROOT
-			casus_belli = cb_crusade
-			defender_leader = TUR
-		}
-		has_country_modifier = fee_ven_turko_venetian_wars
-		is_year = 1463
-		NOT = { is_year = 1479 }
-		111 = {
-			owned_by = ROOT
-			OR = {
-				controlled_by = TUR
-				units_in_province = TUR
-			}
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 12
-	}
-
-	option = {
-		name = FEE_Venice_Events.37.OPT1
-		ai_chance = {
-			factor = 1
-		}
-
-		set_country_flag = fee_ven_turko_venetian_wars_friuli_raided_flag
-		add_prestige = -5
-		add_legitimacy_equivalent = { amount = -5 republican_tradition = -3 }
-		111 = {
-			add_base_tax = -1
-			add_base_manpower = -1
-			add_base_production = -1
-		}
-	}
-}
-
 # Craine of the Venetian Dalmatia
 country_event = {
 	id = FEE_Venice_Events.38
@@ -1932,7 +1563,7 @@ country_event = {
 					add_base_manpower = 1
 					add_province_modifier = {
 						name = fee_ven_craine
-						duration = -1
+						duration = 7300
 					}
 				}
 			}
@@ -1950,7 +1581,7 @@ country_event = {
 					add_base_manpower = 1
 					add_province_modifier = {
 						name = fee_ven_craine
-						duration = -1
+						duration = 7300
 					}
 				}
 			}
@@ -1960,172 +1591,6 @@ country_event = {
 	after = {
 		hidden_effect = {
 			clr_country_flag = fee_ven_turko_venetian_wars_friuli_raided_flag
-		}
-	}
-}
-
-# Trattato di Constantinopoli
-country_event = {
-	id = FEE_Venice_Events.39
-	title = FEE_Venice_Events.39.T
-	desc = FEE_Venice_Events.39.D
-	picture = BAD_WITH_MONARCH_eventPicture
-
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	trigger = {
-		is_or_was_tag = { tag = VEN }
-		is_year = 1463
-		NOT = { is_year = 1479 }
-		is_at_war = no
-		has_country_modifier = fee_ven_turko_venetian_wars
-	}
-
-	option = {
-		name = FEE_Venice_Events.39.OPT1
-		ai_chance = {
-			factor = 1
-		}
-
-		add_prestige = -25
-		add_legitimacy_equivalent = { amount = -20 republican_tradition = -10 }
-		add_mercantilism = -15
-		add_splendor = -200
-		1320 = {
-			add_trade_modifier = {
-				who = ROOT
-				duration = 7300
-				power = -20
-				key = fee_ven_treaty_constantinople
-			}
-		}
-		add_country_modifier = {
-			name = fee_ven_treaty_constantinople
-			duration = 7300
-		}
-		if = {
-			limit = {
-				any_owned_province = {
-					sea_zone = {
-						area = eastern_mediterrenean_area
-					}
-				}
-			}
-			custom_tooltip = FEE_VEN_TREATY_CONSTANTINOPLE_TT
-			tooltip = {
-				random_owned_province = {
-					limit = {
-						sea_zone = {
-							area = eastern_mediterrenean_area
-						}
-					}
-					add_base_production = -1
-					add_province_modifier = {
-						name = fee_ven_treaty_constantinople_province
-						duration = 7300
-					}
-				}
-			}
-			hidden_effect = {
-				every_province = {
-					limit = {
-						country_or_non_sovereign_subject_holds = ROOT
-						sea_zone = {
-							area = eastern_mediterrenean_area
-						}
-					}
-					add_base_production = -1
-					add_province_modifier = {
-						name = fee_ven_treaty_constantinople_province
-						duration = 7300
-					}
-				}
-			}
-		}
-	}
-}
-
-# Il Leone Alato
-country_event = {
-	id = FEE_Venice_Events.40
-	title = FEE_Venice_Events.40.T
-	desc = FEE_Venice_Events.40.D
-	picture = GOOD_WITH_MONARCH_eventPicture
-
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	trigger = {
-		is_or_was_tag = { tag = VEN }
-		is_year = 1463
-		NOT = { is_year = 1479 }
-		has_country_modifier = fee_ven_turko_venetian_wars
-	}
-
-	option = {
-		name = FEE_Venice_Events.40.OPT1
-		ai_chance = {
-			factor = 1
-		}
-
-		add_mercantilism = 25
-		1320 = {
-			add_trade_modifier = {
-				who = ROOT
-				duration = 7300
-				power = 20
-				key = fee_ven_aegean_superiority
-			}
-			add_trade_modifier = {
-				who = TUR
-				duration = 7300
-				power = -20
-				key = fee_ven_aegean_superiority
-			}
-		}
-		add_country_modifier = {
-			name = fee_ven_aegean_superiority
-			duration = 7300
-		}
-		if = {
-			limit = {
-				any_owned_province = {
-					sea_zone = {
-					area = eastern_mediterrenean_area
-				}
-				}
-			}
-			custom_tooltip = FEE_VEN_TREATY_CONSTANTINOPLE_TT
-			tooltip = {
-				random_owned_province = {
-					limit = {
-						sea_zone = {
-						area = eastern_mediterrenean_area
-					}
-					}
-					add_base_production = 1
-					add_province_modifier = {
-						name = fee_ven_aegean_superiority_province
-						duration = 7300
-					}
-				}
-			}
-			hidden_effect = {
-				every_province = {
-					limit = {
-						country_or_non_sovereign_subject_holds = ROOT
-						sea_zone = {
-						area = eastern_mediterrenean_area
-					}
-					}
-					add_base_production = 1
-					add_province_modifier = {
-						name = fee_ven_aegean_superiority_province
-						duration = 7300
-					}
-				}
-			}
 		}
 	}
 }
@@ -5301,7 +4766,7 @@ country_event = {
 			culture = venetian
 			religion = catholic
 		}
-		change_religious_influence_equivalent_fee = { add = 10 }
+		add_papal_influence = 15
 		add_estate_church_loyalty_effect = yes
 		add_ruler_modifier = {
 			name = fee_ven_doge_marcantonio_trevisan
@@ -5315,7 +4780,7 @@ country_event = {
 			factor = 0
 		}
 
-		change_religious_influence_equivalent_fee = { remove = 10 }
+		add_papal_influence = -10
 		reduce_estate_church_loyalty_effect = yes
 		add_adm_power = -50
 	}
@@ -5725,7 +5190,7 @@ country_event = {
 		add_mil_power = -50
 		add_country_modifier = {
 			name = cavalry_companions
-			duration = -1
+			duration = 7300
 		}
 		random_owned_province = {
 			limit = {
@@ -5738,7 +5203,7 @@ country_event = {
 			add_or_upgrade_manpower_building = yes
 			add_province_modifier = {
 				name = military_reinforcement
-				duration = -1
+				duration = 7300
 			}
 		}
 	}
@@ -5822,7 +5287,7 @@ country_event = {
 		add_yearly_manpower = -1
 		add_country_modifier = {
 			name = fee_ven_standing_army
-			duration = -1
+			duration = 7300
 		}
 		add_country_modifier = {
 			name = mng_militry_incompetence
@@ -5840,7 +5305,7 @@ country_event = {
 		add_army_tradition = -15
 		add_country_modifier = {
 			name = fee_ven_mercenary_army
-			duration = -1
+			duration = 7300
 		}
 		add_country_modifier = {
 			name = mng_militry_incompetence
