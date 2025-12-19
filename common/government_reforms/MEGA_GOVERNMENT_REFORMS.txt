@@ -177,6 +177,7 @@ korps_mariniers_reform = {
 	ai = {
 		factor = 1
 	}
+}
 #Frankonian gov
 frankonian_kingdom = {
 	icon = "apostolic_kingdom"
