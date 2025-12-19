@@ -60,23 +60,24 @@ remove_all_age_of_discovery_modifiers = {
 	}
 }
 
-writers_&_painters_guild = {
+writers_painters_guild = {
 	if = {
 		limit = {
 			owner = {
-				has_government_attribute = enables_customs_house
+				has_government_attribute = enables_writers_painters_guild
 			}
+			region = low_countries_region
 			OR = {
 				trade_goods = cloth
-				trade_goods = papper
+				trade_goods = paper
 			}
 		}
 		add_province_modifier = {
-			name = MEGA_The_painters_&_writers_guild
+			name = MEGA_The_painters_writers_guild
 			duration = -1
 		}
 	}
 	else = {
-		remove_province_modifier = MEGA_The_painters_&_writers_guild
+		remove_province_modifier = MEGA_The_painters_writers_guild
 	}
 }
