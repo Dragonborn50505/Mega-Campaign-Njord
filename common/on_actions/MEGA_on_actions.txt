@@ -207,35 +207,30 @@ on_center_of_trade_upgrade = {
 
 
 on_adm_development = {
-	ge_kreditwerk_appointments_province_update = yes
 	BM_magedburg_rights_province_update = yes
 	ge_mint_towns_province_update = yes
 	BM_immigrant_settlements_province_update = yes
 }
 
 on_dip_development = {
-	ge_kreditwerk_appointments_province_update = yes
 	BM_magedburg_rights_province_update = yes
 	ge_mint_towns_province_update = yes
 	BM_immigrant_settlements_province_update = yes
 }
 
 on_mil_development = {
-	ge_kreditwerk_appointments_province_update = yes
 	BM_magedburg_rights_province_update = yes
 	ge_mint_towns_province_update = yes
 	BM_immigrant_settlements_province_update = yes
 }
 
 on_transfer_development = {
-	ge_kreditwerk_appointments_province_update = yes
 	BM_magedburg_rights_province_update = yes
 	ge_mint_towns_province_update = yes
 	BM_immigrant_settlements_province_update = yes
 }
 
 on_raze = {
-	ge_kreditwerk_appointments_province_update = yes
 	BM_magedburg_rights_province_update = yes
 	ge_mint_towns_province_update = yes
 	BM_immigrant_settlements_province_update = yes
@@ -244,7 +239,6 @@ on_raze = {
 on_province_owner_change = {
 	BM_immigrant_settlements_province_update = yes
 	BM_enable_slave_settlements_province_update = yes
-	ge_kreditwerk_appointments_province_update = yes
 	BM_magedburg_rights_province_update = yes
 	ge_society_of_agriculture_province_update = yes
 	ge_customs_house_province_update = yes
@@ -253,6 +247,7 @@ on_province_owner_change = {
 	ge_mint_towns_province_update = yes
 	BM_enables_mountain_towns_province_update = yes
 	BM_enable_crown_of_aragon_province_update = yes
+	writers_painters_guild = yes
 }
 
 
@@ -260,6 +255,7 @@ on_trade_good_changed = {
 	BM_enable_slave_settlements_province_update = yes
 	ge_society_of_agriculture_province_update = yes
 	ge_customs_house_province_update = yes
+	writers_painters_guild = yes
 }
 
 
@@ -296,11 +292,6 @@ on_post_dip_advisor_fired = {
 on_post_mil_advisor_fired = {
 	ge_country_peasant_council_update = yes
 	ge_country_french_court_update = yes
-}
-
-
-on_colony_finished = {
-	BM_jesuit_mission_rights_province_update = yes
 }
 
 # country

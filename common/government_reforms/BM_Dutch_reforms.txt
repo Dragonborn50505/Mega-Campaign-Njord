@@ -18,7 +18,8 @@ guild_dominance_reform = {
 	}
 	modifiers = {
 		global_prov_trade_power_modifier = 0.2
-		navy_tradition = 0.5
+		republican_tradition = 0.1
+		burghers_loyalty_modifier = 0.1
 		burghers_influence_modifier = 0.1
 	}
 	ai = {
