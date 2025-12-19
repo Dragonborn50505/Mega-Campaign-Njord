@@ -30,7 +30,7 @@
  kreditwerk_reform: "Reformed Kreditwerk"
  kreditwerk_reform_desc: "In the 16th century, the Margraves of Brandenburg had become highly dependent and on several occasions highly indebted on the estates (counts, lords, knights and towns). To combat this, the Kreditwerk was established as an independent institution, not controlled by by the elector or the Großer Ausschuß 'Great Committee' of the estates. This institution was tasked with managing the the Margraviates taxation, finances and liabilities and became central to reforming the Margraviates, and later on, Prussias, economy."
 
- mechanic_upgrade_promote_burghers_bookkeeping_yes: "The '§YPromote Burghers Bookkeeping§!' privilege will no longer cost Absolutism and also grant: \n §G-0.25§! Interest Per Annum \n §G+0.05%! Yearly Inflation Reduction5§!."
+ mechanic_upgrade_promote_burghers_bookkeeping_yes: "The '§YPromote Burghers Bookkeeping§!' privilege will no longer cost Absolutism and also grant: \n Interest Per Annum: §G-0.25§! \n Yearly Inflation Reduction: §G+0.05%! \n"
 
  mechanic_upgrade_control_over_monetary_policy_yes: "The '§YCommercial Advisory Board§!' privilege will no longer cost absolutism or increase Stability Cost."
 
