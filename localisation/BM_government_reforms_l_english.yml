@@ -30,7 +30,7 @@
  kreditwerk_reform: "Reformed Kreditwerk"
  kreditwerk_reform_desc: "In the 16th century, the Margraves of Brandenburg had become highly dependent and on several occasions highly indebted on the estates (counts, lords, knights and towns). To combat this, the Kreditwerk was established as an independent institution, not controlled by by the elector or the Großer Ausschuß 'Great Committee' of the estates. This institution was tasked with managing the the Margraviates taxation, finances and liabilities and became central to reforming the Margraviates, and later on, Prussias, economy."
 
- mechanic_upgrade_promote_burghers_bookkeeping_yes: "The '§YPromote Burghers Bookkeeping§!' privilege will no longer cost Absolutism and also grant: \n §G-0.25§! Interest Per Annum \n §G+0.05%! Yearly Inflation Reduction5§!."
+ mechanic_upgrade_promote_burghers_bookkeeping_yes: "The '§YPromote Burghers Bookkeeping§!' privilege will no longer cost Absolutism and also grant: \n Interest Per Annum: §G-0.25§! \n Yearly Inflation Reduction: §G+0.05%! \n"
 
  mechanic_upgrade_control_over_monetary_policy_yes: "The '§YCommercial Advisory Board§!' privilege will no longer cost absolutism or increase Stability Cost."
 
@@ -569,6 +569,16 @@
 
  guild_dominance_reform: "Guild Dominance"
  guild_dominance_reform_desc: "The various merchant, craftsmen, artisan and financial guilds across the Low Countries has always held a lot of power. By granting them access to the government through official channels we will be able to let our guilds expand their influence and expertise across our country."
+
+ korps_mariniers_reform: "Korps Mariniers"
+ korps_mariniers_reform_desc: ""
+
+ last_expedition_reform: "The Last Expedition"
+ last_expedition_reform_desc: ""
+
+ lumiere_admin_reform_reform: "The Painters & Writers Guild"
+ lumiere_admin_reform_desc: ""
+
 
  magnate_govenors_reform: "Magnate Governors"
  magnate_govenors_reform_desc: "By dividing our land in regions dominated by powerful nobles, we can use them to function as lord paramounts, capably organizing the regions making it much easier to hold control over vast lands."

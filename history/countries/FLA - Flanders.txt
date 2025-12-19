@@ -51,7 +51,7 @@ mercantilism = 25
 
 1444.11.11= {
 	monarch = {
-		name = "Renoir"
+		name = "Maelle"
 		dynasty = "Dessendre"
 		adm = 4
 		dip = 4
@@ -59,6 +59,7 @@ mercantilism = 25
 		birth_date = 1414.9.22
 		religion = norse_pagan
 		culture = flemish
+		female = yes
 	}
 	add_ruler_personality = careful_personality
 	add_ruler_personality = reaver_personality
@@ -79,8 +80,8 @@ mercantilism = 25
 	add_queen_personality = fertile_personality
 	add_queen_personality = righteous_personality
 	heir = {
-		name = "Maelle"
-		monarch_name = "Maelle"
+		name = "Renoir"
+		monarch_name = "Renoir"
 		dynasty = "Dessendre"
 		adm = 4
 		dip = 4

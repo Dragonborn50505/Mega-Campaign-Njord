@@ -121,12 +121,6 @@
  sealand_events.3.16: "£sea_land_maintenance_modifier£ Land Maintenance Modifier: §G-10.0%§!"
  sealand_events.3.20: "£sea_defensiveness£ Fort Defence: §G+20.0%§!"
 
- #ECONOMIC GOLDEN AGE
- BM_economic_golden_era_title: "Enter Economic Golden Era"
- BM_economic_golden_era_desc: ""
- BM_in_economic_golden_era: "Economic Golden Era"
- desc_BM_in_economic_golden_era: ""
-
 
 
  #HAMBURG MISSIONS
