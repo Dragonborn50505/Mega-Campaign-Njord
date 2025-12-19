@@ -16,7 +16,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		mil = 4
 		birth_date = 1414.11.14
 		religion = catholic
-		culture = sardinian
+		culture = andalusian
 	}
 	add_ruler_personality = righteous_personality
 	add_ruler_personality = tactical_genius_personality
@@ -45,7 +45,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		birth_date = 1440.11.14
 		claim = 89
 		religion = catholic
-		culture = sardinian
+		culture = andalusian
 	}
 	add_heir_personality = free_thinker_personality
 	add_heir_personality = tactical_genius_personality
