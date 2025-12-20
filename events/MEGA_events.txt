@@ -127,10 +127,14 @@ country_event = {	#news event that the Hamburg League gains power in Holstein
 
 	trigger = {
 		tag = HAM
+		NOT = {
+			has_country_flag = MEGA_GOTTEN_THIS_EVENT_ALREADY
+		}
 	}
 
 
 	immediate = {
+		set_country_flag = MEGA_GOTTEN_THIS_EVENT_ALREADY
 		add_government_reform = trade_confederation_reform
 		define_ruler = { #Same stats as my heir would have had
 			adm = 4

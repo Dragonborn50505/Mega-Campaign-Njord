@@ -18,6 +18,7 @@ MEGA_hansa_kontor_owned_by_hansa = {
 
 MEGA_hamburg_colonisation_craze = {
 	colonists = 1
+	global_colonial_growth = 25
 	colony_development_boost = 1
 }
 

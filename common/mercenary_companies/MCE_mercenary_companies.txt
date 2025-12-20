@@ -41,7 +41,7 @@ MCE_merc_royal_life_guard = {
     regiments_per_development = 0.025
 	sprites = { dan_base_sprite_pack }
     trigger = {
-		tag = DAN
+		culture_group = scandinavian
 		is_year = 1550
 	}
 	modifier = {
@@ -642,7 +642,7 @@ MCE_pretorian_guards = {
 		government_rank = 3
 	}
 	modifier = {
-		infantry_power = 0.1
+		infantry_power = 0.15
 	}
 }
 
@@ -846,7 +846,19 @@ MCE_Norse_Mercenaries = {
 	regiments_per_development = 0.02
 	sprites = { dlc054_swe_sprite_pack dlc028_swe_sprite_pack westerngfx_sprite_pack }
 	trigger = {
-		religion = norse_pagan
+		OR = {
+			religion = norse_pagan
+			religion = norse_pagan_reformed
+			capital_scope = {
+				region = low_countries_region
+			}
+			any_owned_province = {
+				OR = {
+					religion = norse_pagan
+					religion = norse_pagan_reformed
+				}
+			}
+		}
 	}
 	modifier = {
 		shock_damage = 0.1
@@ -912,6 +924,9 @@ MCE_Jaguar_Warriors = {
 	cost_modifier = 0.4
 	sprites = { dlc035_may_sprite_pack southamericagfx_sprite_pack }
 	trigger = {
+		capital_scope = {
+			superregion = new_world_superregion
+		}
 	}
 	modifier = {
 		shock_damage = 0.1
@@ -924,6 +939,9 @@ MCE_Eagle_Warriors = {
 	cost_modifier = 0.4
 	sprites = { dlc035_may_sprite_pack southamericagfx_sprite_pack }
 	trigger = {
+		capital_scope = {
+			superregion = new_world_superregion
+		}
 	}
 	modifier = {
 		movement_speed = 0.1
@@ -936,6 +954,9 @@ MCE_Coyote_Warriors = {
 	cost_modifier = 0.4
 	sprites = { dlc035_may_sprite_pack southamericagfx_sprite_pack }
 	trigger = {
+		capital_scope = {
+			superregion = new_world_superregion
+		}
 	}
 	modifier = {
 		infantry_shock = 0.5
@@ -948,7 +969,6 @@ MCE_Caroline_Infantry = {
 	cost_modifier = 0.5
 	sprites = { dlc054_swe_sprite_pack dlc028_swe_sprite_pack westerngfx_sprite_pack }
 	trigger = {
-		culture_group = scandinavian
 		capital_scope = {
 			region = scandinavia_region
 		}
@@ -966,7 +986,6 @@ MCE_Livgardet = {
 	cost_modifier = 0.7
 	sprites = { westerngfx_sprite_pack }
 	trigger = {
-		culture_group = scandinavian
 		capital_scope = {
 			region = scandinavia_region
 		}
@@ -1007,8 +1026,8 @@ MCE_levies = {
 	}
 	
 	modifier = {
-		reinforce_speed = -0.33
-		recover_army_morale_speed = -0.15
+		reinforce_speed = -0.3
+		recover_army_morale_speed = -0.1
 	}
 }
 

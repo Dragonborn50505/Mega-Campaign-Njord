@@ -5998,6 +5998,7 @@ new_lubeck_modifier = {
 hsa_north_sea_trading = {
 	trade_steering = 0.2
 	range = 0.2
+	colonists = 1
 	global_trade_goods_size_modifier = 0.05
 }
 
