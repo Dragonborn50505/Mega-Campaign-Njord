@@ -58,6 +58,23 @@ remove_all_age_of_discovery_modifiers = {
 			remove_country_modifier = MEGA_all_the_hordes_must_kill_each_other_modifier
 		}
 	}
+	if = {
+		limit = {
+			NOT = { current_age = age_of_absolutism }
+		}
+		if = {
+			limit = { 
+				has_country_modifier = MEGA_tolerance_in_the_empire
+			}
+			remove_country_modifier = MEGA_tolerance_in_the_empire
+		}
+		if = {
+			limit = { 
+				has_country_modifier = MEGA_convert_the_empire
+			}
+			remove_country_modifier = MEGA_convert_the_empire
+		}
+	}
 }
 
 writers_painters_guild = {

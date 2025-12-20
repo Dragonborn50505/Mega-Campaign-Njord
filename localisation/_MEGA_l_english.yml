@@ -181,6 +181,31 @@
  MEGA_events.10.d:0 "The Great Khan, now barely ruling from Central Asia, commands loyalty in name only, his authority drowned out by constant war and betrayal. As the Chahar and Oirats duke it out in the east, the Great Horde and Cumans fight for the legendary city of Sarai. As cities burn, and the roads that once bound the Mongol Empire and Eurasia are left absent of trade, with only the occasional marching of cavalry hordes, the Mongol armies turn on another, fighting not for empire but for their own survival. By the mid 1400's, the Mongol Empire exists only in memory and as a chapter in future history books."
  MEGA_events.10.a:0 "The greatest empire the world has known is no longer."
 
+ MEGA_events.11.t:0 "Reformation Threatening the Empire"
+ MEGA_events.11.d:0 "The Holy Roman Empire had been relatively accepting of the various religious differences of its member states, with Hussite, Orthodox, Blood-Christians often being allowed to practice their heretical beliefs in peace without much interference from the Catholic Church. This tolerance even went so far as to allow a Pagan Norse Electorate to rule within the Empire. However, with the Reformation raging across the Empire, religious tolerance is at an all-time low. As fellow Christians and Pagans turn against each other, an emergency Diet in the capital of the Empire has been enacted. Here, the Electors and the few Free Cities still left have gathered to discuss the future of the Holy Roman Empire."
+ MEGA_events.11.a:0 "We must have a diplomatic course to ensure stability!"
+ MEGA_every_hre_country_gains_TT:0 "Every member of the Holy Roman Empire will gain:"
+
+
+ MEGA_events.12.t:0 "The Emergency Diet"
+ MEGA_events.12.d:0 "The emergency Diet invoked only a few months ago has reached the end of its discussions. After much debate, everyone agreed that more executive powers must be relegated to the Emperor in order to ensure the stability of the Empire at large. Now all that there is left to do is for the Emperor to decide on the religious direction of the Holy Roman Empire."
+ MEGA_events.12.a:0 "I will need much time to think about this..."
+ 
+ MEGA_events.13.t:0 "The future of the Holy Roman Empire"
+ MEGA_events.13.d:0 "After the emergency Diet was finished, the Emperor has spent much time discussing and debating with his fellow Electors and the Imperial Court."
+ MEGA_events.13.a:0 "Tolerance is the only way forward."
+ MEGA_events.13.b:0 "Enforced Catholic Doctrine will create unity."
+
+ MEGA_events.14.t:0 "Last Crusade"
+ MEGA_events.14.d:0 "With the loss of the Crusader States of Antioch and Aleppo, only Jerusalem remains, the bastion of Catholicism in the Levant. With the ever-growing influence and power of the Ayyubids, the Knights of Jerusalem has with the approval of the Pope proclaimed a Crusade against the Ayyubid Imamate, hoping to reclaim its previous territories in Aleppo, Lebanon and Antioch. Will this be the last ride of the Knights of Jerusalem, or is this merely the revival of the Crusades from long ago?"
+ MEGA_events.14.a:0 "Deus Vult!"
+
+ MEGA_events.15.t:0 "Jerusalem Asks For Aid"
+ MEGA_events.15.d:0 "With the Crusade against the Ayyubids raging, several diplomats from Jerusalem has arrived asking for our donation to their cause."
+ MEGA_events.15.a:0 "These Crusaders are a dead cause."
+ MEGA_events.15.b.0 "Of course, give them what they ask."
+ MEGA_events.15.c:0 "Aid is simply not enough, we shall march together!"
+
  MEGA_events.6767.t:0 "Clashing Claims"
  MEGA_events.6767.d:0 "Centuries of intermarriage has opened up mutual claims between the thrones of Byzantium and Troy. Will there be another Trojan war like in the myths?"
  MEGA_events.6767.a:0 "Shieeeeeee"
@@ -222,6 +247,12 @@
  Z43_orthodoxy:0 "Printing Press Conversions"
  Z43_orthodoxy2:0 "Increased Printing"
  recently_spawned_rebels:0 "Recently Provoked a Peasant Uprising"
+ MEGA_emergency_diet:0 "Emergency Diet"
+ MEGA_emergency_empire_powers:0 "Strengthened Authority of the Emperor"
+ MEGA_tolerance_in_the_empire:0 "A Tolerant Stance"
+ MEGA_convert_the_empire:0 "Catholic Supremacy"
+ MEGA_crusader_invasion:0 "Crusader Invasion"
+ MEGA_jerusalem_crusades:0 "Last Ride of the Crusaders"
 
  #Government Reforms:
  trade_confederation_reform:0 "Hansa Trade Confederation"
