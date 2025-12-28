@@ -9005,7 +9005,7 @@ marienberg = {
 		}
 		country_modifiers = {
 			artillery_power = 0.05
-			artillery_levels_available_vs_fort = 0.5
+			artillery_levels_available_vs_fort = 1
 		}
 		on_upgraded = { }
 	}
@@ -9019,7 +9019,7 @@ marienberg = {
 			local_defensiveness = 0.25
 		}
 		country_modifiers = {
-			artillery_power = 0.05
+			artillery_power = 0.1
 			artillery_levels_available_vs_fort = 1
 		}
 		on_upgraded = { }

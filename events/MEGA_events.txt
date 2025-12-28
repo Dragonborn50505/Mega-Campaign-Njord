@@ -1102,6 +1102,342 @@ country_event = {
 	}
 }
 
+country_event = { 
+	id = MEGA_events.16 #Expansion of the Great Wurzburg Fortress
+	title = MEGA_events.16.t
+	desc = MEGA_events.16.d
+	picture = FORT_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	trigger = {
+		owns_core_province = 79
+		is_year = 1520
+	}
+	
+	option = {
+		name = MEGA_events.16.a
+		add_imperial_influence = 5
+		add_prestige_or_monarch_power = { amount = 15 }
+		if = {
+			limit = { 
+				79 = {
+					has_great_project = {
+						type = marienberg
+						tier = 3
+					}
+				}
+			}
+			add_or_upgrade_fort_building = yes
+		}
+		else = {
+			79 = {
+				add_great_project_tier = {
+					type = marienberg
+					tier = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.17 # The Diet of 1512
+	title = MEGA_events.17.t
+	desc = MEGA_events.17.d
+	picture = FORT_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 360
+	}
+
+	trigger = {
+		is_emperor = yes
+		is_year = 1512
+	}
+	
+	option = {
+		name = MEGA_events.17.a
+		add_stability_or_adm_power = yes
+		add_imperial_influence = 15
+		capital_scope = {
+			add_or_upgrade_courthouse_building = yes
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.18 #
+	title = MEGA_events.18.t
+	desc = MEGA_events.18.d
+	picture = TRADE_GOODS_FURS_FISH_AND_SALT_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	trigger = {
+		1975 = {
+			is_strongest_trade_power = root
+		}
+		45 = {
+			is_strongest_trade_power = root
+		}
+		1926 = {
+			is_strongest_trade_power = root
+		}
+		is_year = 1530
+	}
+	
+	option = {
+		name = MEGA_events.18.a
+		add_country_modifier = {
+			name = MEGA_hansa_dominance
+			duration = 10950
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_part_of_hre = yes
+					capital_scope = {
+						OR = {
+							region = north_german_region
+							region = south_german_region
+							region = low_countries_region
+						} 
+					}
+				}
+				if = {
+					limit = { 
+						NOT = {
+							tag = ROOT
+						}
+					}
+					add_country_modifier = {
+						name = MEGA_hansa_dominance_brings_prosperity
+						duration = 10950
+					}
+				}
+				add_mercantilism_or_monarch_power = { amount = 1 }
+				every_owned_province = {
+					limit = {
+						province_has_center_of_trade_of_level = 1
+					}
+					add_base_production = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.19 # The Free City of Geneva
+	title = MEGA_events.19.t
+	desc = MEGA_events.19.d
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	immediate = {
+		4720 = {
+			cede_province = GNV
+			add_core = GNV
+			set_in_empire = yes
+		}
+	}
+
+	trigger = {
+		owns_core_province = 4720
+		is_year = 1515
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 0
+		}
+		name = MEGA_events.19.a
+		create_vassal = GNV
+		GNV = {
+			change_government = republic
+			add_government_reform = oligarchy_reform
+			set_in_empire = yes
+		}
+	}
+
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		name = MEGA_events.19.b
+		emperor = {
+			add_imperial_influence = 10
+		}
+		GNV = {
+			change_government = republic
+			add_government_reform = free_city
+			set_in_empire = yes
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.20 # Geats fading into history
+	title = MEGA_events.20.t
+	desc = MEGA_events.20.d
+	picture = VIKINGS_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+
+	trigger = {
+		is_year = 1550
+		OR = {
+			tag = SWE
+			is_or_was_tag = { tag = SWE }
+		}
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 0
+		}
+		name = MEGA_events.20.a
+		every_owned_province = {
+			limit = {
+				culture = geatish
+			}
+			add_province_modifier = {
+				name = MEGA_convert_the_geats
+				duration = 7300
+			}
+		}
+	}
+
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		name = MEGA_events.20.b
+		every_owned_province = {
+			limit = {
+				culture = geatish
+			}
+			add_province_modifier = {
+				name = MEGA_accept_the_geats
+				duration = 7300
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.21 #Diet of 1596
+	title = MEGA_events.21.t
+	desc = MEGA_events.21.d
+	picture = EMPEROR_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+
+	trigger = {
+		is_year = 1550
+		is_emperor = yes
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 0
+		}
+		name = MEGA_events.21.a
+		add_dip_power = 100
+		add_imperial_influence = 25
+		custom_tooltip = MEGA_every_hre_country_gains_TT
+		tooltip = {
+			add_stability_or_adm_power = yes
+			change_reform_progress_effect = { amount = 50 }
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_part_of_hre = yes
+				}
+				add_stability_or_adm_power = yes
+				change_reform_progress_effect = { amount = 50 }
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.22 #The Reformation forces further religous reforms in the HRE
+	title = MEGA_events.22.t
+	desc = MEGA_events.22.d
+	picture = REFORM_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+
+	trigger = {
+		is_year = 1530
+		is_emperor = yes
+	}
+	
+	option = {
+		name = MEGA_events.22.a
+		add_imperial_influence = 15
+		custom_tooltip = MEGA_every_hre_country_gains_TT
+		tooltip = {
+			capital_scope = {
+				add_province_modifier = {
+					name = MEGA_center_of_reformism
+					duration = 7300
+				}
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_part_of_hre = yes
+					religion_group = christian
+					NOT = {
+						religion = catholic
+					}
+				}
+				capital_scope = {
+					add_province_modifier = {
+						name = MEGA_center_of_reformism
+						duration = 7300
+					}
+				}
+			}
+		}
+	}
+}
+
 country_event = {	#Silly
 	id = MEGA_events.6767
 	title = MEGA_events.6767.t

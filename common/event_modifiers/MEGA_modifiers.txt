@@ -99,7 +99,7 @@ MEGA_the_hamburg_league = {
 }
 
 MEGA_emergency_diet = {
-	free_city_imperial_authority = 0.25
+	free_city_imperial_authority = 0.5
 	legitimacy = 0.5
 	prestige = 0.5
 	improve_relation_modifier = 0.33
@@ -113,7 +113,7 @@ MEGA_emergency_empire_powers = {
 }
 
 MEGA_tolerance_in_the_empire = {
-	imperial_authority_value = 0.1
+	imperial_authority_value = 0.15
 	tolerance_heretic = 2
 	tolerance_of_heretics_capacity = 1
 	religious_unity = 0.25
@@ -144,6 +144,36 @@ MEGA_crusader_invasion = {
 	discipline = -0.05
 	morale_damage_received = 0.15
 	defensiveness = -0.25
+}
+
+MEGA_hansa_dominance = {
+	trade_efficiency = 0.1
+	build_cost = -0.1
+	global_trade_goods_size = 0.1
+}
+
+MEGA_hansa_dominance_brings_prosperity = {
+	development_cost = -0.05
+	build_cost = -0.05
+	global_tax_modifier = 0.1
+}
+
+MEGA_convert_the_geats = {
+	local_culture_conversion_time = -0.2
+	local_culture_conversion_cost = -0.2
+	local_development_cost = -0.05
+}
+
+MEGA_accept_the_geats = {
+	local_manpower_modifier = 0.15
+	local_unrest = -1
+	local_production_efficiency = 0.15
+}
+
+MEGA_center_of_reformism = {
+	monthly_reform_progress = 0.1
+	local_unrest = -1
+	local_development_cost_modifier = -0.05
 }
 
 # Peace Treaties:
