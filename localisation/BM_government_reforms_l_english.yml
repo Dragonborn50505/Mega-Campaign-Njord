@@ -793,4 +793,11 @@
 
  mechanic_enables_bear_arms_yes: "Right to Bear Arms: Unlocks the '§YRight to Bear Arms§!' Privilege for the Peasants, which allows us to increase our Infantry Combat Ability."
 
- 
+  #TROIA TROY TROJAN
+ MEGA_trojan_kingdom:0 "Trojan Kingdom"
+ MEGA_trojan_kingdom_desc:0 "Our Kingdom is as glorious as the Trojans of old!"
+
+ MEGA_troy_may_recruit_mamluks:0 "Elite Mamluk Guard"
+
+ MEGA_elite_trojan_guards:0 "Expand the Elite Mamluk Guard"
+ MEGA_elite_trojan_guards_desc:0 "By expanding our elite guard and integrating them back into our military as officers and educators of war we can make sure each and every one of our soldiers are expertly drilled by the best of the best."

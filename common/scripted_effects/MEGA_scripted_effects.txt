@@ -60,7 +60,7 @@ remove_all_age_of_discovery_modifiers = {
 	}
 	if = {
 		limit = {
-			NOT = { current_age = age_of_absolutism }
+			NOT = { current_age = age_of_reformation }
 		}
 		if = {
 			limit = { 
@@ -73,6 +73,12 @@ remove_all_age_of_discovery_modifiers = {
 				has_country_modifier = MEGA_convert_the_empire
 			}
 			remove_country_modifier = MEGA_convert_the_empire
+		}
+		if = {
+			limit = { 
+				has_country_modifier = MEGA_CCP_the_great_leap_forward
+			}
+			remove_country_modifier = MEGA_CCP_the_great_leap_forward
 		}
 	}
 }

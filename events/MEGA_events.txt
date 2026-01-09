@@ -1438,6 +1438,319 @@ country_event = {
 	}
 }
 
+country_event = { 
+	id = MEGA_events.23 #Ilkhanate Sultan is assassinated
+	title = MEGA_events.23.t
+	desc = MEGA_events.23.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+
+	trigger = {
+		is_year = 1520
+		current_age = age_of_reformation
+		tag = ILK
+	}
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = MEGA_events.24
+				days = 3650
+			}
+			every_subject_country = {
+				add_liberty_desire = 25
+			}
+		}
+	}
+	
+	option = {
+		name = MEGA_events.23.a
+		add_stability = -2
+		kill_ruler = yes
+		add_country_modifier = {
+			name = MEGA_ILK_fall_of_the_ilkhanate
+			duration = 7300
+		}
+		hidden_effect = {
+			add_yearly_manpower = -1
+			remove_accepted_culture = persian
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = luristan_area
+						area = khuzestan_area
+						area = basra_area
+						area = iraq_arabi_area
+						area = shahrizor_area
+					}
+				}
+				add_unrest = 5
+			}
+			random_owned_province = {
+				limit = {
+					area = luristan_area
+				}
+				spawn_rebels = {
+					size = 3
+					win = yes
+					type = nationalist_rebels
+					separatists_target = LRI
+				}
+			}
+			random_owned_province = {
+				limit = {
+					area = khuzestan_area
+				}
+				spawn_rebels = {
+					size = 3
+					win = yes
+					type = nationalist_rebels
+					separatists_target = LRI
+				}
+			}
+			random_owned_province = {
+				limit = {
+					area = basra_area
+				}
+				spawn_rebels = {
+					size = 2
+					win = yes
+					type = nationalist_rebels
+					separatists_target = Z0Q
+				}
+			}
+			random_owned_province = {
+				limit = {
+					area = iraq_arabi_area
+				}
+				spawn_rebels = {
+					size = 2
+					win = yes
+					type = nationalist_rebels
+					separatists_target = Z0Q
+				}
+			}
+			random_owned_province = {
+				limit = {
+					area = shahrizor_area
+				}
+				spawn_rebels = {
+					size = 2
+					win = yes
+					type = nationalist_rebels
+					separatists_target = Z4K
+				}
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.24 #Ilkhanate Sultan is assassinated, civil war
+	title = MEGA_events.24.t
+	desc = MEGA_events.24.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		current_age = age_of_reformation
+		tag = ILK
+	}
+
+	immediate = {
+		hidden_effect = {
+			every_subject_country = {
+				add_liberty_desire = 25
+				add_treasury = 100
+				add_manpower = 10
+			}
+			random_owned_province = {
+				limit = {
+					religion = sunni
+				}
+				change_religion = shiite
+			}
+			random_owned_province = {
+				limit = {
+					religion = sunni
+				}
+				change_religion = shiite
+			}
+			random_owned_province = {
+				limit = {
+					religion = sunni
+				}
+				change_religion = shiite
+			}
+			random_owned_province = {
+				limit = {
+					religion = sunni
+				}
+				change_religion = shiite
+			}
+			random_owned_province = {
+				limit = {
+					religion = sunni
+				}
+				change_religion = shiite
+			}
+			random_owned_province = {
+				limit = {
+					religion = sunni
+				}
+				change_religion = shiite
+			}
+		}
+	}
+	
+	option = {
+		name = MEGA_events.24.a
+		add_stability = -1
+		kill_ruler = yes
+		add_country_modifier = {
+			name = MEGA_ILK_religious_revolts
+			duration = 7300
+		}
+
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					religion = mahayana
+				}
+				spawn_rebels = {
+					size = 3
+					win = yes
+					type = mahayana_rebels
+				}
+			}
+			random_owned_province = {
+				limit = {
+					religion = mahayana
+				}
+				spawn_rebels = {
+					size = 2
+					win = yes
+					type = mahayana_rebels
+				}
+			}
+			random_owned_province = {
+				limit = {
+					religion = mahayana
+				}
+				spawn_rebels = {
+					size = 2
+					win = yes
+					type = mahayana_rebels
+				}
+			}
+			random_owned_province = {
+				limit = {
+					religion = kitebacilweism
+				}
+				spawn_rebels = {
+					size = 2
+					win = yes
+					type = kitebacilweism_rebels
+				}
+			}
+			random_owned_province = {
+				limit = {
+					religion = hinduism
+				}
+				spawn_rebels = {
+					size = 2
+					win = yes
+					type = hinduism_rebels
+				}
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.25 #Sorgy no starting coal for you <3
+	title = MEGA_events.25.t
+	desc = MEGA_events.25.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	fire_only_once = yes
+
+	hidden = yes
+
+	trigger = {
+		tag = UKR
+		owns = 4258
+	}
+
+	immediate = {
+		hidden_effect = {
+			4258 = {
+				change_trade_goods = fur
+			}
+		}
+	}
+	
+	option = {
+		name = MEGA_events.25.a
+	}
+}
+
+country_event = { 
+	id = MEGA_events.26
+	title = MEGA_events.26.t
+	desc = MEGA_events.26.d
+	picture = CHINESE_GENERAL_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+    
+	trigger = {
+		tag = CCP
+		current_age = age_of_reformation
+	}
+	
+	option = {
+		name = MEGA_events.25.a
+		if = {
+			limit = { 
+				has_country_modifier = bankruptcy
+			}
+			remove_country_modifier = bankruptcy
+		}
+		add_stability_or_adm_power_per_stab = { amount = 3 }
+		add_prestige_or_monarch_power = { amount = 100 }
+		add_legitimacy_or_mil_power = { amount = 100 }
+		add_army_tradition_or_mil_power = { amount = 100 }
+		add_adm_power = 300
+		add_dip_power = 300
+		add_mil_power = 300
+		add_country_modifier_for_age = {
+			name = MEGA_CCP_the_great_leap_forward
+			age = age_of_reformation
+		}
+		define_general = {
+			shock = 4
+			fire = 4
+			manuever = 3
+			siege = 3
+			name = "Great Chairman"
+			trait = master_of_arms_personality
+		}
+	}
+}
+
 country_event = {	#Silly
 	id = MEGA_events.6767
 	title = MEGA_events.6767.t

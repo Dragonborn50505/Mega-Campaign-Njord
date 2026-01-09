@@ -121,7 +121,8 @@
  sealand_events.3.16: "£sea_land_maintenance_modifier£ Land Maintenance Modifier: §G-10.0%§!"
  sealand_events.3.20: "£sea_defensiveness£ Fort Defence: §G+20.0%§!"
 
-
+ Z43_form_trojan_kingdom_title:0 "Form the Trojan Kingdom"
+ Z43_form_trojan_kingdom_desc:0 "Our great state is not merely harkening back to the old myths and sagas of the legendary Trojan Kingdom, but is a direct continuation and claimant to the title of Troy."
 
  #HAMBURG MISSIONS
  hsa_london_channel_mission_no_friends:0 "If we complete this mission by achieving Trade Power or Privateer Power we will receive:"
@@ -236,6 +237,10 @@
  MEGA_events.22.d:0 "By the third decade of the sixteenth century, the Holy Roman Empire discovered that doctrine, once loosed, could not be recalled by edict alone. The Reformation had ceased to be a matter of pulpits and pamphlets and had instead lodged itself in chancelleries, courts, and tax rolls. Imperial officials, long trained to write in nomine Dei with an unspoken assumption of Rome, now faced petitions signed by Lutheran councils, Reformed guilds, and cities that no longer recognized episcopal authority at all. \n \nAt first, the imperial bureaucracy resisted. Decrees were issued reaffirming Catholic orthodoxy as the sole legal faith of the Empire, and magistrates were instructed to ignore appeals made in the name of “new teachings.” Yet enforcement proved impossible. Tax collectors found entire districts refusing payment unless their pastors were recognized as lawful clergy and City courts refused to swear oaths invoking saints they no longer acknowledged. Ultimately, pragmatism forced change. In 1532, the Reichshofrat accepted its first case argued by a Protestant jurist, who cited Scripture rather than canon law. Soon afterward, imperial formularies were amended: oaths could be sworn “before God Almighty” without further specification, marriage contracts no longer required episcopal blessing, and clerical status was redefined in secular terms. \n \nBy the mid-century, the civil law of the Empire had become confessionally neutral by necessity with Catholics, Lutherans and Reformed Christians stood equal before the imperial courts, bound by the same taxes and protections. Theologians protested, but the ledgers were clear: the Empire endured not because it resolved the truth of faith, but because its bureaucracy learned to live without answering that question at all."
  MEGA_events.22.a:0 "May this bring reformism to the Empire at large!"
 
+ MEGA_events.26.t:0 "The Great Chairman"
+ MEGA_events.26.d:0 "Our glorious rebellion against the Chinese Emperors did not turn out as succesfully as we had hoped. Massive losses in land and thousands of our martyred comrades falling in battle, bankruptcy and the failure to realise the Revolution has brought our nation to ruin. However, as if heaven itself sent us a gift, a peasant-leader known only as the 'Chairman' has arrived to our last holdouts today. With him he brings thousands of his men, great knowledge in governance and protracted people's war, and technologies."
+ MEGA_events.25.a:0 "Praise the Chairman! Praise the developers!"
+
  MEGA_events.6767.t:0 "Clashing Claims"
  MEGA_events.6767.d:0 "Centuries of intermarriage has opened up mutual claims between the thrones of Byzantium and Troy. Will there be another Trojan war like in the myths?"
  MEGA_events.6767.a:0 "Shieeeeeee"
@@ -288,6 +293,8 @@
  MEGA_convert_the_geats:0 "Convert the Geats"
  MEGA_accept_the_geats:0 "Preserve Geatish Culture"
  MEGA_center_of_reformism:0 "Reforms of the 1532 Diet"
+ MEGA_CCP_the_great_leap_forward:0 "The Great Leap Forward"
+ MEGA_peasant_rebels_spawned:0 "Peasant Insurrection"
 
  #Government Reforms:
  trade_confederation_reform:0 "Hansa Trade Confederation"

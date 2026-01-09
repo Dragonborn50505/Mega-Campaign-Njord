@@ -204,6 +204,42 @@ country_decisions = {
 		}
 	}
 
+	Z43_form_trojan_kingdom = {
+
+		major = yes
+
+		potential = {
+			tag = Z43
+			NOT = {
+				has_country_flag = TROIA_formed_troy_kingdom_flag
+			}
+		}
+
+		allow = {
+			development_in_provinces = {
+				value = 500
+			}
+			NOT = {
+				average_autonomy = 10
+			}
+			stability = 2
+			has_global_modifier_value = {
+				which = discipline
+				value = 0.15
+			}
+		}
+		effect = {
+			add_government_reform = MEGA_trojan_kingdom
+			hidden_effect = {
+				set_country_flag = TROIA_formed_troy_kingdom_flag
+			}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
 	AMG_BUR_form = {
 
 		major = yes
@@ -285,24 +321,22 @@ country_decisions = {
 			factor = 0
 		}
 	}
-
+	
 	CCP_sabotage = {
 
 		major = yes
 
 		potential = {
 			tag = CCP
-			vassal_of = MNG
 		}
 
 		allow = {
 			treasury = 50
-			has_spy_network_in = {
-				who = MNG
-				value = 25
-			}
 			NOT = {
 				has_country_modifier = recently_spawned_rebels
+			}
+			any_neighbor_country = {
+				is_emperor_of_china = yes
 			}
 		}
 
@@ -310,34 +344,38 @@ country_decisions = {
 			add_treasury = -50
 			add_country_modifier = {
 				name = recently_spawned_rebels
-				duration = 700
+				duration = 3650
 			}
-			MNG = {
-				add_mandate = -15
-				2158 = {
+			random_neighbor_country = {
+				limit = {
+					is_emperor_of_china = yes
+				}
+				add_country_modifier = {
+					name = MEGA_peasant_rebels_spawned
+					duration = 3650
+				}
+				random_owned_province = {
 					spawn_rebels = {
 						size = 2
 						type = leadered_peasant_rebels
+						win = yes
+						friend = CCP
 					}
 				}
-				2140 = {
+				random_owned_province = {
 					spawn_rebels = {
 						size = 2
 						type = leadered_peasant_rebels
+						win = yes
+						friend = CCP
 					}
 				}
-
-				675 = {
+				random_owned_province = {
 					spawn_rebels = {
 						size = 2
 						type = leadered_peasant_rebels
-					}
-				}
-
-				1822 = {
-					spawn_rebels = {
-						size = 2
-						type = leadered_peasant_rebels
+						win = yes
+						friend = CCP
 					}
 				}
 			}

@@ -1,7 +1,6 @@
 country_decisions = {
 
     goon = {
-        major = no
 
         potential = {
             tag = SAR    

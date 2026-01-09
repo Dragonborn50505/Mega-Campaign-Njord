@@ -336,7 +336,7 @@ PRC_ideas = {
 		manpower_in_culture_group_provinces = 0.1
 	}
 	PRC_2 = {
-		province_trade_power_modifier = 0.2
+		global_prov_trade_power_modifier = 0.2
 	}
 	PRC_3 = {
 		core_creation = -0.15

@@ -277,3 +277,89 @@ prc_juche = {
 		meritocracy = 0.5
 	}
 }
+
+MEGA_trojan_kingdom = {
+	icon = "ottoman_government"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	potential = {
+		OR = {
+			tag = Z43
+			was_tag = Z43
+		}
+	}
+	trigger = {
+		OR = {
+			tag = Z43
+			was_tag = Z43
+		}
+		has_reform = MEGA_trojan_kingdom
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+		increase_nobles_loyalty_per_culture_conversion = yes
+		recruiting_general_gives_army_tradition = yes
+	}
+
+	effect = {
+		add_country_modifier = {
+			name = MEGA_troy_may_recruit_mamluks
+			duration = -1
+		}
+	}
+
+	removed_effect = {
+		remove_country_modifier = MEGA_troy_may_recruit_mamluks
+	}
+
+	modifiers = {
+		overextension_impact_modifier = -0.25
+		governing_capacity = 100
+		culture_conversion_time = -0.15
+		culture_conversion_cost = -0.15
+	}
+}
+
+MEGA_elite_trojan_guards = {
+	icon = "modernized_furusiyya_reform"
+	potential = {
+		OR = {
+			tag = Z43
+			was_tag = Z43
+		}
+		has_reform = MEGA_trojan_kingdom
+	}
+	trigger = {
+		OR = {
+			tag = Z43
+			was_tag = Z43
+		}
+	}
+
+	custom_attributes = {
+		recruiting_general_gives_army_tradition = yes
+		can_raise_manpower_from_home_region = yes
+	}
+
+	effect = {
+		custom_tooltip = mams_disc_tt
+		hidden_effect = {
+			add_country_modifier = {
+				name = mam_disc_troops_modifier
+				duration = -1 
+				hidden = yes 
+			}
+		}
+	}
+
+	removed_effect = {
+		remove_country_modifier = mam_disc_troops_modifier
+	}
+
+	modifiers = {
+		drill_decay_modifier = -0.33
+		drill_gain_modifier = 0.33
+		allowed_mamluks_fraction = 0.2
+	}
+}
