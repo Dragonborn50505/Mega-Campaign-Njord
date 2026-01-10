@@ -437,8 +437,7 @@ hanseatic_united_tree = {
 			add_years_of_trade_income = {
 				years = 2
 			}
-			custom_tooltip = empty_line_tt
-			custom_tooltip = hsa_dominate_commerce_mission_unique_reward_TT
+			custom_tooltip = MEGA_upgrade_mercantilism_TT
 			hidden_effect = {
 				set_country_flag = MEGA_buffed_promote_mercantilism_flag
 			}

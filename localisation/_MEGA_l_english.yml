@@ -1,6 +1,6 @@
 ﻿l_english:
 
- #BM MOD ADDITIONS:
+ #BM MOD ADDITIONS
  ME_ADD_NAVY_TRADITION_OR_DIP_POWER:0 "All the excess §YNavy Tradition§! will be converted into §G3§! §YDiplomatic Power§! per 1 §YNavy Tradition§!."
  BM_2nd_idea_group_dev_cost: "Dev Cost Compensation"
  desc_BM_2nd_idea_group_dev_cost: "§G-10%§! Dev Cost compensation due to removal of dev cost from Infrastructure Ideas"
@@ -134,7 +134,6 @@
  MEGA_upgrade_burghers_bookkeeping_TT:0 "The '§YPromote Burghers Bookkeeping§!' Burghers Privilege will no longer cost Influence or Max Absolutism. It will also grant the following modifier scaling on Loyalty: \n Reform Progress Growth: §G25.0%§! \n"
  MEGA_upgrade_free_enterprise_TT:0 "The '§YFree Enterprise§!' Burghers Privilege will no longer cost Influence or Max Absolutism. We will also gain: \n Trade Efficiency §G+5.0%§! \n Burghers Privilege: §G+1§!"
 
-
  #ESTATES
  estate_church_muslim_turuq: "Support the Turuq"
  estate_church_muslim_turuq_desc: ""
@@ -241,6 +240,43 @@
  MEGA_events.26.d:0 "Our glorious rebellion against the Chinese Emperors did not turn out as succesfully as we had hoped. Massive losses in land and thousands of our martyred comrades falling in battle, bankruptcy and the failure to realise the Revolution has brought our nation to ruin. However, as if heaven itself sent us a gift, a peasant-leader known only as the 'Chairman' has arrived to our last holdouts today. With him he brings thousands of his men, great knowledge in governance and protracted people's war, and technologies."
  MEGA_events.25.a:0 "Praise the Chairman! Praise the developers!"
 
+ MEGA_events.27.t:0 "Szekler Generals"
+ MEGA_events.27.d:0 "Created by the Unio Trium Nationum in 1438, a union between the Transylvanian estates of Hungarian nobles, Saxon merchants and other German lesser nobles, as well as the Szekler free military, the elite armoured cavalry guard of the 'Hussars' have earned its fame as the preeminent guard of the eastern realms of the Empire. Regularly drilled, highly disciplined, and devout in their mission to protect Christianity and the Hungarian Kingdoms, the Hussars have served us very well. Amongst their ranks, many famed officers have come to our court in order to further serve the King-Elector."
+ MEGA_events.27.a:0 "A highly skilled Captain will serve us well!"
+ MEGA_events.27.b:0 "Employing them directly as a General will serve us the best!"
+
+ MEGA_events.28.t:0 "Oh no!"
+ MEGA_events.28.d:0 "We have gotten a revol oh nooooo!"
+ MEGA_events.28.a:0 "I guess we can ask Transcarpathia for help?"
+
+ MEGA_events.29.t:0 "Revolts in Moesia"
+ MEGA_events.29.d:0 "To our southern border, across the Carpathian mountains lies the Princedom of Moesia. News has reached us that the nobles in their lands, fed up with excessive taxes and privileges being revoked, have risen up against the Vojvode. Now, diplomats from the Princedom has come asking us for help in putting down the noble revolt. In return, they pledge their loyalty to us as a vassal state."
+ MEGA_events.29.a:0 "Of course we shall aid them!"
+ MEGA_events.29.b:0 "And risk angering the Byzantine Empire? No chance!"
+
+ MEGA_events.30.t:0 "The Mountain Wall of Fellegvár"
+ MEGA_events.30.d:0 "In the high Carpathians, where the Elector-Kingdom of Transcarpathia meets the Moldavian Principality, rises the mountain wall of Fellegvár. First raised in the waning centuries of Roman dominion, the fortification was later restored and expandd upon by the Transylvanian Kingdom. Standing as the Holy Roman Empire's easternmost bulwark, Fellegvár has guarded the entrance into Transylvania with stubborn resolve. Its stone ramparts broke the momentum of the Mongol onslaught and, in later generations, repelled the Cuman Hordes, preserving the imperial frontier."
+ MEGA_events.30.a:0 "The Eastern Bulwark of the Empire stands tall."
+
+ MEGA_events.31.t:0 "Hunyad and Lord Corvin"
+ MEGA_events.31.d:0 "In the southern reaches of Transcarpathia lies the province of Hunyad, ancestral seat of the Hunyadi dynasty, from which the kingdom's rulers draw their name and authority. There stands the Castle-House of the late Lord Corvin, whose castle walls and mountain towers have long safeguarded royal prestige and now shelter the administrative court of Elector-Kings of Transcarpathia. Within its halls, the machinery of rule has taken root, and with it a growing question that divides the royal council: whether the king should abandon Maramaros and raise Hunyad not only as the seat of governance, but as the capital of the realm itself."
+ MEGA_events.31.a:0 "Hunyad should serve as our capital."
+ MEGA_events.31.b:0 "Maramaros serves us well enough."
+
+ MEGA_events.32.t:0 "Proclamation of the Vijayanagars"
+ MEGA_events.32.d:0 "Having conquered much of the southern indian continent, the Hiremaths have now formally united into the Vijayanagar Kingdom, laying claim to all of southern India."
+
+ MEGA_events.33.t:0 "Legacy of Mátyás"
+ MEGA_events.33.d:0 "King Mátýas, legendary king who managed to unite much of Hungary in the prestigious Kingdom of Hungary was not only an astute statesman, governor and reformer of the Hungarian army, under his rule there was great developments in science, arts, and culture. Hungary was one of the first areas outside of Italy to embrace the Renaissaince, and we must strive to continue this effort with the ever-changing world."
+ MEGA_events.33.a:0 "Hungary must be the center of European arts and sciences."
+
+
+
+
+
+
+
+
  MEGA_events.6767.t:0 "Clashing Claims"
  MEGA_events.6767.d:0 "Centuries of intermarriage has opened up mutual claims between the thrones of Byzantium and Troy. Will there be another Trojan war like in the myths?"
  MEGA_events.6767.a:0 "Shieeeeeee"
@@ -295,6 +331,8 @@
  MEGA_center_of_reformism:0 "Reforms of the 1532 Diet"
  MEGA_CCP_the_great_leap_forward:0 "The Great Leap Forward"
  MEGA_peasant_rebels_spawned:0 "Peasant Insurrection"
+ MEGA_house_of_corvin:0 "Seat of Governance"
+ MEGA_hungarian_renaissance:0 "Second Hungarian Renaissance"
 
  #Government Reforms:
  trade_confederation_reform:0 "Hansa Trade Confederation"

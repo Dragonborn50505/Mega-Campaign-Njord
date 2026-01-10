@@ -1751,13 +1751,355 @@ country_event = {
 	}
 }
 
+country_event = { # Transcarpathia gets cool general
+	id = MEGA_events.27
+	title = MEGA_events.27.t
+	desc = MEGA_events.27.d
+	picture = HUSSARS_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+    
+	trigger = {
+		OR = {
+			was_tag = Z5J
+			tag = Z5J
+		}
+		is_year = 1500
+	}
+	
+	option = {
+		name = MEGA_events.27.a
+		add_army_tradition_or_mil_power = { amount = 25 }
+		define_advisor = {
+			type = army_reformer
+			skill = 2
+			cost_multiplier = 0.25
+		}
+	}
+
+	option = {
+		name = MEGA_events.27.b
+		add_army_tradition_or_mil_power = { amount = 25 }
+		define_general = {
+			shock = 5
+			fire = 5
+			manuever = 3
+			siege = 2
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.28
+	title = MEGA_events.28.t
+	desc = MEGA_events.28.d
+	picture = HUSSARS_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+    
+	trigger = {
+		tag = Z5N
+		is_free_or_tributary_trigger = yes
+		is_year = 1505
+	}
+
+	immediate = {
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}
+			spawn_rebels = {
+				size = 3
+				should_take_capital = yes
+				win = yes
+				type = noble_rebels
+			}
+		}
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}
+			spawn_rebels = {
+				size = 3
+				should_take_capital = yes
+				win = yes
+				type = noble_rebels
+			}
+		}
+	}
+	
+	option = {
+		name = MEGA_events.28.a
+		add_army_tradition_or_mil_power = { amount = 25 }
+		hidden_effect = {
+			Z5J = {
+				country_event = {
+					id = MEGA_events.29
+					days = 5
+				}
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.29
+	title = MEGA_events.29.t
+	desc = MEGA_events.29.d
+	picture = REVOLT_HUNGARIAN_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+    
+	trigger = {
+		tag = Z5J
+	}
+	
+	option = {
+		name = MEGA_events.29.a
+		add_legitimacy_or_mil_power = { amount = 10 }
+		add_prestige_or_monarch_power = { amount = 10 }
+		vassalize = Z5N
+	}
+
+	option = {
+		name = MEGA_events.29.a
+		add_legitimacy = -10
+		add_prestige = -10
+	}
+}
+
+country_event = { 
+	id = MEGA_events.30
+	title = MEGA_events.30.t
+	desc = MEGA_events.30.d
+	picture = FORT_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+    
+	trigger = {
+		is_year = 1515
+		OR = {
+			was_tag = Z5J
+			tag = Z5J
+		}
+		owns_core_province = 4953
+	}
+	
+	option = {
+		name = MEGA_events.30.a
+		add_prestige_or_monarch_power = { amount = 15 }
+		if = {
+			limit = { 
+				4953 = {
+					has_great_project = {
+						type = visegrad_citadel
+						tier = 3
+					}
+				}
+			}
+			4953 = {
+				add_or_upgrade_fort_building = yes
+			}
+		}
+		else = {
+			4953 = {
+				add_or_upgrade_fort_building = yes
+				add_great_project_tier = {
+					type = visegrad_citadel
+					tier = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.31
+	title = MEGA_events.31.t
+	desc = MEGA_events.31.d
+	picture = CASTLE_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+    
+	trigger = {
+		is_year = 1510
+		OR = {
+			was_tag = Z5J
+			tag = Z5J
+		}
+		owns_core_province = 1951
+	}
+	
+	option = {
+		name = MEGA_events.31.a
+		set_capital = 1951
+		1951 = {
+			add_province_modifier = {
+				name = MEGA_house_of_corvin
+				duration = 7300
+			}
+		}
+		if = {
+			limit = { 
+				1951 = {
+					has_great_project = {
+						type = corvincastle
+						tier = 3
+					}
+				}
+			}
+			1951 = {
+				add_or_upgrade_fort_building = yes
+			}
+		}
+		else = {
+			1951 = {
+				add_or_upgrade_fort_building = yes
+				add_great_project_tier = {
+					type = corvincastle
+					tier = 1
+				}
+			}
+		}
+	}
+
+	option = {
+		name = MEGA_events.31.b
+		capital_scope = {
+			add_province_modifier = {
+				name = MEGA_house_of_corvin
+				duration = 7300
+			}
+		}
+		if = {
+			limit = { 
+				1951 = {
+					has_great_project = {
+						type = corvincastle
+						tier = 3
+					}
+				}
+			}
+			1951 = {
+				add_or_upgrade_fort_building = yes
+			}
+		}
+		else = {
+			1951 = {
+				add_or_upgrade_fort_building = yes
+				add_great_project_tier = {
+					type = corvincastle
+					tier = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.32
+	title = MEGA_events.32.t
+	desc = MEGA_events.32.d
+	picture = INDIAN_WARS_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	major = yes
+    
+	trigger = {
+		is_year = 1508
+		tag = MAD
+	}
+	
+	option = {
+		name = MEGA_events.32.a
+		add_prestige = 25
+		change_tag = VIJ
+		remove_non_electors_emperors_from_empire_effect = yes
+		if = {
+			limit = { NOT = { government_rank = 2 } }
+			set_government_rank = 2
+		}
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		if = {
+			limit = {
+				has_custom_ideas = no
+				NOT = { has_idea_group = VIJ_ideas }
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		set_country_flag = formed_vijayanagar_flag
+		if = {
+			limit = { has_dlc = "King of Kings" }
+			swap_non_generic_missions = yes
+		}
+		on_change_tag_effect = yes
+	}
+}
+
+country_event = { 
+	id = MEGA_events.33
+	title = MEGA_events.33.t
+	desc = MEGA_events.33.d
+	picture = INVENTION_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	major = yes
+    
+	trigger = {
+		is_year = 1515
+		OR = {
+			was_tag = Z5J
+			tag = Z5J
+		}
+	}
+	
+	option = {
+		name = MEGA_events.33.a
+		add_stability_or_adm_power = yes
+		add_prestige_or_monarch_power = { amount = 25 }
+		add_innovativeness_or_monarch_power = { amount = 3 }
+		add_country_modifier = {
+			name = MEGA_hungarian_renaissance
+			duration = 7300
+		}
+	}
+}
+
 country_event = {	#Silly
 	id = MEGA_events.6767
 	title = MEGA_events.6767.t
 	desc = MEGA_events.6767.d
 	picture = BAD_WITH_MONARCH_eventPicture
-
-
 
 	trigger = {
 		tag = BYZ
