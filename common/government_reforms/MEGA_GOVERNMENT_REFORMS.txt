@@ -58,7 +58,7 @@ trade_confederation_reform = {
 
 #Dragonborn Larp
 last_expedition_reform = {
-	icon = dutch_tulip_field
+	icon = "free_city"
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -87,6 +87,7 @@ last_expedition_reform = {
 		remove_country_modifier = fra_vanguard_guard_modifier
 	}
 	modifiers = {
+		can_recruit_revolutionary_guards = yes
 		allowed_rev_guard_fraction = 0.2
 	}
 
