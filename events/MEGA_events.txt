@@ -2095,6 +2095,64 @@ country_event = {
 	}
 }
 
+country_event = { 
+	id = MEGA_events.34
+	title = MEGA_events.34.t
+	desc = MEGA_events.34.d
+	picture = MERCHANTS_TALKING_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	major = yes
+    
+	trigger = {
+		is_year = 1512
+		OR = {
+			was_tag = LEI
+			tag = LEI
+		}
+	}
+	
+	option = {
+		name = MEGA_events.34.a
+		add_country_modifier = {
+			name = MEGA_hansa_aid
+			duration = 7300
+		}
+		add_mercantilism_or_monarch_power = { amount = 3 }
+		every_owned_province = {
+			limit = {
+				OR = {
+					has_river_estuary_trigger = yes
+					province_has_center_of_trade_of_level = 1
+				}
+			}
+			add_base_production = 1
+		}
+		custom_tooltip = empty_line_tt
+		1975 = {
+			add_trade_modifier = {
+				who = HAM
+				duration = 7300
+				power = 15
+				key = aju_trade_influence
+			}
+		}
+	}
+
+	option = {
+		name = MEGA_events.34.b
+		add_mercantilism_or_monarch_power = { amount = 1 }
+		capital_scope = {
+			add_base_tax = 2
+		}
+	}
+}
+
 country_event = {	#Silly
 	id = MEGA_events.6767
 	title = MEGA_events.6767.t

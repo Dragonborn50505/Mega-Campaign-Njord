@@ -194,6 +194,18 @@ MEGA_hungarian_renaissance = {
 	technology_cost = -0.1
 }
 
+HUN_a_radical_new_direction = {
+	idea_cost = -0.33
+	core_creation = -0.05
+	development_cost = -0.05
+}
+
+MEGA_hansa_aid = {
+	development_cost_in_primary_culture = -0.05
+	build_cost = -0.1
+	trade_efficiency = 0.05
+}
+
 # Peace Treaties:
 pte_protect_religious_bretheren_modifier = {
 	global_heretic_missionary_strength = -1

@@ -381,4 +381,37 @@ country_decisions = {
 			}
 		}
 	}
+
+	HUN_a_radical_new_direction = {
+
+		major = yes
+
+		potential = {
+			tag = Z5J
+			NOT = {
+				has_country_flag = HUN_a_radical_new_direction_flag
+			}
+		}
+
+		allow = {
+			always = yes
+			has_idea_group = infrastructure_ideas
+			has_idea_group = theocracy_gov_ideas
+		}
+		effect = {
+			remove_idea_group = infrastructure_ideas
+			remove_idea_group = theocracy_gov_ideas
+			add_country_modifier = {
+				name = HUN_a_radical_new_direction
+				duration = 7300
+			}
+			hidden_effect = {
+				set_country_flag = HUN_a_radical_new_direction_flag
+			}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }

@@ -1859,6 +1859,7 @@ rock_of_cashel = {
 		OR = {
 			culture_group = celts
 			culture_group = british
+			culture_group = french
 		}
 	}
 	can_use_modifiers_trigger = {
@@ -1866,6 +1867,7 @@ rock_of_cashel = {
 		OR = {
 			culture_group = celts
 			culture_group = british
+			culture_group = french
 		}
 	}
 	can_upgrade_trigger = {
@@ -1873,6 +1875,7 @@ rock_of_cashel = {
 		OR = {
 			culture_group = celts
 			culture_group = british
+			culture_group = french
 		}
 	}
 	keep_trigger = { }
@@ -8701,17 +8704,29 @@ dunluce = {
 	type = monument
 	can_be_moved = no
 	build_trigger = {
-		culture_group = gaelic
+		OR = {
+			culture_group = gaelic
+			culture_group = british
+			culture_group = french
+		}
 		province_is_or_accepts_culture = yes
 	}
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		culture_group = gaelic
+		OR = {
+			culture_group = gaelic
+			culture_group = british
+			culture_group = french
+		}
 		province_is_or_accepts_culture = yes
 	}
 	can_upgrade_trigger = {
-		culture_group = gaelic
+		OR = {
+			culture_group = gaelic
+			culture_group = british
+			culture_group = french
+		}
 		province_is_or_accepts_culture = yes
 	}
 	keep_trigger = { }
@@ -8775,7 +8790,11 @@ trinity_college = {
 	starting_tier = 0
 	type = monument
 	build_trigger = { #Can't be built by Irish, but can be used and upgraded by 'em.
-		culture_group = british
+		OR = {
+			culture_group = gaelic
+			culture_group = british
+			culture_group = french
+		}
 		province_is_or_accepts_culture = yes
 	}
 	on_built = { }
@@ -8784,6 +8803,7 @@ trinity_college = {
 		OR = {
 			culture_group = gaelic
 			culture_group = british
+			culture_group = french
 		}
 		province_is_or_accepts_culture = yes
 	}
@@ -8791,6 +8811,7 @@ trinity_college = {
 		OR = {
 			culture_group = gaelic
 			culture_group = british
+			culture_group = french
 		}
 		province_is_or_accepts_culture = yes
 	}
@@ -8878,6 +8899,7 @@ newgrange = {
 		OR = {
 			culture_group = celts
 			culture_group = british
+			culture_group = french
 		}
 	}
 	on_built = { }
@@ -8887,6 +8909,7 @@ newgrange = {
 		OR = {
 			culture_group = celts
 			culture_group = british
+			culture_group = french
 		}
 	}
 	can_upgrade_trigger = {
@@ -8894,6 +8917,7 @@ newgrange = {
 		OR = {
 			culture_group = celts
 			culture_group = british
+			culture_group = french
 		}
 	}
 	keep_trigger = { }

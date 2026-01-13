@@ -270,9 +270,10 @@
  MEGA_events.33.d:0 "King Mátýas, legendary king who managed to unite much of Hungary in the prestigious Kingdom of Hungary was not only an astute statesman, governor and reformer of the Hungarian army, under his rule there was great developments in science, arts, and culture. Hungary was one of the first areas outside of Italy to embrace the Renaissaince, and we must strive to continue this effort with the ever-changing world."
  MEGA_events.33.a:0 "Hungary must be the center of European arts and sciences."
 
-
-
-
+ MEGA_events.34.t:0 "Arrival of the Hansa"
+ MEGA_events.34.d:0 "With the expansion of the german Confederation of Hansa Cities, famed merchants have established trade routes all along the Baltic Sea and has slowly cemented their control over the North Sea trade. Now, the Hansa are looking to expand their trade into Scotland and Ireland, looking to buy irish and scottish wool. Inviting these merchants to our ports means letting their commercial enterprises to set up in our ports to sell their goods."
+ MEGA_events.34.a:0 "Our friendship is strengthened through trade"
+ MEGA_events.34.b:0 "We can't trust those dirty merchants"
 
 
 
@@ -361,6 +362,11 @@
  Home_Market_10:0 "Mercantilist Practices"
 
 
+
+ #HUNGARY DECISION
+ HUN_a_radical_new_direction_title:0 "A Radical New Direction"
+ HUN_a_radical_new_direction_desc:0 "In order to realize our ambitions to unite the Hungarian Kingdom, we must, uh, stop having 'Divine' ideas and 'Infrastructure' focus. Instead, Quality of our troops and an Economic model for our economy is a must."
+ HUN_a_radical_new_direction:0 "A Radical New Direction"
 
  # NORTH AND SOUTH GERMAN FORMABLE
  SGF: "South German Federation"
