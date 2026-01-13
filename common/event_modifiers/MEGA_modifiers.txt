@@ -311,6 +311,9 @@ MEGA_CCP_the_great_leap_forward = {
 	core_creation = -0.15
 	ae_impact = -0.25
 	province_warscore_cost = -0.1
+	all_estate_loyalty_equilibrium = 0.25
+	all_estate_influence_modifier = -0.25
+	estate_interaction_cooldown_modifier = -0.25
 }
 
 MEGA_house_of_corvin = {
