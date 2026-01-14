@@ -316,6 +316,12 @@ MEGA_CCP_the_great_leap_forward = {
 	estate_interaction_cooldown_modifier = -0.25
 }
 
+MEGA_CCP_reconquest_of_korchin = {
+	siege_ability = 0.25
+	land_maintenance_modifier = -0.5
+	infantry_power = 0.15
+}
+
 MEGA_house_of_corvin = {
 	local_fort_maintenance_modifier = -0.9
 	local_development_cost = -0.25

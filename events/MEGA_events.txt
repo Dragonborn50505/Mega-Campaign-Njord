@@ -1718,7 +1718,7 @@ country_event = {
     
 	trigger = {
 		tag = CCP
-		current_age = age_of_reformation
+		is_year = 1505
 	}
 	
 	option = {
@@ -1734,10 +1734,17 @@ country_event = {
 		add_prestige_or_monarch_power = { amount = 100 }
 		add_legitimacy_or_mil_power = { amount = 100 }
 		add_army_tradition_or_mil_power = { amount = 100 }
-		add_adm_power = 300
-		add_dip_power = 300
-		add_mil_power = 300
+		add_adm_power = 500
+		add_dip_power = 500
+		add_mil_power = 500
 		add_treasury = 1500
+		add_adm_tech = 1
+		add_dip_tech = 1
+		add_mil_tech = 1
+		change_estate_land_share = {
+			estate = all
+			share = -30
+		}
 		add_country_modifier_for_age = {
 			name = MEGA_CCP_the_great_leap_forward
 			age = age_of_reformation
@@ -2151,6 +2158,170 @@ country_event = {
 		add_mercantilism_or_monarch_power = { amount = 1 }
 		capital_scope = {
 			add_base_tax = 2
+		}
+	}
+}
+
+
+country_event = {  
+	id = MEGA_events.35
+	title = MEGA_events.35.t
+	desc = MEGA_events.35.d
+	picture = CHINESE_GENERAL_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 60
+	}
+
+	immediate = {
+		country_event = {
+			id = MEGA_events.36
+			days = 50
+		}
+	}
+    
+	trigger = {
+		tag = CCP
+		QIN = {
+			exists = yes
+		}
+		has_country_modifier = MEGA_CCP_the_great_leap_forward
+	}
+	
+	option = {
+		name = MEGA_events.35.a
+		add_prestige_or_monarch_power = { amount = 10 }
+		add_yearly_manpower = 2
+		inherit = QIN
+	}
+}
+
+
+country_event = { 
+	id = MEGA_events.36
+	title = MEGA_events.36.t
+	desc = MEGA_events.36.d
+	picture = CHINESE_GENERAL_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		country_event = {
+			id = MEGA_events.37
+			days = 50
+		}
+		KRC = {
+			remove_country_modifier = MEGA_all_the_hordes_must_kill_each_other_modifier
+		}
+	}
+    
+	trigger = {
+		tag = CCP
+		KRC = {
+			exists = yes
+		}
+		has_country_modifier = MEGA_CCP_the_great_leap_forward
+	}
+	
+	option = {
+		name = MEGA_events.36.a
+		add_prestige_or_monarch_power = { amount = 10 }
+		add_yearly_manpower = 3
+		inherit = CSH
+	}
+}
+
+country_event = { 
+	id = MEGA_events.37
+	title = MEGA_events.37.t
+	desc = MEGA_events.37.d
+	picture = CHINESE_GENERAL_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		KRC = {
+			grant_independence = yes
+			every_ally = {
+				break_alliance = KRC
+			}
+			add_stability = -3
+			add_army_tradition = -100
+			add_horde_unity = -100
+			add_yearly_manpower = -5
+		}
+	}
+    
+	trigger = {
+		tag = CCP
+		KRC = {
+			exists = yes
+		}
+	}
+	
+	option = {
+		name = MEGA_events.37.a
+		add_country_modifier = {
+			name = MEGA_CCP_reconquest_of_korchin
+			duration = 3650
+		}
+		capital_scope = {
+			create_units_of_type_in_province = {
+				amount = 20
+				unit_type = infantry
+				who = root
+			}
+		}
+		declare_war_with_cb = {
+			casus_belli = cb_chinese_unification
+			who = KRC
+		}
+	}
+}
+
+country_event = {  
+	id = MEGA_events.38
+	title = MEGA_events.38.t
+	desc = MEGA_events.38.d
+	picture = CHINESE_GENERAL_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 30
+	}
+    
+	trigger = {
+		tag = CCP
+		is_at_war = no
+		owns_all_provinces = {
+			area = shanxi_area
+		}
+		MNG = {
+			exists = yes
+		}
+		has_country_modifier = MEGA_CCP_the_great_leap_forward
+	}
+	
+	option = {
+		name = MEGA_events.38.a
+		add_prestige_or_monarch_power = { amount = 25 }
+		MNG = {
+			add_stability = -1
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = shandong_area
+						area = south_hebei_area
+						area = north_henan_area
+					}
+				}
+				cede_province = CCP
+			}
 		}
 	}
 }

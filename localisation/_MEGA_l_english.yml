@@ -275,8 +275,21 @@
  MEGA_events.34.a:0 "Our friendship is strengthened through trade"
  MEGA_events.34.b:0 "We can't trust those dirty merchants"
 
+ MEGA_events.35.t:0 "The Chairman Seizen Qin"
+ MEGA_events.35.d:0 "In his most recent bravadous achievements, the 'Great Chairman' took his 2nd Northern Expeditionary Army into the contested territories of the Qin Anarchist Commune. Quickly overrunning their defensive lines, the seat of power and capital of Qin was sieged for several days before the declaration of surrender. \n \nNow, the path to Shun lies open."
+ MEGA_events.35.a:0 "Anarchist scum!"
 
+ MEGA_events.36.t:0 "Shun Submits"
+ MEGA_events.36.d:0 "Because of our historical friendship with the Tribal territories of Shun, an accord was struck with the Paramount Chief and the 'Great Chairman', allowing our peasant armies to integrate the Shun territories. \n \nThe path to righteous National Liberation is clear."
+ MEGA_events.36.a:0 "United in revolutionary fervor!"
 
+ MEGA_events.37.t:0 "The Second Northern Expedition"
+ MEGA_events.37.d:0 "With our recent consolidation of Shanxi, it is ample time to finish our northern conquests with our invasion of the Korchin Horde. Though a much larger adversary, the 'Great Chairman' assures us that the Korchin tribes are weak and disunited internally. We must strike now!"
+ MEGA_events.37.a:0 "The Northern Expedition Resumes!"
+ 
+ MEGA_events.38.t:0 "The Second Northern Expedition Continues"
+ MEGA_events.38.d:0 "With our recent conquests in Northern China and the surrounding areas in Beijing, several autonomous regions in Henan and Shandong have ceeded to the Chinese Communists and the Northern Expeditionary Army, greatly increasing our control over Northern China as a whole."
+ MEGA_events.38.a:0 "Wansui!"
 
  MEGA_events.6767.t:0 "Clashing Claims"
  MEGA_events.6767.d:0 "Centuries of intermarriage has opened up mutual claims between the thrones of Byzantium and Troy. Will there be another Trojan war like in the myths?"
@@ -333,7 +346,8 @@
  MEGA_CCP_the_great_leap_forward:0 "The Great Leap Forward"
  MEGA_peasant_rebels_spawned:0 "Peasant Insurrection"
  MEGA_house_of_corvin:0 "Seat of Governance"
- MEGA_hungarian_renaissance:0 "Second Hungarian Renaissance"
+ MEGA_hungarian_renaissance:0 "Second Hungarian Renaissance" 
+ MEGA_CCP_reconquest_of_korchin:0 "Second Northern Expedition"
 
  #Government Reforms:
  trade_confederation_reform:0 "Hansa Trade Confederation"
