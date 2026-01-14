@@ -996,9 +996,9 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			add_treasury = 400
+			add_treasury = 7500
 			add_manpower = 40
-			add_mil_power = 150
+			add_mil_power = 300
 			syria_area = {
 				add_core = KOJ
 			}
@@ -1013,17 +1013,22 @@ country_event = {
 			}
 			ARB = {
 				add_stability = -6
+				add_yearly_manpower = -6
 				add_country_modifier = {
 					name = MEGA_crusader_invasion
 					duration = 7300
 				}
 			}
 		}
+		add_country_modifier_for_age = {
+			name = MEGA_jerusalem_crusades
+			age = age_of_reformation
+		}
 	}
 	
 	option = {
 		name = MEGA_events.14.a
-		add_prestige_or_monarch_power = { amount = 33 }
+		add_prestige_or_monarch_power = { amount = 50 }
 		add_country_modifier_for_age = {
 			name = MEGA_jerusalem_crusades
 			age = age_of_reformation
@@ -1051,7 +1056,7 @@ country_event = {
 				}
 				country_event = {
 					id = MEGA_events.15
-					days = 25
+					days = 60
 				}
 			}
 		}
@@ -1079,7 +1084,7 @@ country_event = {
 
 	option = {
 		ai_chance = {
-			factor = 80
+			factor = 50
 		}
 		name = MEGA_events.15.b
 		add_papal_influence = 10
@@ -1087,13 +1092,13 @@ country_event = {
 		add_treasury = -25
 		KOJ = {
 			add_manpower = 3
-			add_treasury = -25
+			add_treasury = 25
 		}
 	}
 
 	option = {
 		ai_chance = {
-			factor = 20
+			factor = 50
 		}
 		name = MEGA_events.15.c
 		add_papal_influence = 50

@@ -203,7 +203,7 @@
  MEGA_events.15.t:0 "Jerusalem Asks For Aid"
  MEGA_events.15.d:0 "With the Crusade against the Ayyubids raging, several diplomats from Jerusalem has arrived asking for our donation to their cause."
  MEGA_events.15.a:0 "These Crusaders are a dead cause."
- MEGA_events.15.b.0 "Of course, give them what they ask."
+ MEGA_events.15.b:0 "Of course, give them what they ask."
  MEGA_events.15.c:0 "Aid is simply not enough, we shall march together!"
 
  MEGA_events.16.t:0 "Expansion of Marienberg"

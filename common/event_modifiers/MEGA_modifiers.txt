@@ -134,7 +134,7 @@ MEGA_convert_the_empire = {
 MEGA_jerusalem_crusades = {
 	morale_damage = 0.1
 	land_morale = 0.15
-	land_forcelimit_modifier = 0.33
+	land_forcelimit = 35
 	manpower_in_true_faith_provinces = 0.33
 	cavalry_power = 0.15
 	global_missionary_strength = 0.03
@@ -142,8 +142,14 @@ MEGA_jerusalem_crusades = {
 
 MEGA_crusader_invasion = {
 	discipline = -0.05
-	morale_damage_received = 0.15
+	fire_damage_received = 0.15
+	shock_damage_received = 0.15
+	land_morale = -0.15
 	defensiveness = -0.25
+	land_forcelimit_modifier = -0.25
+	global_manpower_modifier = -0.25
+	land_maintenance_modifier = 0.75
+	global_unrest = 5
 }
 
 MEGA_hansa_dominance = {
