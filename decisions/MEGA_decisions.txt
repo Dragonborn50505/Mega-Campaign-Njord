@@ -51,4 +51,18 @@ country_decisions = {
 			factor = 0
 		}
 	}
+
+	POL_SCHIZO = {
+		potential = {
+			tag = POL
+			NOT = { has_country_modifier = POL_ideas_trust }
+		}
+		allow = {}
+		effect = {
+			add_country_modifier = {
+				name = POL_ideas_trust
+				duration = -1
+			}
+		}
+	}
 }
