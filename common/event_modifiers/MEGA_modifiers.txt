@@ -201,7 +201,7 @@ MEGA_hungarian_renaissance = {
 }
 
 HUN_a_radical_new_direction = {
-	idea_cost = -0.33
+	idea_cost = -0.05
 	core_creation = -0.05
 	development_cost = -0.05
 }
@@ -210,6 +210,13 @@ MEGA_hansa_aid = {
 	development_cost_in_primary_culture = -0.05
 	build_cost = -0.1
 	trade_efficiency = 0.05
+}
+
+MEGA_the_council_of_ulm = {
+	imperial_authority_value = 0.1
+	tolerance_own = 1
+	improve_relation_modifier = 0.25
+	diplomatic_reputation = 2
 }
 
 # Peace Treaties:

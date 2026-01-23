@@ -2331,6 +2331,76 @@ country_event = {
 	}
 }
 
+country_event = {  # The Council of Ulm
+	id = MEGA_events.39
+	title = MEGA_events.39.t
+	desc = MEGA_events.39.d
+	picture = COUNCIL_TRENT_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 30
+	}
+    
+	trigger = {
+		is_emperor = yes
+		is_at_war = no
+		is_year = 1555
+	}
+	
+	option = {
+		name = MEGA_events.39.a
+		add_imperial_influence = 25
+		add_prestige_or_monarch_power = { amount = 25 }
+		custom_tooltip = empty_line_tt
+		add_country_modifier = {
+			name = MEGA_the_council_of_ulm
+			duration = 7300
+		}
+		custom_tooltip = empty_line_tt
+		1872 = {
+			if = {
+				limit = { 
+					NOT = {
+						religion = root
+					}
+				}
+				change_religion = root
+			}
+			add_great_project_tier = {
+				type = ulm_minster_great_project
+				tier = 1
+			}
+		}
+		custom_tooltip = empty_line_tt
+		custom_tooltip = MEGA_every_hre_country_gains_TT
+		tooltip = {
+			capital_scope = {
+				add_or_upgrade_tax_building = yes
+			}
+			add_opinion = {
+				who = root
+				modifier = eng_pro_catholicism
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_part_of_hre = yes
+				}
+				capital_scope = {
+					add_or_upgrade_tax_building = yes
+				}
+				add_opinion = {
+					who = root
+					modifier = eng_pro_catholicism
+				}
+			}
+		}
+	}
+}
+
 country_event = {	#Silly
 	id = MEGA_events.6767
 	title = MEGA_events.6767.t

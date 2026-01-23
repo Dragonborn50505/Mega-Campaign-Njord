@@ -291,6 +291,10 @@
  MEGA_events.38.d:0 "With our recent conquests in Northern China and the surrounding areas in Beijing, several autonomous regions in Henan and Shandong have ceeded to the Chinese Communists and the Northern Expeditionary Army, greatly increasing our control over Northern China as a whole."
  MEGA_events.38.a:0 "Wansui!"
 
+ MEGA_events.39.t:0 "The Council of Ulm"
+ MEGA_events.39.d:0 "With the outbreak of the Reformation having raged across the Holy Roman Empire, shaking its foundations to its very core, for the better part of 40 years now, a slow quiet as subsided over the heated religious wars that plagued Germany in particular. Now, in the famous city of Ulm, several representatives from Catholics, Protestants, Reformists, the Orthodox Church and even a handful of Hussite remnants, has met to discuss the future of the 'Reformation'. With tolerance and cross-church understanding returning, now is the time for diplomacy. The members of the Council of Ulm did not reach a decisive agreement on the future of the Holy Roman Empire or the Christian Church in Europe as a whole, but all parties left the Council with newfound amicable relations."
+ MEGA_events.39.a:0 "Perhaps there is finally time for some reforms..."
+
  MEGA_events.6767.t:0 "Clashing Claims"
  MEGA_events.6767.d:0 "Centuries of intermarriage has opened up mutual claims between the thrones of Byzantium and Troy. Will there be another Trojan war like in the myths?"
  MEGA_events.6767.a:0 "Shieeeeeee"
@@ -348,6 +352,7 @@
  MEGA_house_of_corvin:0 "Seat of Governance"
  MEGA_hungarian_renaissance:0 "Second Hungarian Renaissance" 
  MEGA_CCP_reconquest_of_korchin:0 "Second Northern Expedition"
+ MEGA_the_council_of_ulm:0 "The Council of Ulm"
 
  #Government Reforms:
  trade_confederation_reform:0 "Hansa Trade Confederation"

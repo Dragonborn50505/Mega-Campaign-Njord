@@ -32,10 +32,15 @@ country_event = {	#AI fix
 	trigger = {
 		adm_tech = 4
 		ai = yes
+		NOT = {
+			all_owned_province = {
+				has_tax_building_trigger = yes
+			}
+		}
 	}
 
 	mean_time_to_happen = {
-		years = 10
+		years = 20
 	}
 	
 	option = {
@@ -63,7 +68,7 @@ country_event = {	#AI fix
 	}
 
 	mean_time_to_happen = {
-		years = 10
+		years = 20
 	}
 	
 	option = {
@@ -89,10 +94,15 @@ country_event = {	#AI fix
 	trigger = {
 		ai = yes
 		adm_tech = 8
+		NOT = {
+			all_owned_province = {
+				has_courthouse_building_trigger = yes
+			}
+		}
 	}
 
 	mean_time_to_happen = {
-		years = 10
+		years = 20
 	}
 	
 	option = {
@@ -320,5 +330,59 @@ country_event = {	#AI fix
 	
 	option = {
 		name = MEGA_misc.11.a
+	}
+}
+
+country_event = {	#AI fix
+	id = MEGA_misc.12
+	title = MEGA_misc.12.t
+	desc = MEGA_misc.12.d
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		ai = yes
+	}
+
+	mean_time_to_happen = {
+		years = 20
+	}
+	
+	option = {
+		name = MEGA_misc.2.a
+		random_owned_province = {
+			limit = {
+				base_tax = 10
+			}
+			add_base_tax = -2
+		}
+		add_adm_power = 50
+		add_treasury = 50
+	}
+}
+
+country_event = {	#AI fix
+	id = MEGA_misc.13
+	title = MEGA_misc.13.t
+	desc = MEGA_misc.13.d
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		ai = yes
+	}
+
+	mean_time_to_happen = {
+		years = 20
+	}
+	
+	option = {
+		name = MEGA_misc.2.a
+		random_owned_province = {
+			limit = {
+				base_production = 10
+			}
+			add_base_production = -2
+		}
+		add_dip_power = 50
+		add_treasury = 50
 	}
 }
