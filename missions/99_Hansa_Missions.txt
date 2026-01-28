@@ -1500,6 +1500,9 @@ lubeck_missions_5 = {
 				limit = { hre_size = 1 }
 				OR = {
 					emperor = {
+						alliance_with = root
+					}
+					emperor = {
 						has_opinion = {
 							who = ROOT 
 							value = 100 
@@ -1533,6 +1536,7 @@ lubeck_missions_5 = {
 			if = {
 				limit = { hre_size = 1 }
 				emperor = {
+					add_imperial_influence = 15
 					add_trust = {
 						who = ROOT 
 						value = 25 
