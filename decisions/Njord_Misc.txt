@@ -220,8 +220,11 @@ country_decisions = {
 
 		potential = {
 			tag = Z43
-			NOT = {
+			AND = {
 				has_country_flag = TROIA_formed_troy_kingdom_flag
+				NOT = {
+					has_reform = MEGA_trojan_kingdom
+				}
 			}
 		}
 

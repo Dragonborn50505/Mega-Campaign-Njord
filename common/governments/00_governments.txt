@@ -152,6 +152,7 @@ monarchy = {
 				guhilawat_reform
 				#MEGA
 				frankonian_kingdom
+				MEGA_trojan_kingdom
 			}
 		}
 		hereditary_vs_nobility = {
@@ -424,6 +425,8 @@ monarchy = {
 				slave_soldiers_reform
 				farari_commanders_reform
 				ashigaru_generals_reform
+				# MEGA
+				MEGA_elite_trojan_guards
 			}
 		}
 		deliberative_assembly = {
