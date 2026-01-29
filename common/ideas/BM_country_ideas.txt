@@ -19,6 +19,7 @@ NGF_ideas = {
 	
 	NGF_idea_1 = {
 		ae_impact = -0.15
+		governing_capacity_modifier = 0.1
 	}
 	ger_junkers = {
 		army_tradition = 0.5

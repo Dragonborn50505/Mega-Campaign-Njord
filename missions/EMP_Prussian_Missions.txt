@@ -24,7 +24,10 @@ emp_bra_pru_1 = {
 						NOT = { was_tag = DNZ }
 					}
 				}
-				tag = PRU
+				OR = {
+					tag = PRU
+					tag = NGF
+				}
 			}
 		}
 	}
@@ -358,7 +361,10 @@ emp_bra_pru_1_b = {
 					NOT = { was_tag = DNZ }
 				}
 			}
-			tag = PRU
+			OR = {
+				tag = PRU
+				tag = NGF
+			}
 		}
 	}
 	has_country_shield = yes
@@ -490,7 +496,10 @@ emp_bra_pru_2 = {
 						NOT = { was_tag = DNZ }
 					}
 				}
-				tag = PRU
+				OR = {
+					tag = PRU
+					tag = NGF
+				}
 			}
 		}
 	}
@@ -878,7 +887,10 @@ emp_bra_pru_3 = {
 						NOT = { was_tag = DNZ }
 					}
 				}
-				tag = PRU
+				OR = {
+					tag = PRU
+					tag = NGF
+				}
 			}
 		}
 	}
@@ -1264,7 +1276,10 @@ emp_bra_pru_4 = {
 						NOT = { was_tag = DNZ }
 					}
 				}
-				tag = PRU
+				OR = {
+					tag = PRU
+					tag = NGF
+				}
 			}
 		}
 	}

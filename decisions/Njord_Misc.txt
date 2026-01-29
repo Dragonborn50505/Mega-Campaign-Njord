@@ -5,8 +5,10 @@ country_decisions = {
 
 		potential = {
 			tag = FKN
-			not = {
-				has_country_flag = oktoberfest
+			4718 = {
+				NOT = {
+					province_has_center_of_trade_of_level = 1
+				}
 			}
 		}
 
@@ -16,10 +18,18 @@ country_decisions = {
 			prestige = 25
 		}
 		effect = {
-			set_country_flag = oktoberfest
 			add_treasury = -150
-			capital_scope = {
-				add_center_of_trade_level = 1
+			every_owned_province = {
+				limit = {
+					NOT = {
+						province_id = 4718
+					}
+					has_province_modifier = bav_established_oktoberfest
+				}
+				remove_province_modifier = bav_established_oktoberfest
+			}
+			4718 = {
+				center_of_trade = 1
 				add_province_modifier = {
 					name = bav_established_oktoberfest
 					duration = -1

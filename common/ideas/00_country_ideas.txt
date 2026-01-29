@@ -10689,7 +10689,13 @@ DTT_ideas = {
 	trigger = {
 		OR = {
 			tag = DTT
-			has_country_flag = MEGA_the_peasants_league_rallied
+			AND = {
+				has_country_flag = MEGA_the_peasants_league_rallied
+				OR = {
+					tag = HAM
+					tag = HSA
+				}
+			}
 		}
 	}
 	free = yes
