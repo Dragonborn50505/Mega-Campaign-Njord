@@ -1,5 +1,5 @@
-owner = ORI
-controller = ORI
+owner = BRR
+controller = BRR
 capital = "Chauragar"
 is_city = yes
 culture = vindhyan
@@ -10,7 +10,7 @@ base_production = 3
 base_manpower = 2
 add_core = BND
 add_core = GDW
-add_core = ORI
+add_core = BRR
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

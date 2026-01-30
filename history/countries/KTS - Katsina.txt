@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = feudal_theocracy
 government_rank = 1
 technology_group = sub_saharan
-religion = sunni
+religion = masmudi
 primary_culture = mossi
 capital = 1149
 religious_school = hanbali_school
@@ -15,7 +15,7 @@ add_accepted_culture = hausa
 		dip = 3
 		mil = 4
 		birth_date = 1408.8.18
-		religion = sunni
+		religion = masmudi
 		culture = mossi
 	}
 	add_ruler_personality = craven_personality
@@ -45,7 +45,7 @@ add_accepted_culture = hausa
 		birth_date = 1427.10.26
 		death_date = 1492.10.26
 		claim = 89
-		religion = sunni
+		religion = masmudi
 		culture = nubian
 	}
 	add_heir_personality = infertile_personality

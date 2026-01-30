@@ -1,6 +1,6 @@
-government = tribal
-add_government_reform = steppe_horde
-government_rank = 1
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
 technology_group = nomad_group
 religion = sunni
 primary_culture = kirgiz
@@ -71,13 +71,23 @@ add_accepted_culture = uyghur
 		mil = 2
 	}
 }
-1429.1.1= {
+1444.11.11= {
 	monarch = {
 		name = "Esen Buqa"
 		dynasty = "Chagatayid"
-		adm = 1
-		dip = 0
-		mil = 5
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 1414.1.1
+	}
+
+	heir = {
+		name = "Abdul-Latif"
+		dynasty = "Chagatayid"
+		birth_date = 1440.1.1
+		adm = 4
+		dip = 4
+		mil = 4
 	}
 }
 1462.1.1= {

@@ -1,5 +1,5 @@
-owner = KRK
-controller = KRK
+owner = Z1L
+controller = Z1L
 capital = "Mandu"
 is_city = yes
 culture = marathi
@@ -8,7 +8,7 @@ trade_goods = dyes
 base_tax = 5
 base_production = 4
 base_manpower = 2
-add_core = KRK
+add_core = Z1L
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

@@ -1,5 +1,5 @@
-owner = MNG
-controller = MNG
+owner = CCP
+controller = CCP
 capital = "Ningwu"
 is_city = yes
 culture = jin
@@ -9,6 +9,6 @@ base_tax = 1
 base_production = 1
 base_manpower = 2
 add_core = JIN
-add_core = MNG
+add_core = CCP
 discovered_by = chinese
 discovered_by = nomad_group

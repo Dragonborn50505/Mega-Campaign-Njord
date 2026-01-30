@@ -1,5 +1,5 @@
-owner = Z7O
-controller = Z7O
+owner = ETH
+controller = ETH
 capital = "Debarwa"
 is_city = yes
 culture = beja
@@ -9,7 +9,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 add_core = Y0B
-add_core = Z7O
+add_core = ETH
 add_permanent_claim = BEJ
 discovered_by = east_african
 discovered_by = indian

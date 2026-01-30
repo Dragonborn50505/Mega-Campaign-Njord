@@ -1,5 +1,5 @@
-owner = Z7O
-controller = Z7O
+owner = ETH
+controller = ETH
 capital = "Qoz Rajab"
 is_city = yes
 culture = beja
@@ -8,7 +8,7 @@ trade_goods = livestock
 base_tax = 2
 base_production = 2
 base_manpower = 1
-add_core = Z7O
+add_core = ETH
 add_permanent_claim = BEJ
 discovered_by = east_african
 discovered_by = muslim

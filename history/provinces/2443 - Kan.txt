@@ -1,7 +1,4 @@
-owner = Z4T
-controller = Z4T
 capital = "Kansk"
-is_city = yes
 culture = khazak
 religion = mahayana
 trade_goods = unknown

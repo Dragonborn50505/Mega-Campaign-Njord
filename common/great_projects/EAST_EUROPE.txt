@@ -3195,7 +3195,7 @@ rhodes_palace = {
 }
 
 visegrad_citadel = { #Fellegvar
-	start = 153 #Changed to Pest from Hont due to request.
+	start = 4953 #Changed to Pest from Hont due to request.
 	date = 01.01.1009
 	time = { months = 120 }
 	build_cost = 1000
@@ -3203,26 +3203,17 @@ visegrad_citadel = { #Fellegvar
 	type = monument
 	can_be_moved = no
 	build_trigger = {
-		OR = {
-			culture = hungarian
-			culture = slovak
-		}
+		culture_group = carpathian
 		province_is_or_accepts_culture = yes
 	}
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		OR = {
-			culture = hungarian
-			culture = slovak
-		}
+		culture_group = carpathian
 		province_is_or_accepts_culture = yes
 	}
 	can_upgrade_trigger = {
-		OR = {
-			culture = hungarian
-			culture = slovak
-		}
+		culture_group = carpathian
 		province_is_or_accepts_culture = yes
 	}
 	keep_trigger = { }
@@ -3292,26 +3283,17 @@ eger = {
 	type = monument
 	can_be_moved = no
 	build_trigger = {
-		OR = {
-			culture = hungarian
-			culture = slovak
-		}
+		culture_group = carpathian
 		province_is_or_accepts_culture = yes
 	}
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		OR = {
-			culture = hungarian
-			culture = slovak
-		}
+		culture_group = carpathian
 		province_is_or_accepts_culture = yes
 	}
 	can_upgrade_trigger = {
-		OR = {
-			culture = hungarian
-			culture = slovak
-		}
+		culture_group = carpathian
 		province_is_or_accepts_culture = yes
 	}
 	keep_trigger = { }
@@ -3466,17 +3448,17 @@ veszprem_castle = {
 	type = monument
 	can_be_moved = no
 	build_trigger = {
-		culture = hungarian
+		culture_group = carpathian
 		province_is_or_accepts_culture = yes
 	}
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		culture = hungarian
+		culture_group = carpathian
 		province_is_or_accepts_culture = yes
 	}
 	can_upgrade_trigger = {
-		culture = hungarian
+		culture_group = carpathian
 		province_is_or_accepts_culture = yes
 	}
 	keep_trigger = { }
@@ -3741,7 +3723,7 @@ kamianets = {
 }
 
 diosgyor = {
-    start = 162 #Zemplen.
+    start = 4956 #Zemplen.
     date = 01.01.1150
 	time = { months = 120 }
 	build_cost = 1000
@@ -3839,7 +3821,7 @@ diosgyor = {
 }
 
 kisvarda = {
-    start = 1953 #Szabolcs.
+    start = 4126 #Szabolcs.
     date = 01.01.895
 	time = { months = 120 }
 	build_cost = 1000

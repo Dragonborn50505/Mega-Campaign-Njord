@@ -1,5 +1,5 @@
-owner = SWA
-controller = SWA
+owner = SWI
+controller = SWI
 capital = "Zürich"
 is_city = yes
 culture = swabian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 6
 base_production = 4
 base_manpower = 4
-add_core = SWA
+add_core = SWI
 add_permanent_claim = TTL
 discovered_by = eastern
 discovered_by = muslim

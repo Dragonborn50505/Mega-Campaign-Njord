@@ -321,7 +321,7 @@ christian = {
 			catholic
 		}
 		country = {
-			development_cost = -0.1
+			global_colonial_growth = 10
 			technology_cost = -0.05
 		}
 		
@@ -734,7 +734,7 @@ christian = {
 			}
 
 			icon_pancreator = {
-				development_cost = -0.10
+				development_cost = -0.05
 				build_cost = -0.1
 				
 				allow = {

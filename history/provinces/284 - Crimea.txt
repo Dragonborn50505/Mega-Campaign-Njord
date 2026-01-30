@@ -1,5 +1,5 @@
-owner = Z8L
-controller = Z8L
+owner = CRI
+controller = CRI
 capital = "Qirq-Yer"
 is_city = yes
 culture = crimean
@@ -8,7 +8,7 @@ trade_goods = salt
 base_tax = 1
 base_production = 1
 base_manpower = 1
-add_core = Z8L
+add_core = CRI
 add_permanent_claim = CRI
 discovered_by = eastern
 discovered_by = muslim

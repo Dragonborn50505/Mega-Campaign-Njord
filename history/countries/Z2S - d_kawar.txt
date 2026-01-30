@@ -2,7 +2,7 @@ government = tribal
 add_government_reform = tribal_despotism
 government_rank = 1
 technology_group = western
-religion = catholic
+religion = adamites
 primary_culture = sardinian
 capital = 2275
 add_accepted_culture = kanuri
@@ -15,7 +15,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		dip = 2
 		mil = 5
 		birth_date = 1419.11.18
-		religion = catholic
+		religion = adamites
 		culture = sardinian
 	}
 	add_ruler_personality = malevolent_personality
@@ -30,7 +30,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		birth_date = 1390.6.17
 		death_date = 1455.6.17
 		claim = 89
-		religion = catholic
+		religion = adamitest
 		culture = sardinian
 	}
 	add_heir_personality = righteous_personality

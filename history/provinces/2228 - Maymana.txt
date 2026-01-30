@@ -1,5 +1,5 @@
-owner = Z3O
-controller = Z3O
+owner = ILK
+controller = ILK
 capital = "Maymana"
 is_city = yes
 culture = khorasani
@@ -8,7 +8,7 @@ trade_goods = cotton
 base_tax = 5
 base_production = 9
 base_manpower = 4
-add_core = KHO
+add_core = ILK
 add_core = Z3O
 discovered_by = KAS
 discovered_by = indian

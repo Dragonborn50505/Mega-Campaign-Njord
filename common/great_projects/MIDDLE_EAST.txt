@@ -3270,3 +3270,84 @@ fu_isfahan_city = { #Khaju Bridge.
 		}
 	}
 }
+
+troy = {
+	start = 2296
+	date = 01.01.1
+	time = { months = 120 }
+	build_cost = 1000
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		owned_by = Z43
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		owned_by = Z43
+	}
+	can_upgrade_trigger = {
+		owned_by = Z43
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			fort_level = 1
+			local_defensiveness = 0.1
+			local_fort_maintenance_modifier = -0.5
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			fort_level = 1
+			local_defensiveness = 0.20
+			local_fort_maintenance_modifier = -1
+			local_garrison_size = 0.1
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			prestige = 0.5
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			fort_level = 2
+			local_defender_dice_roll_bonus = 1
+			local_development_cost = -0.2
+		}
+		area_modifier = {
+			local_defensiveness = 0.2
+			local_fort_maintenance_modifier = -1
+			local_garrison_size = 0.15
+		}
+		region_modifier = { }
+		country_modifiers = {
+			prestige = 1
+		}
+		on_upgraded = { }
+	}
+}

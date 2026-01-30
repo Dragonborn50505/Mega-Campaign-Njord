@@ -1,5 +1,5 @@
-owner = MNG
-controller = MNG
+owner = CCP
+controller = CCP
 capital = "Datong"
 is_city = yes
 culture = jin
@@ -10,6 +10,6 @@ base_tax = 4
 base_production = 4
 base_manpower = 3
 add_core = JIN
-add_core = MNG
+add_core = CCP
 discovered_by = chinese
 discovered_by = nomad_group

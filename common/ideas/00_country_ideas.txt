@@ -7469,6 +7469,9 @@ HAM_ideas = {
 	
 	trigger = {
 		tag = HAM
+		NOT = {
+			has_country_flag = MEGA_the_peasants_league_rallied
+		}
 	}
 	free = yes		#will be added at load.
 	
@@ -10684,7 +10687,16 @@ DTT_ideas = {
 		horde_unity = 1
 	}
 	trigger = {
-		tag = DTT
+		OR = {
+			tag = DTT
+			AND = {
+				has_country_flag = MEGA_the_peasants_league_rallied
+				OR = {
+					tag = HAM
+					tag = HSA
+				}
+			}
+		}
 	}
 	free = yes
 	dtt_resistance_against_feudalism = {
@@ -15879,7 +15891,9 @@ ADU_ideas = {
 	}
     
 	trigger = {
-		tag = ADU
+		OR = {
+			tag = EOM
+		}
 	}
 	free = yes        #will be added at load.
     
@@ -16361,7 +16375,7 @@ FKN_ideas = {
 		defensiveness = 0.2
 	}
 	fkn_free_knights_of_franconia = {
-		cavalry_power = 0.10
+		infantry_power = 0.1
 	}
 	franconian_wine = { #in WBG_ideas
 		#production_efficiency = 0.1

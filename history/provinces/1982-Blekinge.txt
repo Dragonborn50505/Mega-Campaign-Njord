@@ -2,6 +2,7 @@ owner = DAN
 controller = DAN
 capital = "Ronneby"
 is_city = yes
+hre = yes
 culture = danish
 religion = catholic
 trade_goods = naval_supplies

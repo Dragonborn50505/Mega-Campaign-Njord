@@ -1,5 +1,5 @@
-owner = VPS
-controller = VPS
+owner = MOS
+controller = MOS
 capital = "Kashin"
 is_city = yes
 culture = russian

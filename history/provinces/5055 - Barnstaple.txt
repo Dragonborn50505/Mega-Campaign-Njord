@@ -2,9 +2,9 @@
 
 owner = CRN
 controller = CRN
-culture = english
+culture = cornish
 religion = catholic
-hre = no
+hre = yes
 base_tax = 2
 base_production = 1
 trade_goods = fish

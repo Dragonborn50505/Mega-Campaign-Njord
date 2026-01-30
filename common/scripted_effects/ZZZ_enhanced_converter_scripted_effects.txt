@@ -309,7 +309,7 @@ ZZZ_enhanced_converter_battle_cult_spreading_effect = {
 			FROM = {
 				OR = {
 					religion_group = muslim
-					religion_group = yazidi #Until I can add it as its own cult
+					religion_group = yazidism #Until I can add it as its own cult
 					has_unlocked_cult = islam_cult
 				}
 			}
@@ -326,7 +326,7 @@ ZZZ_enhanced_converter_battle_cult_spreading_effect = {
 			ROOT = {
 				OR = {
 					has_unlocked_cult = islam_cult
-					religion_group = yazidi #Until I can add it as its own cult
+					religion_group = yazidism #Until I can add it as its own cult
 					religion_group = muslim
 				}
 			}

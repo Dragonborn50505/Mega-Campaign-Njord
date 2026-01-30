@@ -1,5 +1,5 @@
-owner = MNG
-controller = MNG
+owner = CCP
+controller = CCP
 capital = "Xi'an"
 is_city = yes
 culture = xibei
@@ -12,7 +12,7 @@ base_manpower = 3
 extra_cost = 16
 center_of_trade = 2
 add_core = CSH
-add_core = MNG
+add_core = CCP
 add_core = QIN
 discovered_by = chinese
 discovered_by = nomad_group

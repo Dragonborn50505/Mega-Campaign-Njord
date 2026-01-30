@@ -3,9 +3,9 @@
 add_core = FRI
 owner = FRI
 controller = FRI
-culture = flemish
+culture = frisian
 religion = norse_pagan
-hre = no
+hre = yes
 base_tax = 5
 base_production = 4
 trade_goods = cloth

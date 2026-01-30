@@ -1,5 +1,5 @@
-owner = KBO
-controller = KBO
+owner = KTS
+controller = KTS
 capital = "Kano"
 is_city = yes
 culture = kanuri
@@ -8,5 +8,5 @@ trade_goods = dyes
 base_tax = 2
 base_production = 2
 base_manpower = 1
-add_core = KBO
+add_core = KTS
 discovered_by = sub_saharan

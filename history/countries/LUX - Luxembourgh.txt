@@ -1,7 +1,7 @@
-government = republic
-add_government_reform = free_city
+government = monarchy
 government_rank = 1
 technology_group = western
+add_government_reform = duchy_of_luxembourg_reform
 religion = norse_pagan
 primary_culture = flemish
 capital = 93

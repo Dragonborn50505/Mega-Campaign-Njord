@@ -796,8 +796,8 @@ dynamic-hungarian-culture-num1_ideas = {
 	tradition_agrarian = {
 		global_trade_goods_size_modifier = 0.1
 	}
-	tradition_forest_folk = {
-		development_cost = -0.1
+	tradition_hunters = {
+		cavalry_power = 0.2
 	}
 	tradition_brewery = {
 		tolerance_own = 2
@@ -1017,6 +1017,7 @@ dynamic-greek-culture-num3_ideas = {
 	}
 	trigger = {
 		culture = dynamic-greek-culture-num3
+		NOT = { tag = Z43 }
 	}
 	free = yes
 

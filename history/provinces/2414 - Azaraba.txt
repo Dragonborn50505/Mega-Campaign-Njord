@@ -1,5 +1,5 @@
-owner = IME
-controller = IME
+owner = CIR
+controller = CIR
 capital = "Azaraba"
 is_city = yes
 culture = crimean
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 1
 base_production = 1
 base_manpower = 1
-add_core = IME
+add_core = CIR
 add_core = Z0M
 discovered_by = eastern
 discovered_by = muslim

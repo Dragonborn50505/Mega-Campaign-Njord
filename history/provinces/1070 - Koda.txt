@@ -1,7 +1,4 @@
-owner = Z07
-controller = Z07
 capital = "Narim"
-is_city = yes
 culture = mongol
 religion = mahayana
 trade_goods = unknown

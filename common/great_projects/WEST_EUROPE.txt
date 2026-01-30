@@ -1441,7 +1441,7 @@ arcdetriomphe = {
 }
 
 ME_aula_magna = {
-	start = 92
+	start = 99
 	date = 1444.01.01
 	time = { months = 0 }
 	build_cost = 0
@@ -1859,6 +1859,7 @@ rock_of_cashel = {
 		OR = {
 			culture_group = celts
 			culture_group = british
+			culture_group = french
 		}
 	}
 	can_use_modifiers_trigger = {
@@ -1866,6 +1867,7 @@ rock_of_cashel = {
 		OR = {
 			culture_group = celts
 			culture_group = british
+			culture_group = french
 		}
 	}
 	can_upgrade_trigger = {
@@ -1873,6 +1875,7 @@ rock_of_cashel = {
 		OR = {
 			culture_group = celts
 			culture_group = british
+			culture_group = french
 		}
 	}
 	keep_trigger = { }
@@ -2036,17 +2039,17 @@ speyer = { #Kaiserdom.
 	on_destroyed = { }
 	build_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 	can_use_modifiers_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 	can_upgrade_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 	keep_trigger = { }
@@ -2065,7 +2068,9 @@ speyer = { #Kaiserdom.
 		area_modifier = { }
 		country_modifiers = {
 			improve_relation_modifier = 0.15
+			monthly_fervor_increase = 0.25
 			papal_influence = 0.5
+			church_power_modifier = 0.1
 		}
 		conditional_modifier = {
 			trigger = {
@@ -2074,7 +2079,7 @@ speyer = { #Kaiserdom.
 				}
 			}
 			modifier = {
-				global_heathen_missionary_strength = 0.0005
+				global_heathen_missionary_strength = 0.005
 			}
 		}
 		on_upgraded = { }
@@ -2087,7 +2092,9 @@ speyer = { #Kaiserdom.
 		country_modifiers = {
 			improve_relation_modifier = 0.25
 			imperial_authority = 0.05
+			monthly_fervor_increase = 0.5
 			papal_influence = 1
+			church_power_modifier = 0.15
 		}
 		conditional_modifier = {
 			trigger = {
@@ -2096,7 +2103,7 @@ speyer = { #Kaiserdom.
 				}
 			}
 			modifier = {
-				global_heathen_missionary_strength = 0.001
+				global_heathen_missionary_strength = 0.01
 			}
 		}
 		on_upgraded = { }
@@ -2109,7 +2116,9 @@ speyer = { #Kaiserdom.
 		country_modifiers = {
 			improve_relation_modifier = 0.33
 			imperial_authority = 0.1
+			monthly_fervor_increase = 1
 			papal_influence = 2
+			church_power_modifier = 0.25
 		}
 		conditional_modifier = {
 			trigger = {
@@ -2118,7 +2127,7 @@ speyer = { #Kaiserdom.
 				}
 			}
 			modifier = {
-				global_heathen_missionary_strength = 0.001
+				global_heathen_missionary_strength = 0.02
 				diplomatic_reputation = 1
 			}
 		}
@@ -2324,19 +2333,19 @@ batalha_monastery = {
 	type = monument
 	build_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 	can_upgrade_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 	keep_trigger = { }
@@ -2431,19 +2440,19 @@ basilica_pillar = {
 	can_be_moved = no
 	build_trigger = { 
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 	can_upgrade_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 	keep_trigger = { }
@@ -2769,7 +2778,7 @@ chateau_angers = {
 	}
 	tier_2 = {
 		upgrade_time = { months = 240 }
-		cost_to_upgrade = { factor = 1300 }
+		cost_to_upgrade = { factor = 2500 }
 		province_modifiers = {
 			local_defensiveness = 0.25
 		}
@@ -3236,15 +3245,16 @@ aachen_cathedral = {
 		region_modifier = { }
 		country_modifiers = {
 			imperial_authority = 0.05
+			tolerance_own = 0.5
 		}
 		on_upgraded = { 
 			if = {
 				limit = { 
 					owner = {
-						is_emperor = yes
+						is_part_of_hre = yes
 					}
 				}
-				owner = {
+				emperor = {
 					add_scaled_imperial_influence = 1
 				}
 			}
@@ -3261,15 +3271,16 @@ aachen_cathedral = {
 		country_modifiers = {
 			core_creation = -0.05
 			imperial_authority = 0.1
+			tolerance_own = 1
 		}
 		on_upgraded = { 
 			if = {
 				limit = { 
 					owner = {
-						is_emperor = yes
+						is_part_of_hre = yes
 					}
 				}
-				owner = {
+				emperor = {
 					add_scaled_imperial_influence = 3
 				}
 			}
@@ -3286,15 +3297,16 @@ aachen_cathedral = {
 		country_modifiers = {
 			core_creation = -0.1
 			imperial_authority = 0.15
+			tolerance_own = 2
 		}
 		on_upgraded = {
 			if = {
 				limit = { 
 					owner = {
-						is_emperor = yes
+						is_part_of_hre = yes
 					}
 				}
-				owner = {
+				emperor = {
 					add_scaled_imperial_influence = 5
 				}
 			}
@@ -3419,7 +3431,9 @@ herrenhausen_gardens = {
 	tier_1 = {
 		upgrade_time = { months = 120 }
 		cost_to_upgrade = { factor = 1000 }
-		province_modifiers = { }
+		province_modifiers = { 
+			local_institution_spread = 0.25
+		}
 		area_modifier = { }
 		region_modifier = { }
 		country_modifiers = {
@@ -3445,7 +3459,9 @@ herrenhausen_gardens = {
 	tier_2 = {
 		upgrade_time = { months = 240 }
 		cost_to_upgrade = { factor = 2500 }
-		province_modifiers = { }
+		province_modifiers = { 
+			local_institution_spread = 0.33
+		}
 		area_modifier = { }
 		region_modifier = { }
 		country_modifiers = {
@@ -3472,7 +3488,9 @@ herrenhausen_gardens = {
 	tier_3 = {
 		upgrade_time = { months = 480 }
 		cost_to_upgrade = { factor = 3600 }
-		province_modifiers = { }
+		province_modifiers = { 
+			local_institution_spread = 0.5
+		}
 		area_modifier = { }
 		region_modifier = { }
 		country_modifiers = {
@@ -4499,19 +4517,19 @@ santiago = { #Santiago de Compostela.
 	can_be_moved = no
 	build_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 	can_upgrade_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 	keep_trigger = { }
@@ -4755,7 +4773,7 @@ charles_bridge = {
 }
 
 fu_vladislav_hall = {
-	start = 266 #Prague.
+	start = 4981 #Prague.
 	date = 01.01.870
 	time = { months = 0	}
 	build_cost = 1000
@@ -4763,17 +4781,26 @@ fu_vladislav_hall = {
 	starting_tier = 1
 	type = monument
 	build_trigger = {
-		culture = czech
+		OR = {
+			culture_group = scandinavian
+			culture_group = germanic
+		}
 		province_is_or_accepts_culture = yes
 	}
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		culture = czech
+		OR = {
+			culture_group = scandinavian
+			culture_group = germanic
+		}
 		province_is_or_accepts_culture = yes
 	}
 	can_upgrade_trigger = {
-		culture = czech
+		OR = {
+			culture_group = scandinavian
+			culture_group = germanic
+		}
 		province_is_or_accepts_culture = yes
 	}
 	keep_trigger = { }
@@ -4791,6 +4818,7 @@ fu_vladislav_hall = {
 		cost_to_upgrade = { factor = 1000 }
 		province_modifiers = {
 			local_manpower_modifier = 0.25
+			local_regiment_cost = -0.25
 		}
 		area_modifier = { }
 		country_modifiers = {
@@ -4805,12 +4833,12 @@ fu_vladislav_hall = {
 	tier_2 = {
 		upgrade_time = { months = 240 }
 		cost_to_upgrade = { factor = 2500 }
-		province_modifiers = {
-			local_manpower_modifier = 0.33
+		province_modifiers = { }
+		area_modifier = { 
+			local_manpower_modifier = 0.25
+			local_regiment_cost = -0.25
 		}
-		area_modifier = { }
 		country_modifiers = {
-			free_mil_policy = 1
 			nobles_loyalty_modifier = 0.1
 			nobles_influence_modifier = 0.05
 		}
@@ -4823,18 +4851,19 @@ fu_vladislav_hall = {
 	tier_3 = {
 		upgrade_time = { months = 480 }
 		cost_to_upgrade = { factor = 5000 }
-		province_modifiers = {
-			local_manpower_modifier = 0.5
+		province_modifiers = { }
+		area_modifier = { 
+			local_manpower_modifier = 0.33
+			local_regiment_cost = -0.33
 		}
-		area_modifier = { }
 		country_modifiers = {
-			free_mil_policy = 1
+			global_regiment_cost = -0.1
 			nobles_loyalty_modifier = 0.15
 			nobles_influence_modifier = 0.1
 		}
 		on_upgraded = { 
 			owner = {
-				add_legitimacy_or_mil_power = { amount = 15 }
+				add_legitimacy_or_mil_power = { amount = 25 }
 			}
 		}
 	}
@@ -5447,19 +5476,19 @@ church_jacobins = {
 	can_be_moved = no
 	build_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 	can_upgrade_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 	keep_trigger = { }
@@ -5735,19 +5764,19 @@ cluny = {
 	can_be_moved = no
 	build_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 	can_upgrade_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 	keep_trigger = { }
@@ -6215,17 +6244,17 @@ mainz_cathedral = {
 	on_destroyed = { }
 	build_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 	can_use_modifiers_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 	can_upgrade_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 	keep_trigger = { }
@@ -6627,40 +6656,51 @@ schwerin = {
 		upgrade_time = { months = 120 }
 		cost_to_upgrade = { factor = 1000 }
 		province_modifiers = { }
-		area_modifier = { }
+		area_modifier = { 
+			local_state_maintenance_modifier = -0.15
+		}
 		region_modifier = { }
 		country_modifiers = {
-			drill_decay_modifier = -0.1
-			drill_gain_modifier = 0.1
-			vassal_forcelimit_bonus = 0.25
+			diplomatic_upkeep = 1
+			ship_trade_power_modifier = 0.1
 		}
-		on_upgraded = { }
+		on_upgraded = { 
+			add_or_upgrade_courthouse_building = yes
+		}
 	}
 	tier_2 = {
 		upgrade_time = { months = 240 }
 		cost_to_upgrade = { factor = 2500 }
 		province_modifiers = { }
-		area_modifier = { }
+		area_modifier = { 
+			local_state_maintenance_modifier = -0.25
+		}
 		region_modifier = { }
 		country_modifiers = {
-			drill_decay_modifier = -0.15
-			drill_gain_modifier = 0.15
-			vassal_forcelimit_bonus = 0.5
+			diplomatic_upkeep = 1
+			ship_trade_power_modifier = 0.15
+			diplomatic_reputation = 1
 		}
-		on_upgraded = { }
+		on_upgraded = { 
+			add_or_upgrade_courthouse_building = yes
+		}
 	}
 	tier_3 = {
 		upgrade_time = { months = 480 }
 		cost_to_upgrade = { factor = 5000 }
 		province_modifiers = { }
-		area_modifier = { }
+		area_modifier = { 
+			local_state_maintenance_modifier = -0.33
+		}
 		region_modifier = { }
 		country_modifiers = {
-			drill_decay_modifier = -0.25
-			drill_gain_modifier = 0.25
-			vassal_forcelimit_bonus = 0.75
+			diplomatic_upkeep = 2
+			ship_trade_power_modifier = 0.2
+			diplomatic_reputation = 2
 		}
-		on_upgraded = { }
+		on_upgraded = { 
+			add_or_upgrade_courthouse_building = yes
+		}
 	}
 }
 
@@ -6968,7 +7008,9 @@ marialaach = {
 		}
 		area_modifier = { }
 		region_modifier = { }
-		country_modifiers = { }
+		country_modifiers = { 
+			mil_advisor_cost = -0.1
+		}
 		on_upgraded = { }
 	}
 	tier_2 = {
@@ -6982,7 +7024,7 @@ marialaach = {
 		}
 		region_modifier = { }
 		country_modifiers = {
-			mil_advisor_cost = -0.1
+			mil_advisor_cost = -0.15
 		}
 		on_upgraded = { }
 	}
@@ -6997,7 +7039,7 @@ marialaach = {
 		}
 		region_modifier = { }
 		country_modifiers = {
-			mil_advisor_cost = -0.15
+			mil_advisor_cost = -0.2
 		}
 		on_upgraded = { 
 			custom_tooltip = MEGA_maria_laach_unique_TT
@@ -7186,17 +7228,17 @@ triererdom = {
 	on_destroyed = { }
 	build_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 	can_use_modifiers_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 	can_upgrade_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 	keep_trigger = { }
@@ -7257,17 +7299,17 @@ limburg_cathedral = {
 	on_destroyed = { }
 	build_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 	can_use_modifiers_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 	can_upgrade_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 	keep_trigger = { }
@@ -8160,7 +8202,7 @@ glucksburg = {
 		cost_to_upgrade = { factor = 1000 }
 		province_modifiers = { }
 		area_modifier = {
-			local_defensiveness = 0.1
+			local_defensiveness = 0.15
 		}
 		country_modifiers = {
 			movement_speed = 0.05
@@ -8172,7 +8214,7 @@ glucksburg = {
 		cost_to_upgrade = { factor = 2500 }
 		province_modifiers = { }
 		area_modifier = {
-			local_defensiveness = 0.15
+			local_defensiveness = 0.25
 			local_hostile_attrition = 1
 		}
 		country_modifiers = {
@@ -8186,7 +8228,7 @@ glucksburg = {
 		cost_to_upgrade = { factor = 5000 }
 		province_modifiers = { }
 		area_modifier = {
-			local_defensiveness = 0.25
+			local_defensiveness = 0.33
 			local_hostile_attrition = 1
 		}
 		country_modifiers = {
@@ -8491,19 +8533,19 @@ grande_chartreuse = {
 	can_be_moved = no
 	build_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 	can_upgrade_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 	keep_trigger = { }
@@ -8551,9 +8593,11 @@ grande_chartreuse = {
 		country_modifiers = {
 			same_religion_advisor_cost = -0.1
 			institution_spread_from_true_faith = 0.33
+			tolerance_own = 1
 		}
 		on_upgraded = { 
 			change_trade_goods = iron
+			add_or_upgrade_production_building = yes
 		}
 	}
 }
@@ -8660,17 +8704,29 @@ dunluce = {
 	type = monument
 	can_be_moved = no
 	build_trigger = {
-		culture_group = gaelic
+		OR = {
+			culture_group = gaelic
+			culture_group = british
+			culture_group = french
+		}
 		province_is_or_accepts_culture = yes
 	}
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		culture_group = gaelic
+		OR = {
+			culture_group = gaelic
+			culture_group = british
+			culture_group = french
+		}
 		province_is_or_accepts_culture = yes
 	}
 	can_upgrade_trigger = {
-		culture_group = gaelic
+		OR = {
+			culture_group = gaelic
+			culture_group = british
+			culture_group = french
+		}
 		province_is_or_accepts_culture = yes
 	}
 	keep_trigger = { }
@@ -8734,7 +8790,11 @@ trinity_college = {
 	starting_tier = 0
 	type = monument
 	build_trigger = { #Can't be built by Irish, but can be used and upgraded by 'em.
-		culture_group = british
+		OR = {
+			culture_group = gaelic
+			culture_group = british
+			culture_group = french
+		}
 		province_is_or_accepts_culture = yes
 	}
 	on_built = { }
@@ -8743,6 +8803,7 @@ trinity_college = {
 		OR = {
 			culture_group = gaelic
 			culture_group = british
+			culture_group = french
 		}
 		province_is_or_accepts_culture = yes
 	}
@@ -8750,6 +8811,7 @@ trinity_college = {
 		OR = {
 			culture_group = gaelic
 			culture_group = british
+			culture_group = french
 		}
 		province_is_or_accepts_culture = yes
 	}
@@ -8837,6 +8899,7 @@ newgrange = {
 		OR = {
 			culture_group = celts
 			culture_group = british
+			culture_group = french
 		}
 	}
 	on_built = { }
@@ -8846,6 +8909,7 @@ newgrange = {
 		OR = {
 			culture_group = celts
 			culture_group = british
+			culture_group = french
 		}
 	}
 	can_upgrade_trigger = {
@@ -8853,6 +8917,7 @@ newgrange = {
 		OR = {
 			culture_group = celts
 			culture_group = british
+			culture_group = french
 		}
 	}
 	keep_trigger = { }
@@ -8964,7 +9029,7 @@ marienberg = {
 		}
 		country_modifiers = {
 			artillery_power = 0.05
-			artillery_levels_available_vs_fort = 0.5
+			artillery_levels_available_vs_fort = 1
 		}
 		on_upgraded = { }
 	}
@@ -8978,7 +9043,7 @@ marienberg = {
 			local_defensiveness = 0.25
 		}
 		country_modifiers = {
-			artillery_power = 0.05
+			artillery_power = 0.1
 			artillery_levels_available_vs_fort = 1
 		}
 		on_upgraded = { }
@@ -9074,7 +9139,7 @@ klingentorturm = {
 }
 
 fu_amsterdam_dike = { #Amsteldijk.
-	start = 97
+	start = 1931
 	date = 01.01.1650
 	time = { months = 120 }
 	build_cost = 1000
@@ -9158,16 +9223,23 @@ fu_amsterdam_dike = { #Amsteldijk.
 		}
 		on_upgraded = { 
 			add_prosperity = 100
-			add_province_modifier = {
-				name = MEGA_drained_the_swamps
-				duration = 3650
+			owner = {
+				every_owned_province = {
+					limit = {
+						area = frisia_area
+					}
+					add_province_modifier = {
+						name = MEGA_drained_the_swamps
+						duration = 3650
+					}
+				}
 			}
 		}
 	}
 }
 
 fu_admiralty_amsterdam = {
-	start = 97
+	start = 100
 	date = 01.01.1597
 	time = { months = 120 }
 	build_cost = 1000
@@ -9607,6 +9679,7 @@ fu_antwerp_dike = { #Antwerp Bourse
 		country_modifiers = {
 			trade_company_governing_cost = -0.05
 			reduced_trade_penalty_on_non_main_tradenode = 0.05
+			merchants = 1
 		}
 		on_upgraded = {
 			owner = {
@@ -9635,6 +9708,7 @@ fu_antwerp_dike = { #Antwerp Bourse
 		country_modifiers = {
 			trade_company_governing_cost = -0.1
 			reduced_trade_penalty_on_non_main_tradenode = 0.15
+			merchants = 1
 		}
 		on_upgraded = {
 			owner = {
@@ -9664,6 +9738,7 @@ fu_antwerp_dike = { #Antwerp Bourse
 		country_modifiers = {
 			trade_company_governing_cost = -0.15
 			reduced_trade_penalty_on_non_main_tradenode = 0.25
+			merchants = 2
 		}
 		on_upgraded = {
 			owner = {
@@ -9782,97 +9857,6 @@ fu_gent_dike = { #Gravensteen.
 
 fu_brugge_dike = { #Zeebrugge.
 	start = 90 #Gent/Ghent.
-	date = 01.01.1
-	time = { months = 120 }
-	build_cost = 1000
-	starting_tier = 1
-	type = monument
-	can_be_moved = no
-	build_trigger = {
-		has_owner_accepted_culture = yes
-		OR = {
-			culture = dutch
-			culture = flemish
-			culture = frisian
-		}
-	}
-	on_built = { }
-	on_destroyed = { }
-	can_use_modifiers_trigger = {
-		has_owner_accepted_culture = yes
-		OR = {
-			culture = dutch
-			culture = flemish
-			culture = frisian
-		}
-	}
-	can_upgrade_trigger = {
-		has_owner_accepted_culture = yes
-		OR = {
-			culture = dutch
-			culture = flemish
-			culture = frisian
-		}
-	}
-	keep_trigger = { }
-	tier_0 = {
-		upgrade_time = { months = 0 }
-		cost_to_upgrade = { factor = 0 }
-		province_modifiers = { }
-		area_modifier = { }
-		region_modifier = { }
-		country_modifiers = { }
-		on_upgraded = { }
-	}
-	tier_1 = {
-		upgrade_time = { months = 120 }
-		cost_to_upgrade = { factor = 1000 }
-		province_modifiers = {
-			trade_goods_size = 1
-		}
-		area_modifier = { }
-		region_modifier = { }
-		country_modifiers = {
-			transport_cost = -0.15
-			transport_attrition = -0.15
-			naval_tradition_from_trade = 0.15
-		}
-		on_upgraded = { }
-	}
-	tier_2 = {
-		upgrade_time = { months = 240 }
-		cost_to_upgrade = { factor = 2500 }
-		province_modifiers = {
-			trade_goods_size = 2
-		}
-		area_modifier = { }
-		region_modifier = { }
-		country_modifiers = {
-			transport_cost = -0.25
-			transport_attrition = -0.25
-			naval_tradition_from_trade = 0.25
-		}
-		on_upgraded = { }
-	}
-	tier_3 = {
-		upgrade_time = { months = 480 }
-		cost_to_upgrade = { factor = 5000 }
-		province_modifiers = {
-			trade_goods_size = 3
-		}
-		area_modifier = { }
-		region_modifier = { }
-		country_modifiers = {
-			transport_cost = -0.33
-			transport_attrition = -0.33
-			naval_tradition_from_trade = 0.33
-		}
-		on_upgraded = { }
-	}
-}
-
-domtoren = {
-	start = 98 #Utrecht.
 	date = 01.01.1382
 	time = { months = 120 }
 	build_cost = 1000
@@ -9947,7 +9931,100 @@ domtoren = {
 		country_modifiers = {
 			imperial_authority = 0.1
 			colonist_placement_chance = 0.15
-			governing_capacity_modifier = 0.05
+			governing_capacity_modifier = 0.15
+		}
+		on_upgraded = { }
+	}
+}
+
+domtoren = {
+	start = 98 #Utrecht.
+	date = 01.01.1025
+	time = { months = 0 }
+	build_cost = 900
+	can_be_moved = no
+	starting_tier = 1
+	type = monument
+	on_built = { }
+	on_destroyed = { }
+	build_trigger = {
+		province_is_or_accepts_religion = {
+			religion_group = christian
+		}
+		has_owner_accepted_culture = yes
+		OR = {
+			culture = dutch
+			culture = flemish
+			culture = frisian
+		}
+	}
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_religion = {
+			religion_group = christian
+		}
+		has_owner_accepted_culture = yes
+		OR = {
+			culture = dutch
+			culture = flemish
+			culture = frisian
+		}
+	}
+	can_upgrade_trigger = {
+		province_is_or_accepts_religion = {
+			religion_group = christian
+		}
+		has_owner_accepted_culture = yes
+		OR = {
+			culture = dutch
+			culture = flemish
+			culture = frisian
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = { }
+		on_upgraded = {	}
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = {
+			improve_relation_modifier = 0.15
+			monthly_fervor_increase = 0.25
+			papal_influence = 0.5
+			church_power_modifier = 0.1
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = {
+			improve_relation_modifier = 0.25
+			monthly_fervor_increase = 0.5
+			papal_influence = 1
+			church_power_modifier = 0.15
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = {
+			improve_relation_modifier = 0.33
+			monthly_fervor_increase = 1
+			papal_influence = 2
+			church_power_modifier = 0.25
 		}
 		on_upgraded = { }
 	}
@@ -10244,6 +10321,124 @@ the_bock = {
 					culture = root
 					religion = root
 					cost_multiplier = 0.25
+				}
+			}
+		}
+	}
+}
+
+fu_acemi_oglan = {
+	start = 1874
+	date = 1384.01.1
+	time = { months = 120 }
+	build_cost = 1000
+	can_be_moved = no
+	starting_tier = 1
+	type = monument
+	build_trigger = { }
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+	}
+	can_upgrade_trigger = {
+	}
+	keep_trigger = {
+	}
+	
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			local_sailors_modifier = 0.25
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			admiral_cost = -0.1
+			naval_tradition_from_battle = 0.15
+		}
+		on_upgraded = {
+			owner = { 
+				create_admiral = {
+					tradition = 50
+					add_shock = 1
+				}
+			}
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = { }
+		area_modifier = {
+			local_sailors_modifier = 0.33
+		}
+		country_modifiers = {
+			admiral_cost = -0.15
+			naval_tradition_from_battle = 0.25
+			navy_tradition = 0.25
+		}
+		on_upgraded = {
+			owner = { 
+				create_admiral = {
+					tradition = 75
+					add_shock = 1
+					add_fire = 1
+				}
+			}
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = { }
+		area_modifier = {
+			local_sailors_modifier = 0.5
+		}
+		country_modifiers = {
+			admiral_cost = -0.25
+			naval_tradition_from_battle = 0.33
+			navy_tradition = 0.5
+		}
+		on_upgraded = {
+			custom_tooltip = MEGA_fu_acemi_oglan_unique_TT #grants extra naval tradition when hiring admirals
+			owner = { 
+				create_admiral = {
+					tradition = 100
+					add_shock = 1
+					add_fire = 1
+					add_manuever = 1
 				}
 			}
 		}

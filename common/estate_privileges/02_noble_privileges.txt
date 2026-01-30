@@ -420,6 +420,15 @@ estate_nobles_levies = {
 		}
 	}
 	conditional_modifier = {
+		trigger = {
+			has_government_attribute = BM_buffed_increased_levies
+		}
+		modifier = {
+			global_regiment_cost = -0.15
+			army_tradition_decay = -0.01
+		}
+	}
+	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
@@ -673,6 +682,23 @@ estate_nobles_supremacy_over_crown = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
+	on_granted = {
+		if = {
+			limit = { 
+				has_government_attribute = enables_cortes
+			}
+			country_event = { id = BM_government_reforms.7 }
+		}
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		if = {
+			limit = { 
+				has_government_attribute = enables_cortes
+			}
+			country_event = { id = BM_government_reforms.8 }
+		}
+	}
 
 	ai_will_do = {
 		factor = 10
@@ -827,6 +853,7 @@ estate_nobles_monopoly_of_metals = {
 		}
 		modifier = {
 			max_absolutism = 10
+			production_efficiency = 0.05
 		}
 	}
 	on_cooldown_expires = {
@@ -1217,6 +1244,10 @@ estate_nobles_golden_liberty = {
 			has_reform = elective_monarchy
 			has_reform = polish_elective_monarchy 
 		}
+		OR = {
+			tag = POL
+			tag = PLC
+		}
 	}
 	can_revoke = {
 		if = {
@@ -1469,6 +1500,10 @@ estate_nobles_better_integration = {
 	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
+	}
+	conditional_modifier = {
+		trigger = { has_government_attribute = enable_valdemar_constitution }
+		modifier = { manpower_in_accepted_culture_provinces = 0.1 }
 	}
 	ai_will_do = {
 		factor = 10
@@ -2543,7 +2578,7 @@ estate_nobles_early_serfdom = {
 	}
 	penalties = {
 		global_institution_spread = -0.2
-		monthly_russian_modernization = -0.5
+		monthly_russian_modernization = -0.25
 	}
 	conditional_modifier = {
 		trigger = { has_country_flag = rus_buffed_serfdom_privileges }
@@ -2700,7 +2735,7 @@ estate_nobles_total_serfdom = {
 		global_institution_spread = -0.2
 		technology_cost = 0.1
 		idea_cost = 0.1
-		monthly_russian_modernization = -1
+		monthly_russian_modernization = -0.75
 	}
 	conditional_modifier = {
 		trigger = { has_country_flag = rus_buffed_serfdom_privileges }
@@ -2997,7 +3032,7 @@ estate_nobles_peasant_liberation = {
 	}
 	benefits = {
 		nobles_privilege_slots = 1
-		russian_modernization_gain_modifier = 0.1
+		russian_modernization_gain_modifier = 0.15
 		global_institution_spread = 0.2
 		monthly_russian_modernization = 0.75
 	}
@@ -3026,7 +3061,15 @@ estate_nobles_factionalist_nobility = {
 		tag = CAS
 	}
 	can_revoke = {
-		crown_land_share = 50 
+		OR = {
+			crown_land_share = 40 
+			AND = {
+				has_estate_privilege = estate_church_religious_state
+				has_estate_privilege = estate_nobles_nobility_primacy
+				has_estate_privilege = estate_burghers_land_of_commerce
+				crown_land_share = 30
+			}
+		}
 	}
 	on_granted = {
 		
@@ -3038,17 +3081,25 @@ estate_nobles_factionalist_nobility = {
 		
 	}
 	penalties = {
-		legitimacy = -0.5
-		global_autonomy = 0.05
-		
+	}
+	conditional_modifier = {
+		trigger = { 
+			NOT = {
+				has_country_flag = cas_royalist_flag
+			}
+		}
+		modifier = {
+			legitimacy = -0.5
+			global_autonomy = 0.05
+		}
 	}
 	conditional_modifier = {
 		trigger = { 
 			has_country_flag = cas_royalist_flag
 		}
 		modifier = {
-			global_autonomy = -0.025
-			legitimacy = 0.25
+			global_autonomy = 0.025
+			legitimacy = -0.25
 			nobles_loyalty_modifier = 0.05
 		}
 	}
@@ -3122,6 +3173,7 @@ estate_nobles_english_villeinage = {
 				has_estate_privilege = estate_nobles_nobility_primacy
 				has_estate_privilege = estate_burghers_land_of_commerce
 			}
+			has_reform = abolish_bastard_feudalism_reform
 		}
 	}
 	on_granted = {
@@ -3130,6 +3182,12 @@ estate_nobles_english_villeinage = {
 	}
 	modifier_by_land_ownership = {
 		global_tax_modifier = -0.5
+	}
+	influence_scaled_conditional_modifier = {
+		modifier = { 
+			development_cost = 0.1
+		}
+		is_bad = yes
 	}
 	mechanics = {
 		exempt_from_seize_land
@@ -3161,6 +3219,11 @@ estate_nobles_english_copyhold_tenure = {
 	}
 	benefits = {
 		global_tax_modifier = 0.1
+	}
+	influence_scaled_conditional_modifier = {
+		modifier = { 
+			global_unrest = -2
+		}
 	}
 	modifier_by_land_ownership = {
 		production_efficiency = 0.2
@@ -3312,7 +3375,7 @@ estate_nobles_statesman_servitude = {
 	}
 	conditional_modifier = {
 		trigger = { 
-			owns_core_province = 1953
+			owns_core_province = 4126
 			1953 = {
 				has_great_project = {
 					type = kisvarda
@@ -3899,6 +3962,7 @@ estate_nobles_tupchi_artillery_corps = {
 estate_nobles_qurchi_service = {
 	icon = privilege_legitimacy
 	loyalty = 0.10
+	influence = 0.15
 	max_absolutism = 0
 	#conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
@@ -3927,9 +3991,8 @@ estate_nobles_qurchi_service = {
 		trigger = { always = yes }
 		modifier = {
 			monarch_lifespan = 0.5
-			nobles_influence_modifier = 0.5
-			qizilbash_influence_modifier = -0.5
-			ghulams_influence_modifier = -0.5
+			qizilbash_influence_modifier = -0.15
+			ghulams_influence_modifier = -0.15
 		}
 	}
 	ai_will_do = {
@@ -4007,6 +4070,10 @@ estate_nobles_enlist_the_mamluks = {
 	benefits = {
 		has_mamluks = yes 
 		allowed_mamluks_fraction = 0.2
+	}
+	loyalty_scaled_conditional_modifier = {
+		trigger = { always = yes }
+		modifier = { manpower_recovery_speed = 0.2 }
 	}
 	ai_will_do = {
 		factor = 100
@@ -4760,11 +4827,14 @@ estate_nobles_TIM_soyurghal_grants = {
 		NOT = { has_country_flag = estate_nobles_TIM_soyurghal_grants_revoked }
 	}
 	penalties = {
-		global_tax_modifier = -0.1
+		vassal_income = -0.33
 		reform_progress_growth = -0.1
 	}
 	benefits = {
 		army_tradition_decay = -0.01
+	}
+	modifier_by_land_ownership = {
+		global_tax_modifier = -0.5
 	}
 	can_revoke = {
 		custom_trigger_tooltip = {

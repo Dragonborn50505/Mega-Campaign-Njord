@@ -1,7 +1,4 @@
-owner = Z4T
-controller = Z4T
 capital = "Sayan"
-is_city = yes
 culture = kirgiz
 religion = mahayana
 trade_goods = unknown

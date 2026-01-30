@@ -1,10 +1,10 @@
-government = monarchy
-add_government_reform = feudal_theocracy
+government = theocracy
+add_government_reform = monastic_order_reform
 government_rank = 2
-technology_group = east_african
+technology_group = muslim
 religion = sunni
-primary_culture = somali
-capital = 1099
+primary_culture = yemeni_culture
+capital = 390
 religious_school = hanbali_school
 1444.11.11= {
 	monarch = {

@@ -659,6 +659,37 @@ country_event = {
 				duration = -1												#Once per campaign
 				hidden = yes											#Debug timer modifier, stays hidden
 			}
+			MOS = {
+				every_owned_province = {
+					add_core = MOS
+				}
+			}
+			EST = {
+				every_owned_province = {
+					add_core = EST
+				}
+			}
+			CHR = {
+				every_owned_province = {
+					add_core = CHR
+				}
+			}
+			VPS = {
+				every_owned_province = {
+					add_core = VPS
+				}
+			}
+			CRI = {
+				every_owned_province = {
+					add_core = CRI
+				}
+			}
+			ILK = {
+				every_owned_province = {
+					add_core = ILK
+				}
+			}
+			
 			random_known_country = {
 				limit = {
 					is_nomad = yes
@@ -675,6 +706,17 @@ country_event = {
 	
 	option = {
 		name = "plati_ck_new_flavor.EVTOPTA9"							#Interesting, just FYI
+		tooltip = {
+			KHA = {
+				add_country_modifier = {
+					name = MEGA_mongol_empire_still_standing
+					duration = -1
+				}
+				add_ruler_modifier = {
+					name = MEGA_great_khan_khubilai
+				}
+			}
+		}
 	}
 }
 country_event = {

@@ -1,5 +1,5 @@
-owner = Z61
-controller = Z61
+owner = Z07
+controller = Z07
 capital = "Chimgi-Tura"
 is_city = yes
 culture = ostyaki
@@ -12,4 +12,5 @@ center_of_trade = 1
 add_core = YUG
 add_core = Z5E
 add_core = Z61
+add_core = Z07
 discovered_by = nomad_group

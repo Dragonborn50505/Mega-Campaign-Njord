@@ -1,5 +1,5 @@
-owner = LIT
-controller = LIT
+owner = EST
+controller = EST
 capital = "Dünaburg"
 is_city = yes
 culture = latvian

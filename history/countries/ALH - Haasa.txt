@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = gond_kingdom
 government_rank = 1
 technology_group = indian
-religion = hinduism
+religion = kharijite
 primary_culture = gondi
 capital = 2347
 add_accepted_culture = al_suryah_arabic
@@ -14,7 +14,7 @@ add_accepted_culture = al_suryah_arabic
 		dip = 4
 		mil = 4
 		birth_date = 1411.11.26
-		religion = hinduism
+		religion = kharijite
 		culture = gondi
 	}
 	add_ruler_personality = drunkard_personality
@@ -29,7 +29,7 @@ add_accepted_culture = al_suryah_arabic
 		birth_date = 1400.9.1
 		death_date = 1460.9.1
 		female = yes
-		religion = mahayana
+		religion = kharijite
 		culture = mongol
 	}
 	add_queen_personality = fertile_personality
@@ -44,7 +44,7 @@ add_accepted_culture = al_suryah_arabic
 		birth_date = 1430.2.7
 		death_date = 1495.2.7
 		claim = 89
-		religion = hinduism
+		religion = kharijite
 		culture = gondi
 	}
 	add_heir_personality = secretive_personality

@@ -1,5 +1,5 @@
-owner = VPS
-controller = VPS
+owner = MOS
+controller = MOS
 capital = "Kostroma"
 is_city = yes
 culture = vepsian

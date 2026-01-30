@@ -1,5 +1,5 @@
-owner = IME
-controller = IME
+owner = Z4H
+controller = Z4H
 capital = "Tana"
 is_city = yes
 culture = crimean
@@ -9,7 +9,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 extra_cost = 10
-add_core = IME
+add_core = Z4H
 add_core = Z0M
 discovered_by = eastern
 discovered_by = muslim

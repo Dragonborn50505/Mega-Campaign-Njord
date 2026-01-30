@@ -1,13 +1,10 @@
 government = republic
+add_government_reform = pirate_republic
 government_rank = 1
 technology_group = western
 religion = catholic
 primary_culture = galician
 capital = 230
-government = republic
-reform_stack = {
-    pirate_republic_reform
-}
 set_country_flag = ZZZ_generated_converter_nation
 1444.11.11= {
 	monarch = {

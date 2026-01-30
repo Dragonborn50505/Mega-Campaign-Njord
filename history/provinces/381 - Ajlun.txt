@@ -1,5 +1,5 @@
-owner = Z5W
-controller = Z5W
+owner = Z47
+controller = Z47
 capital = "Ajlun"
 is_city = yes
 culture = al_suryah_arabic
@@ -10,7 +10,7 @@ base_tax = 1
 base_production = 3
 base_manpower = 2
 add_core = SYR
-add_core = Z5W
+add_core = Z47
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

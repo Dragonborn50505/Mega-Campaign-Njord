@@ -1,5 +1,5 @@
-owner = Z2Q
-controller = Z2Q
+owner = FER
+controller = FER
 capital = "Ferrara"
 is_city = yes
 culture = romagnan
@@ -11,7 +11,6 @@ base_production = 4
 base_manpower = 3
 extra_cost = 10
 add_core = FER
-add_core = Z2Q
 add_permanent_claim = PAP
 discovered_by = eastern
 discovered_by = muslim

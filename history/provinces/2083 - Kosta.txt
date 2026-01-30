@@ -1,5 +1,5 @@
-owner = YOR
-controller = YOR
+owner = Z5H
+controller = Z5H
 capital = "Udayagiri"
 is_city = yes
 culture = telegu
@@ -9,7 +9,7 @@ base_tax = 7
 base_production = 4
 base_manpower = 2
 add_core = GOC
-add_core = YOR
+add_core = Z5H
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

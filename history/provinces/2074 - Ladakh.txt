@@ -1,5 +1,5 @@
-owner = GUG
-controller = GUG
+owner = Z0U
+controller = Z0U
 capital = "Leh"
 is_city = yes
 culture = tibetan
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 4
 base_production = 3
 base_manpower = 3
-add_core = GUG
+add_core = Z0U
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

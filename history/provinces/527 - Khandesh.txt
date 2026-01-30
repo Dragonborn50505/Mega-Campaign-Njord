@@ -1,5 +1,5 @@
-owner = MAR
-controller = MAR
+owner = BRR
+controller = BRR
 capital = "Burhanpur"
 is_city = yes
 culture = dynamic-marathi-culture-num1
@@ -10,7 +10,7 @@ base_production = 4
 base_manpower = 2
 extra_cost = 16
 center_of_trade = 2
-add_core = MAR
+add_core = BRR
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

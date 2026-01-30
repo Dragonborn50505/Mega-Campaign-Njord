@@ -1,5 +1,5 @@
-owner = ARD
-controller = ARD
+owner = AKK
+controller = AKK
 capital = "Diyar Bekir"
 is_city = yes
 culture = dynamic-al_suryah_arabic-culture-num3
@@ -10,7 +10,7 @@ base_production = 4
 base_manpower = 3
 extra_cost = 8
 center_of_trade = 1
-add_core = ARD
+add_core = AKK
 add_core = Z1P
 discovered_by = east_african
 discovered_by = eastern

@@ -1,5 +1,5 @@
-owner = Z0B
-controller = Z0B
+owner = SOS
+controller = SOS
 capital = "Sidi Ifni"
 is_city = yes
 culture = moroccan
@@ -8,7 +8,7 @@ trade_goods = fish
 base_tax = 5
 base_production = 3
 base_manpower = 3
-add_core = Z0B
+add_core = SOS
 add_permanent_claim = SOS
 discovered_by = muslim
 discovered_by = ottoman

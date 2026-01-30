@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = muslim
-religion = catholic
+religion = adamites
 primary_culture = berber
 capital = 2267
 add_accepted_culture = aka
@@ -15,7 +15,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		dip = 4
 		mil = 3
 		birth_date = 1391.7.30
-		religion = catholic
+		religion = adamites
 		culture = berber
 	}
 	add_ruler_personality = lawgiver_personality
@@ -30,7 +30,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		birth_date = 1420.3.11
 		death_date = 1480.3.11
 		female = yes
-		religion = catholic
+		religion = adamites
 		culture = mali
 	}
 	add_queen_personality = malevolent_personality
@@ -45,7 +45,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		birth_date = 1419.9.23
 		death_date = 1484.9.23
 		claim = 89
-		religion = catholic
+		religion = adamites
 		culture = berber
 	}
 	add_heir_personality = fierce_negotiator_personality

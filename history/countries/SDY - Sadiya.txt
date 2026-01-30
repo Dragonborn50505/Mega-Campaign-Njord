@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = uparaja_reform
+add_government_reform = tai_and_ahom_reform
 government_rank = 1
 technology_group = indian
 religion = vajrayana

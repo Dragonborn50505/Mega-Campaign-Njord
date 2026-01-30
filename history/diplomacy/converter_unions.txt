@@ -32,16 +32,24 @@ union=
 
 union=
 {
-	first="Z1J"
-	second="Z0X"
-	start_date="1444.11.11"
+	first="GUR"
+	second="Z5T"
+	start_date="1424.11.11"
 	end_date="1836.1.1"
 }
 
 union=
 {
-	first="Z3M"
-	second="Z12"
+	first="GUR"
+	second="Z3H"
+	start_date="1434.11.11"
+	end_date="1836.1.1"
+}
+
+union=
+{
+	first="Z1J"
+	second="Z0X"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -112,8 +120,29 @@ union=
 
 union=
 {
-	first="Z18"
+	first="HAB"
 	second="Z34"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+union=
+{
+	first="HAB"
+	second="Z18"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+union=
+{
+	first="HAB"
+	second="STY"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+union=
+{
+	first="HAB"
+	second="TIR"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }

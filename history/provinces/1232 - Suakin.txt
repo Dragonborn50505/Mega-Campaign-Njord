@@ -1,5 +1,5 @@
-owner = BEJ
-controller = BEJ
+owner = Z3U
+controller = Z3U
 capital = "Suakin"
 is_city = yes
 culture = dynamic-bedouin_arabic-culture-num1
@@ -8,7 +8,7 @@ trade_goods = slaves
 base_tax = 3
 base_production = 2
 base_manpower = 2
-add_core = BEJ
+add_core = Z3U
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

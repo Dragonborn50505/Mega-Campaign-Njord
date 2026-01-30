@@ -1,5 +1,5 @@
-owner = NOV
-controller = NOV
+owner = Z07
+controller = Z07
 capital = "Orda"
 is_city = yes
 culture = astrakhani
@@ -8,7 +8,7 @@ trade_goods = livestock
 base_tax = 1
 base_production = 1
 base_manpower = 1
-add_core = NOV
+add_core = Z07
 add_core = Z8E
 discovered_by = eastern
 discovered_by = muslim

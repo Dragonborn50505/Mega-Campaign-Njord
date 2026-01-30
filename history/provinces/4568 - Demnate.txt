@@ -1,5 +1,5 @@
-owner = Z4O
-controller = Z4O
+owner = MRK
+controller = MRK
 capital = "Demnate"
 is_city = yes
 culture = moroccan
@@ -8,7 +8,7 @@ trade_goods = wool
 base_tax = 6
 base_production = 4
 base_manpower = 4
-add_core = Z4O
+add_core = MRK
 add_core = Z9L
 add_permanent_claim = MRK
 discovered_by = eastern

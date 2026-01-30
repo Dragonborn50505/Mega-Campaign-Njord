@@ -7,9 +7,11 @@ immortals_ideas = {
 		global_manpower_modifier = 0.25
 	}
 	trigger = {
-		tag = IMM
+		OR = {
+			tag = IMM
+			tag = FRS
+		}
 		religion_group = zoroastrian_group
-		government = theocracy
 	}
 	free = yes
 	
@@ -20,10 +22,11 @@ immortals_ideas = {
 		global_foreign_trade_power = 0.2
 	}
 	ZZZ_expand_the_immortal_ranks = {
-		land_forcelimit_modifier = 0.5
+		land_forcelimit_modifier = 0.2
 	}
 	ZZZ_expand_the_rites = {
-		missionaries = 2
+		missionaries = 1
+		diplomatic_reputation = 1
 	}
 	ZZZ_immortal_sameness = {
 		culture_conversion_cost = -0.25
