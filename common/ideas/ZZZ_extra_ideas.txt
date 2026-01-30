@@ -922,6 +922,13 @@ TRA_ideas = {
 			tag = TRA
 			primary_culture = transylvanian
 		}
+		NOT = {
+			OR = {
+				tag = HUN
+				tag = HAB
+				tag = AUH
+			}
+		}
 	}
 }
 
