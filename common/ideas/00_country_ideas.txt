@@ -112,6 +112,9 @@ GER_ideas = {
 
 	trigger = {
 		tag = GER
+		NOT = {
+			has_country_flag = MEGA_i_want_south_german_ideas
+		}
 	}
 	free = yes
 	

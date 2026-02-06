@@ -449,4 +449,88 @@ country_decisions = {
 			factor = 0
 		}
 	}
+
+	ADD_BACK_PROVINCE_MODIFIER = {
+
+		major = yes
+
+		potential = {
+			OR = {
+				tag = HSA
+				was_tag = HSA
+			}
+			owns_core_province = 44
+			44 = {
+				not = {
+					has_province_modifier = hanseatic_shipwrights_modifier
+				}
+			}
+		}
+
+		allow = {
+			always = yes
+		}
+		effect = {
+			44 = {
+				add_province_modifier = {
+					name = hanseatic_shipwrights_modifier
+					duration = -1
+				}
+			}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	GET_SOUTH_GERMAN_IDEAS = {
+
+		major = yes
+
+		potential = {
+			tag = GER
+			NOT = {
+				has_country_flag = MEGA_i_want_south_german_ideas
+			}
+		}
+
+		allow = {
+			always = yes
+		}
+		effect = {
+			set_country_flag = MEGA_i_want_south_german_ideas
+			country_event = {
+				id = ideagroups.1
+			}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	GET_GERMAN_IDEAS = {
+
+		major = yes
+
+		potential = {
+			tag = GER
+			has_country_flag = MEGA_i_want_south_german_ideas
+		}
+
+		allow = {
+			always = yes
+		}
+		effect = {
+			clr_country_flag = MEGA_i_want_south_german_ideas
+			country_event = {
+				id = ideagroups.1
+			}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }

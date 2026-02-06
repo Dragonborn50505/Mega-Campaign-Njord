@@ -55,7 +55,14 @@ SGF_ideas = {
 	}	
 
 	trigger = {
-		tag = SGF
+		OR = {
+			tag = SGF
+			was_tag = SGF
+			AND = {
+				tag = GER
+				has_country_flag = MEGA_i_want_south_german_ideas
+			}
+		}
 	}
 	free = yes
 	
