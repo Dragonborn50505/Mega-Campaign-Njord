@@ -281,20 +281,24 @@ prc_juche = {
 
 MEGA_trojan_kingdom = {
 	icon = "ottoman_government"
-	allow_normal_conversion = no
-	lock_level_when_selected = yes
+	allow_normal_conversion = yes
 	potential = {
 		OR = {
 			tag = Z43
-			was_tag = Z43
+			is_or_was_tag = {
+				tag = Z43
+			}
+			has_reform = MEGA_trojan_kingdom
 		}
 	}
 	trigger = {
 		OR = {
 			tag = Z43
-			was_tag = Z43
+			is_or_was_tag = {
+				tag = Z43
+			}
+			has_reform = MEGA_trojan_kingdom
 		}
-		has_reform = MEGA_trojan_kingdom
 	}
 
 	custom_attributes = {
@@ -327,14 +331,19 @@ MEGA_elite_trojan_guards = {
 	potential = {
 		OR = {
 			tag = Z43
-			was_tag = Z43
+			is_or_was_tag = {
+				tag = Z43
+			}
+			has_reform = MEGA_elite_trojan_guards
 		}
-		has_reform = MEGA_trojan_kingdom
 	}
 	trigger = {
 		OR = {
 			tag = Z43
-			was_tag = Z43
+			is_or_was_tag = {
+				tag = Z43
+			}
+			has_reform = MEGA_elite_trojan_guards
 		}
 	}
 
